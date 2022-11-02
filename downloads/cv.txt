@@ -1,0 +1,46 @@
+Control de versiones:
+
+1.001 Transformación del manuscrito a texto plano (29-07-2022)
+1.002 Agregada licencia Creative Commons (30-07-2022)
+1.003 Agregada una Nota preliminar (31-07-2022)
+1.004 Agregado un índice de Cuadros (01-08-2022)
+1.005 Agregado un índice de Imágenes (02-08-2022)
+1.006 Agregado un listado de Siglas y abreviaturas (03-08-2022)
+1.007 Vectorización de mapas (05-08-2022)
+1.008 Agregados los nombres de los archivos consultados (07-08-2022)
+1.009 Dividida las fuentes consultadas en archivos y bibliografía (07-08-2022)
+1.010 Corrección del aparato crítico (08-08-2022)
+1.011 Agregado el árbol genealógico (17-10-2022)
+1.012 Agregado el gráfico en pág. 95 (17-10-2022)
+1.013 Corrección de palabras (31-10-2022)
+1.014 Mejora de números de página en Contenidos (01-11-2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
