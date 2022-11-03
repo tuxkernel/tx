@@ -14,3 +14,33 @@ Control de versiones:
 1.012 Agregado el gráfico en pág. 95 (17-10-2022)
 1.013 Corrección de palabras (31-10-2022)
 1.014 Mejora de números de página en Contenidos (02-11-2022)
+1.015 Corrección de errores en el escrito (02-11-2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
