@@ -15,6 +15,7 @@ Control de versiones:
 1.013 Corrección de palabras (31-10-2022)
 1.014 Mejora de números de página en Contenidos (02-11-2022)
 1.015 Corrección de errores en el escrito (02-11-2022)
+1.016 Corrección de estajos a hectáreas (17-11-2022)
 
 
 
