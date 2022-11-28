@@ -16,6 +16,9 @@ Control de versiones:
 1.014 Mejora de números de página en Contenidos (02-11-2022)
 1.015 Corrección de errores en el escrito (02-11-2022)
 1.016 Corrección de estajos a hectáreas (17-11-2022)
+1.017 Correccion del aparato crítico (28-11-2022)
+
+Pendientes: Crear una fe de erratas con los errores en la version 2007.
 
 
 
