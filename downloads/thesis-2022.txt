@@ -1814,9 +1814,9 @@ año 7, núm. 39, pp. 18-28.
 
 \hangpara{1cm}{1}\textsc{Solis Vicarte}, Ruth (Comp.), \emph{Veracruz en el Diccionario Universal de Historia y de Geografía, 1853-1856}. Gobierno del estado de Veracruz"/Secretaría de Educación y Cultura, Xalapa, 1998.
 
-\hangpara{1cm}{1}\textsc{Southworth}, John R, \emph{Directorio oficial de las minas y haciendas de México}. Casino español de México, México, s/f, pp. 242-251.
+\hangpara{1cm}{1}\textsc{Southworth}, John R., \emph{Directorio oficial de las minas y haciendas de México}. Casino español de México, México, s/f, pp. 242-251.
 
-\hangpara{1cm}{1}\textsc{Tenenbaum}, Barbara A, \emph{México en la época de los agiotistas, 1821-1857}. Fondo de Cultura Económica, México, 1985, 235 pp.
+\hangpara{1cm}{1}\textsc{Tenenbaum}, Barbara A., \emph{México en la época de los agiotistas, 1821-1857}. Fondo de Cultura Económica, México, 1985, 235 pp.
 
 \hangpara{1cm}{1}\textsc{Velázquez Hernández}, Emilia, \emph{Cuando los arrieros perdieron sus caminos}. El Colegio de Michoacán, Zamora, 1995, 196 pp.
 % INDICE ONOMÁSTICO
