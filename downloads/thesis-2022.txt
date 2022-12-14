@@ -269,7 +269,6 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 \sethlcolor{red} % Color rojo para el marca textos.
 \usepackage{silence} % Necesario para suprimir el mensaje del paquete everypage
 \WarningsOff[everypage] % Elimina el mensaje
-\usepackage[pages=some]{background} % Números de capítulos.
 \usepackage{transparent} % transparencia en imágenes
 \usepackage{tcolorbox} % Cajas de diálogo.
 %\usepackage[stamp=true,text=Borrador]{draftwatermark} % Marca al agua (borrador)
@@ -651,16 +650,6 @@ periodo porfirista, la sociedad mexicana había quedado dividida en dos únicas 
 \end{flushright}
 % CAPÍTULO 1
 \chapter[El cantón de Jalacingo. La región y su \emph{hinterland} económico]{El cantón de Jalacingo. \\ La región y su \emph{hinterland} económico}\label{ch:capitulo-uno}
-\backgroundsetup{
-color=black,
-scale=2.5, 
-hshift=5.5, 
-vshift=90,
-angle=0,
-opacity=.4,
-contents=\textlf{1}
-}
-\BgThispage
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
@@ -948,16 +937,6 @@ En otro estudio comprobamos cómo las pequeñas producciones de las cofradías d
 \null\vfill
 % CAPÍTULO 2
 \chapter[Familia y poder. Los Villegas de Jalacingo, 1872-1910]{Familia y poder. \\ Los Villegas de Jalacingo, 1872-1910}\label{ch:capitulo-dos}
-\backgroundsetup{
-color=black,
-scale=2.5, 
-hshift=5.5, 
-vshift=90,
-angle=0,
-opacity=.4,
-contents=\textlf{2}
-}
-\BgThispage
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
@@ -1165,16 +1144,6 @@ Otros miembros de los Guzmán también entablarían relaciones de negocios con l
 
 Es pues ésta, la familia Villegas del cantón de Jalacingo durante los años del Porfiriato. Al presentar a sus miembros y sus actividades económicas y políticas, así como las relaciones que tejieron con otras familias a través de las uniones matrimoniales, las redes de poder y las operaciones comerciales, hemos querido ofrecer un cuadro de su prestigio y ascendente económico. Ahora pasemos a explicar con mayor profundidad sus actividades usurarias, agropecuarias y comerciales, y los mecanismos de enriquecimiento que hicieron de ella una de la familias más acaudaladas en el cantón de Jalacingo durante los años del Porfiriato.
 \chapter[La riqueza familiar. Usura, propiedad y comercio]{La riqueza familiar. \\ Usura, propiedad y comercio}\label{ch:capitulo-tres}
-\backgroundsetup{
-color=black,
-scale=2.5, 
-hshift=5.5, 
-vshift=90,
-angle=0,
-opacity=.4,
-contents=\textlf{3}
-}
-\BgThispage
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
