@@ -17,4 +17,4 @@ Control de versiones:
 1.015 Corrección de errores en el escrito (02-11-2022)
 1.016 Corrección de estajos a hectáreas (17-11-2022)
 1.017 Corrección del aparato crítico (28-11-2022)
-1.018 Cambio de licencia. De CC BY 4.0 a WTFPL (v. 2.0) (17-12-2022)
+1.018 Agregado de apéndices (17-12-2022)
