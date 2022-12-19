@@ -335,11 +335,63 @@ pdfcopyright={Noel Merino Hernández. Todos los derechos reservados.},
 \parskip=0mm % Espacio entre párrafos.
 %\setlength{\footnotesep}{0pt} % Elimina el espacio entre las notas a pie de página.
 %\linespread{1.5} % Interlineado
-% PORTADA
+% PORTADA 1
 \newpage
 \pagestyle{empty}
 \pdfbookmark{Portada}{Portada}
-\includepdf[fitpaper=true]{Portada} % autoscale (default)
+\begin{center}
+\begin{minipage}{11cm}
+\includegraphics[width=3cm]{01}\label{fig:buap} \hfill \includegraphics[width=2.8cm]{02}
+\label{fig:icsyh}
+\end{minipage}
+\end{center}
+\smallskip
+\begin{center}
+\large\scshape Benemérita Universidad Autónoma de Puebla
+\end{center}
+\begin{center}
+\large\scshape Instituto de Ciencias Sociales y Humanidades \\
+
+<<Alfonso Vélez Pliego>> 
+\end{center}
+\begin{center}
+\large\scshape Posgrado en Historia
+\end{center}
+\bigskip
+\begin{center}
+\Large\itshape Familia y poder en el centro de Veracruz. \\ Los Villegas de Jalacingo, 1872-1910
+\end{center}
+\bigskip
+\begin{center}
+\Large\scshape Tesis
+\end{center}
+\bigskip
+\begin{center}
+que para obtener el grado de:
+\end{center}
+\begin{center}
+\scshape Maestro en Historia
+\end{center}
+\begin{center}
+Presenta:
+\end{center}
+\begin{center}
+\scshape Lic. Noel Merino Hernández
+\end{center}
+\begin{center}
+Directora:
+\end{center}
+\begin{center}
+\scshape Dra. Leticia Gamboa Ojeda
+\end{center}
+\medskip
+\begin{center}
+Puebla, Pue., 29 de agosto del 2007
+\end{center}
+\begin{center}
+(núm. 64)
+\end{center}
+\clearpage
 % LICENCIA CREATIVE COMMONS
 \newpage
 \pagestyle{empty}
@@ -349,11 +401,15 @@ pdfcopyright={Noel Merino Hernández. Todos los derechos reservados.},
 \begin{scriptsize}
 \begin{flushleft}
 \begin{minipage}{7.5cm}
-\def\fileversion{1.017}
-\def\filedate{(28-11-2022)}
+\includegraphics[width=2.5cm]{cc-large}\phantomsection\label{fig:cc-large} \\
+
+\includegraphics[width=2.5cm]{cc}\phantomsection\label{fig:cc} \\
+
+\def\fileversion{1.018}
+\def\filedate{(17-12-2022)}
 versión\space\fileversion\space\filedate \\
 
-\textcopyright{} 2007-2022. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto). \\ \textcopyright{} 2007-2022. Eugenio Pedro José Pradal Roa (de la foto en la pág. \pageref{fig:jalacingo-photo}) \\ \textcopyright{} 2007-2022. \textsc{agev} (de la foto en la pág. \pageref{fig:progreso-industrial}) \\ \textcopyright{} 2022. \href{muxkernel@gmail.com}{Tuxkernel} (de la composición tipográfica). \\
+\textcopyright\ 2007-2022. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto). \\ \textcopyright\ 2022. \href{muxkernel@gmail.com}{Tuxkernel} (de la composición tipográfica). \\
 
 \noindent Este documento se distribuye bajo una licencia \href{https://creativecommons.org/licenses/by/4.0/deed.es}{Creative Commons Atribución 4.0 Internacional (\textsc{cc} by 4.0)}. Por lo tanto, eres libre de \emph{compartir, copiar y redistribuir} el material en cualquier medio o formato. \emph{Adaptar, remezclar, transformar y construir} a partir del material para cualquier propósito, incluso comercialmente. El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia, bajo los siguientes términos: \\
 
@@ -1788,6 +1844,105 @@ año 7, núm. 39, pp. 18-28.
 \hangpara{1cm}{1}\textsc{Tenenbaum}, Barbara A., \emph{México en la época de los agiotistas, 1821-1857}. Fondo de Cultura Económica, México, 1985, 235 pp.
 
 \hangpara{1cm}{1}\textsc{Velázquez Hernández}, Emilia, \emph{Cuando los arrieros perdieron sus caminos}. El Colegio de Michoacán, Zamora, 1995, 196 pp.
+% APÉNDICES
+\appendix
+\chapter{Apéndice 1}\label{ap:apendice-one}
+\thispagestyle{empty}
+\pagestyle{fancy}
+\fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
+%\fancyhead[RE]{\small\sc el humor como poética en los cuentos de efrén hernández}
+%\fancyhead[LO]{\small\sc fuentes consultadas}
+\fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872-1910} % Centrados
+\fancyhead[CO]{\small\sc apéndice 1} % Centrados
+\fancyhead[RO,LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{arabic}
+\setcounter{page}{137}
+\section{Glosario}\label{sec:glosario}
+\begin{description}
+\item[Medieros]Personas que van a medias en la explotación de tierras, cría de ganados u otras granjerías del campo.\footnote{<<Mediero"/ra>> en \emph{Diccionario de la Lengua Española}. Real Academia Española, Madrid. [En línea] \url{https://dle.rae.es/mediero} [Consulta: 17 de diciembre, 2022].}
+\item[Punta de ganado]Pequeña porción de ganado que se separa del hato.\footnote{<<Punta>> en \emph{Diccionario de la Lengua Española}. Real Academia Española, Madrid. [En línea] \url{https://dle.rae.es/punta} [Consulta: 17 de diciembre, 2022].}
+
+\end{description}
+\chapter{Apéndice 2}\label{ap:apendice-dos}
+\thispagestyle{empty}
+\pagestyle{fancy}
+\fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
+%\fancyhead[RE]{\small\sc el humor como poética en los cuentos de efrén hernández}
+%\fancyhead[LO]{\small\sc fuentes consultadas}
+\fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872-1910} % Centrados
+\fancyhead[CO]{\small\sc apéndice 2} % Centrados
+\fancyhead[RO,LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{arabic}
+\setcounter{page}{139}
+\section{Aviso legal: \emph{software}}\label{sec:aviso-legal-software}
+Cochineal\texttrademark\ es una marca registrada de Michael Sharpe y se distribuye bajo la licencia Open Font.
+
+\textsc{gimp}\texttrademark\ es una marca registrada de Spencer Kimball y Peter Mattis y se distribuye bajo la licencia pública general de \textsc{gnu}.
+
+Inkscape es \emph{software} y se distribuye bajo la licencia pública general de \textsc{gnu}.
+
+\LaTeX\texttrademark\ es una marca registrada de Leslie Lamport y se distribuye bajo la licencia publica del proyecto \LaTeX{}.
+
+LibreOffice\texttrademark\ es una marca registrada de The Document Foundation y se distribuye bajo la licencia pública de Mozilla.
+
+\textsc{pdf}\TeX{} es una marca registrada de Hàn Th\'{ê} Thành y se distribuye bajo la licencia pública general de \textsc{gnu}.
+
+\TeX\texttrademark\ es una marca registrada de Donald~E.~Knuth y la American Mathematical Society y se distribuye bajo dominio publico.
+
+\TeX{}maker\texttrademark\ es una marca registrada de Pascal Brachet y se distribuye bajo la licencia pública general de \textsc{gnu}.
+\chapter{Apéndice 3}\label{ap:apendice-tres}
+\thispagestyle{empty}
+\pagestyle{fancy}
+\fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
+%\fancyhead[RE]{\small\sc el humor como poética en los cuentos de efrén hernández}
+%\fancyhead[LO]{\small\sc fuentes consultadas}
+\fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872-1910} % Centrados
+\fancyhead[CO]{\small\sc apéndice 3} % Centrados
+\fancyhead[RO,LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{arabic}
+\setcounter{page}{141}
+\section{Aviso legal: imágenes}\label{sec:aviso-legal-imágenes}
+Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titulares y se reproducen aquí con su permiso. \\
+
+\noindent Portada: \\
+
+\noindent\textcopyright\ 2007-2022 Benemérita Universidad Autónoma de Puebla (pág. \pageref{fig:buap}).
+
+\noindent\textcopyright\ 2007-2022 Instituto de Ciencias Sociales y Humanidades (pág. \pageref{fig:icsyh}). \\
+
+\noindent Licencia: \\
+
+\noindent\textcopyright\ 2022 Creative Commons (pág. \pageref{fig:cc-large})
+
+\noindent\textcopyright\ 2022 Creative Commons (pág. \pageref{fig:cc-large}) \\
+
+\noindent Capítulo 1: \\
+
+\noindent\textcopyright\ 1987-2022 María de la Luz Belmonte Guzmán (pág. \pageref{fig:veracruz-1857}).
+
+\noindent\textcopyright\ 1992-2022 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:jalacingo-principios-xx}).
+
+\noindent\textcopyright\ 2007-2022 Archivo General del estado de Veracruz (pág. \pageref{fig:progreso-industrial}). \\
+
+\noindent Capítulo 2: \\
+
+\noindent\textcopyright\ 2007-2022 Eugenio Pedro José Pradal Roa (pág. \pageref{fig:jalacingo-photo}). \\
+
+\noindent Capítulo 3: \\
+
+\noindent\textcopyright\ 1992-2022 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-limon}).
+
+\noindent\textcopyright\ 1992-2022 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-cuatotolapam}).
+
+\noindent\textcopyright\ 1992-2022 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-tenextepec}). \\
+
+\noindent Colofón: \\
+
+\noindent\textcopyright\ 2007-2022 Eugenio Pedro José Pradal Roa, detalle (pág. \pageref{fig:vineta}).
+\clearpage
 % INDICE ONOMÁSTICO
 %\newpage
 %\thispagestyle{plain}
@@ -1822,7 +1977,7 @@ año 7, núm. 39, pp. 18-28.
 \hspace*{0pt}
 \vfill
 \begin{center}
-\includegraphics[width=1.5cm]{vineta}
+\includegraphics[width=1.5cm]{vineta}\phantomsection\label{fig:vineta}
 \end{center}
 {\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeXe{} de Leslie Lamport, basado en el lenguaje de programación \TeX{} creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX{} desarrollado por Hàn Th\'{ê} Thành. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizada por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2); la portada se diseñó en LibreOffice Draw (7.3.5.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}}
 \end{document}
