@@ -19,3 +19,4 @@ Control de versiones:
 1.017 Corrección del aparato crítico (28-11-2022)
 1.018 Agregado de apéndices (17-12-2022)
 1.019 Corrección de errores ortográficos (16-01-2023)
+1.020 Eliminación de un apéndice (21-01-2023)
