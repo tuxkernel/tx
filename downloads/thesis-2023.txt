@@ -452,11 +452,11 @@ versión\space\fileversion\space\filedate \\
 \pagestyle{empty}
 \chapter*{Nota preliminar}\label{ch:nota-preliminar}
 \addcontentsline{toc}{chapter}{Nota preliminar}
-Insatisfecho con la formación que se hizo en 2007, he realizado una <<nueva>> versión con cambios \emph{únicamente} en la composición tipográfica, ya que el texto y el contenido ---con ligeras modificaciones--- son, en esencia, los mismos. El texto original aún puede consultarse en la siguiente dirección electrónica:
+Insatisfecho con la formación que se hizo en 2007, he realizado una <<nueva>> versión con cambios \emph{únicamente} en la composición tipográfica, ya que el texto y el contenido ---con ligeras modificaciones--- son, en esencia, los mismos. El texto original (2007) aún puede consultarse en la siguiente dirección electrónica:
 \begin{center}
 \href{https://tuxkernel.github.io/tx/downloads/thesis-2007.pdf}{\bfseries https://tuxkernel.github.io/tx/downloads/thesis-2007.pdf}
 \end{center}
-La nueva en:
+La nueva (2023) en:
 \begin{center}
 \href{https://tuxkernel.github.io/tx/downloads/thesis-2023.pdf}{\bfseries https://tuxkernel.github.io/tx/downloads/thesis-2023.pdf}
 \end{center}
@@ -464,9 +464,9 @@ No importa que sean versiones distintas de un mismo texto, cualquiera es válida
 \begin{center}
 \bfseries (Merino, 2023 [2007], p. 13)
 \end{center}
-\noindent que indica que estas citando la página 13 de la versión 2023, pero cuyo contenido está basado en la de 2007. Solo adapta el ejemplo anterior a tu modelo de citación. Repito, el texto original aún puede consultarse en la primera dirección electrónica.
+\noindent que indica que estas citando la página 13 de la versión 2023, pero cuyo contenido está basado en la de 2007; solo adapta el ejemplo anterior a tu modelo de citación. Repito, el texto original aún está disponible en la primera dirección electrónica.
 
-El texto de 2007 está plagado de errores sintácticos, ortotipográficos, e incluso hermenéuticos. Me hubiera gustado corregirlos ese año, pero en los posgrados de <<calidad>> \textsc{conacyt}, o te dedicas a escribir para titularte en tiempo y forma, o a corregir pero con una titulación extemporánea. ¡Así de simple! Corregirlos en la <<nueva>> versión habría implicado pasar por alto el texto primigenio, perdiendo así su <<originalidad>>. ¡Caveat emptor!
+El texto de 2007 está plagado de errores sintácticos, ortotipográficos e incluso hermenéuticos. Me hubiera gustado corregirlos ese año, pero en los posgrados de <<calidad>> \textsc{conacyt}, o te dedicas a escribir para titularte en tiempo y forma, o a corregir pero con una titulación extemporánea. ¡Así de simple! Corregirlos en la <<nueva>> versión habría implicado pasar por alto el texto primigenio, perdiendo así su <<originalidad>>.
 
 Agradezco a Tuxkernel, su tiempo, paciencia y dedicación para \emph{componer} nuevamente el texto.
 % AGRADECIMIENTOS
