@@ -7,7 +7,7 @@
 % CODIFICACIÓN DE ARCHIVO Y FUENTE
 
 \usepackage[utf8]{inputenc}
-\usepackage[TS1,T1]{fontenc}
+\usepackage[LGR,TS1,T1]{fontenc}
 
 % SÍMBOLOS
 
@@ -67,6 +67,7 @@
 \usepackage{shapepar} % Para el colofón
 \usepackage{calligra} % Para el nombre de José Antonio Villegas
 \usepackage{pifont} % Mano \ding{43}
+\usepackage{hologo} % For TeX, LaTeX and LaTeXe logos
 
 % SANGRIA
 
@@ -1941,6 +1942,11 @@ Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titula
 %\setcounter{page}{139}
 %\printindex[lugares]
 % COLOFÓN
+% Fix TeX LaTeX and LaTeXe logos
+%\def\TeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX} % Knuth TeX logo definition
+\renewcommand{\TeX}{T\kern -.1267em\lower .35ex\hbox {E}\kern -.105emX} % For TeX logo
+\renewcommand{\LaTeX}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX}} % For LaTeX
+\renewcommand{\LaTeXe}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX} \hbox{2}\kern-.03em\raisebox{-.4ex}{\fontencoding{LGR}\selectfont\char 101}} % Even LaTeXe
 \newpage
 \pagestyle{empty}
 \pdfbookmark{Colofón}{colophon}
@@ -1949,5 +1955,6 @@ Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titula
 \begin{center}
 \includegraphics[width=1.5cm]{vineta}\phantomsection\label{fig:vineta}
 \end{center}
-{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano TeXmaker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico LaTeX de Leslie Lamport, basado en el lenguaje de programación TeX creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}TeX desarrollado por Hàn Th\'{ê} Thành. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizada por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}
+% Hàn Th\'{ê} Thành don't looks well in plain text. Fix with hologo package.
+{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeXe\ de Leslie Lamport, basado en el lenguaje de programación \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por \hologo{HanTheThanh}. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizada por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}
 \end{document}
