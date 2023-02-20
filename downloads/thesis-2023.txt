@@ -469,7 +469,7 @@ No importa que sean versiones distintas de un mismo texto, cualquiera es válida
 
 El texto de 2007 está plagado de errores sintácticos, ortotipográficos e incluso hermenéuticos. Me hubiera gustado corregirlos ese año, pero en los posgrados de <<calidad>> \textsc{conacyt}, o te dedicas a escribir para titularte en tiempo y forma, o a corregir pero con una titulación extemporánea. ¡Así de simple! Corregirlos en la <<nueva>> versión habría implicado pasar por alto el texto primigenio, perdiendo así su <<originalidad>>. ¡Caveat emptor!
 
-Agradezco a Tuxkernel, su tiempo, paciencia y dedicación para \emph{componer} nuevamente el texto.
+Agradezco a \href{muxkernel@gmail.com}{Tuxkernel}, su tiempo, paciencia y dedicación para \emph{componer} nuevamente el texto.
 % AGRADECIMIENTOS
 \chapter*{Agradecimientos}\label{ch:agradecimientos}
 \thispagestyle{empty}
@@ -1947,6 +1947,7 @@ Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titula
 \renewcommand{\TeX}{T\kern -.1267em\lower .35ex\hbox {E}\kern -.105emX} % For TeX logo
 \renewcommand{\LaTeX}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX}} % For LaTeX
 \renewcommand{\LaTeXe}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX} \hbox{2}\kern-.03em\raisebox{-.4ex}{\fontencoding{LGR}\selectfont\char 101}} % Even LaTeXe
+\newcommand{\TuX}{T\kern -.1267em\lower .37ex\hbox {U}\kern -.105emX} % For TuX logo
 \newpage
 \pagestyle{empty}
 \pdfbookmark{Colofón}{colophon}
@@ -1956,5 +1957,5 @@ Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titula
 \includegraphics[width=1.5cm]{vineta}\phantomsection\label{fig:vineta}
 \end{center}
 % Hàn Th\'{ê} Thành don't looks well in plain text. Fix with hologo package.
-{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeXe\ de Leslie Lamport, basado en el lenguaje de programación \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por \hologo{HanTheThanh}. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizada por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}
+{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeX\ de Leslie Lamport, basado en el lenguaje de programación \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por Hàn Th\'{ê} Thành. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizada por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{\TuX{}kernel}.}
 \end{document}
