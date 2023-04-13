@@ -21,3 +21,4 @@ Control de versiones:
 1.019 Corrección de errores ortográficos (16-01-2023)
 1.020 Eliminación de un Apéndice (21-01-2023)
 1.021 Corrección de logos TeX, LaTeX y pdfTeX en el colofón (18-02-2023)
+1.022 Corrección de comas, puntos en cursivas (12-04-2023)
