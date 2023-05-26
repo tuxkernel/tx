@@ -227,10 +227,6 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 %\DeclareMicrotypeSet*{smallcapsi} % Kerning versalitas itálicas
 %{encoding={TS1,T1},shape={sc*,si,scit}}
 
-% VIUDAS Y HUÉRFANAS
-
-\usepackage[all]{nowidow} % Elimina viudas y huérfanas
-
 % DISPOSICIÓN TIPOGRÁFICA
 
 \usepackage[letterpaper,includehead,headsep=1.5cm,left=4cm,right=3cm,top=3cm,bottom=3cm]{geometry} % Márgenes (Tamaño carta)
@@ -281,7 +277,7 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 \usepackage{rotating}
 \usepackage{float}
 \usepackage[tablename=Cuadro,figurename=Imagen,font=small]{caption}
-\usepackage[toc,enum,lineno]{tabfigures} % Mejora los números en toc, enum y lineno.
+\usepackage[enum,lineno]{tabfigures} % Mejora los números en toc, enum y lineno.
 
 % UTILIDADES PARA PDF
 
@@ -315,7 +311,8 @@ colorlinks=true,linkcolor=black,urlcolor=black,pdftitle={Familia y poder en el c
 % COPYRIGHT
 
 \hypersetup{
-pdfcopyright={Noel Merino Hernández. Todos los derechos reservados.},
+pdfcopyright={© 2007-2023. Noel Merino Hernández. Todos los derechos reservados. Este documento se proporciona como es, sin ningún tipo de garantía, y se distribuye bajo una licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0). Por lo tanto, eres libre de compartir, copiar y redistribuir el material en cualquier medio o formato. Adaptar, remezclar, transformar y construir a partir del material para cualquier propósito, incluso comercialmente. El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia, bajo los siguientes términos: Atribución. Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante. No hay restricciones adicionales. No puede aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otras a hacer cualquier uso permitido por la licencia. Avisos: Usted no tiene que cumplir con la licencia para elementos del material en el dominio público o cuando su uso esté permitido por una excepción o limitación aplicable. No se dan garantías. La licencia podría no darle todos los permisos que necesita para el uso que tenga previsto. Por ejemplo, otros derechos como publicidad, privacidad, o derechos morales pueden limitar la forma en que utilice el material.},
+pdflicenseurl={https://creativecommons.org/licenses/by/4.0/deed.es},
 }
 
 % IMPRENTA Y ARCHIVADO
@@ -326,7 +323,7 @@ pdfcopyright={Noel Merino Hernández. Todos los derechos reservados.},
 
 % DOCUMENTO
 
-\raggedbottom % Reduce los espacios en blanco en cada hoja y los envía al final.
+%\raggedbottom % Reduce los espacios en blanco en cada hoja y los envía al final.
 %\flushbottom % Distribuye los espacios en blanco en cada hoja de forma aleatoria.
 \newcommand{\nota}[1]{\marginpar{\color{blue}\tiny #1}}% Nota al margen
 \begin{document}
@@ -404,15 +401,15 @@ Puebla, Pue., 29 de agosto del 2007
 
 \includegraphics[width=2.5cm]{cc}\phantomsection\label{fig:cc} \medskip
 
-\def\fileversion{1.022}
-\def\filedate{(12-04-2023)}
+\def\fileversion{1.023}
+\def\filedate{(26-05-2023)}
 versión\space\fileversion\space\filedate \medskip
 
 \textcopyright\ 2007-2023. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
 
 \textcopyright\ 2022-2023. \href{muxkernel@gmail.com}{Tuxkernel} (de la composición tipográfica). \medskip
 
-Este documento se distribuye bajo una licencia \href{https://creativecommons.org/licenses/by/4.0/deed.es}{Creative Commons Atribución 4.0 Internacional (\textsc{cc} by 4.0)}. Por lo tanto, eres libre de \emph{compartir, copiar y redistribuir} el material en cualquier medio o formato. \emph{Adaptar, remezclar, transformar y construir} a partir del material para cualquier propósito, incluso comercialmente. El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia, bajo los siguientes términos: \medskip
+Este documento se proporciona \emph{como es}, sin ningún tipo de garantía, y se distribuye bajo una licencia \href{https://creativecommons.org/licenses/by/4.0/deed.es}{Creative Commons Atribución 4.0 Internacional (\textsc{cc} by 4.0)}. Por lo tanto, eres libre de \emph{compartir, copiar y redistribuir} el material en cualquier medio o formato. \emph{Adaptar, remezclar, transformar y construir} a partir del material para cualquier propósito, incluso comercialmente. El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia, bajo los siguientes términos: \medskip
 
 \textbf{Atribución} --- Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante. \medskip
 
@@ -436,7 +433,7 @@ Para mayores informes visite: \medskip
 \pdfbookmark{Dedicatoria}{dedicatoria}
 \vspace*{42pt}
 \begin{flushright}
-\textit{Francisco R.\,Córdoba Olivares}
+\textit{Francisco R.~Córdoba Olivares}
 \end{flushright}
 \begin{flushright}
 \textsc{In memoriam}
@@ -455,17 +452,17 @@ Para mayores informes visite: \medskip
 \addcontentsline{toc}{chapter}{Nota preliminar}
 Insatisfecho con la formación que se hizo en 2007, he realizado una <<nueva>> versión con cambios \emph{únicamente} en la composición tipográfica, ya que el texto y el contenido son ---con ligeras modificaciones---, en esencia, los mismos. El texto original (2007) aún puede consultarse en la siguiente dirección electrónica:
 \begin{center}
-\href{https://tuxkernel.github.io/tx/downloads/thesis-2007.pdf}{\bfseries https://tuxkernel.github.io/tx/downloads/thesis-2007.pdf}
+\href{https://tuxkernel.github.io/tx/dl/thesis-2007.pdf}{\bfseries https://tuxkernel.github.io/tx/dl/thesis-2007.pdf}
 \end{center}
 La nueva (2023) en:
 \begin{center}
-\href{https://tuxkernel.github.io/tx/downloads/thesis-2023.pdf}{\bfseries https://tuxkernel.github.io/tx/downloads/thesis-2023.pdf}
+\href{https://tuxkernel.github.io/tx/dl/thesis-2023.pdf}{\bfseries https://tuxkernel.github.io/tx/dl/thesis-2023.pdf}
 \end{center}
 No importa que sean versiones distintas de un mismo texto, cualquiera es válida para fines académicos. Sin embargo, al utilizar la <<nueva>> versión, deberás colocar en tus notas algo como lo siguiente:
 \begin{center}
 \bfseries (Merino, 2023 [2007], p. 13)
 \end{center}
-\noindent que indica que estas citando la página 13 de la versión 2023, pero cuyo contenido está basado en la de 2007; solo adapta el ejemplo anterior a tu modelo de citación. Repito, el texto original aún está disponible en la primera dirección electrónica.
+\noindent que indica que estas citando la página 13 de la versión 2023, pero cuyo contenido está basado en la de 2007; solo adapta el ejemplo anterior a tu modelo de citación. Si te resulta «complicado» este método, usa la versión original (2007) y listo.
 
 El texto de 2007 está plagado de errores sintácticos, ortotipográficos e incluso hermenéuticos. Me hubiera gustado corregirlos ese año, pero en los posgrados de <<calidad>> \textsc{conacyt}, o te dedicas a escribir para titularte en tiempo y forma, o a corregir pero con una titulación extemporánea. ¡Así de simple! Corregirlos en la <<nueva>> versión habría implicado pasar por alto el texto primigenio, perdiendo así su <<originalidad>>. ¡Caveat emptor!
 
@@ -480,7 +477,6 @@ Agradezco a \href{muxkernel@gmail.com}{Tuxkernel}, su tiempo, paciencia y dedica
 \renewcommand{\headrulewidth}{0pt}
 \pagenumbering{arabic}
 \setcounter{page}{7}
-%\pdfbookmark{Agradecimientos}{Agradecimientos}
 \addcontentsline{toc}{chapter}{Agradecimientos}
 La paternidad de este trabajo no es exclusivamente mía. Fueron demasiadas las personas que contribuyeron en su nacimiento que un recuento de ellos me obligaría a escribir un texto gordo, casi con las mismas características de éste. Tampoco estableceré grados de apoyo pues cada uno contribuyó según sus tiempos y dedicación.
 
@@ -519,7 +515,6 @@ A la Dra.~Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \renewcommand{\headrulewidth}{0pt}
 \pagenumbering{arabic}
 \setcounter{page}{11}
-%\addcontentsline{toc}{chapter}{Índice de contenidos}
 \cleardoublepage
 \tableofcontents
 % ÍNDICE DE CUADROS
@@ -528,7 +523,6 @@ A la Dra.~Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \makeatother
 \renewcommand{\listtablename}{Índice de cuadros}
 \listoftables
-%\pdfbookmark{Cuadros}{Cuadros}
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
@@ -545,7 +539,6 @@ A la Dra.~Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \makeatother
 \renewcommand{\listfigurename}{Índice de imágenes}
 \listoffigures
-%\pdfbookmark{Imagenes}{Imagenes}
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
@@ -563,7 +556,6 @@ A la Dra.~Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
 \fancyhead[CE,CO]{\small\sc siglas y abreviaturas} % Centrados
-%\fancyhead[CO]{\small\sc siglas y abreviaturas} % Centrados
 \fancyhead[RO,LE]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \pagenumbering{arabic}
@@ -598,7 +590,6 @@ Sem. & Semestre \\
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
 \fancyhead[CE,CO]{\small\sc símbolos} % Centrados
-%\fancyhead[CO]{\small\sc siglas y abreviaturas} % Centrados
 \fancyhead[RO,LE]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \pagenumbering{arabic}
@@ -930,7 +921,7 @@ existentes en la zona baja del cantón, sólo la de Almanza y Naranjal, propieda
 
 En las inmediaciones de la sierra, la caña de azúcar tenía variados usos. No sólo como endulzante; servía también para destilar aguardiente y producir panela, elaborados en los distintos trapiches de Mexcalteco, Mecacalco y otras congregaciones.\footnote{Solis, \emph{op. cit.}, p. 42.} Los productos eran conducidos desde las escarpadas inmediaciones de la sierra por un sistemático grupo de arrieros cuyo destino final era la cabecera municipal. Es paradójico que Altotonga, a pesar de ser el centro rector de la economía municipal, no haya tenido un mercado público. Éste se edificó en la última década de la centuria decimonona cuando Luís Marín donó al ayuntamiento un paralelogramo de 4000\,m\textsu{2} para su construcción.\footnote{Blázquez y Corzo, \emph{op. cit.}, t. \textsc{xi}, p. 405.}
 
-Si Altotonga era el centro económico por excelencia, Jalacingo era el punto axial de la política del cantón. Era allí precisamente donde se tomaban las decisiones políticas de todo el territorio, al ser cabecera cantonal y residencia oficial del jefe político. Aun cuando tenía un territorio de menor tamaño que los de Altotonga y Perote, y su infraestructura urbana y política era mucho más sofisticada, poseía una <<espaciosa>> cárcel con fines de <<ortopedia>> social, una escuela cantonal y los tribunales de impartición de justicia. Era el único lugar en todo el cantón que tenía una notaría pública y una oficina del Registro Público. Y es que su importancia política venía desde tiempos coloniales, al ser uno de los corregimientos de españoles en la provincia veracruzana, y uno de los doce partidos de la Intendencia de Veracruz. Para 1848 era el único poblado con la categoría de villa; y en 1910, con motivo de las celebraciones del centenario de la Independencia, la única población elevada por el gobierno del estado a rango de ciudad.\footnote{Blázquez y Corzo, \emph{op. cit.}, t. \textsc{iii}, p. 103 y t. \textsc{xiii}, p. 439. En 1881, Altotonga y Tlapacoyan fueron elevadas a villas por el gobierno del estado; Atzalan en 1898 y Martínez de la Torre en 1910. Blázquez y Corzo, \emph{op. cit.}, t. \textsc{viii}, pp. 238 y 273; t. \textsc{xi}, p. 535.}
+Si Altotonga era el centro económico por excelencia, Jalacingo era el punto axial de la política del cantón. Era allí precisamente donde se tomaban las decisiones políticas de todo el territorio, al ser cabecera cantonal y residencia oficial del jefe político. Aun cuando tenía un territorio de menor tamaño que los de Altotonga y Perote, y su infraestructura urbana y política era mucho más sofisticada, poseía una <<espaciosa>> cárcel con fines de <<ortopedia>> social, una escuela cantonal y los tribunales de impartición de justicia. Era el único lugar en todo el cantón que tenía una notaría pública y una oficina del Registro Público. Y es que su importancia política venía desde tiempos coloniales, al ser uno de los corregimientos de españoles en la provincia veracruzana, y uno de los doce partidos de la Intendencia de Veracruz. Para 1848 era el único poblado con la categoría de villa; y en 1910, con motivo de las celebraciones del centenario de la Independencia, la única población elevada por el gobierno del estado a rango de ciudad.\footnote{Blázquez y Corzo, \emph{op. cit.}, t. \textsc{iii}, p. 103 y t. \textsc{xiii}, p. 439. En 1881, Altotonga y Tlapacoyan fueron elevadas a villas por el gobierno del estado; Atzalan en 1898 y Martínez de la Torre en 1910. Blázquez y Corzo, \emph{op. cit.}, t. \textsc{viii}, pp. 238 y 273; t. \textsc{xi}, p. 535.} \pagebreak[4]
 
 Por otra parte, Jalacingo también se erigió como el centro religioso más importante en la región. A finales del siglo \textsc{xviii}, el culto a Padre Jesús había adquirido dimensiones espaciales de importancia. Aunque se trataba de un santuario regional edificado a principios de la segunda mitad del siglo \textsc{xix}, su radio de acción devocional traspasaba las fronteras del cantón. Desde 1820 su cofradía decía tener hermanos espirituales en algunos puntos del centro de la entidad, e incluso en la huasteca veracruzana.\footnote{\textsc{apj}, Disciplinar, Cofradías, c. 56, s/f. \emph{Lista de los pueblos de donde hay hermanos de dicha cofradía de Nuestro Padre Jesús, 20 de agosto de 1818. Libro de asentamiento de hermanos de la cofradía de Padre Jesús de Jalacingo. 1 de enero de 1820.}} Este hecho se debía al carácter milagroso de la imagen.
 
@@ -976,9 +967,10 @@ El Arco & Antonio Barrientos & \texttlf{48} & \texttlf{480} & \texttlf{240} \\
 
 \noindent Pero no sólo la cerveza era la única bebida alcohólica producida en la región. El hecho de que la municipalidad contara con algunas tierras en la zona caliente del cantón, propicias para el cultivo de la caña de azúcar, hizo que proliferara una industria aún más enviciante. Desde la primera mitad del siglo \textsc{xix}, se tiene el registro de la existencia de dos trapiches en la municipalidad, que en su conjunto producían 98~l de aguardiente y 960~@ de panela, con ganancias cercanas a los \$~480 anuales. Aunque es cierto que los rendimientos y las producciones son pequeñas, debe tenerse presente la posible clandestinidad con la que operaban algunos trapiches.
 
-En otro estudio comprobamos cómo las pequeñas producciones de las cofradías de Jalacingo durante la primera mitad del siglo \textsc{xix}, eran comercializadas en distantes puntos de la entidad y el territorio nacional.\footnote{El maíz era comercializado en Tlapacoyan, Martínez de la Torre, Xalapa y Perote; el ganado menor ---ovejas y borregos, principalmente--- y la nuez en el puerto de Veracruz; la lana tenía como paradero la ciudad de Puebla y Santa Ana Chiautempam. Merino, \emph{op. cit.}, pp. 128-134.} Se trató sólo de una muestra de un amplio universo y potencial agropecuario regional, al que deben añadirse las producciones de los pequeños y medianos propietarios.
+En otro estudio comprobamos cómo las pequeñas producciones de las cofradías de Jalacingo durante la primera mitad del siglo \textsc{xix}, eran comercializadas en distantes puntos de la entidad y el territorio nacional.\footnote{El maíz era comercializado en Tlapacoyan, Martínez de la Torre, Xalapa y Perote; el ganado menor ---ovejas y borregos, principalmente--- y la nuez en el puerto de Veracruz; la lana tenía como paradero la ciudad de Puebla y Santa Ana Chiautempam. Merino, \emph{op. cit.}, pp. 128-134.} Se trató sólo de una muestra de un amplio universo y potencial agropecuario regional, al que deben añadirse las producciones de los pequeños y medianos propietarios. \enlargethispage{\baselineskip}
 
 Éste era más o menos el panorama económico del cantón de Jalacingo durante los años del Porfiriato. Al enfatizar sus características económicas ---principalmente las del valle de Perote y los pueblos de la sierra---, hemos querido ofrecer un antecedente que nos permita analizar y entender mejor, las actividades mercantiles y giros económicos de la oligarquía local. Es en este contexto regional y temporal, donde estudiaremos a la familia Villegas. Pasemos entonces a presentarla, a seguir sus pasos económicos y a reconstruir sus estrechos vínculos con otras prominentes familias de la sociedad local.
+\cleardoublepage
 % EPIGRAFE
 \newpage
 \pagestyle{empty}
@@ -1074,7 +1066,6 @@ Pero la injerencia de algunos miembros de la familia Villegas en el gobierno loc
 El hecho de que la familia y algunos de sus miembros gozaran de una holgada posición económica a nivel local, fue un factor para que detentaran puestos dentro de la administración local. Algunos incluso ejercían simultáneamente sus actividades políticas con las económicas, como en el caso de José Antonio. A ello debemos agregar la trascendencia de algunos miembros de la familia en la política estatal. José Antonio en calidad de diputado propietario ante el Congreso del estado, y Manuel Villegas como presidente del Tribunal Superior de Justicia de dicha entidad.
 
 Por otra parte, la presencia de algunos miembros de la familia en el poder local revela varias cosas:
-% En primer lugar, una rotación de los puestos públicos; es decir, un ejercicio y transferencia de los cargos entre la familia temporalmente no secuenciales entre una generación y otra. En segundo, una presencia temporalmente prolongada de algunos miembros de la familia en los mismos. Entre los años 1873 y 1908 ocho miembros sumaron, en efecto, en total diecisiete años de ejercicio político temporalmente no secuencial de los treinta y cinco que comprende el periodo. Esto revela una monopolización de algunos cargos dentro de la administración local en manos de la familia, al detentarlos durante poco menos del 50\,\% del periodo.
 \begin{enumerate}[noitemsep]
 \item una rotación de los puestos públicos; es decir, un ejercicio y transferencia de los cargos entre la familia temporalmente no secuenciales entre una generación y otra; 
 \item una presencia temporalmente prolongada de algunos miembros de la familia en los mismos.
@@ -1097,13 +1088,13 @@ Pero ¿hasta dónde fueron beneficiarios los Villegas de las disposiciones legis
 
 Además, aunque el valor total de la propiedad ascendió en su conjunto a los \$ 8000, ésta se encontraba dispersa. Efectivamente, se trataba de pequeñas propiedades diseminadas en la parte sur del cantón, que económicamente representaban un elevado costo de explotación. Sin embargo, esa cualidad no era impedimento para que los hacendados no mostraran interés, pues existía siempre la posibilidad de arrendarla. Dejemos, finalmente, abierta la posibilidad a la indiferencia que la familia Villegas mantendría respecto a este tipo de propiedades. Por otra parte, en el capítulo anterior, señalamos cómo algunos beneficiarios inmediatos de la política desamortizadora fueron las propias comunidades indígenas, al hacer uso del discurso liberal para apropiarse y defender algo que históricamente era suyo. Esto demuestra que la familia no hizo sus latifundios a expensas de la desamortización de los bienes el clero.
 
-Por otra parte, los Villegas se vieron poco favorecidos con la política liberal de privatización de las tierras comunales indígenas. Un análisis preliminar revela los serios problemas que enfrentaron las autoridades locales y estatales y los continuos aplazamientos implementados por los gobiernos del periodo ante la imposibilidad del reparto. Entre los años 1856 y 1898, las tierras comunales indígenas fueron objeto de una larga disputa entre los propios comuneros de la región y a la que se agregaron las arbitrariedades de las autoridades locales en su afán por venderlas, hecho que pospuso su reparto. A ello debemos agregar que algunas propiedades desamortizadas fueron legalmente adquiridas por las comunidades indígenas, pero posteriormente fueron consideradas por el gobierno estatal como terrenos comunales, hecho que también provocó que se pospusiera su reparto.
+Por otra parte, los Villegas se vieron poco favorecidos con la política liberal de privatización de las tierras comunales indígenas. Un análisis preliminar revela los serios problemas que enfrentaron las autoridades locales y estatales y los continuos aplazamientos implementados por los gobiernos del periodo ante la imposibilidad del reparto. Entre los años 1856 y 1898, las tierras comunales indígenas fueron objeto de una larga disputa entre los propios comuneros de la región y a la que se agregaron las arbitrariedades de las autoridades locales en su afán por venderlas, hecho que pospuso su reparto. A ello debemos agregar que algunas propiedades desamortizadas fueron legalmente adquiridas por las comunidades indígenas, pero posteriormente fueron consideradas por el gobierno estatal como terrenos comunales, hecho que también provocó que se pospusiera su reparto. \enlargethispage{\baselineskip}
 
 Las únicas operaciones de compra de terrenos comunales en las que participó la familia Villegas fueron efectuadas en 1876 y sólo involucraron a un personaje directamente, y a otro en forma indirecta. Ese año, Joaquín Villegas compró al ayuntamiento de Atzalan, con base en las leyes de adjudicaciones de terrenos baldíos el predio San Pedro Ixcucuil con una dimensión aproximada a las 1400 ha y con un valor de \$ 200.\footnote{\textsc{arppj}, 1876, Sec. 1"a, Inst. 100, fs. 81-82.} Aunque se trataba de una propiedad adquirida por las leyes mencionadas, en la escritura salió a relucir que <<San Pedro Ixcuicuil [...] perteneció a la comunidad de razón e indígenas de aquel lugar>>.\footnote{\em Ídem.} A pesar de que la propiedad era de medianas dimensiones, ésta era relativamente pequeña si se le compara con las que fueron adjudicadas a Roberto Guzmán, Plácido Aguilar, Gustavo Scheibe, Luis Marín, entre otros, las cuales constituían verdaderos feudos con dimensiones territoriales por encima de las 1000 ha.
 
 José Antonio Villegas también compró aunque indirectamente algunos terrenos comunales; no obstante, éstos habrían de ser casi insignificantes tanto en el precio como en sus dimensiones, si se les compara frente a los ranchos y haciendas que éste llegó a poseer. El 24 de julio de 1876, José Antonio Rivera Franquis y su esposa Ana Villegas, ambos sobrinos de José Antonio Villegas, le vendieron, en efecto, cuatro ranchos que habían pertenecido a la comunidad indígena de Atzalan por un valor de \$\,400.\footnote{\textsc{agnep}, Teziutlán, 1876, fs. 163-164.} Como se podrá observar, la compra de terrenos de comunidad por la familia Villegas y su extensión fue mínima. De manera que este trabajo demostrará cómo los extensos latifundios de la familia fueron adquiridos mediante compras y adjudicaciones hipotecarias, hecho que revela preliminarmente una fuerza ya de sus capitales, y su importante presencia en las actividades económicas del entorno regional.
 \section{El entramado y las redes familiares}\label{sec:entramado-y-redes-familiares}
-Jalacingo fue durante varios siglos y principalmente en toda la centuria decimonona, el lugar de residencia y centro de operaciones de un grupo de familias con orígenes hispanos, que se encargaron de controlar algunas de las actividades económicas y políticas del cantón durante el Porfiriato. Se trató de un lugar que desde la Conquista cumplió un papel de primer orden por su importante posición estratégica dentro de la administración colonialista. Algunos aspectos ya han sido tratados en el primer capítulo, por lo que no profundizaremos más. Desde tiempos coloniales y poscoloniales, los apellidos Villegas, Guzmán, Perdomo, del Campo, entre otros, formaban parte del aparato burocrático español, ya en calidad de escribanos o tenientes de justicia. Su continuidad en las próximas dos centurias ---siglo \textsc{xix} y parte del \textsc{xx}---, nos habla del enorme poder de adaptación que tuvieron para sobreponerse a las adversidades de un país sumergido entre las confrontaciones militares y las crisis políticas y económicas.
+Jalacingo fue durante varios siglos y principalmente en toda la centuria decimonona, el lugar de residencia y centro de operaciones de un grupo de familias con orígenes hispanos, que se encargaron de controlar algunas de las actividades económicas y políticas del cantón durante el Porfiriato. Se trató de un lugar que desde la Conquista cumplió un papel de primer orden por su importante posición estratégica dentro de la administración colonialista. Algunos aspectos ya han sido tratados en el primer capítulo, por lo que no profundizaremos más. Desde tiempos coloniales y poscoloniales, los apellidos Villegas, Guzmán, Perdomo, del Campo, entre otros, formaban parte del aparato burocrático español, ya en calidad de escribanos o tenientes de justicia. Su continuidad en las próximas dos centurias ---siglo \textsc{xix} y parte del \textsc{xx}---, nos habla del enorme poder de adaptación que tuvieron para sobreponerse a las adversidades de un país sumergido entre las confrontaciones militares y las crisis políticas y económicas. \pagebreak[4]
 
 En este sentido, hay opiniones encontradas sobre el desenvolvimiento histórico de las familias. Para Paul Ganster, <<lo normal era que las familias subieran o bajaran constantemente en la escala social, ya que la economía daba vueltas y no había ninguna seguridad de que una familia pudiera mantenerse social y económicamente en el mismo nivel por mucho tiempo>>.\footnote{Ana Carolina Ibarra, <<Comerciantes peninsulares y élites locales: el cabildo catedralicio de Oaxaca a comienzos de siglo \textsc{xix}>> en Luz Marina Morales (Coord.), \emph{Migrantes y comerciantes en la Nueva España. Origen y formación de las oligarquías mexicanas.} Benemérita Universidad Autónoma de Puebla, Puebla, 2002, p. 91.} Schwaller afirma lo contrario, pues la estrecha relación que tejieron los conquistadores con las generaciones siguientes hizo que éstas pudieran mantenerse.\footnote{\em Ídem.} Estas apreciaciones deben matizarse para nuestro caso. Por una parte, ambas investigaciones estudiaron familias establecidas en núcleos urbanos con características muy distintas a aquellas en entornos semiurbanos o rurales. Por otra, centraron su análisis en el periodo colonial, aspecto que no abordan y profundizan para el siglo \textsc{xix}, rico en experiencias políticas que deben tenerse en cuenta. Si bien es cierto que los acontecimientos políticos del siglo \textsc{xix} arruinaron fortunas familiares, también es cierto que algunas las incrementaron considerablemente.
 
@@ -1158,7 +1149,7 @@ En efecto, Carlos se vio, como la mayoría de los jefes cantonales, inmiscuido e
 \begin{quoting}
 Es lamentable la situación en que varias veces se ha colocado [a Jalacingo] debido a la perversión de sus gobernantes, atravezando por épocas amarguísimas sufriendo las tiranías y despotismo de algunos jefes políticos encarnizados en sus caprichos, infamias e inmoralidades. En épocas no muy lejanas han pasado esos periodos de disgusto que con resignación se han sufrido. Allí están los jefes Pacheco, Luis Tejeda Guzmán, Diego Rosas Landa y Carlos Vera Rosas, que sin miramientos humanos fueron el azote de éste desgraciado pueblo, contándose con intermitencias provisionales los periodos de los sres. Miguel Perdomo Ruiz y Miguel V. Gómez.\footnote{\em Ídem.}
 \end{quoting}
-Producto de la psicosis revolucionaria que habría de desatarse en 1910 contra de los jefes políticos, Carlos del Campo habría de autoexiliarse junto a otras prominentes familias de la localidad en ciudades como Teziutlán, Xalapa y México.\footnote{Landa, \emph{op. cit.}, 1946, p. 46.} Sin embargo, frente a las dudosas acciones de gobierno de los jefes cantonales, hay por otra parte, imágenes positivas de su gestión pública. A Carlos del Campo se le achacó haber construido el zócalo, atrio y santuario de Jalacingo, la necrópolis municipal, los puentes <<Teodoro A. Dehesa>> y Epapa; iniciar la construcción de la escuela cantonal <<Juan Díaz Covarrubias>>; de haber hecho de golfines y malhechores, zapateros, mecánicos y carpinteros; así como de la reparación de los caminos vecinales por donde transitaban bandidos y abigeos.\footnote{\emph{Ibid.}, pp. 41-42. Ramírez, \emph{op. cit.}, p. 99. Carmen Blázquez Domínguez (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz"/Instituto Veracruzano de Cultura"/Instituto Mora, México, 1988b, t. \textsc{ii}, pp. 206-207.}
+Producto de la psicosis revolucionaria que habría de desatarse en 1910 contra de los jefes políticos, Carlos del Campo habría de autoexiliarse junto a otras prominentes familias de la localidad en ciudades como Teziutlán, Xalapa y México.\footnote{Landa, \emph{op. cit.}, 1946, p. 46.} Sin embargo, frente a las dudosas acciones de gobierno de los jefes cantonales, hay por otra parte, imágenes positivas de su gestión pública. A Carlos del Campo se le achacó haber construido el zócalo, atrio y santuario de Jalacingo, la necrópolis municipal, los puentes <<Teodoro A. Dehesa>> y Epapa; iniciar la construcción de la escuela cantonal <<Juan Díaz Covarrubias>>; de haber hecho de golfines y malhechores, zapateros, mecánicos y carpinteros; así como de la reparación de los caminos vecinales por donde transitaban bandidos y abigeos.\footnote{\emph{Ibid.}, pp. 41-42. Ramírez, \emph{op. cit.}, p. 99. Carmen Blázquez Domínguez (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz"/Instituto Veracruzano de Cultura"/Instituto Mora, México, 1988b, t. \textsc{ii}, pp. 206-207.} \pagebreak[4]
 
 Pero no sólo Carlos del Campo y esos jefes políticos fueron atacados por la población. Hacia 1910 el jefe político José Inés Pacheco, habría de protagonizar al lado de los altotongueses otro escándalo público, cuyas acciones fueron denunciadas a la prensa.\footnote{Los hechos fueron denunciados por Herminio Cabañas León al periódico \emph{El Dictamen} del puerto de Veracruz unos días después. Hay elementos anacrónicos en lo que dicen Baltazar Vázquez y Cabañas León. Sospechamos que estos acontecimientos ocurrieron en una fecha posterior a 1910, cuando José Inés Pacheco ocupó la jefatura política del cantón y no en 1883 como lo consignan ellos. Es improbable también por las siguientes razones: porque en 1883, sólo José Serrano y Luis Tejeda Guzmán habían ocupado la jefatura política del cantón; y porque no existe constancia alguna de que Pacheco haya ejercido el cargo ---al menos interinamente--- en esa fecha. Todo parece indicar que se debe a un error de imprenta, pues aunque la fecha 3 de mayo de 1883 coincide con los acontecimientos protagonizados por Apolinar Castillo y Luis Mier y Terán; ésta no corresponde con el periodo de José Inés Pacheco como jefe político. En este sentido, véase Cuadro \ref{tab:jefes-politicos} (p. \pageref{tab:jefes-politicos}).} Según Baltazar Vázquez y Cabañas León, el 3 de mayo de 1883 la población de Altotonga se disponía a celebrar el día de la Santa Cruz con una corrida de toros. La fiesta taurina se vio ensombrecida cuando Pacheco ordenó a sus rurales <<cortar los cordeles y dejar descubierto el citado redondel>>\footnote{Baltazar, \emph{op. cit.}, p. 125.} para que los asistentes disfrutaran completamente del espectáculo. Los organizadores del evento, enardecidos por las acciones de Pacheco, salieron a la calle <<dando silbidos, tamborazos y gritos>>; lanzando consignas como <<¡Muera Pacheco!>> y <<¡Abajo el jefe político!>> Lo que había comenzado como un simple espectáculo taurino pronto se convirtió en una lluvia de balas, cegando la vida de dos personas y resultando herido el jefe político. El acto tenía en realidad otros orígenes. Como señala Herminio Cabañas:
 \begin{quoting}
@@ -1170,7 +1161,7 @@ Regresando con los Villegas, Quirino habría de unirse nuevamente en matrimonio 
 
 Las relaciones entre los Villegas y los del Campo se hicieron más fuertes en las décadas siguientes. El 20 de abril de 1901, Amador del Campo vendió ---coaccionado probablemente por su familia y los Villegas--- a Leonardo Villegas Perdomo las acciones hereditarias que había adquirido de los herederos de Miguel Villegas Guzmán ---su hermana Guadalupe y sobrinos Carolina, Daniel, Manuel, Rafael y Gabriel Flores--- unos meses antes, por la cantidad de \$ 1500.\footnote{\textsc{arppj}, 1901, Sec. 1"a, Inst. 49, fs. 132-133.} Esta operación es interesante porque permitía recuperar las propiedades de la familia vendidas con anterioridad a particulares.
 
-Si las relaciones matrimoniales que tejió Quirino Villegas con los Contreras y los del Campo tuvieron un carácter eminentemente local, los descendientes ampliaron el radio de las alianzas matrimoniales uniéndose a familias de políticos y comerciantes de poblados vecinos como Altotonga y Atzalan. En este sentido, la segunda generación de los Villegas concertó sus enlaces matrimoniales con familias de la región cuya residencia comprendía los tres núcleos poblacionales más importantes del cantón: Jalacingo, Altotonga y Atzalan. Es decir, estas alianzas conyugales de los Villegas de la segunda generación, se inscribieron en un diámetro cercano a los 20~km dentro de la jurisdicción cantonal. Al unirse matrimonialmente con estas familias, los Villegas no sólo lograron ensanchar sus relaciones sociales, sino que podían beneficiarse mutuamente en los aspectos económicos y políticos.
+Si las relaciones matrimoniales que tejió Quirino Villegas con los Contreras y los del Campo tuvieron un carácter eminentemente local, los descendientes ampliaron el radio de las alianzas matrimoniales uniéndose a familias de políticos y comerciantes de poblados vecinos como Altotonga y Atzalan. En este sentido, la segunda generación de los Villegas concertó sus enlaces matrimoniales con familias de la región cuya residencia comprendía los tres núcleos poblacionales más importantes del cantón: Jalacingo, Altotonga y Atzalan. Es decir, estas alianzas conyugales de los Villegas de la segunda generación, se inscribieron en un diámetro cercano a los 20~km dentro de la jurisdicción cantonal. Al unirse matrimonialmente con estas familias, los Villegas no sólo lograron ensanchar sus relaciones sociales, sino que podían beneficiarse mutuamente en los aspectos económicos y~políticos.
 
 El matrimonio más exitoso entre los Villegas del Campo se efectuó cuando Miguel contrajo nupcias con Dolores Guzmán, miembro de la familia probablemente más poderosa de Altotonga durante la segunda mitad de la centuria decimonona, y que al igual que los Villegas, habían acumulado sus capitales a través del comercio, las actividades agroganaderas y las prácticas usurarias. Miguel Villegas del Campo y Dolores Guzmán procrearon cinco hijos: Joaquina, Guadalupe, Miguel, Josefa y Carmen Villegas Guzmán. Su hija Carmen habría de emparentar con otro miembro de la familia, Miguel María Guzmán y Guzmán, comandante militar del cantón en 1864, en la época de la guerra contra el Imperio y que atrincherado en Jalacingo, prestaba efectivos servicios al gobierno en aras de defender las instituciones republicanas.\footnote{\textsc{agev, asgg, gyj}, Tierras, Altototonga, Magueyitos, 1895, c. 433, exp. 6, s/f.} Fue él quien <<estando autorizado por el Superior Gobierno del estado [...] en nombre de los Supremos Poderes de la Nación y como representante de la Hacienda Pública [...] vendió a Manuel y José Miguel Arcos los terrenos de la extinguida Cofradía del Santísimo Sacramento.\footnote{\emph{Ídem} y \textsc{arppj}, 1873, Sec. 1"a, Inst. 21, fs. 19-21.}
 
@@ -1189,7 +1180,7 @@ expresión en latín <<in \ae ternum>>. Ariès, \emph{op.~cit.}, pp. 165 y 433.}
 
 Las relaciones entre los Villegas y los Guzmán no sólo se circunscribieron al plano familiar. El 18 de abril de 1879, Miguel María de Guzmán vendió a Quirino Villegas con pacto de retroventa uno de los establecimientos comerciales más importantes en Jalacingo por una cantidad de \$ 3500.\footnote{\textsc{arppj}, 1879, Sec. 1"a, Inst. 59, fs. 55-56.} En el contrato se señaló que Guzmán debía pagar a Villegas al termino de dos años el \emph{¡1 \% de interés anual si éste no pagaba a tiempo!} Este bajísimo gravamen era en realidad una concesión familiar, pues Miguel María Guzmán era sobrino político de Quirino Villegas por encontrarse casado con Carmen Villegas, hija legítima de su medio hermano Miguel Villegas del Campo. Este contrato se hizo definitivo el 23 de abril de 1881.\footnote{\textsc{arppj}, 1881, Sec. 1"a, Inst. 54, fs. 42-43.}
 
-Al casarse, Miguel María de Guzmán y Guzmán pasó a administrar los bienes de su esposa Carmen Villegas Guzmán. En efecto, Carmen había aportado al matrimonio una suma de \$ 4655.83 consistentes en una casa situada en Teziutlán y dos predios rústicos.\footnote{\textsc{arppj}, 1879, Sec. 1"a, Inst. 57, fs. 52-53.} El 16 de abril de 1879, Miguel hipotecó a su esposa Carmen una casa y cuatro predios rústicos por un valor de \$ 2900. En el contrato no figuraron la duración de la hipoteca ni los intereses o réditos a pagar.
+Al casarse, Miguel María de Guzmán y Guzmán pasó a administrar los bienes de su esposa Carmen Villegas Guzmán. En efecto, Carmen había aportado al matrimonio una suma de \$ 4655.83 consistentes en una casa situada en Teziutlán y dos predios rústicos.\footnote{\textsc{arppj}, 1879, Sec. 1"a, Inst. 57, fs. 52-53.} El 16 de abril de 1879, Miguel hipotecó a su esposa Carmen una casa y cuatro predios rústicos por un valor de \$ 2900. En el contrato no figuraron la duración de la hipoteca ni los intereses o réditos a pagar. \enlargethispage{\baselineskip}
 
 El matrimonio Guzmán Villegas habría de seguir realizando negocios con los Villegas del Campo. El 21 de octubre de 1881, Miguel María de Guzmán y Guzmán arrendó a su tío político José María Villegas del Campo una casa situada en el interior del mercado de Jalacingo por ocho años y con una renta anual de \$ 144.\footnote{\textsc{arppj}, 1881, Sec. 1"a, Inst. 141, f. 109.} Y es que el establecimiento era uno de los mejores ubicados; poseía <<tienda, trastienda, pieza contigua, cocina y bodega que le sigue a ésta, pudiendo hacer el uso del zaguán, corredor bajo, así como de los patios y caballeriza>>.\footnote{\em Ídem.} Las características físicas de la casa revelan las inclinaciones y actividades comerciales de ambas familias.
 
@@ -1578,11 +1569,11 @@ criadero que en dicho rancho tiene, las cuales están marcadas con el fierro del
 
 Las potencialidades agrícolas del rancho <<San Pedro Buenavista>> se hicieron notables en 1891. En la escritura de adjudicación se mencionó que <<el referido rancho está dividido en potreros con pasto natural y una extensión de 60 estajos [42.12 ha] de zacate del Pará en mal estado y lo demás en Monte Alto>>.\footnote{\textsc{arppj}, 1891, Sec. 1"a (Libro 2), Inst. 214, fs. 41-44.} En el litigio de 1903 entre Quirino Villegas Contreras y Marcelino Pumarino sobre el rancho <<La Peña>>, se mencionó que dicha propiedad poseía <<arrendamiento de pastos que el sr. Pedro Naude debe pagar al sr.~Pumarino, por razón de los ganados [...] y se encuentran pastando en la mencionada finca [...]. Las mercancías, aparadores, caja de fierro, mesas de juego, prensa de copiar y escritorio existentes en la tienda>>.\footnote{\textsc{arppj}, 1903, Sec. 4"a, fs. 10-14.} Es importante mencionar que de los once ranchos que la familia llego a poseer, ocho de ellos se ubicaban en la tierra caliente.
 
-Ahora bien, revelar los efectos económicos y sociales que las sequías de 1875, 1884, 1886 y 1894 tuvieron sobre el valle de Perote y otras partes del cantón, aún está por determinarse. Sin embargo, es interesante hacer notar que este periodo de sequías coincide con las adjudicaciones que hizo la familia Villegas de sus haciendas y ranchos. En efecto, en 1875 la familia obtuvo las haciendas de San Antonio y Cuautotolapam; y en 1885, la de Cerro de León; sólo el rancho <<Arroyo Zarco>> fue adquirido en 1896. Es decir, que de las cuatro haciendas que poseía la familia en esta área, la adquisición de tres coincide con las sequías y los procesos de adjudicación. El valle de Perote, a pesar de ubicarse geopolíticamente en el estado de Veracruz, histórica y geográficamente siempre se ha vinculado al Altiplano Central. El hecho de que las haciendas de esta área hayan practicado una agricultura fincada en el cultivo de cereales durante la centuria decimonona ---similar a las del valle Puebla-Tlaxcala---, confirma las similitudes que tenían con aquéllas.
+Ahora bien, revelar los efectos económicos y sociales que las sequías de 1875, 1884, 1886 y 1894 tuvieron sobre el valle de Perote y otras partes del cantón, aún está por determinarse. Sin embargo, es interesante hacer notar que este periodo de sequías coincide con las adjudicaciones que hizo la familia Villegas de sus haciendas y ranchos. En efecto, en 1875 la familia obtuvo las haciendas de San Antonio y Cuautotolapam; y en 1885, la de Cerro de León; sólo el rancho <<Arroyo Zarco>> fue adquirido en 1896. Es decir, que de las cuatro haciendas que poseía la familia en esta área, la adquisición de tres coincide con las sequías y los procesos de adjudicación. El valle de Perote, a pesar de ubicarse geopolíticamente en el estado de Veracruz, histórica y geográficamente siempre se ha vinculado al Altiplano Central. El hecho de que las haciendas de esta área hayan practicado una agricultura fincada en el cultivo de cereales durante la centuria decimonona ---similar a las del valle Puebla-Tlaxcala---, confirma las similitudes que tenían con aquéllas. \pagebreak[4]
 
 El valle peroteño no estuvo exento de las calamidades climatológicas. Si bien el ciclón de 1888 había contraído la economía de la región, ésta había salido avante en los años siguientes. Dado que el valle se sitúa y comprende parte de la meseta central ---la cual recibe sólo el 12 \% de lluvias de todo el territorio nacional---, no es casual que éste padeciera las consecuencias de las sequías. Enrique Florescano ha señalado que una baja ligera en el índice de lluvias en esta área, provocaba desequilibrios económicos de magnitudes nacionales, por la importancia que tenía en la producción de cereales.\footnote{Enrique Florescano, \emph{Breve historia de la sequía en México.} Consejo Nacional para la Cultura y las Artes, México, 2000, p. 39 [Regiones].}
 
-El clima seco y la altura sobre el nivel el mar, fueron factores que favorecieron la producción de granos en esta área. El hecho de que la cebada y el trigo requieran de un mínimo de temperatura de 3\,°C y un máximo de 28\,°C y una temporalidad menor para su germinación y maduración muy superiores a los del maíz,\footnote{Este grano necesita un mínimo de temperatura de 8\,°C y un máximo de 44\,°C. Además, necesita de 80 a 140 días para su completa maduración.} hacía que los productores de esta área invirtieran sus capitales en cultivos más seguros. Esto es factible para todo el valle, pues como se podrá observar, el trigo y la cebada no sólo requieren de condiciones de humedad, temperatura y tiempo de maduración menores a los del maíz, sino que por otra parte, son más resistentes al granizo y heladas tan recurrentes de las zonas frías. Son quizá estas características las que influyeron entre los hacendados y rancheros, para invertir sus capitales de manera segura.
+El clima seco y la altura sobre el nivel el mar, fueron factores que favorecieron la producción de granos en esta área. El hecho de que la cebada y el trigo requieran de un mínimo de temperatura de 3\,°C y un máximo de 28\,°C y una temporalidad menor para su germinación y maduración muy superiores a los del maíz,\footnote{Este grano necesita un mínimo de temperatura de 8\,°C y un máximo de 44\,°C. Además, necesita de 80 a 140 días para su completa maduración.} hacía que los productores de esta área invirtieran sus capitales en cultivos más seguros. Esto es factible para todo el valle, pues como se podrá observar, el trigo y la cebada no sólo requieren de condiciones de humedad, temperatura y tiempo de maduración menores a los del maíz, sino que por otra parte, son más resistentes al granizo y heladas tan recurrentes de las zonas frías. Son quizá estas características las que influyeron entre los hacendados y rancheros, para invertir sus capitales de manera segura. \enlargethispage{\baselineskip}
 
 En el último tercio del siglo \textsc{xix}, se presentaron en todo el país cuatro grandes sequías. La de 1877 afectó principalmente el valle de México y se prolongó hasta el año siguiente; la de 1891 fue la peor de todas, pues no sólo se sintió con intensidad afectando a todo el país, sino que duró hasta 1892. En cuanto a sequías de carácter regional con impactos profundos, se tiene la de 1868, que azotó principalmente a Chiapas, Oaxaca, Guerrero, Aguascalientes, Coahuila, el valle de México y Veracruz.\footnote{Florescano, \emph{op. cit.}, p. 48.} Florescano sostiene que las sequías más severas se presentaron a finales del siglo \textsc{xix} entre las que se incluyen las de 1877-1878 y 1891-1892.\footnote{\em Ídem.}
 
@@ -1758,7 +1749,7 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 
 \hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Breve historia de Veracruz.} Fondo de Cultura Económica"/El Colegio de México, México, 2000, 203 pp.
 
-\hangpara{1cm}{1}\textsc{Bloch}, Marc, \emph{Introducción a la historia.} Fondo de Cultura Económica, México, 1987, 159 pp.
+\hangpara{1cm}{1}\textsc{Bloch}, Marc, \emph{Introducción a la historia.} Fondo de Cultura Económica, México, 1987, 159 pp. \enlargethispage{\baselineskip}
 
 \hangpara{1cm}{1}\textsc{Cambrezy}, Luc y \textsc{Lascurain}, Bernal, \emph{De la hacienda al ejido. Crónicas de un territorio fraccionado (Centro de Veracruz).} \textsc{larousse"/orstom}"/Centro de Estudios Mexicanos y Centroamericanos, México, 1992, 168 pp.
 
@@ -1852,37 +1843,36 @@ año 7, núm. 39, pp. 18-28.
 \hangpara{1cm}{1}\textsc{Velázquez Hernández}, Emilia, \emph{Cuando los arrieros perdieron sus caminos.} El Colegio de Michoacán, Zamora, 1995, 196 pp.
 % APÉNDICES
 \appendix
-\chapter{Apéndice 1}\label{ap:apendice-one}
+\chapter{Glosario}\label{ap:glosario}
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
-%\fancyhead[RE]{\small\sc el humor como poética en los cuentos de efrén hernández}
-%\fancyhead[LO]{\small\sc fuentes consultadas}
 \fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872-1910} % Centrados
-\fancyhead[CO]{\small\sc apéndice 1} % Centrados
+\fancyhead[CO]{\small\sc glosario} % Centrados
 \fancyhead[RO,LE]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \pagenumbering{arabic}
 \setcounter{page}{137}
-\section{Glosario}\label{sec:glosario}
-\begin{description}
+\begin{description}[noitemsep]
 \item[Medieros]Personas que van a medias en la explotación de tierras, cría de ganados u otras granjerías del campo.\footnote{<<Mediero"/ra>> en \emph{Diccionario de la Lengua Española}. Real Academia Española, Madrid. [En línea] \url{https://dle.rae.es/mediero} [Consulta: 17 de diciembre, 2022].}
 \item[Punta de ganado]Pequeña porción de ganado que se separa del hato.\footnote{<<Punta>> en \emph{Diccionario de la Lengua Española}. Real Academia Española, Madrid. [En línea] \url{https://dle.rae.es/punta} [Consulta: 17 de diciembre, 2022].}
 \end{description}
-\chapter{Apéndice 2}\label{ap:apendice-dos}
+\chapter{Aviso Legal/Disclaimer}\label{ap:aviso-legal-disclaimer}
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
-%\fancyhead[RE]{\small\sc el humor como poética en los cuentos de efrén hernández}
-%\fancyhead[LO]{\small\sc fuentes consultadas}
 \fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872-1910} % Centrados
-\fancyhead[CO]{\small\sc apéndice 2} % Centrados
+\fancyhead[CO]{\small\sc aviso legal"/disclaimer} % Centrados
 \fancyhead[RO,LE]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \pagenumbering{arabic}
 \setcounter{page}{139}
-\section{Aviso legal: imágenes}\label{sec:aviso-legal-imágenes}
-Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titulares y se reproducen aquí con su permiso. \\
+% Fix TeX, LaTeX and LaTeXe logos
+%\def\TeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX} % Knuth TeX logo definition
+\renewcommand{\TeX}{T\kern -.1267em\lower .35ex\hbox {E}\kern -.105emX} % For TeX logo
+\renewcommand{\LaTeX}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX}} % For LaTeX
+\renewcommand{\LaTeXe}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX} \hbox{2}\kern-.03em\raisebox{-.4ex}{\fontencoding{LGR}\selectfont\char 101}} % Even LaTeXe
+Las imágenes, logos y nombres de marcas comerciales utilizadas en este trabajo, son propiedad de sus respectivos titulares. Algunas se reproducen como referencia; otras bajo su consentimiento. \\
 
 \noindent Portada: \\
 
@@ -1918,7 +1908,25 @@ Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titula
 
 \noindent Colofón: \\
 
-\noindent\textcopyright\ 2007-2023 Eugenio Pedro José Pradal Roa, detalle (pág. \pageref{fig:vineta}).
+\noindent\textcopyright\ 2007-2023 Eugenio Pedro José Pradal Roa, detalle (pág. \pageref{fig:vineta}). \\
+
+\noindent Creative Commons\texttrademark\ es una marca registrada de Lawrence Lessig, Hal Abelson y Eric Eldred, y sus logos se distribuyen bajo dominio público.
+
+\TeX{}maker\texttrademark\ es una marca registrada de Pascal Brachet, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
+
+\LaTeX{}\texttrademark\ es una marca registrada de Leslie Lamport, y su \emph{software} se distribuye bajo la licencia pública del proyecto \LaTeX{}, versión 1.3c.
+
+\TeX{}\texttrademark\ es una marca registrada de Donald E.~Knuth y la American Matemathical Society, y su \emph{software} se distribuye bajo dominio público.
+
+\textsc{pdf}\TeX{}\texttrademark\ es una marca registrada de Hàn Th\'{ê} Thành, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
+
+Crimson Text\texttrademark\ es una marca registrada de Sebastian Kosch, y la tipografía se distribuye bajo una licencia \textsc{sil} Open Font.
+
+Cochineal\texttrademark\ es una marca registrada de Michael Sharpe, y la tipografía se distribuye bajo una licencia \textsc{sil} Open Font.
+
+\textsc{gimp}\texttrademark\ es una marca registrada de Spencer Kimball y Peter Mattis, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}, versión 3 o posterior.
+
+Inkscape es \emph{software}, y se distribuye bajo la licencia pública general de \textsc{gnu}, versión 3.
 % INDICE ONOMÁSTICO
 %\newpage
 %\thispagestyle{plain}
@@ -1947,12 +1955,6 @@ Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titula
 %\setcounter{page}{139}
 %\printindex[lugares]
 % COLOFÓN
-% Fix TeX LaTeX and LaTeXe logos
-%\def\TeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX} % Knuth TeX logo definition
-\renewcommand{\TeX}{T\kern -.1267em\lower .35ex\hbox {E}\kern -.105emX} % For TeX logo
-\renewcommand{\LaTeX}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX}} % For LaTeX
-\renewcommand{\LaTeXe}{L\kern-.275em\raisebox{.5ex}{\textsc{a}}\kern-.1em\hbox{\TeX} \hbox{2}\kern-.03em\raisebox{-.4ex}{\fontencoding{LGR}\selectfont\char 101}} % Even LaTeXe
-\newcommand{\TuX}{T\kern -.1267em\lower .37ex\hbox {U}\kern -.105emX} % For TuX logo
 \newpage
 \pagestyle{empty}
 \pdfbookmark{Colofón}{colophon}
@@ -1961,6 +1963,5 @@ Las imágenes utilizadas en este trabajo son propiedad de sus respectivos titula
 \begin{center}
 \includegraphics[width=1.5cm]{vineta}\phantomsection\label{fig:vineta}
 \end{center}
-% Hàn Th\'{ê} Thành don't looks well in plain text. Fix with hologo package.
-{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeX\ de Leslie Lamport, basado en el lenguaje de programación \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por Hàn Th\'{ê} Thành. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizada por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}
+{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeX\ de Leslie Lamport, basado en el lenguaje de programación \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por Hàn Th\'{ê} Thành. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizado por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}
 \end{document}
