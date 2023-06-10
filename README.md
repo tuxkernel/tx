@@ -1,1 +1,1 @@
-[My homepage](https://tuxkernel.github.io/tx/)
+https://tuxkernel.github.io/tx/
