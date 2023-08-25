@@ -27,3 +27,5 @@ Control de versiones:
 1.025 Correcciones ortotipográficas menores (20-08-2023)
 1.026 Agregada una errata (21-08-2023)
 1.027 Correcciones menores en Cuadros (22-08-2023)
+1.028 Corrección de homeoarquías y homeotéleutones (25-08-2023)
+1.029 Correcciones menores en Cuadros (26-08-2023)
