@@ -30,3 +30,4 @@ Control de versiones:
 1.028 Corrección de homeoarquías y homeotéleutones (25-08-2023)
 1.029 Correcciones menores en Cuadros (26-08-2023)
 1.030 Agregada una página separada de Apéndices (28-08-2023)
+1.031 Agregados años en Archivos (30-08-2023)
