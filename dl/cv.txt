@@ -31,3 +31,4 @@ Control de versiones:
 1.029 Correcciones menores en Cuadros (26-08-2023)
 1.030 Agregada una página separada de Apéndices (28-08-2023)
 1.031 Agregados años en Archivos (30-08-2023)
+1.032 Correcciones menores en Cuadros (07-09-2023)

@@ -406,8 +406,8 @@ Puebla, Pue., 29 de agosto del 2007
 
 \includegraphics[width=2.5cm]{cc}\phantomsection\label{fig:cc} \protect\medskip
 
-\def\fileversion{1.031}
-\def\filedate{(30-08-2023)}
+\def\fileversion{1.032}
+\def\filedate{(07-09-2023)}
 versión\space\fileversion\space\filedate \protect\medskip
 
 \textcopyright\ 2007-2023. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -872,7 +872,7 @@ Frente a los exiguos logros en cuanto el reparto de los terrenos comunales, la v
 \toprule
 \multirow{2}{*}{Propietario} & \multicolumn{2}{c}{Superficie} \\
 \cmidrule{2-3}
-{} & Estajos\textsu{*} & ha \\
+{} & Estajos\textsu{*} & Hectáreas \\
 \midrule
 Roberto Guzmán & \texttlf{8973} & \texttlf{62811} \\
 Plácido Aguilar & \texttlf{4000} & \texttlf{28000} \\
@@ -976,7 +976,7 @@ Altotonga & Genaro Méndez & \texttlf{910} \\
 \centering
 \begin{tabular}{@{}llccc@{}}
 \toprule
-{} & {} & \multicolumn{2}{c}{Productos} & Valor \\
+{} & {} & \multicolumn{2}{c}{Productos} & \multirow{2}{*}{Valor} \\
 \cmidrule{3-4}
 Fábrica & Propietario & Aguardiente & Panela & {} \\
 {} & {} & (Barriles) & (@) & (\$) \\
@@ -1053,9 +1053,9 @@ Por otra parte, su medio hermano Joaquín Villegas del Campo también había det
 \begin{sidewaystable}
 \centering
 \begin{small}
-\begin{tabular}{@{}llll@{}}
+\begin{tabular}{@{}lllr@{}}
 \toprule
-Año & Nombre & Cargo & Adscripción \\
+Año(s) & Nombre & Cargo & \multicolumn{1}{c}{Lugar} \\
 \midrule
 \texttlf{1871} & Manuel Villegas & Juez de 1"a instancia & Jalacingo \\
 \texttlf{1873} & Joaquín Villegas del Campo & Juez 2"o de paz & Jalacingo \\
@@ -1143,7 +1143,7 @@ el periodo 1902-1910. Su escalada social y política fue evidente. Tras ocupar u
 \centering
 \begin{tabular}{@{}ll@{}}
 \toprule
-Año & Nombre(s) \\
+Año(s) & Nombre(s) \\
 \midrule
 \texttlf{1873} & José Juan Guzmán \\
 \texttlf{1875} & José Juan Guzmán y Felipe S. Naveda \\
@@ -1425,7 +1425,7 @@ Préstamos (\$) & Rendimientos (\$) & Total (\$) \\
 \centering
 \begin{tabular}{@{}ccccc@{}}
 \toprule
-Compras & Ventas & Préstamos & Otros & Totales \\
+Compras & Ventas & Préstamos & Otros & Total \\
 \midrule
 \texttlf{56} & \texttlf{42} & \texttlf{101} & \texttlf{2} & \texttlf{201} \\
 \bottomrule
@@ -1437,7 +1437,7 @@ Compras & Ventas & Préstamos & Otros & Totales \\
 \centering
 \begin{tabular}{@{}ccc@{}}
 \toprule
-Con tasa de interés & sin tasa de interés\textsu{*} & Totales \\
+Con tasa de interés & Sin tasa de interés\textsu{*} & Total \\
 \midrule
 \texttlf{60} & \texttlf{36} & \texttlf{96} \\
 \bottomrule
@@ -1445,25 +1445,30 @@ Con tasa de interés & sin tasa de interés\textsu{*} & Totales \\
 \caption[Préstamos diferenciados, 1872-1910]{Préstamos diferenciados, 1872-1910. \textsu{*} Compras o ventas con pacto de retroventa. \textsc{Fuente:} \textsc{agnep}, 1876-1910. \textsc{arppj}, 1872-1910.}
 \label{tab:prestamos-diferenciados}
 \end{table}
+\protect\enlargethispage*{\baselineskip}
 \begin{table}[H]
 \centering
-\begin{tabular}{@{}cccccccccc@{}}
+\begin{tabular}{@{}lrrrcrcrccc@{}}
 \toprule
-\texttlf{24}\% & \texttlf{18}\% & \texttlf{15}\% & \texttlf{12}\% & \texttlf{10}\% & \texttlf{9}\% & \texttlf{6}\% & \texttlf{5}\% & \texttlf{1}\% & Totales \\
+\multicolumn{10}{c}{} & Total \\
 \midrule
-\texttlf{2} & \texttlf{1} & \texttlf{1} & \texttlf{30} & \texttlf{3} & \texttlf{5} & \texttlf{14} & \texttlf{2} & \texttlf{1} & \texttlf{59} \\
+\textsc{tia} (\fontencoding{T1}\selectfont\char 37)\textsu{*} & \texttlf{24} & \texttlf{18} & \texttlf{15} & \texttlf{12} & \texttlf{10} & \texttlf{9} & \texttlf{6} & \texttlf{5} & \texttlf{1} & {} \\
+\midrule
+Núm. de operaciones & \texttlf{2} & \texttlf{1} & \texttlf{1} & \texttlf{30} & \texttlf{3} & \texttlf{5} & \texttlf{14} & \texttlf{2} & \texttlf{1} & \texttlf{59} \\
 \bottomrule
 \end{tabular}
-\caption[Préstamos realizados según la tasa de interés, 1872-1910]{Préstamos realizados según la tasa de interés, 1872-1910. \textsc{Fuente:} \textsc{agnep}, \mbox{1876-1910}. \textsc{arppj}, 1872-1910.}
+\caption[Préstamos realizados según la tasa de interés, 1872-1910]{Préstamos realizados según la tasa de interés, 1872-1910. \textsu{*} \textsc{tia} = tasa de interés anual. \textsc{Fuente:} \textsc{agnep}, \mbox{1876-1910}. \textsc{arppj}, 1872-1910.}
 \label{tab:prestamos-tasa-interes}
 \end{table}
 \begin{table}[H]
 \centering
 \begin{tabular}{@{}lcccccrrrrc@{}}
 \toprule
-Años & \texttlf{8} & \texttlf{7} & \texttlf{6} & \texttlf{5} & \texttlf{4} & \texttlf{3} & \texttlf{2} & \texttlf{1} & \texttlf{$-1$} & Totales \\
+\multicolumn{10}{c}{} & Total \\
 \midrule
-Préstamos & \texttlf{2} & \texttlf{1} & \texttlf{3} & \texttlf{3} & \texttlf{5} & \texttlf{18} & \texttlf{12} & \texttlf{13} & \texttlf{8} & \texttlf{65} \\
+Años & \texttlf{8} & \texttlf{7} & \texttlf{6} & \texttlf{5} & \texttlf{4} & \texttlf{3} & \texttlf{2} & \texttlf{1} & \texttlf{$-1$} & {} \\
+\midrule
+Núm. de operaciones & \texttlf{2} & \texttlf{1} & \texttlf{3} & \texttlf{3} & \texttlf{5} & \texttlf{18} & \texttlf{12} & \texttlf{13} & \texttlf{8} & \texttlf{65} \\
 \bottomrule
 \end{tabular}
 \caption[Préstamos realizados según la duración ideal contractual, \mbox{1872-1910}]{Préstamos realizados según la duración ideal contractual, \mbox{1872-1910}. \textsc{Fuente:} \textsc{agnep}, 1876-1910. \textsc{arppj}, 1872-1910.}
@@ -1599,13 +1604,13 @@ En el caso de los ranchos es más difícil poder determinar el número de hectá
 
 Las potencialidades agrícolas del rancho <<San Pedro Buenavista>> se hicieron notables en 1891. En la escritura de adjudicación se mencionó que <<el referido rancho está dividido en potreros con pasto natural y una extensión de 60 estajos [42.12 ha] de zacate del Pará en mal estado y lo demás en Monte Alto>>.\footnote{\textsc{arppj}, 1891, Sec. 1"a (Libro 2), Inst. 214, fs. 41-44.} En el litigio de 1903 entre Quirino Villegas Contreras y Marcelino Pumarino sobre el rancho <<La Peña>>, se mencionó que dicha propiedad poseía <<arrendamiento de pastos que el sr. Pedro Naude debe pagar al sr.~Pumarino, por razón de los ganados [...] y se encuentran pastando en la mencionada finca [...]. Las mercancías, aparadores, caja de fierro, mesas de juego, prensa de copiar y escritorio existentes en la tienda>>.\footnote{\textsc{arppj}, 1903, Sec. 4"a, fs. 10-14.} Es importante mencionar que de los once ranchos que la familia llego a poseer, ocho de ellos se ubicaban en la tierra caliente.
 
-Ahora bien, revelar los efectos económicos y sociales que las sequías de 1875, 1884, 1886 y 1894 tuvieron sobre el valle de Perote y otras partes del cantón, aún está por determinarse. Sin embargo, es interesante hacer notar que este periodo de sequías coincide con las adjudicaciones que hizo la familia Villegas de sus haciendas y ranchos. En efecto, en 1875 la familia obtuvo las haciendas de San Antonio y Cuautotolapam; y en 1885, la de Cerro de León; sólo el rancho <<Arroyo Zarco>> fue adquirido en 1896. Es decir, que de las cuatro haciendas que poseía la familia en esta área, la adquisición~de tres coincide con las sequías y los procesos de adjudicación. El valle de Perote, a pesar de ubicarse geopolíticamente en el estado de Veracruz, histórica y geográficamente siempre se ha vinculado al Altiplano Central. El hecho de que las haciendas de esta área hayan practicado una agricultura fincada en el cultivo de cereales durante la centuria decimonona ---similar a las del valle Puebla-Tlaxcala---, confirma las similitudes que tenían con aquéllas. \pagebreak[4]
+Ahora bien, revelar los efectos económicos y sociales que las sequías de 1875, 1884, 1886 y 1894 tuvieron sobre el valle de Perote y otras partes del cantón, aún está por determinarse. Sin embargo, es interesante hacer notar que este periodo de sequías coincide con las adjudicaciones que hizo la familia Villegas de sus haciendas y ranchos. En efecto, en 1875 la familia obtuvo las haciendas de San Antonio y Cuautotolapam; y en 1885, la de Cerro de León; sólo el rancho <<Arroyo Zarco>> fue adquirido en 1896. Es decir, que de las cuatro haciendas que poseía la familia en esta área, la adquisición~de tres coincide con las sequías y los procesos de adjudicación. El valle de Perote, a pesar de ubicarse geopolíticamente en el estado de Veracruz, histórica y geográficamente siempre se ha vinculado al Altiplano Central. El hecho de que las haciendas de esta área hayan practicado una agricultura fincada en el cultivo de cereales durante la centuria decimonona ---similar a las del valle Puebla-Tlaxcala---, confirma las similitudes que tenían con aquéllas. \protect\enlargethispage*{\baselineskip}
 
 El valle peroteño no estuvo exento de las calamidades climatológicas. Si bien el ciclón de 1888 había contraído la economía de la región, ésta había salido avante en los años siguientes. Dado que el valle se sitúa y comprende parte de la meseta central ---la cual recibe sólo el 12 \% de lluvias de todo el territorio nacional---, no es casual que éste padeciera las consecuencias de las sequías. Enrique Florescano ha señalado que una baja ligera en el índice de lluvias en esta área, provocaba desequilibrios económicos de magnitudes nacionales, por la importancia que tenía en la producción de cereales.\footnote{Enrique Florescano, \emph{Breve historia de la sequía en México.} Consejo Nacional para la Cultura y las Artes, México, 2000, p. 39 [Regiones].}
 
-El clima seco y la altura sobre el nivel el mar, fueron factores que favorecieron la producción de granos en esta área. El hecho de que la cebada y el trigo requieran de un mínimo de temperatura de 3\,°C y un máximo de 28\,°C y una temporalidad menor para su germinación y maduración muy superiores a los del maíz,\footnote{Este grano necesita un mínimo de temperatura de 8\,°C y un máximo de 44\,°C. Además, necesita de 80 a 140 días para su completa maduración.} hacía que los productores de esta área invirtieran sus capitales en cultivos más seguros. Esto es factible para todo el valle, pues como se podrá observar, el trigo y la cebada no sólo requieren de condiciones de humedad, temperatura y tiempo de maduración menores a los del maíz, sino que por otra parte, son más resistentes al granizo y heladas tan recurrentes de las zonas frías. Son quizá estas características las que influyeron entre los hacendados y rancheros, para invertir sus capitales de manera segura. \enlargethispage{\baselineskip}
+El clima seco y la altura sobre el nivel el mar, fueron factores que favorecieron la producción de granos en esta área. El hecho de que la cebada y el trigo requieran de un mínimo de temperatura de 3\,°C y un máximo de 28\,°C y una temporalidad menor para su germinación y maduración muy superiores a los del maíz,\footnote{Este grano necesita un mínimo de temperatura de 8\,°C y un máximo de 44\,°C. Además, necesita de 80 a 140 días para su completa maduración.} hacía que los productores de esta área invirtieran sus capitales en cultivos más seguros. Esto es factible para todo el valle, pues como se podrá observar, el trigo y la cebada no sólo requieren de condiciones de humedad, temperatura y tiempo de maduración menores a los del maíz, sino que por otra parte, son más resistentes al granizo y heladas tan recurrentes de las zonas frías. Son quizá estas características las que influyeron entre los hacendados y rancheros, para invertir sus capitales de manera segura.
 
-En el último tercio del siglo \textsc{xix}, se presentaron en todo el país cuatro grandes sequías. La de 1877 afectó principalmente el valle de México y se prolongó hasta el año siguiente; la de 1891 fue la peor de todas, pues no sólo se sintió con intensidad afectando a todo el país, sino que duró hasta 1892. En cuanto a sequías de carácter regional con impactos profundos, se tiene la de 1868, que azotó principalmente a Chiapas, Oaxaca, Guerrero, Aguascalientes, Coahuila, el valle de México y Veracruz.\footnote{Florescano, \emph{op. cit.}, p. 48.} Florescano sostiene que las sequías más severas se presentaron a finales del siglo \textsc{xix} entre las que se incluyen las de 1877-1878 y 1891-1892.\footnote{\em Ídem.}
+En el último tercio del siglo \textsc{xix}, se presentaron en todo el país cuatro grandes sequías. La de 1877 afectó principalmente el valle de México y se prolongó hasta el año siguiente; la de 1891 fue la peor de todas, pues no sólo se sintió con intensidad afectando a todo el país, sino que duró hasta 1892. En cuanto a sequías de carácter regional con impactos profundos, se tiene la de 1868, que azotó principalmente a Chiapas, Oaxaca, Guerrero, Aguascalientes, Coahuila, el valle de México y Veracruz.\footnote{Florescano, \emph{op. cit.}, p. 48.} Florescano sostiene que las sequías más severas se presentaron a finales del siglo \textsc{xix} entre las que se incluyen las de 1877-1878 y 1891-1892.\footnote{\em Ídem.} \pagebreak[4]
 
 La falta de agua en el llano perotense no sólo fue una amenaza constante para las cosechas de hacendados y rancheros, sino también el centro de sus preocupaciones. En 1878 José Antonio Villegas Contreras, propietario del Molino de Guadalupe, se vio obligado a comprar un predio pequeño y perder los intereses de un capital que le adeudaban Santiago Flores y Manuel Ortiz Canelo <<porque han convenido en que Flores por esta cantidad rebajada de \$\,48.50 concede a Villegas que pueda éste pasar en canoas por el lugar que le convenga en los terrenos de Flores, el agua que necesite del río para que pueda [¿regar?] los terrenos de Villegas>>.\footnote{\textsc{arppj}, 1878, Sec. 1"a, Inst. 5, f. 8.}
 
@@ -1746,7 +1751,7 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \item Archivo de la Comisión Agraria Mixta (\textsc{acam})
 \begin{enumerate}[noitemsep]
 \item Tierras
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item[•]Años: 1918-1937
 \end{itemize}
 \end{enumerate}
@@ -1754,7 +1759,7 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \begin{enumerate}[noitemsep]
 \item Gobernación y Justicia (\textsc{gyj})
 \item Fomento (\textsc{f})
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item[•]Años: 1864-1937
 \end{itemize}
 \end{enumerate}
@@ -1766,7 +1771,7 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \item[•]Disciplinar
 \begin{itemize}[noitemsep]
 \item[•]Cofradías
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item[•]Año: 1818
 \end{itemize}
 \end{itemize}
