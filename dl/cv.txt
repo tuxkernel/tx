@@ -33,4 +33,4 @@ Control de versiones:
 1.031 Correcciones menores en Cuadros (07-09-2023)
 1.032 Cambios menores en Epígrafes (07-10-2023)
 1.033 Agregados Índice onomástico e Índice toponímico (16-10-2023)
-1.034 Vectorización del Plano de la hacienda San Antonio Limón (17-10-2023)
+1.034 Legibilidad de los planos de las haciendas (20-10-2023)
