@@ -342,7 +342,9 @@ pdflicenseurl={https://creativecommons.org/licenses/by/4.0/deed.es},
 % PORTADA 1
 \newpage
 \thispagestyle{empty}
-\pdfbookmark{Portada}{portada}
+\phantomsection
+\addcontentsline{toc}{chapter}{Portada}
+\addtocontents{toc}{\vspace{\normalbaselineskip}} % Add some vertical space between titles in TOC
 \begin{center}
 \begin{minipage}{11cm}
 \includegraphics[width=3cm]{buap}\label{fig:buap} \hfill \includegraphics[width=2.8cm]{icsyh}
@@ -396,7 +398,9 @@ Puebla, Pue., 29 de agosto del 2007
 % LICENCIA CREATIVE COMMONS
 \newpage
 \pagestyle{empty}
-\pdfbookmark{Licencia Creative Commons}{licencia}
+\phantomsection
+\addcontentsline{toc}{chapter}{Licencia \emph{Creative Commons}}
+\addtocontents{toc}{\vspace{\normalbaselineskip}} % Add some vertical space between titles in TOC
 \vspace*{0pt}
 \vfill
 \begin{scriptsize}
@@ -408,8 +412,8 @@ Puebla, Pue., 29 de agosto del 2007
 
 \includegraphics[width=2.5cm]{cc-large}\phantomsection\label{fig:cc} \protect\medskip
 
-\def\fileversion{1.034}
-\def\filedate{(20-10-2023)}
+\def\fileversion{1.035}
+\def\filedate{(26-10-2023)}
 versión\space\fileversion\space\filedate \protect\medskip
 
 \textcopyright\ 2007-2023. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -437,8 +441,9 @@ Para mayores informes visite: \protect\medskip
 % DEDICATORIA
 \newpage
 \pagestyle{empty}
+\phantomsection
+\addcontentsline{toc}{chapter}{Dedicatoria}
 \vspace*{48pt}
-\pdfbookmark{Dedicatoria}{dedication}
 \begin{flushright}
 \textit{Francisco R. Córdoba Olivares}
 \end{flushright}
@@ -1017,7 +1022,7 @@ José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas 
 \label{fig:jalacingo-photo}
 \end{sidewaysfigure}
 
-Aunque nunca llegó a ser jefe político del cantón de Jalacingo,\index[lugares]{Jalacingo!cantón} en 1874 fue miembro\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro del ayuntamiento} del ayuntamiento de su pueblo; en 1885 formó parte de la Junta Auxiliar\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro de la Junta Auxiliar} del mismo y en el periodo 1894-1896 fungió como diputado propietario\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!diputado en el congreso local} ante el congreso local.\index[lugares]{Veracruz!Congreso}\footnote{\textsc{agev, asgg, gyj}, Tierras, Altotonga, Magueyitos, 1895, cj. 433, exp. 6, f. s/f. Soledad García Morales y José Velasco Toro (Coord.), \emph{Memorias e informes de jefes políticos y autoridades del régimen porfirista, 1883-1911. Estado de Veracruz.} Universidad Veracruzana, Xalapa, 1997, t. \textsc{ii}, p. 116. Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, informes de sus gobernadores, 1826-1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, t.~\textsc{viii}, p. 4401; t. \textsc{ix}, p. 4757.} Éstas no son sino ejemplificaciones de sus actividades políticas. Y es que él y su familia\index[nombres]{Villegas!familia} eran ampliamente conocidos por su injerencia en la vida económica, política y hasta religiosa del cantón.\index[lugares]{Jalacingo!cantón} Como los agiotistas de Tenenbaum,\index[nombres]{Tenenbaum, Barbara}\footnote{Barbara Tenenbaum, \emph{México en la época de los agiotistas, 1821-1857.} Fondo de Cultura Económica, México, 1985, 235 pp.} aunque a una escala mucho menor, José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} también prestaba sus capitales a las instituciones del Estado mexicano. Durante la administración del jefe político Miguel S. Perdomo\index[nombres]{Perdomo, Miguel S.!jefe político} (1885-1891) realizó un donativo y un préstamo al ayuntamiento de Jalacingo;\index[lugares]{Jalacingo!ayuntamiento}\footnote{García y Velasco, \emph{op. cit.}, t. \textsc{ii}, p. 131.} en 1893 donó un terreno a la misma corporación\index[lugares]{Jalacingo!ayuntamiento} para construir la cárcel pública;\footnote{\textsc{arppj}, 1893, Sec. 1"a, Inst. 248, fs. 337-339. «el sr. José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} [...] manifestó: que el terreno objeto de esta escritura, lo cede gratuitamente al H. ayuntamiento\index[lugares]{Jalacingo!ayuntamiento} de esta cabecera con objeto de que sirva para que la prisión disfrute de mayor espacio y comodidad y de mejores condiciones higiénicas [...] el mismo sr. don José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} manifestó: que al hacer esta donación de dicho terreno al H. ayuntamiento\index[lugares]{Jalacingo!ayuntamiento} de esta cabecera, obedece a un sentimiento de gratitud hacia el sr. don Teodoro A. Dehesa,\index[nombres]{Dehesa, Teodoro A.} actual gobernador del estado por el empeño que demuestra a favor del adelanto material de los intereses generales de este cantón».} finalmente, en 1898 volvió hacer otro donativo a la jefatura política para reactivar la economía del cantón.\index[lugares]{Jalacingo!cantón}\footnote{Soledad García Morales, \emph{Jefes políticos y regiones veracruzanas, 1880-1900.} Universidad Nacional Autónoma de México, México, 2000, p. 136 [Tesis doctoral].} Son significativos los préstamos y donativos que José Antonio\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} realizó al ayuntamiento,\index[lugares]{Jalacingo!ayuntamiento} teniendo en cuenta que ante la falta de instituciones bancarias los ricos de la región se convertían con frecuencia en los prestamistas y benefactores del pueblo por excelencia.
+Aunque nunca llegó a ser jefe político del cantón de Jalacingo,\index[lugares]{Jalacingo!cantón} en 1874 fue miembro\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro del ayuntamiento} del ayuntamiento de su pueblo; en 1885 formó parte de la Junta Auxiliar\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro de la Junta Auxiliar} del mismo y en el periodo 1894-1896 fungió como diputado propietario\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!diputado en el congreso local} ante el congreso local.\index[lugares]{Veracruz!Congreso}\footnote{\textsc{agev, asgg, gyj}, Tierras, Altotonga, Magueyitos, 1895, c. 433, exp. 6, f. s/f. Soledad García Morales y José Velasco Toro (Coord.), \emph{Memorias e informes de jefes políticos y autoridades del régimen porfirista, 1883-1911. Estado de Veracruz.} Universidad Veracruzana, Xalapa, 1997, t. \textsc{ii}, p. 116. Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, informes de sus gobernadores, 1826-1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, t.~\textsc{viii}, p. 4401; t. \textsc{ix}, p. 4757.} Éstas no son sino ejemplificaciones de sus actividades políticas. Y es que él y su familia\index[nombres]{Villegas!familia} eran ampliamente conocidos por su injerencia en la vida económica, política y hasta religiosa del cantón.\index[lugares]{Jalacingo!cantón} Como los agiotistas de Tenenbaum,\index[nombres]{Tenenbaum, Barbara}\footnote{Barbara Tenenbaum, \emph{México en la época de los agiotistas, 1821-1857.} Fondo de Cultura Económica, México, 1985, 235 pp.} aunque a una escala mucho menor, José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} también prestaba sus capitales a las instituciones del Estado mexicano. Durante la administración del jefe político Miguel S. Perdomo\index[nombres]{Perdomo, Miguel S.!jefe político} (1885-1891) realizó un donativo y un préstamo al ayuntamiento de Jalacingo;\index[lugares]{Jalacingo!ayuntamiento}\footnote{García y Velasco, \emph{op. cit.}, t. \textsc{ii}, p. 131.} en 1893 donó un terreno a la misma corporación\index[lugares]{Jalacingo!ayuntamiento} para construir la cárcel pública;\footnote{\textsc{arppj}, 1893, Sec. 1"a, Inst. 248, fs. 337-339. «el sr. José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} [...] manifestó: que el terreno objeto de esta escritura, lo cede gratuitamente al H. ayuntamiento\index[lugares]{Jalacingo!ayuntamiento} de esta cabecera con objeto de que sirva para que la prisión disfrute de mayor espacio y comodidad y de mejores condiciones higiénicas [...] el mismo sr. don José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} manifestó: que al hacer esta donación de dicho terreno al H. ayuntamiento\index[lugares]{Jalacingo!ayuntamiento} de esta cabecera, obedece a un sentimiento de gratitud hacia el sr. don Teodoro A. Dehesa,\index[nombres]{Dehesa, Teodoro A.} actual gobernador del estado por el empeño que demuestra a favor del adelanto material de los intereses generales de este cantón».} finalmente, en 1898 volvió hacer otro donativo a la jefatura política para reactivar la economía del cantón.\index[lugares]{Jalacingo!cantón}\footnote{Soledad García Morales, \emph{Jefes políticos y regiones veracruzanas, 1880-1900.} Universidad Nacional Autónoma de México, México, 2000, p. 136 [Tesis doctoral].} Son significativos los préstamos y donativos que José Antonio\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} realizó al ayuntamiento,\index[lugares]{Jalacingo!ayuntamiento} teniendo en cuenta que ante la falta de instituciones bancarias los ricos de la región se convertían con frecuencia en los prestamistas y benefactores del pueblo por excelencia.
 
 Durante la primera mitad del siglo \textsc{xix} su familia\index[nombres]{Villegas!familia} había pagado de su peculio la construcción del sagrario de la iglesia de Jalacingo\index[lugares]{Jalacingo!iglesia} y había mantenido durante varias décadas el control administrativo de la cofradía de Padre Jesús.\index[lugares]{Jalacingo!Padre Jesús (cofradía)}\footnote{Landa, \emph{op. cit.}, p. 5. Hilarión Landa, \emph{Memorias jalacingueñas.} Imprenta «La Económica», Puebla, 1946, 2"a ed., p. 39.} Por otra parte, se recuerda a Quirino Villegas\index[nombres]{Villegas, Quirino} como arrendatario de las tierras de la cofradía del Santísimo Sacramento.\index[lugares]{Jalacingo!Santísimo Sacramento (cofradía)}\footnote{Noel Merino Hernández, \emph{Las cofradías de Jalacingo, 1799-1873.} Universidad Veracruzana, Xalapa, 2003, p. 133 [Tesis de licenciatura].} Como se podrá observar, las relaciones existentes entre la familia Villegas\index[nombres]{Villegas!familia} y las instituciones y autoridades locales eran estrechas. No sólo era una familia\index[nombres]{Villegas!familia} con grandes propiedades, sino que al ejercicio de las actividades económicas, sus miembros sumaban su presencia en la administración local y su participación en las celebraciones religiosas del pueblo.
 
@@ -1750,6 +1755,7 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \section*{Bibliografía}
 \label{sec:bibliografia}
 \addcontentsline{toc}{section}{Bibliografía}
+\addtocontents{toc}{\vspace{\normalbaselineskip}} % Add some vertical space between Bib and Appendix
 \hangpara{1cm}{1}\textsc{Aguilar Camín}, Héctor y \textsc{Meyer}, Lorenzo, \emph{A la sombra de la Revolución Mexicana.} Cal y Arena, México, 2004, 323 pp.
 
 \hangpara{1cm}{1}\textsc{Ariès}, Philippe, \emph{El hombre ante la muerte.} Taurus, Madrid, 1999, 522 pp.
@@ -1871,9 +1877,10 @@ año 7, núm. 39, pp. 18-28.
 \newpage
 \pagestyle{empty}
 \hspace*{0pt}
+\phantomsection
 \vfill
 \begin{center}
-\pdfbookmark{Apéndices}{appendix}
+\addcontentsline{toc}{chapter}{Apéndices}
 \Huge\scshape Apéndices
 \end{center}
 \vfill
