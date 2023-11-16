@@ -66,7 +66,6 @@
 
 \usepackage{shapepar} % Para el colofón
 \usepackage{calligra} % Para el nombre de José Antonio Villegas
-\usepackage{lettrine} % Letra capital
 
 % SANGRIA
 
@@ -343,7 +342,7 @@ pdflicenseurl={https://creativecommons.org/licenses/by/4.0/deed.es},
 % PORTADA
 \newpage
 \thispagestyle{empty}
-\phantomsection
+\protect\phantomsection
 \addcontentsline{toc}{chapter}{Portada}
 \addtocontents{toc}{\vspace{\normalbaselineskip}} % Add some vertical space between titles in TOC
 \begin{center}
@@ -399,7 +398,7 @@ Puebla, Pue., 29 de agosto del 2007
 % LICENCIA CREATIVE COMMONS
 \newpage
 \pagestyle{empty}
-\phantomsection
+\protect\phantomsection
 \addcontentsline{toc}{chapter}{Licencia \emph{Creative Commons}}
 \addtocontents{toc}{\vspace{\normalbaselineskip}} % Add some vertical space between titles in TOC
 \vspace*{0pt}
@@ -413,8 +412,8 @@ Puebla, Pue., 29 de agosto del 2007
 
 \includegraphics[width=2.5cm]{cc-large}\phantomsection\label{fig:cc} \protect\medskip
 
-\def\fileversion{1.036}
-\def\filedate{(31-10-2023)}
+\def\fileversion{1.038}
+\def\filedate{(16-11-2023)}
 versión\space\fileversion\space\filedate \protect\medskip
 
 \textcopyright\ 2007-2023. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -491,6 +490,7 @@ Agradezco a \href{muxkernel@gmail.com}{Tuxkernel} su tiempo, paciencia y dedicac
 \fancyhead[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \addcontentsline{toc}{chapter}{Agradecimientos}
+\addtocontents{toc}{\vspace{\normalbaselineskip}}
 La paternidad de este trabajo no es exclusivamente mía. Fueron demasiadas las personas que contribuyeron en su nacimiento que un recuento de ellos me obligaría a escribir un texto gordo, casi con las mismas características de éste. Tampoco estableceré grados de apoyo pues cada uno contribuyó según sus tiempos y dedicación.
 
 Es paradójico que quienes más contribuyen y viven a ras de suelo en ese maravilloso país de la historia, son quizá, los menos recordados. Este trabajo rescata del olvido sus nombres y les otorga un lugar especial en la historia. En este sentido, agradezco a Guadalupe Rivas Romero, encargada de la biblioteca «Ernesto de la Torre Villar» del Instituto de Ciencias Sociales y Humanidades «Alfonso Vélez Pliego», sus finas atenciones. En varias ocasiones tuvo que arriesgar el pellejo a guisa de regaños y coscorrones por haberme facilitado materiales no siempre para su consulta en casa.
@@ -518,7 +518,6 @@ A la Dra. Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \renewcommand\@dotsep{200} % Remueve los puntos en los índices
 \makeatother
 \renewcommand{\contentsname}{Índice de contenidos}
-\pdfbookmark{Índice de contenidos}{Contenidos}
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
@@ -527,6 +526,8 @@ A la Dra. Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \microtypesetup{protrusion=false}
+\protect\phantomsection
+\addcontentsline{toc}{chapter}{Índice de contenidos}
 \tableofcontents
 \microtypesetup{protrusion=true}
 \cleardoublepage
@@ -585,15 +586,17 @@ A la Dra. Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \textsc{gyj} & Gobernación y Justicia \\
 \textsc{f} & Fomento \\
 c. & caja \\
+Dip. prop. & Diputado propietario \\
 enc. & encargado \\
 exp. & expediente \\
 f. & folio \\
 fs. & folios \\
 Inst. & Instrumento \\
+Pdte. & Presidente \\
 Prot. & Protocolo \\
 Sec. & Sección \\
 Sem. & Semestre \\
-srio. & secretario \\
+Srio. & secretario \\
 \end{tabular}
 \label{tab:siglas-y-abreviaturas}
 \end{table}
@@ -640,7 +643,7 @@ W & watts \\
 \end{minipage}
 \end{flushright}
 \begin{flushright}
-\textsc{Marc Bloch}
+\textsc{Marc Bloch}\index[nombres]{Bloch, Marc}
 \end{flushright}
 \protect\smallskip
 \begin{flushright}
@@ -649,7 +652,7 @@ W & watts \\
 \end{minipage}
 \end{flushright}
 \begin{flushright}
-\textsc{Michel de Certeau}
+\textsc{Michel de Certeau}\index[nombres]{Certeau, Michel de}
 \end{flushright}
 % INTRODUCCIÓN
 \chapter*{Introducción}
@@ -704,7 +707,7 @@ Por último, en el capítulo tres (p.~\pageref{ch:capitulo-tres}), se analizan t
 \end{minipage}
 \end{flushright}
 \begin{flushright}
-\textsc{Josep Fontana}
+\textsc{Josep Fontana}\index[nombres]{Fontana, Josep}
 \end{flushright}
 % CAPÍTULO 1
 \chapter[El cantón de Jalacingo. La región y su \emph{hinterland} económico]{El cantón de Jalacingo. \\ La región y su \emph{hinterland} económico}
@@ -718,7 +721,7 @@ Por último, en el capítulo tres (p.~\pageref{ch:capitulo-tres}), se analizan t
 \renewcommand\headrulewidth{\iffloatpage{0pt}{0pt}}
 \section{El cantón de Jalacingo. Características generales}
 \label{sec:canton-caracteristicas-generales}
-A principios de la antepenúltima década de la centuria decimonona, el cantón de Jalacingo\index[lugares]{Jalacingo!cantón}\footnote{De la toponimia náhuatl «en el pequeño arenal». Sus orígenes se remontan a tiempos precortesianos cuando el imperio Tenochca logró imponer su hegemonía sobre los últimos límites del Totonacapan\index[lugares]{Totonacapan} en el golfo de México.\index[lugares]{Mexico@México!golfo de} Jalacingo\index[lugares]{Jalacingo} era una de las tres guarniciones militares junto con Atzalan\index[lugares]{Atzalan} y Tlapacoyan,\index[lugares]{Tlapacoyan} que al tiempo del imperio Tenochca, estaba adscrita jurisdiccionalmente a un amplio señorío bajo la denominación de Mexcaltzinco.\index[lugares]{Mexcaltzinco} Su importancia dentro del nuevo aparato burocrático español quedo definida cuando los franciscanos se hicieron cargo de la evangelización de la población indígena. Prueba de ello son las austeras capillas edificadas en Atzalan\index[lugares]{Atzalan} (1535) y Jalacingo\index[lugares]{Jalacingo} (1548), que demuestra el trasfondo e intereses políticos del imperio español. A principios de la penúltima década del siglo \textsc{xvii}, Jalacingo\index[lugares]{Jalacingo!corregimiento} era uno de los corregimientos españoles comprendidos dentro de la alcaldía mayor de Xalapa\index[lugares]{Xalapa!alcaldía mayor} junto con los pueblos de Perote,\index[lugares]{Perote!pueblo} Atzalan,\index[lugares]{Atzalan!pueblo} Altotonga\index[lugares]{Altotonga!pueblo} y Tlapacoyan.\index[lugares]{Tlapacoyan!pueblo} Noel Merino Hernández, \emph{Las cofradías en Jalacingo, 1799-1873.} Universidad Veracruzana, Xalapa, 2003, pp. 60-61 [Tesis de Licenciatura]. Carmen Blázquez Domínguez, \emph{Breve historia de Veracruz.} Fondo de Cultura Económica"/El Colegio de México, México, 2000, p. 56 [Fideicomiso Historia de las Américas]. María de la Luz Belmonte Guzmán, \emph{La organización territorial de Veracruz en el siglo \textsc{xix}.} Universidad Veracruzana, Xalapa, 1987, p. 9.} era una de las dieciocho demarcaciones geopolíticas que conformaban el estado de Veracruz\index[lugares]{Veracruz!estado} (\emph{v.} Imagen~\ref{fig:veracruz-1857}, p.~\pageref{fig:veracruz-1857}). Según cifras oficiales, hacia 1908 tenía una extensión superficial\index[lugares]{Jalacingo!superficie} de 2872 km\textsu{2} y estaba compuesto por cuatro villas y tres pueblos. Se reconocen Perote,\index[lugares]{Perote!villa} Altotonga,\index[lugares]{Altotonga!villa} Jalacingo\index[lugares]{Jalacingo!villa} y Tlapacoyan\index[lugares]{Tlapacoyan!villa} entre las primeras, y Atzalan,\index[lugares]{Atzalan!pueblo} Martínez de la Torre\index[lugares]{Martinez de la Torre@Martínez de la Torre!pueblo} y Las Minas\index[lugares]{Minas, Las!pueblo}\footnote{Soledad García Morales, \emph{Jefes políticos y regiones veracruzanas, 1880-1900.} Universidad Nacional Autónoma de México, México, 2000, pp. 313 y 367 [Tesis Doctoral].} entre los segundos. Ubicado en la parte meridional del estado,\index[lugares]{Veracruz!estado} estaba flanqueado al septentrión por el cantón de Papantla;\index[lugares]{Papantla!cantón} al noreste por el de Misantla;\index[lugares]{Misantla!cantón} al sureste por el de Xalapa;\index[lugares]{Xalapa!cantón} en la zona austral por el de Coatepec,\index[lugares]{Coatepec!cantón} y al oeste con pueblos y tierras del estado de Puebla\index[lugares]{Puebla!estado} (\emph{v.} Imagen~\ref{fig:veracruz-1857}, pág.~\pageref{fig:veracruz-1857}). Sus límites geopolíticos quedaron finiquitados en el periodo colonial tardío, cuando los otrora virreinatos fueron sublimados por la política borbónica de 1786 en intendencias y territorios. En el periodo que va desde las postrimerías del siglo \textsc{xviii} hasta las primeras dos décadas del siglo \textsc{xx}, el cantón\index[lugares]{Jalacingo!cantón} no sufrió metamorfosis geopolíticas de fondo. En todo caso, éstas fueron de carácter interno, sin que alteraran su fisonomía geográfica.\footnote{En 1786 la Intendencia de Veracruz\index[lugares]{Veracruz!Intendencia} fue dividida en doce partidos entre los que se encontraban Acayucan,\index[lugares]{Acayucan!partido} Córdoba,\index[lugares]{Cordoba@Córdoba!partido} Cosamaloapan,\index[lugares]{Cosamaloapan!partido} Huimanguillo,\index[lugares]{Huimanguillo!partido} Jalacingo,\index[lugares]{Jalacingo!partido} Xalapa,\index[lugares]{Xalapa!partido} Misantla,\index[lugares]{Misantla!partido} Orizaba,\index[lugares]{Orizaba!partido} Papantla,\index[lugares]{Papantla!partido} Tampico,\index[lugares]{Tampico!partido} Tuxtla\index[lugares]{Tuxtla!partido} y Veracruz.\index[lugares]{Veracruz!partido} Hacia 1825, el estado de Veracruz\index[lugares]{Veracruz!estado} se integró por cuatro departamentos subdivididos a su vez en los doce antiguos partidos de la Intendencia de Veracruz.\index[lugares]{Veracruz!Intendencia} Para 1837 y con el proceso de departamentalización del territorio nacional, la antigua entidad veracruzana fue divida en cinco distritos y éstos, a su vez, en partidos. Jalacingo\index[lugares]{Jalacingo!partido} se integró al distrito de Xalapa\index[lugares]{Xalapa!distrito} junto con Misantla\index[lugares]{Misantla!partido} y Papantla.\index[lugares]{Papantla!partido} Hacia 1845, el territorio veracruzano fue dividido en siete distritos: Veracruz,\index[lugares]{Veracruz!distrito} Xalapa,\index[lugares]{Xalapa!distrito} Orizaba,\index[lugares]{Orizaba!distrito} Córdoba,\index[lugares]{Cordoba@Córdoba!distrito} Acayucan,\index[lugares]{Acayucan!distrito} Tampico\index[lugares]{Tampico!distrito} y Jalacingo.\index[lugares]{Jalacingo!distrito} El distrito de Jalacingo\index[lugares]{Jalacingo!distrito} se formó por sus poblados, congregaciones y rancherías pero anexándose el partido de Papantla.\index[lugares]{Papantla!partido} En 1848, el estado de Veracruz\index[lugares]{Veracruz!estado} regresó a la división territorial que había imperado en 1825, y en 1853 a la de 1845. Para 1857, el territorio se dividió en dieciocho cantones. A los doce partidos originales, vinieron a sumarse los de Coatepec,\index[lugares]{Coatepec!cantón} Chicontepec,\index[lugares]{Chicontepec!cantón} Huatusco,\index[lugares]{Huatusco!cantón} Minatitlán,\index[lugares]{Minatitlan@Minatitlán!cantón} Zongolica,\index[lugares]{Zongolica!cantón} Tantoyuca\index[lugares]{Tantoyuca!cantón} y Tuxpan,\index[lugares]{Tuxpan!cantón} éste último perteneciente anteriormente al estado de Puebla.\index[lugares]{Puebla!estado} En 1862, con motivo de la guerra franco-mexicana, el estado de Veracruz\index[lugares]{Veracruz!estado} se dividió en tres cantones. Jalacingo\index[lugares]{Jalacingo} se integró al segundo de ellos, junto con Veracruz,\index[lugares]{Veracruz} Huatusco,\index[lugares]{Huatusco} Coatepec,\index[lugares]{Coatepec} Xalapa\index[lugares]{Xalapa} y Misantla.\index[lugares]{Misantla} Belmonte, \emph{op, cit.,} pp. 17, 26, 28-29, 31-32, 37 y 48. Soledad García Morales, «Sistema político y control de cantones en Veracruz, 1877-1911» en \emph{La palabra y el hombre. Revista de la Universidad Veracruzana.} Universidad Veracruzana, Xalapa, 1990, julio-septiembre, núm. 75, p. 61. Carmen Blázquez Domínguez y Ricardo Corzo Ramírez (coord.), \emph{Colección de Leyes y Decretos de Veracruz, 1824-1919.} Universidad Veracruzana, Xalapa, 1997, t. \textsc{i}, pp. 281 y 300.}
+A principios de la antepenúltima década de la centuria decimonona, el cantón de Jalacingo\index[lugares]{Jalacingo!cantón}\footnote{De la toponimia náhuatl «en el pequeño arenal». Sus orígenes se remontan a tiempos precortesianos cuando el imperio Tenochca logró imponer su hegemonía sobre los últimos límites del Totonacapan\index[lugares]{Totonacapan} en el golfo de México.\index[lugares]{Mexico@México!golfo de} Jalacingo\index[lugares]{Jalacingo} era una de las tres guarniciones militares junto con Atzalan\index[lugares]{Atzalan} y Tlapacoyan,\index[lugares]{Tlapacoyan} que al tiempo del imperio Tenochca, estaba adscrita jurisdiccionalmente a un amplio señorío bajo la denominación de Mexcaltzinco.\index[lugares]{Mexcaltzinco} Su importancia dentro del nuevo aparato burocrático español quedo definida cuando los franciscanos se hicieron cargo de la evangelización de la población indígena. Prueba de ello son las austeras capillas edificadas en Atzalan\index[lugares]{Atzalan} (1535) y Jalacingo\index[lugares]{Jalacingo} (1548), que demuestra el trasfondo e intereses políticos del imperio español. A principios de la penúltima década del siglo \textsc{xvii}, Jalacingo\index[lugares]{Jalacingo!corregimiento} era uno de los corregimientos españoles comprendidos dentro de la alcaldía mayor de Xalapa\index[lugares]{Xalapa!alcaldía mayor} junto con los pueblos de Perote,\index[lugares]{Perote!pueblo} Atzalan,\index[lugares]{Atzalan!pueblo} Altotonga\index[lugares]{Altotonga!pueblo} y Tlapacoyan.\index[lugares]{Tlapacoyan!pueblo} Noel Merino Hernández, \emph{Las cofradías en Jalacingo, 1799-1873.} Universidad Veracruzana, Xalapa, 2003, pp. 60-61 [Tesis de Licenciatura]. Carmen Blázquez Domínguez, \emph{Breve historia de Veracruz.} Fondo de Cultura Económica/El Colegio de México, México, 2000, p. 56 [Fideicomiso Historia de las Américas]. María de la Luz Belmonte Guzmán, \emph{La organización territorial de Veracruz en el siglo \textsc{xix}.} Universidad Veracruzana, Xalapa, 1987, p. 9.} era una de las dieciocho demarcaciones geopolíticas que conformaban el estado de Veracruz\index[lugares]{Veracruz!estado} (\emph{v.} Imagen~\ref{fig:veracruz-1857}, p.~\pageref{fig:veracruz-1857}). Según cifras oficiales, hacia 1908 tenía una extensión superficial\index[lugares]{Jalacingo!superficie} de 2872 km\textsu{2} y estaba compuesto por cuatro villas y tres pueblos. Se reconocen Perote,\index[lugares]{Perote!villa} Altotonga,\index[lugares]{Altotonga!villa} Jalacingo\index[lugares]{Jalacingo!villa} y Tlapacoyan\index[lugares]{Tlapacoyan!villa} entre las primeras, y Atzalan,\index[lugares]{Atzalan!pueblo} Martínez de la Torre\index[lugares]{Martinez de la Torre@Martínez de la Torre!pueblo} y Las Minas\index[lugares]{Minas, Las!pueblo}\footnote{Soledad García Morales, \emph{Jefes políticos y regiones veracruzanas, 1880-1900.} Universidad Nacional Autónoma de México, México, 2000, pp. 313 y 367 [Tesis Doctoral].} entre los segundos. Ubicado en la parte meridional del estado,\index[lugares]{Veracruz!estado} estaba flanqueado al septentrión por el cantón de Papantla;\index[lugares]{Papantla!cantón} al noreste por el de Misantla;\index[lugares]{Misantla!cantón} al sureste por el de Xalapa;\index[lugares]{Xalapa!cantón} en la zona austral por el de Coatepec,\index[lugares]{Coatepec!cantón} y al oeste con pueblos y tierras del estado de Puebla\index[lugares]{Puebla!estado} (\emph{v.} Imagen~\ref{fig:veracruz-1857}, pág.~\pageref{fig:veracruz-1857}). Sus límites geopolíticos quedaron finiquitados en el periodo colonial tardío, cuando los otrora virreinatos fueron sublimados por la política borbónica de 1786 en intendencias y territorios. En el periodo que va desde las postrimerías del siglo \textsc{xviii} hasta las primeras dos décadas del siglo \textsc{xx}, el cantón\index[lugares]{Jalacingo!cantón} no sufrió metamorfosis geopolíticas de fondo. En todo caso, éstas fueron de carácter interno, sin que alteraran su fisonomía geográfica.\footnote{En 1786 la Intendencia de Veracruz\index[lugares]{Veracruz!Intendencia} fue dividida en doce partidos entre los que se encontraban Acayucan,\index[lugares]{Acayucan!partido} Córdoba,\index[lugares]{Cordoba@Córdoba!partido} Cosamaloapan,\index[lugares]{Cosamaloapan!partido} Huimanguillo,\index[lugares]{Huimanguillo!partido} Jalacingo,\index[lugares]{Jalacingo!partido} Xalapa,\index[lugares]{Xalapa!partido} Misantla,\index[lugares]{Misantla!partido} Orizaba,\index[lugares]{Orizaba!partido} Papantla,\index[lugares]{Papantla!partido} Tampico,\index[lugares]{Tampico!partido} Tuxtla\index[lugares]{Tuxtla!partido} y Veracruz.\index[lugares]{Veracruz!partido} Hacia 1825, el estado de Veracruz\index[lugares]{Veracruz!estado} se integró por cuatro departamentos subdivididos a su vez en los doce antiguos partidos de la Intendencia de Veracruz.\index[lugares]{Veracruz!Intendencia} Para 1837 y con el proceso de departamentalización del territorio nacional, la antigua entidad veracruzana fue divida en cinco distritos y éstos, a su vez, en partidos. Jalacingo\index[lugares]{Jalacingo!partido} se integró al distrito de Xalapa\index[lugares]{Xalapa!distrito} junto con Misantla\index[lugares]{Misantla!partido} y Papantla.\index[lugares]{Papantla!partido} Hacia 1845, el territorio veracruzano fue dividido en siete distritos: Veracruz,\index[lugares]{Veracruz!distrito} Xalapa,\index[lugares]{Xalapa!distrito} Orizaba,\index[lugares]{Orizaba!distrito} Córdoba,\index[lugares]{Cordoba@Córdoba!distrito} Acayucan,\index[lugares]{Acayucan!distrito} Tampico\index[lugares]{Tampico!distrito} y Jalacingo.\index[lugares]{Jalacingo!distrito} El distrito de Jalacingo\index[lugares]{Jalacingo!distrito} se formó por sus poblados, congregaciones y rancherías pero anexándose el partido de Papantla.\index[lugares]{Papantla!partido} En 1848, el estado de Veracruz\index[lugares]{Veracruz!estado} regresó a la división territorial que había imperado en 1825, y en 1853 a la de 1845. Para 1857, el territorio se dividió en dieciocho cantones. A los doce partidos originales, vinieron a sumarse los de Coatepec,\index[lugares]{Coatepec!cantón} Chicontepec,\index[lugares]{Chicontepec!cantón} Huatusco,\index[lugares]{Huatusco!cantón} Minatitlán,\index[lugares]{Minatitlan@Minatitlán!cantón} Zongolica,\index[lugares]{Zongolica!cantón} Tantoyuca\index[lugares]{Tantoyuca!cantón} y Tuxpan,\index[lugares]{Tuxpan!cantón} éste último perteneciente anteriormente al estado de Puebla.\index[lugares]{Puebla!estado} En 1862, con motivo de la guerra franco-mexicana, el estado de Veracruz\index[lugares]{Veracruz!estado} se dividió en tres cantones. Jalacingo\index[lugares]{Jalacingo} se integró al segundo de ellos, junto con Veracruz,\index[lugares]{Veracruz} Huatusco,\index[lugares]{Huatusco} Coatepec,\index[lugares]{Coatepec} Xalapa\index[lugares]{Xalapa} y Misantla.\index[lugares]{Misantla} Belmonte, \emph{op, cit.,} pp. 17, 26, 28-29, 31-32, 37 y 48. Soledad García Morales, «Sistema político y control de cantones en Veracruz, 1877-1911» en \emph{La palabra y el hombre. Revista de la Universidad Veracruzana.} Universidad Veracruzana, Xalapa, 1990, julio-septiembre, núm. 75, p. 61. Carmen Blázquez Domínguez y Ricardo Corzo Ramírez (coord.), \emph{Colección de Leyes y Decretos de Veracruz, 1824-1919.} Universidad Veracruzana, Xalapa, 1997, t. \textsc{i}, pp. 281 y 300.}
 % MAPA: DIVISIÓN TERRITORIAL DE VERACRUZ EN 1857
 \begin{figure}
 \includegraphics[width=\textwidth]{veracruz}
@@ -732,7 +735,7 @@ En este sentido, el cantón de Jalacingo\index[lugares]{Jalacingo!cantón} era u
 % MAPA: EL CANTÓN DE JALACINGO A PRINCIPIOS DEL SIGLO XX
 \begin{figure}
 \includegraphics[width=\textwidth]{jalacingo}
-\caption[El cantón de Jalacingo a principios del siglo \textsc{xx}]{El cantón de Jalacingo\index[lugares]{Jalacingo!Mapa@\textit{Mapa}} a principios del siglo \textsc{xx}. \textsc{Fuente:} Luc Cambrezy y Bernal Lascurain, \emph{De la hacienda al ejido. Crónicas de un territorio fraccionado (Centro de Veracruz).} \textsc{larousse"/orstom}"/Centro de Estudios Mexicanos y Centroamericanos, México, 1992, p. 9.}
+\caption[El cantón de Jalacingo a principios del siglo \textsc{xx}]{El cantón de Jalacingo\index[lugares]{Jalacingo!Mapa@\textit{Mapa}} a principios del siglo \textsc{xx}. \textsc{Fuente:} Luc Cambrezy y Bernal Lascurain, \emph{De la hacienda al ejido. Crónicas de un territorio fraccionado (Centro de Veracruz).} \textsc{larousse/orstom}/Centro de Estudios Mexicanos y Centroamericanos, México, 1992, p. 9.}
 \label{fig:jalacingo-principios-xx}
 \end{figure}
 % CUADRO: POBLACIÓN EN EL CANTÓN DE JALACINGO, 1869-1910
@@ -741,19 +744,19 @@ En este sentido, el cantón de Jalacingo\index[lugares]{Jalacingo!cantón} era u
 \begin{tabular}{@{}cc@{}}
 Año & Habitantes \\
 \midrule
-\texttlf{1869} & \texttlf{30266} \\
-\texttlf{1870} & \texttlf{32285} \\
-\texttlf{1873} & \texttlf{33907} \\
-\texttlf{1878} & \texttlf{36572} \\
-\texttlf{1882} & \texttlf{42610} \\
-\texttlf{1885} & \texttlf{41992} \\
-\texttlf{1895} & \texttlf{60593} \\
-\texttlf{1900} & \texttlf{67016} \\
-\texttlf{1908} & \texttlf{67016} \\
-\texttlf{1910} & \texttlf{69913} \\
+\textlf{1869} & \texttlf{30266} \\
+\textlf{1870} & \texttlf{32285} \\
+\textlf{1873} & \texttlf{33907} \\
+\textlf{1878} & \texttlf{36572} \\
+\textlf{1882} & \texttlf{42610} \\
+\textlf{1885} & \texttlf{41992} \\
+\textlf{1895} & \texttlf{60593} \\
+\textlf{1900} & \texttlf{67016} \\
+\textlf{1908} & \texttlf{67016} \\
+\textlf{1910} & \texttlf{69913} \\
 \bottomrule
 \end{tabular}
-\caption[Población en el cantón de Jalacingo, 1869-1910]{Población en el cantón de Jalacingo,\index[lugares]{Jalacingo!población (\emph{cuadro})} 1869-1910. \textsc{Fuente:} García, «Sistema...», pp. 313-314; Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, Informes de sus gobernadores, 1826-1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, t. \textsc{ii}, pp. 701 y 845; Antonio García Cubas, \emph{Escritos diversos. De 1870-1874.} Imprenta Escalante, México, 1874, p.~41; Carmen Blázquez Domínguez (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz"/Instituto Veracruzano de Cultura"/Instituto Mora, México, 1988b, t. \textsc{ii}, p. 168.}
+\caption[Población en el cantón de Jalacingo, 1869-1910]{Población en el cantón de Jalacingo,\index[lugares]{Jalacingo!población (\emph{cuadro})} 1869-1910. \textsc{Fuente:} García, «Sistema...», pp. 313-314; Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, Informes de sus gobernadores, 1826-1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, t. \textsc{ii}, pp. 701 y 845; Antonio García Cubas, \emph{Escritos diversos. De 1870-1874.} Imprenta Escalante, México, 1874, p.~41; Carmen Blázquez Domínguez (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz/Instituto Veracruzano de Cultura/Instituto Mora, México, 1988b, t. \textsc{ii}, p. 168.}
 \label{tab:poblacion-anos}
 \end{table}
 % TABLA DISTRIBUCIÓN POBLACIONAL DEL CANTÓN POR MUNICIPIOS
@@ -765,9 +768,9 @@ Año & Habitantes \\
 \cmidrule{2-7}
 {} & Altotonga\index[lugares]{Altotonga!municipio} & Atzalan\index[lugares]{Atzalan!municipio} & Jalacingo\index[lugares]{Jalacingo!municipio} & Las Minas\index[lugares]{Minas, Las!municipio} & Perote\index[lugares]{Perote!municipio} & Tlapacoyan\index[lugares]{Tlapacoyan!municipio} \\
 \midrule
-\texttlf{1869}\textsu{*} & \texttlf{7052} & \texttlf{5543} & \texttlf{5664} & \texttlf{1695} & \texttlf{4730} & \texttlf{5582} \\
-\texttlf{1870}\textsu{*} & \texttlf{7786} & \texttlf{5750} & \texttlf{5579} & \texttlf{2037} & \texttlf{5671} & \texttlf{5462} \\
-\texttlf{1873}\textsu{*} & \texttlf{7993} & \texttlf{5945} & \texttlf{5863} & \texttlf{2247} & \texttlf{5897} & \texttlf{5962} \\
+\textlf{1869}\textsu{*} & \texttlf{7052} & \texttlf{5543} & \texttlf{5664} & \texttlf{1695} & \texttlf{4730} & \texttlf{5582} \\
+\textlf{1870}\textsu{*} & \texttlf{7786} & \texttlf{5750} & \texttlf{5579} & \texttlf{2037} & \texttlf{5671} & \texttlf{5462} \\
+\textlf{1873}\textsu{*} & \texttlf{7993} & \texttlf{5945} & \texttlf{5863} & \texttlf{2247} & \texttlf{5897} & \texttlf{5962} \\
 \bottomrule
 \end{tabular}
 \caption[Distribución poblacional del cantón de Jalacingo por municipio, 1869-1870 y 1873]{Distribución poblacional del cantón de Jalacingo\index[lugares]{Jalacingo!población (\emph{cuadro})} por municipio (habitantes), 1869-1870 y 1873. \textsu{*} \emph{véase} Cuadro~\ref{tab:poblacion-anos}, p.~\pageref{tab:poblacion-anos}. \textsc{Fuente:} Blázquez, \emph{op. cit.,} 1986a, t. \textsc{ii}, pp. 701 y 845; t. \textsc{iii}, p. 1724.}
@@ -782,8 +785,8 @@ Año & Habitantes \\
 \cmidrule{2-6}
 {} & Indígenas & No indígenas & Franceses & Italianos & Españoles \\
 \midrule
-\texttlf{1885} & \texttlf{21815} & \texttlf{19975} & \texttlf{108} & \texttlf{29} & \texttlf{24} \\
-\texttlf{1910} & {} & {} & \texttlf{212} & {} & \texttlf{98} \\
+\textlf{1885} & \texttlf{21815} & \texttlf{19975} & \texttlf{108} & \texttlf{29} & \texttlf{24} \\
+\textlf{1910} & {} & {} & \texttlf{212} & {} & \texttlf{98} \\
 \bottomrule
 \end{tabular}
 \caption[Distribución poblacional del cantón de Jalacingo por grupo social, 1885 y 1910]{Distribución poblacional del cantón de Jalacingo\index[lugares]{Jalacingo!población (\emph{cuadro})} por grupo social, 1885 y 1910. \textsc{Fuente:} García, \emph{Jefes...,} p. 367.}
@@ -827,11 +830,11 @@ San Marcos\index[lugares]{San Marcos!hacienda} & Manuel Zorrilla & \texttlf{9601
 \bottomrule
 \end{tabular}
 \end{small}
-\caption[Haciendas del cantón de Jalacingo en 1907]{Haciendas del cantón de Jalacingo\index[lugares]{Jalacingo!haciendas (\emph{cuadro})} en 1907. \textsc{Fuente:} Falcón y García, 1986, pp. 36-37. Soledad García Morales, «Análisis de la Estadística de 1907. Haciendas y hacendados» en Mirna Benítez; Carmen Blázquez Domínguez \emph{et al., Veracruz. Un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana"/Instituto Nacional de Antropología e Historia, México, 1989, pp. 166-167. \textsu{*} maíz, trigo, cebada.}
+\caption[Haciendas del cantón de Jalacingo en 1907]{Haciendas del cantón de Jalacingo\index[lugares]{Jalacingo!haciendas (\emph{cuadro})} en 1907. \textsc{Fuente:} Falcón y García, 1986, pp. 36-37. Soledad García Morales, «Análisis de la Estadística de 1907. Haciendas y hacendados» en Mirna Benítez; Carmen Blázquez Domínguez \emph{et al., Veracruz. Un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana/Instituto Nacional de Antropología e Historia, México, 1989, pp. 166-167. \textsu{*} maíz, trigo, cebada.}
 \label{tab:haciendas-1907}
 \end{sidewaystable}
 
-Por su parte, Falcón\index[nombres]{Falcon, Romana@Falcón, Romana} y García Morales,\index[nombres]{Garcia Morales, Soledad@García Morales, Soledad} tomando como base el \emph{Directorio} de Southworth,\index[nombres]{Southworth, John R.!Directorio@\textit{Directorio}} afirman que el 42\% (124345 ha) de la tierra cantonal estaba en manos de los grandes propietarios, lo que hacía que el cantón de Jalacingo\index[lugares]{Jalacingo!cantón} ocupara la primera posición en concentración de la tierra en manos privadas en todo el estado de Veracruz.\index[lugares]{Veracruz!estado}\footnote{Romana Falcón y Soledad García Morales, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México"/Gobierno del estado de Veracruz, México, 1986, p. 35.} La mayor concentración se ubicaba en el valle de Perote,\index[lugares]{Perote!valle} donde ocho haciendas poseían 69930 ha (56.23\%) frente a las 54415 ha (43.73\%) que comprendía los pueblos de la sierra (Tlapacoyan,\index[lugares]{Tlapacoyan!pueblo} El Pital\index[lugares]{Pital, El!pueblo} y Martínez de la Torre).\index[lugares]{Martinez de la Torre@Martínez de la Torre!pueblo} Pero ese \emph{Directorio} de Southworth\index[nombres]{Southworth, John R.!Directorio@\textit{Directorio}} debe tomarse con reservas, pues como hemos señalado no fueron incluidos algunos grandes ranchos y haciendas ubicadas en el cantón.\index[lugares]{Jalacingo!cantón} Igualmente, debe considerarse el «mágico» ocultamiento que hicieron los hacendados del valle de Perote\index[lugares]{Perote!valle} de sus propiedades, como lo ha demostrado Juárez Martínez.\index[nombres]{Juarez Martinez, Abel@Juárez Martínez, Abel}
+Por su parte, Falcón\index[nombres]{Falcon, Romana@Falcón, Romana} y García Morales,\index[nombres]{Garcia Morales, Soledad@García Morales, Soledad} tomando como base el \emph{Directorio} de Southworth,\index[nombres]{Southworth, John R.!Directorio@\textit{Directorio}} afirman que el 42\% (124345 ha) de la tierra cantonal estaba en manos de los grandes propietarios, lo que hacía que el cantón de Jalacingo\index[lugares]{Jalacingo!cantón} ocupara la primera posición en concentración de la tierra en manos privadas en todo el estado de Veracruz.\index[lugares]{Veracruz!estado}\footnote{Romana Falcón y Soledad García Morales, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México/Gobierno del estado de Veracruz, México, 1986, p. 35.} La mayor concentración se ubicaba en el valle de Perote,\index[lugares]{Perote!valle} donde ocho haciendas poseían 69930 ha (56.23\%) frente a las 54415 ha (43.73\%) que comprendía los pueblos de la sierra (Tlapacoyan,\index[lugares]{Tlapacoyan!pueblo} El Pital\index[lugares]{Pital, El!pueblo} y Martínez de la Torre).\index[lugares]{Martinez de la Torre@Martínez de la Torre!pueblo} Pero ese \emph{Directorio} de Southworth\index[nombres]{Southworth, John R.!Directorio@\textit{Directorio}} debe tomarse con reservas, pues como hemos señalado no fueron incluidos algunos grandes ranchos y haciendas ubicadas en el cantón.\index[lugares]{Jalacingo!cantón} Igualmente, debe considerarse el «mágico» ocultamiento que hicieron los hacendados del valle de Perote\index[lugares]{Perote!valle} de sus propiedades, como lo ha demostrado Juárez Martínez.\index[nombres]{Juarez Martinez, Abel@Juárez Martínez, Abel}
 
 Además de las haciendas y los grandes ranchos, habría que señalar que las tierras comunales indígenas enfrentaban un ataque sistemático por parte de la legislación liberal, a fin de reducirlas a propiedad privada. Desde 1856, año de la promulgación de la \emph{Ley de Desamortización de Fincas Rústicas y Urbanas, Propiedad de las Corporaciones Civiles y Religiosas,} las comunidades indígenas del cantón de Jalacingo\index[lugares]{Jalacingo!comunidades indígenas} hicieron de la legislación liberal un instrumento que fue vehiculizado hacia la defensa de sus tierras.
 
@@ -891,7 +894,7 @@ Hacia la segunda mitad del siglo \textsc{xix}, Perote\index[lugares]{Perote!pueb
 
 Establecido a las faldas del Cofre\index[lugares]{Perote!cofre de} del mismo nombre, se trataba de un pueblo\index[lugares]{Perote!pueblo} ubicado en un amplio valle\index[lugares]{Perote!valle} y posicionado estratégicamente en el sistema de comunicaciones que unían al golfo de México\index[lugares]{Mexico@México!golfo de} con el centro del país. Su población\index[lugares]{Perote!población} era hacia 1869 de 4730 habitantes, repartidos entre el poblado, las congregaciones y las rancherías, siendo el penúltimo pueblo del cantón\index[lugares]{Jalacingo!cantón} con el mayor número de habitantes.\footnote{Blázquez, \emph{Estado...,} p. 701.} Hacia 1873 el poblado\index[lugares]{Perote!poblado} tenía 5897 almas que lo convertía en el cuarto punto con el mayor número de habitantes, tan sólo atrás de Altotonga,\index[lugares]{Altotonga} Atzalan\index[lugares]{Atzalan} y Tlapacoyan.\index[lugares]{Tlapacoyan}
 
-Dada su proximidad con la zona montañosa del centro del estado y la altiplanicie mexicana, su orografía\index[lugares]{Perote!orografía} se bifurcaba entre el exuberante bosque situado a las faldas del Cofre de Perote\index[lugares]{Perote!cofre de} y el llano\index[lugares]{Perote!llano} semidesértico. Su paisaje estaba compuesto de una infinidad de pinares, oyameles y encinares que permitían establecer un lucrativo emporio maderero. Prueba de ello son los numerosos aserraderos que se instalaron en las principales haciendas y grandes ranchos del valle perotense\index[lugares]{Perote!valle} como San José de los Molinos,\index[lugares]{San Jose de los Molinos@San José de los Molinos!hacienda} Ximonco,\index[lugares]{Ximonco!hacienda} Tenextepec,\index[lugares]{Tenextepec!hacienda} Santa Ana\index[lugares]{Santa Ana!hacienda} y Cuautotolapam,\index[lugares]{Cuautotolapam!hacienda}\footnote{Abel Juárez Martínez, «El trabajo en la hacienda de San José de los Molinos en Veracruz \mbox{(1890-1910)}» en Mario Cerutti (Coord.), \emph{De los Borbones a la Revolución. Ocho estudios regionales.} \textsc{comecso"/gv} editores"/\textsc{uanl}, México, 1986, p. 199. Abel Juárez Martínez, «Crónica de un ecocidio: el llano de Perote» en \emph{Anuario~\textsc{vii}.} Centro de Investigaciones Históricas, Xalapa, 1990, pp. 64 y 71-75. Abel Juárez Martínez, «Reacomodo de las fuerzas sociales en el valle de Perote, 1910-1920» en \emph{Anuario \textsc{viii}.} Centro de Investigaciones Históricas, Xalapa, 1992, pp. 114-115. Abel Juárez Martínez, «Los rancheros. Un nuevo grupo en el poder (1910-1920)» en Mirna Benítez, Carmen Blázquez Domínguez \emph{et al., Veracruz, un tiempo para contar. Memoria del 1"er seminario de Historia Regional.} Universidad Veracruzana"/Instituto Nacional de Antropología e Historia, México, 1989, pp. 184-185 [Regiones de México]. David Ramírez Lavoignet, \emph{Testimonios para una Historia de Perote.} Editora del Gobierno del estado, México, s/f, p. 97. Cambrezy y Lascurain, \emph{op. cit.,} pp. 22-24. Abel Juárez ha señalado las trágicas consecuencias que tuvo la deforestación en los índices pluviométricos, los ciclos agrícolas y la erosión de los suelos en el llano perotense.\index[lugares]{Perote!llano}} encargados de rasurar durante varios lustros al Cofre.\index[lugares]{Perote!cofre de}
+Dada su proximidad con la zona montañosa del centro del estado y la altiplanicie mexicana, su orografía\index[lugares]{Perote!orografía} se bifurcaba entre el exuberante bosque situado a las faldas del Cofre de Perote\index[lugares]{Perote!cofre de} y el llano\index[lugares]{Perote!llano} semidesértico. Su paisaje estaba compuesto de una infinidad de pinares, oyameles y encinares que permitían establecer un lucrativo emporio maderero. Prueba de ello son los numerosos aserraderos que se instalaron en las principales haciendas y grandes ranchos del valle perotense\index[lugares]{Perote!valle} como San José de los Molinos,\index[lugares]{San Jose de los Molinos@San José de los Molinos!hacienda} Ximonco,\index[lugares]{Ximonco!hacienda} Tenextepec,\index[lugares]{Tenextepec!hacienda} Santa Ana\index[lugares]{Santa Ana!hacienda} y Cuautotolapam,\index[lugares]{Cuautotolapam!hacienda}\footnote{Abel Juárez Martínez, «El trabajo en la hacienda de San José de los Molinos en Veracruz \mbox{(1890-1910)}» en Mario Cerutti (Coord.), \emph{De los Borbones a la Revolución. Ocho estudios regionales.} \textsc{comecso/gv} editores/\textsc{uanl}, México, 1986, p. 199. Abel Juárez Martínez, «Crónica de un ecocidio: el llano de Perote» en \emph{Anuario~\textsc{vii}.} Centro de Investigaciones Históricas, Xalapa, 1990, pp. 64 y 71-75. Abel Juárez Martínez, «Reacomodo de las fuerzas sociales en el valle de Perote, 1910-1920» en \emph{Anuario \textsc{viii}.} Centro de Investigaciones Históricas, Xalapa, 1992, pp. 114-115. Abel Juárez Martínez, «Los rancheros. Un nuevo grupo en el poder (1910-1920)» en Mirna Benítez, Carmen Blázquez Domínguez \emph{et al., Veracruz, un tiempo para contar. Memoria del 1"er seminario de Historia Regional.} Universidad Veracruzana/Instituto Nacional de Antropología e Historia, México, 1989, pp. 184-185 [Regiones de México]. David Ramírez Lavoignet, \emph{Testimonios para una Historia de Perote.} Editora del Gobierno del estado, México, s/f, p. 97. Cambrezy y Lascurain, \emph{op. cit.,} pp. 22-24. Abel Juárez ha señalado las trágicas consecuencias que tuvo la deforestación en los índices pluviométricos, los ciclos agrícolas y la erosión de los suelos en el llano perotense.\index[lugares]{Perote!llano}} encargados de rasurar durante varios lustros al Cofre.\index[lugares]{Perote!cofre de}
 
 Con una altitud\index[lugares]{Perote!altitud} de 2200 m s. n. m., posee un clima\index[lugares]{Perote!clima} gélido que desciende a temperaturas por debajo de los 0\,°C. Éste sería un factor que incidiría negativamente en la economía regional durante todo el siglo \textsc{xix}, puesto que los cultivos estuvieron constantemente amenazados por las heladas, provocando con ello severas contracciones económicas. Pero \emph{¿cuáles son las principales actividades económicas que definen y permiten al valle de Perote\index[lugares]{Perote!valle} considerarlo como una región frente a los demás de los pueblos de la sierra?} Dicho de otro modo, \emph{¿cuáles son las especificidades económicas que diferencian al valle de Perote,\index[lugares]{Perote!valle} frente a los pueblos de la sierra, del cantón\index[lugares]{Jalacingo!cantón} y otros puntos del estado de Veracruz?\index[lugares]{Veracruz!estado}} En síntesis, \emph{¿qué lo hace diferente económicamente?}
 
@@ -907,7 +910,7 @@ Aunque la economía del valle\index[lugares]{Perote!economía} descansaba en el 
 
 A escasos kilómetros, el poblado de Las Minas\index[lugares]{Minas, Las} se diferenciaba también por su riqueza mineral. Se sabe que tenía en explotación diversas vetas en plomo, cobre e incluso oro. En este sentido, Solís\index[nombres]{Solis Vicarte, Ruth@Solís Vicarte, Ruth} apunta:
 \begin{quoting}
-son varias las vetas que metódicamente se trabajan [en Las Minas]\index[lugares]{Minas, Las} por la compañía mexicana. La Sabanilla,\index[lugares]{Sabanilla, La!mina} que es de cobre y está en fruto; y las del Alto\index[lugares]{Alto, El!mina} y San Antonio,\index[lugares]{San Antonio!mina} que son de oro y están en faenas.\footnote{Ruth Solís Vicarte (Comp.), \emph{Veracruz en el diccionario universal de Geografía e Historia, 1853-1856.} Gobierno del estado de Veracruz"/Secretaría de Educación y Cultura, Xalapa, 1998, p. 396.}
+son varias las vetas que metódicamente se trabajan [en Las Minas]\index[lugares]{Minas, Las} por la compañía mexicana. La Sabanilla,\index[lugares]{Sabanilla, La!mina} que es de cobre y está en fruto; y las del Alto\index[lugares]{Alto, El!mina} y San Antonio,\index[lugares]{San Antonio!mina} que son de oro y están en faenas.\footnote{Ruth Solís Vicarte (Comp.), \emph{Veracruz en el diccionario universal de Geografía e Historia, 1853-1856.} Gobierno del estado de Veracruz/Secretaría de Educación y Cultura, Xalapa, 1998, p. 396.}
 \end{quoting}
 En aras de fomentar la explotación metalera, el gobierno del estado\index[lugares]{Veracruz!gobierno} eximió durante cinco años a José María González\index[nombres]{Gonzalez, Jose Maria@González, José María} de todo gravamen por la explotación del plomo.\footnote{Blázquez y Corzo, \emph{op. cit.,} t. \textsc{vii}, p. 453.} Aunque carecemos de información sobre las cantidades explotadas, lo que sí es un hecho es que el valor de las tierras en Las Minas\index[lugares]{Minas, Las} era mucho mayor que en el cantón.\index[lugares]{Jalacingo!cantón} Así se comprueba en las escrituras existentes en el Archivo del Registro Público de Jalacingo\index[lugares]{Jalacingo!\textsc{arppj}} durante los años del Porfiriato, cuyas transacciones superaban los cientos de miles de pesos. Esta información revela los fuertes intereses de los empresarios mexicanos y extranjeros por hacerse de alguna veta en el lugar, y por formar de sociedades económicas para su explotación. Aunque jamás llegó a competir con las grandes minas del norte del país, las vetas de Las Minas\index[lugares]{Minas, Las!mina} nunca fueron tan ricas. Para principios del siglo \textsc{xx} entraron en un proceso de agotamiento. Se trató de un ejemplo de ascenso y caída rápidos, debido a los escasos yacimientos existentes.
 
@@ -933,7 +936,7 @@ Si Altotonga\index[lugares]{Altotonga} era el centro económico por excelencia, 
 
 Por otra parte, Jalacingo\index[lugares]{Jalacingo} también se erigió como el centro religioso más importante en la región. A finales del siglo \textsc{xviii}, el culto a Padre Jesús\index[lugares]{Jalacingo!Padre Jesús} había adquirido dimensiones espaciales de importancia. Aunque se trataba de un santuario regional edificado a principios de la segunda mitad del siglo \textsc{xix}, su radio de acción devocional traspasaba las fronteras del cantón. Desde 1820 su cofradía decía tener hermanos espirituales en algunos puntos del centro de la entidad, e incluso en la huasteca veracruzana.\index[lugares]{Huasteca}\footnote{\textsc{apj}, Disciplinar, Cofradías, c. 56, s/f. \emph{Lista de los pueblos de donde hay hermanos de dicha cofradía de Nuestro Padre Jesús,\index[lugares]{Jalacingo!Padre Jesús (cofradía)} 20 de agosto de 1818. Libro de asentamiento de hermanos de la cofradía de Padre Jesús\index[lugares]{Jalacingo!Padre Jesús (cofradía)} de Jalacingo.\index[lugares]{Jalacingo} 1 de enero de 1820.}} Este hecho se debía al carácter milagroso de la imagen.
 
-De acuerdo con la tradición oral, habitantes de Jalacingo\index[lugares]{Jalacingo} pidieron prestada a Altotonga\index[lugares]{Altotonga} en fecha desconocida, la imagen de Padre Jesús\index[lugares]{Jalacingo!Padre Jesús} de donde era oriunda, para calmar algunas epidemias y"/o sequías acaecidas en la región. Sofocadas, Altotonga\index[lugares]{Altotonga} reclamó a Jalacingo\index[lugares]{Jalacingo} el retorno de la imagen a su lugar original. El milagro empezó cuando vecinos de ambos pueblos intentaron trasladar la imagen hacia Altotonga,\index[lugares]{Altotonga} pero un fuerte e inusitado chubasco que se prolongó durante todo el día impidió su salida. A la mañana siguiente sacaron la imagen, pero ya rumbo a Altotonga,\index[lugares]{Altotonga} los tamemes empezaron a disminuir su vitalidad física diezmados por el \emph{creciente peso} de la imagen. Los jalacinguenses aseguran con asombro, \emph{¡que ni decenas de hombres, ni yuntas, pudieron levantar y mover un ápice la imagen del suelo!}
+De acuerdo con la tradición oral, habitantes de Jalacingo\index[lugares]{Jalacingo} pidieron prestada a Altotonga\index[lugares]{Altotonga} en fecha desconocida, la imagen de Padre Jesús\index[lugares]{Jalacingo!Padre Jesús} de donde era oriunda, para calmar algunas epidemias y/o sequías acaecidas en la región. Sofocadas, Altotonga\index[lugares]{Altotonga} reclamó a Jalacingo\index[lugares]{Jalacingo} el retorno de la imagen a su lugar original. El milagro empezó cuando vecinos de ambos pueblos intentaron trasladar la imagen hacia Altotonga,\index[lugares]{Altotonga} pero un fuerte e inusitado chubasco que se prolongó durante todo el día impidió su salida. A la mañana siguiente sacaron la imagen, pero ya rumbo a Altotonga,\index[lugares]{Altotonga} los tamemes empezaron a disminuir su vitalidad física diezmados por el \emph{creciente peso} de la imagen. Los jalacinguenses aseguran con asombro, \emph{¡que ni decenas de hombres, ni yuntas, pudieron levantar y mover un ápice la imagen del suelo!}
 
 Los esfuerzos subsiguientes fueron inútiles. Resignados, acabaron por aceptar que la imagen estaba predestinada a proteger al pueblo.\index[lugares]{Jalacingo!pueblo} Y es que este hecho es muy significativo, pues Altotonga\index[lugares]{Altotonga} ya contaba con Santa María Magdalena\index[lugares]{Altotonga!Santa María Magdalena (patrona)} como patrona y protectora del pueblo.\index[lugares]{Jalacingo!pueblo} Lo interesante del caso es cómo una imagen ajena al lugar suplantó y eclipsó la presencia de San Bartolomé Apóstol,\index[lugares]{Jalacingo!San Bartolomé Apóstol (patrono)} patrono de Jalacingo.\index[lugares]{Jalacingo}
 
@@ -991,7 +994,7 @@ En otro estudio comprobamos cómo las pequeñas producciones de las cofradías d
 \end{minipage}
 \end{flushright}
 \begin{flushright}
-\textsc{Carlos Fuentes}
+\textsc{Carlos Fuentes}\index[nombres]{Fuentes, Carlos}
 \end{flushright}
 % CAPÍTULO 2
 \chapter[Familia y poder. Los Villegas de Jalacingo, 1872-1910]{Familia y poder. \\ Los Villegas de Jalacingo, 1872-1910}
@@ -1009,7 +1012,7 @@ Su nombre era José Antonio Villegas Contreras.\index[nombres]{Villegas Contrera
 
 En efecto, José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} era uno de los hacendados más prósperos a principios de la antepenúltima década del siglo \textsc{xix} en todo el cantón de Jalacingo\index[lugares]{Jalacingo!cantón} y uno de los siete hijos que habían tenido Quirino Villegas\index[nombres]{Villegas, Quirino} y Trinidad Contreras,\index[nombres]{Contreras, Trinidad}\footnote{Aunque en su testamento declaró ser hijo de Ana del Campo,\index[nombres]{Campo, Ana del} ésta en realidad era su madrastra. Además, en todas sus operaciones registradas ante el \textsc{arppj} y el \textsc{agnep}, José Antonio\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} siempre utilizó Contreras\index[nombres]{Contreras!apellido} como segundo apellido. Quirino Villegas,\index[nombres]{Villegas, Quirino} padre de José Antonio,\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} al parecer había contraído primeras nupcias con Trinidad Contreras,\index[nombres]{Contreras, Trinidad} que en 1892 aún vivía, lo que nos hace pensar en su avanzada edad si tenemos en cuenta que José Antonio Villegas\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} había nacido en 1827. Posteriormente, Quirino Villegas\index[nombres]{Villegas, Quirino} contraería matrimonio con Ana del Campo,\index[nombres]{Campo, Ana del} procreando a Miguel,\index[nombres]{Villegas del Campo, Miguel} Joaquín,\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín} Rosa,\index[nombres]{Villegas del Campo, Rosa} Ana María,\index[nombres]{Villegas del Campo, Ana Maria@Villegas del Campo, Ana María} Guadalupe\index[nombres]{Villegas del Campo, Guadalupe} y José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} respectivamente, medios hermanos de José Antonio.\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio}} un matrimonio radicado en Jalacingo\index[lugares]{Jalacingo} probablemente desde tiempos coloniales. Nacido en 1827, dos años antes de la expedición de Isidro Barradas\index[nombres]{Barradas, Isidro!expedición@\textit{expedición}} a México,\index[lugares]{Mexico@México} le tocó presenciar a sus veinte años la guerra contra los Estados Unidos,\index[lugares]{Estados Unidos} la aplicación de las leyes de Reforma a los treinta, y cercano a los cincuenta la entronización de Porfirio Díaz.\index[nombres]{Diaz, Porfirio@Díaz, Porfirio!presidente}
 
-Poco sabemos sobre sus antecedentes familiares. Desde las postrimerías del siglo \textsc{xvii} el apellido Villegas\index[nombres]{Villegas!apellido} ya era conocido en el pueblo.\footnote{Hilarión Landa, \emph{Memorias jalacingueñas.} Imprenta «La Económica», Puebla, 1946, pp. 17 y 23. Romana Falcón y Soledad García Morales, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México"/Gobierno del estado de Veracruz, 1986, pp. 31-32.} Se recuerda a un tal Juan de Villegas\index[nombres]{Villegas, Juan de} «escribano público de esta provincia [de Jalacingo]»,\index[lugares]{Jalacingo!provincia} que en 1693 atestiguó la venta de un terreno entre los naturales de Altotonga\index[lugares]{Altotonga!indígenas} y Atzalan.\index[lugares]{Atzalan!indígenas}\footnote{\textsc{agev, acam}, Tierras, Atzalan, Dotación, c. 7, exp. 7, 1921, fs. 34-41.} Más aún, a principios del siglo \textsc{xviii} José\index[nombres]{Villegas, Jose de@Villegas, José de} y Antonio de Villegas\index[nombres]{Villegas, Antonio de} junto a otros prominentes vecinos del pueblo,\index[lugares]{Jalacingo!pueblo} dieron fe de un nuevo contrato.\footnote{Landa, \emph{op. cit.,} p. 23.} Es difícil establecer una vinculación certera entre estos personajes de finales del siglo \textsc{xvii} y principios del \textsc{xviii} con la familia Villegas de principios del siglo \textsc{xix}, pero los datos nos hablan ya de la existencia del apellido en la administración virreinal local.
+Poco sabemos sobre sus antecedentes familiares. Desde las postrimerías del siglo \textsc{xvii} el apellido Villegas\index[nombres]{Villegas!apellido} ya era conocido en el pueblo.\footnote{Hilarión Landa, \emph{Memorias jalacingueñas.} Imprenta «La Económica», Puebla, 1946, pp. 17 y 23. Romana Falcón y Soledad García Morales, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México/Gobierno del estado de Veracruz, 1986, pp. 31-32.} Se recuerda a un tal Juan de Villegas\index[nombres]{Villegas, Juan de} «escribano público de esta provincia [de Jalacingo]»,\index[lugares]{Jalacingo!provincia} que en 1693 atestiguó la venta de un terreno entre los naturales de Altotonga\index[lugares]{Altotonga!indígenas} y Atzalan.\index[lugares]{Atzalan!indígenas}\footnote{\textsc{agev, acam}, Tierras, Atzalan, Dotación, c. 7, exp. 7, 1921, fs. 34-41.} Más aún, a principios del siglo \textsc{xviii} José\index[nombres]{Villegas, Jose de@Villegas, José de} y Antonio de Villegas\index[nombres]{Villegas, Antonio de} junto a otros prominentes vecinos del pueblo,\index[lugares]{Jalacingo!pueblo} dieron fe de un nuevo contrato.\footnote{Landa, \emph{op. cit.,} p. 23.} Es difícil establecer una vinculación certera entre estos personajes de finales del siglo \textsc{xvii} y principios del \textsc{xviii} con la familia Villegas de principios del siglo \textsc{xix}, pero los datos nos hablan ya de la existencia del apellido en la administración virreinal local.
 
 Lo que sí sabemos es que Quirino Villegas,\index[nombres]{Villegas, Quirino} padre de José Antonio,\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} tuvo lazos de sangre con dos sujetos del mismo apellido a finales del siglo \textsc{xviii}: Miguel\index[nombres]{Villegas, Miguel} y Juan Nepomuceno.\index[nombres]{Villegas, Juan Nepomuceno} Éste último era hijo de José Juan Nepomuceno de Yzurieta\index[nombres]{Yzurieta, Jose Juan Nepomuceno de@Yzurieta, José Juan Nepomuceno de} (sic), quien en 1829 solicitó ante el Congreso del Estado\index[lugares]{Veracruz!Congreso} licencia para que su hijo pudiera entrar a administrar sus propios bienes por ser menor de edad.\footnote{Carmen Blázquez Domínguez y Ricardo Corzo Ramírez (Coord.), \emph{Colección de Leyes y Decretos de Veracruz, 1824-1919.} Universidad Veracruzana, Xalapa, 1997, t. \textsc{ii}, p. 32.} La fecha es significativa: la expulsión de los españoles. El hecho es aún más importante porque revela la urgencia que tiene el padre de que su hijo entre en inmediata posesión de sus propios bienes ¿Por qué no esperar a que cumpla la mayoría de edad? ¿Qué circunstancias personales obligan a Juan Nepomuceno Villegas\index[nombres]{Villegas, Juan Nepomuceno} a poseer bienes a tan prematura edad? ¿Es acaso que la política de expulsión de españoles de 1829 afectaría los intereses de la familia?
 
@@ -1040,29 +1043,29 @@ Por otra parte, su medio hermano Joaquín Villegas del Campo\index[nombres]{Vill
 \toprule
 Año(s) & Nombre & Cargo & \multicolumn{1}{c}{Lugar} \\
 \midrule
-\texttlf{1871} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia & Jalacingo \\
-\texttlf{1873} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!juez 2.\textsu{o} de paz} & Juez 2"o de paz & Jalacingo \\
-\texttlf{1873-1874} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia & Jalacingo \\
-\texttlf{1874} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro del ayuntamiento} & Miembro del ayuntamiento & Jalacingo \\
-\texttlf{1874} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!enc. del \textsc{arppj}} & Encargado del \textsc{arppj} & Jalacingo \\
-\texttlf{1875} & Mariano Lauro Villegas Perdomo\index[nombres]{Villegas Perdomo, Mariano Lauro!miembro del ayuntamiento} & Miembro del ayuntamiento & Jalacingo \\
-\texttlf{1875} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia, juez 1"o de paz\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!juez 1.\textsu{o} de paz} y enc. del \textsc{arppj}\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!enc. del \textsc{arppj}} & Jalacingo \\
-\texttlf{1875} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!srio. del Juzgado de 1.\textsu{a} Instancia} & Srio.\ del Juzgado de 1"a Instancia & Jalacingo \\
-\texttlf{1877} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!presidente del Tribunal Superior de Justicia del Estado} & Pdte.\ del Tribunal Superior de Justicia del Estado & Orizaba \\
-\texttlf{1885} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro de la Junta Auxiliar} & Miembro de la Junta Auxiliar & Jalacingo \\
-\texttlf{1885} & Leonardo Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo!regidor del ayuntamiento} & Regidor del ayuntamiento & Jalacingo \\
-\texttlf{1885} & Mariano Lauro Villegas Perdomo\index[nombres]{Villegas Perdomo, Mariano Lauro!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
-\texttlf{1885} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!miembro de la Junta Auxiliar} & Miembro de la Junta Auxiliar & Jalacingo \\
-\texttlf{1886-1888} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!srio. de la Junta de Caridad} & Srio. de la Junta de Caridad & Jalacingo \\
-\texttlf{1892} & Leonardo Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo!regidor del ayuntamiento} & Regidor del ayuntamiento & Jalacingo \\
-\texttlf{1892} & José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María!juez 2.\textsu{o} de paz} & Juez 2"o de paz & Jalacingo \\
-\texttlf{1894-1896} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!diputado en el congreso local} & Dip. prop. ante el Congreso del Estado & Veracruz \\
-\texttlf{1896} & José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
-\texttlf{1897} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
-\texttlf{1900} & Agustín Elías Villegas Perdomo & Juez 1"o de paz & Jalacingo \\
-\texttlf{1905} & Ángel Villegas Bello\index[nombres]{Villegas Bello, Angel@Villegas Bello, Ángel!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
-\texttlf{1906} & Agustín Elías Villegas Perdomo & Juez 1"o de paz & Jalacingo \\
-\texttlf{1908} & Agustín Elías Villegas Perdomo & Juez 1"o de paz & Jalacingo \\
+\textlf{1871} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia & Jalacingo \\
+\textlf{1873} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!juez 2.\textsu{o} de paz} & Juez 2"o de paz & Jalacingo \\
+\textlf{1873-1874} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia & Jalacingo \\
+\textlf{1874} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro del ayuntamiento} & Miembro del ayuntamiento & Jalacingo \\
+\textlf{1874} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!enc. del \textsc{arppj}} & Encargado del \textsc{arppj} & Jalacingo \\
+\textlf{1875} & Mariano Lauro Villegas Perdomo\index[nombres]{Villegas Perdomo, Mariano Lauro!miembro del ayuntamiento} & Miembro del ayuntamiento & Jalacingo \\
+\textlf{1875} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia, juez 1"o de paz\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!juez 1.\textsu{o} de paz} y enc. del \textsc{arppj}\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!enc. del \textsc{arppj}} & Jalacingo \\
+\textlf{1875} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!srio. del Juzgado de 1.\textsu{a} Instancia} & Srio.\ del Juzgado de 1"a Instancia & Jalacingo \\
+\textlf{1877} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!presidente del Tribunal Superior de Justicia del Estado} & Pdte.\ del Tribunal Superior de Justicia del Estado & Orizaba \\
+\textlf{1885} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro de la Junta Auxiliar} & Miembro de la Junta Auxiliar & Jalacingo \\
+\textlf{1885} & Leonardo Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo!regidor del ayuntamiento} & Regidor del ayuntamiento & Jalacingo \\
+\textlf{1885} & Mariano Lauro Villegas Perdomo\index[nombres]{Villegas Perdomo, Mariano Lauro!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
+\textlf{1885} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!miembro de la Junta Auxiliar} & Miembro de la Junta Auxiliar & Jalacingo \\
+\textlf{1886-1888} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!srio. de la Junta de Caridad} & Srio. de la Junta de Caridad & Jalacingo \\
+\textlf{1892} & Leonardo Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo!regidor del ayuntamiento} & Regidor del ayuntamiento & Jalacingo \\
+\textlf{1892} & José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María!juez 2.\textsu{o} de paz} & Juez 2"o de paz & Jalacingo \\
+\textlf{1894-1896} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!diputado en el congreso local} & Dip. prop. ante el Congreso del Estado & Veracruz \\
+\textlf{1896} & José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
+\textlf{1897} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
+\textlf{1900} & Agustín Elías Villegas Perdomo & Juez 1"o de paz & Jalacingo \\
+\textlf{1905} & Ángel Villegas Bello\index[nombres]{Villegas Bello, Angel@Villegas Bello, Ángel!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
+\textlf{1906} & Agustín Elías Villegas Perdomo & Juez 1"o de paz & Jalacingo \\
+\textlf{1908} & Agustín Elías Villegas Perdomo & Juez 1"o de paz & Jalacingo \\
 \bottomrule
 \end{tabular}
 \end{small}
@@ -1126,27 +1129,27 @@ Sin embargo, el hombre más conocido y prominente de esta dinastía familiar fue
 \toprule
 Año(s) & Nombre(s) \\
 \midrule
-\texttlf{1873} & José Juan Guzmán\index[nombres]{Guzman, Jose Juan@Guzmán, José Juan!jefe político} \\
-\texttlf{1875} & José Juan Guzmán y Felipe S. Naveda\index[nombres]{Naveda, Felipe S.!jefe político} \\
-\texttlf{1876} & Felipe S. Naveda y Miguel Melgarejo\index[nombres]{Melgarejo, Miguel!jefe político} \\
-\texttlf{1877} & Manuel S. Castellanos\index[nombres]{Castellanos, Manuel S.!jefe político} \\
-\texttlf{1878} & Miguel Melgarejo y Manuel S. Castellanos \\
-\texttlf{1879} & Manuel S. Castellanos \\
-\texttlf{1880} & Pablo Moreno\index[nombres]{Moreno, Pablo!jefe político} y Antonio Hernández\index[nombres]{Hernandez, Antonio@Hernández, Antonio!jefe político} \\
-\texttlf{1881} & Antonio Hernández \\
-\texttlf{1882} & José Serrano\index[nombres]{Serrano, Jose@Serrano, José!jefe político} \\
-\texttlf{1883} & José Serrano y Luis Tejeda Guzmán\index[nombres]{Tejeda Guzman, Luis@Tejeda Guzmán, Luis!jefe político} \\
-\texttlf{1884} & Luis Tejeda Guzmán \\
-\texttlf{1885} & Luis Tejeda Guzmán y Miguel S. Perdomo\index[nombres]{Perdomo, Miguel S.!jefe político} \\
-\texttlf{1886-1890} & Miguel S. Perdomo \\
-\texttlf{1891} & Miguel S. Perdomo y José María Guzmán\index[nombres]{Guzman, Jose Maria@Guzmán, José María!jefe político} \\
-\texttlf{1892} & Miguel María de Guzmán\index[nombres]{Guzman, Miguel Maria de@Guzmán, Miguel María de!jefe político} y Carlos V. Rosas\index[nombres]{Vera Rosas, Carlos!jefe político} \\
-\texttlf{1893} & Carlos V. Rosas \\
-\texttlf{1894-1895} & Diego Rosas Landa\index[nombres]{Rosas Landa, Diego!jefe político} \\
-\texttlf{1896} & Diego Rosas Landa y Miguel V. Gómez\index[nombres]{Gomez, Miguel V.@Gómez, Miguel V.!jefe político} \\
-\texttlf{1897-1901} & Miguel V. Gómez \\
-\texttlf{1902} & Miguel V. Gómez y Carlos del Campo\index[nombres]{Campo, Carlos del!jefe político} \\
-\texttlf{1903-1910} & Carlos del Campo \\
+\textlf{1873} & José Juan Guzmán\index[nombres]{Guzman, Jose Juan@Guzmán, José Juan!jefe político} \\
+\textlf{1875} & José Juan Guzmán y Felipe S. Naveda\index[nombres]{Naveda, Felipe S.!jefe político} \\
+\textlf{1876} & Felipe S. Naveda y Miguel Melgarejo\index[nombres]{Melgarejo, Miguel!jefe político} \\
+\textlf{1877} & Manuel S. Castellanos\index[nombres]{Castellanos, Manuel S.!jefe político} \\
+\textlf{1878} & Miguel Melgarejo y Manuel S. Castellanos \\
+\textlf{1879} & Manuel S. Castellanos \\
+\textlf{1880} & Pablo Moreno\index[nombres]{Moreno, Pablo!jefe político} y Antonio Hernández\index[nombres]{Hernandez, Antonio@Hernández, Antonio!jefe político} \\
+\textlf{1881} & Antonio Hernández \\
+\textlf{1882} & José Serrano\index[nombres]{Serrano, Jose@Serrano, José!jefe político} \\
+\textlf{1883} & José Serrano y Luis Tejeda Guzmán\index[nombres]{Tejeda Guzman, Luis@Tejeda Guzmán, Luis!jefe político} \\
+\textlf{1884} & Luis Tejeda Guzmán \\
+\textlf{1885} & Luis Tejeda Guzmán y Miguel S. Perdomo\index[nombres]{Perdomo, Miguel S.!jefe político} \\
+\textlf{1886-1890} & Miguel S. Perdomo \\
+\textlf{1891} & Miguel S. Perdomo y José María Guzmán\index[nombres]{Guzman, Jose Maria@Guzmán, José María!jefe político} \\
+\textlf{1892} & Miguel María de Guzmán\index[nombres]{Guzman, Miguel Maria de@Guzmán, Miguel María de!jefe político} y Carlos V. Rosas\index[nombres]{Vera Rosas, Carlos!jefe político} \\
+\textlf{1893} & Carlos V. Rosas \\
+\textlf{1894-1895} & Diego Rosas Landa\index[nombres]{Rosas Landa, Diego!jefe político} \\
+\textlf{1896} & Diego Rosas Landa y Miguel V. Gómez\index[nombres]{Gomez, Miguel V.@Gómez, Miguel V.!jefe político} \\
+\textlf{1897-1901} & Miguel V. Gómez \\
+\textlf{1902} & Miguel V. Gómez y Carlos del Campo\index[nombres]{Campo, Carlos del!jefe político} \\
+\textlf{1903-1910} & Carlos del Campo \\
 \bottomrule
 \end{tabular}
 \caption[Jefes políticos del cantón de Jalacingo, 1873-1910]{Jefes políticos del cantón de Jalacingo,\index[lugares]{Jalacingo!jefes políticos (\emph{cuadro})} 1873-1910. \textsc{Fuente:} \textsc{arppj}, 1873-1910.}
@@ -1157,7 +1160,7 @@ En efecto, Carlos\index[nombres]{Campo, Carlos del} se vio, como la mayoría de 
 \begin{quoting}
 Es lamentable la situación en que varias veces se ha colocado [a Jalacingo]\index[lugares]{Jalacingo} debido a la perversión de sus gobernantes, atravezando por épocas amarguísimas sufriendo las tiranías y despotismo de algunos jefes políticos encarnizados en sus caprichos, infamias e inmoralidades. En épocas no muy lejanas han pasado esos periodos de disgusto que con resignación se~han sufrido. Allí están los jefes Pacheco,\index[nombres]{Pacheco, Jose Ines@Pacheco, José Inés!jefe político} Luis Tejeda Guzmán,\index[nombres]{Tejeda Guzman, Luis@Tejeda Guzmán, Luis!jefe político} Diego Rosas Landa\index[nombres]{Rosas Landa, Diego!jefe político} y Carlos Vera Rosas,\index[nombres]{Vera Rosas, Carlos!jefe político} que sin miramientos humanos fueron el azote de éste desgraciado pueblo,\index[lugares]{Jalacingo!pueblo} contándose con intermitencias provisionales los periodos de los sres. Miguel Perdomo Ruiz\index[nombres]{Perdomo Ruiz, Miguel!jefe político} y Miguel V. Gómez.\index[nombres]{Gomez, Miguel V.@Gómez, Miguel V.!jefe político}\footnote{\em Ídem.}
 \end{quoting}
-Producto de la psicosis revolucionaria que habría de desatarse en 1910 contra de los jefes políticos, Carlos del Campo\index[nombres]{Campo, Carlos del!exilio} habría de autoexiliarse junto a otras prominentes familias de la localidad en ciudades como Teziutlán,\index[lugares]{Teziutlan@Teziutlán} Xalapa\index[lugares]{Xalapa} y México\index[lugares]{Mexico@México}.\footnote{Landa, \emph{op. cit.,} 1946, p. 46.} Sin embargo, frente a las dudosas acciones de gobierno de los jefes cantonales, hay por otra parte, imágenes positivas de su gestión pública. A Carlos del Campo\index[nombres]{Campo, Carlos del!jefe político} se le achacó haber construido el zócalo, atrio y santuario de Jalacingo,\index[lugares]{Jalacingo!santuario} la necrópolis municipal, los puentes «\mbox{Teodoro A. Dehesa}»\index[nombres]{Dehesa, Teodoro A.!puente} y Epapa;\index[lugares]{Epapa!puente} iniciar la construcción de la escuela cantonal «Juan Díaz Covarrubias»;\index[nombres]{Diaz Covarrubias, Juan@Díaz Covarrubias, Juan!escuela cantonal} de haber hecho de golfines y malhechores, zapateros, mecánicos y carpinteros; así como de la reparación de los caminos vecinales por donde transitaban bandidos y abigeos.\footnote{\emph{Ibid.,} pp. 41-42. Ramírez, \emph{op. cit.,} p. 99. Carmen Blázquez Domínguez (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz"/Instituto Veracruzano de Cultura"/Instituto Mora, México, 1988b, t. \textsc{ii}, pp. 206-207.} \pagebreak[4]
+Producto de la psicosis revolucionaria que habría de desatarse en 1910 contra de los jefes políticos, Carlos del Campo\index[nombres]{Campo, Carlos del!exilio} habría de autoexiliarse junto a otras prominentes familias de la localidad en ciudades como Teziutlán,\index[lugares]{Teziutlan@Teziutlán} Xalapa\index[lugares]{Xalapa} y México\index[lugares]{Mexico@México}.\footnote{Landa, \emph{op. cit.,} 1946, p. 46.} Sin embargo, frente a las dudosas acciones de gobierno de los jefes cantonales, hay por otra parte, imágenes positivas de su gestión pública. A Carlos del Campo\index[nombres]{Campo, Carlos del!jefe político} se le achacó haber construido el zócalo, atrio y santuario de Jalacingo,\index[lugares]{Jalacingo!santuario} la necrópolis municipal, los puentes «\mbox{Teodoro A. Dehesa}»\index[nombres]{Dehesa, Teodoro A.!puente} y Epapa;\index[lugares]{Epapa!puente} iniciar la construcción de la escuela cantonal «Juan Díaz Covarrubias»;\index[nombres]{Diaz Covarrubias, Juan@Díaz Covarrubias, Juan!escuela cantonal} de haber hecho de golfines y malhechores, zapateros, mecánicos y carpinteros; así como de la reparación de los caminos vecinales por donde transitaban bandidos y abigeos.\footnote{\emph{Ibid.,} pp. 41-42. Ramírez, \emph{op. cit.,} p. 99. Carmen Blázquez Domínguez (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz/Instituto Veracruzano de Cultura/Instituto Mora, México, 1988b, t. \textsc{ii}, pp. 206-207.} \pagebreak[4]
 
 Pero no sólo Carlos del Campo\index[nombres]{Campo, Carlos del} y esos jefes políticos fueron atacados por la población. Hacia 1910 el jefe político José Inés Pacheco,\index[nombres]{Pacheco, Jose Ines@Pacheco, José Inés!jefe político} habría de protagonizar al lado de los altotongueses otro escándalo público, cuyas acciones fueron denunciadas a la prensa.\footnote{Los hechos fueron denunciados por Herminio Cabañas León\index[nombres]{Cabanas Leon, Herminio@Cabañas León, Herminio} al periódico \emph{El Dictamen}\index[nombres]{Dictamen, El@\textit{Dictamen, El}!periódico} del puerto de Veracruz\index[lugares]{Veracruz!puerto} unos días después. Hay elementos anacrónicos en lo que dicen Baltazar Vázquez\index[nombres]{Baltazar Vazquez, Miguel@Baltazar Vázquez, Miguel} y Cabañas León.\index[nombres]{Cabanas Leon, Herminio@Cabañas León, Herminio} Sospechamos que estos acontecimientos ocurrieron en una fecha posterior a 1910, cuando José Inés Pacheco\index[nombres]{Pacheco, Jose Ines@Pacheco, José Inés!jefe político} ocupó la jefatura política del cantón y no en 1883 como lo consignan ellos. Es improbable también por las siguientes razones: porque en 1883, sólo José Serrano\index[nombres]{Serrano, Jose@Serrano, José!jefe político} y Luis Tejeda Guzmán\index[nombres]{Tejeda Guzman, Luis@Tejeda Guzmán, Luis!jefe político} habían ocupado la jefatura política del cantón; y porque no existe constancia alguna de que Pacheco\index[nombres]{Pacheco, Jose Ines@Pacheco, José Inés} haya ejercido el cargo ---al menos interinamente--- en esa fecha. Todo parece indicar que se debe a un error de imprenta, pues aunque la fecha 3 de mayo de 1883 coincide con los acontecimientos protagonizados por Apolinar Castillo\index[nombres]{Castillo, Apolinar} y Luis Mier y Terán;\index[nombres]{Mier y Teran, Luis@Mier y Terán, Luis} ésta no corresponde con el periodo de José Inés Pacheco\index[nombres]{Pacheco, Jose Ines@Pacheco, José Inés!jefe político} como jefe político. En este sentido, véase Cuadro~\ref{tab:jefes-politicos} (p.~\pageref{tab:jefes-politicos}).} Según Baltazar Vázquez\index[nombres]{Baltazar Vazquez, Miguel@Baltazar Vázquez, Miguel} y Cabañas León,\index[nombres]{Cabanas Leon, Herminio@Cabañas León, Herminio} el 3 de mayo de 1883 la población de Altotonga\index[lugares]{Altotonga} se disponía a celebrar el día de la Santa Cruz con una corrida de toros. La fiesta taurina se vio ensombrecida cuando Pacheco\index[nombres]{Pacheco, Jose Ines@Pacheco, José Inés!jefe político} ordenó a sus rurales «cortar los cordeles y dejar descubierto el citado redondel»\footnote{Baltazar, \emph{op. cit.,} p. 125.} para que los asistentes disfrutaran completamente del espectáculo. Los organizadores del evento, enardecidos por las acciones de Pacheco,\index[nombres]{Pacheco, Jose Ines@Pacheco, José Inés!jefe político} salieron a la calle «dando silbidos, tamborazos y gritos»; lanzando consignas como «¡Muera Pacheco!» y «¡Abajo el jefe político!» Lo que había comenzado como un simple espectáculo taurino pronto se convirtió en una lluvia de balas, cegando la vida de dos personas y resultando herido el jefe político. El acto tenía en realidad otros orígenes. Como señala Herminio Cabañas:\index[nombres]{Cabanas Leon, Herminio@Cabañas León, Herminio}
 \begin{quoting}
@@ -1206,7 +1209,7 @@ periodo porfirista, la sociedad mexicana había quedado dividida en dos únicas 
 \end{minipage}
 \end{flushright}
 \begin{flushright}
-\textsc{Friedrich Katz}
+\textsc{Friedrich Katz}\index[nombres]{Katz, Friedrich}
 \end{flushright}
 \chapter[La riqueza familiar. Usura, propiedad y comercio]{La riqueza familiar. \\ Usura, propiedad y comercio}
 \label{ch:capitulo-tres}
@@ -1256,8 +1259,9 @@ nodes near coords,
 \begin{figure}
 \centering
 \begin{tikzpicture}
+%\lfstyle % <--- Lining nums
 \centering
-\pie[text=inside,color={gray!27.8,gray!20.8,gray!50.2,black!0.9}]{27.8/Compras,20.8/Ventas,50.2/Préstamos,0.9/Otros}
+\pie[explode=0.1,text=inside,color={gray!27.8,gray!20.8,gray!50.2,black!0.9}]{27.8/Compras,20.8/Ventas,50.2/Préstamos,0.9/Otros}
 \end{tikzpicture}
 \caption[Operaciones de la familia Villegas, 1872-1910 (Porcentajes)]{Operaciones de la familia Villegas,\index[nombres]{Villegas!operaciones comerciales (\emph{gráfico})} 1872-1910 (Porcentajes). \textsc{Fuente:} \textsc{agnep}, 1876-1910. \textsc{arppj}, 1872-1910.}
 \label{fig:porcentajes}
@@ -1277,7 +1281,7 @@ Los Villegas\index[nombres]{Villegas!familia} habrían de cumplir un papel deter
 \endfirsthead
 % Encabezado de la tabla
 \toprule
-Acreedor & Deudor(es) & \textsc{p} (\$)\textsu{\emph{a}} & \textsc{t}\textsu{\em b} & \textsc{tia}\textsu{\em c} & \textsc{r} (\$)\textsu{\em d} & Garantía \\
+Acreedor & Deudor(es) & \textsc{p} (\$)\textsu{\emph{a}} & \textsc{t}\textsu{\em b} & \textsc{tia} (\char37) & \textsc{r} (\$)\textsu{\em c} & Garantía \\
 \midrule
 \endhead
 \bottomrule
@@ -1288,109 +1292,109 @@ Acreedor & Deudor(es) & \textsc{p} (\$)\textsu{\emph{a}} & \textsc{t}\textsu{\em
 \endlastfoot
 % Contenido de la tabla
 \toprule
-Acreedor & Deudor(es) & \textsc{p} (\$)\textsu{\emph{a}} & \textsc{t}\textsu{\em b} & \textsc{tia}\textsu{\em c} & \textsc{r} (\$)\textsu{\em d} & Garantía \\
+Acreedor & Deudor(es) & \textsc{p} (\$)\textsu{\emph{a}} & \textsc{t}\textsu{\em b} & \textsc{tia} (\char37) & \textsc{r} (\$)\textsu{\em c} & Garantía \\
 \midrule
-J. A. Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} & Ignacio Danini\index[nombres]{Danini, Ignacio} e Isidoro O. Marié\index[nombres]{Marie, Isidoro O.@Marié, Isidoro O.} & \texttlf{20000} & \texttlf{8} & \texttlf{12} & \texttlf{19200} & Hda. San Miguel del Rincón\index[lugares]{San Miguel del Rincon@San Miguel del Rincón!hacienda} \\
-J. A. Villegas Contreras & Ignacio Danini e Isidoro o. Marié & \texttlf{10000} & \texttlf{3} & \texttlf{12} & \texttlf{3600} & Hda. San Miguel del Rincón \\
-J. A. Villegas Contreras & Miguel Valdés\index[nombres]{Valdes, Miguel@Valdés, Miguel} & \texttlf{4000} & \texttlf{3} & \texttlf{12} & \texttlf{1440} & Rancho Buenavista\index[lugares]{San Pedro Buenavista!rancho} \\
-J. A. Villegas Contreras & Nicolás Velázquez\index[nombres]{Velazquez, Nicolas@Velázquez, Nicolás} & \texttlf{3000} & \texttlf{3} & \texttlf{12} & \texttlf{1080} & Casa \\
+J. A. Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} & Ignacio Danini\index[nombres]{Danini, Ignacio} e Isidoro O. Marié\index[nombres]{Marie, Isidoro O.@Marié, Isidoro O.} & \texttlf{20000} & \textlf{8} & \texttlf{12} & \texttlf{19200} & Hda. San Miguel del Rincón\index[lugares]{San Miguel del Rincon@San Miguel del Rincón!hacienda} \\
+J. A. Villegas Contreras & Ignacio Danini e Isidoro o. Marié & \texttlf{10000} & \textlf{3} & \texttlf{12} & \texttlf{3600} & Hda. San Miguel del Rincón \\
+J. A. Villegas Contreras & Miguel Valdés\index[nombres]{Valdes, Miguel@Valdés, Miguel} & \texttlf{4000} & \textlf{3} & \texttlf{12} & \texttlf{1440} & Rancho Buenavista\index[lugares]{San Pedro Buenavista!rancho} \\
+J. A. Villegas Contreras & Nicolás Velázquez\index[nombres]{Velazquez, Nicolas@Velázquez, Nicolás} & \texttlf{3000} & \textlf{3} & \texttlf{12} & \texttlf{1080} & Casa \\
 Q. Villegas Contreras\index[nombres]{Villegas Contreras, Quirino} & José María Calderón\index[nombres]{Calderon, Jose Maria@Calderón, José María} & \texttlf{400} & & & & Casa \\
 J. A. Villegas Contreras & Leonardo M. de Rugama\index[nombres]{Rugama, Leonardo} & \texttlf{1436} & & & & Hda. de Tenextepec\index[lugares]{Tenextepec!hacienda} \\
-J. A. Villegas Contreras & José Huici\index[nombres]{Huici, Jose@Huici, José} y Cástula Naveda\index[nombres]{Naveda, Castula@Naveda, Cástula} & \texttlf{1000} & \texttlf{2} & \texttlf{12} & \texttlf{240} & Casa \\
-J. A. Villegas Contreras & Manuel\index[nombres]{Lopez Leon, Manuel@López León, Manuel} y Herminia López León\index[nombres]{Lopez Leon, Herminia@López León, Herminia} & \texttlf{7000} & \texttlf{3} & \texttlf{12} & \texttlf{2520} & Casa y terreno \\
-J. A. Villegas Contreras & Fco. Calderón\index[nombres]{Calderon, Francisco@Calderón, Francisco} y Dolores Ríos\index[nombres]{Rios, Dolores@Ríos, Dolores} & \texttlf{6000} & \texttlf{6} & \texttlf{12} & \texttlf{4320} & Casa \\
-J. A. Villegas Contreras & Fco. Calderón y Dolores Ríos & \texttlf{7000} & \texttlf{7} & \texttlf{12}
+J. A. Villegas Contreras & José Huici\index[nombres]{Huici, Jose@Huici, José} y Cástula Naveda\index[nombres]{Naveda, Castula@Naveda, Cástula} & \texttlf{1000} & \textlf{2} & \texttlf{12} & \texttlf{240} & Casa \\
+J. A. Villegas Contreras & Manuel\index[nombres]{Lopez Leon, Manuel@López León, Manuel} y Herminia López León\index[nombres]{Lopez Leon, Herminia@López León, Herminia} & \texttlf{7000} & \textlf{3} & \texttlf{12} & \texttlf{2520} & Casa y terreno \\
+J. A. Villegas Contreras & Fco. Calderón\index[nombres]{Calderon, Francisco@Calderón, Francisco} y Dolores Ríos\index[nombres]{Rios, Dolores@Ríos, Dolores} & \texttlf{6000} & \textlf{6} & \texttlf{12} & \texttlf{4320} & Casa \\
+J. A. Villegas Contreras & Fco. Calderón y Dolores Ríos & \texttlf{7000} & \textlf{7} & \texttlf{12}
 & \texttlf{5880} & Casa \\
-J. A. Villegas Contreras & Victorino\index[nombres]{Bando, Victorino} y Leonardo Bando\index[nombres]{Bando, Leonardo} & \texttlf{3000} & \texttlf{3} & \texttlf{12} & \texttlf{1080} & Pahuatatempa\index[lugares]{Pahuatatempa!hacienda} y anexos Xaltepec\index[lugares]{Xaltepec!rancho} y Tachitepec\index[lugares]{Tachitepec!rancho} \\
-J. A. Villegas Contreras & Victorino y Leonardo Bando & \texttlf{2550} & \texttlf{5} & \texttlf{10} & \texttlf{1275} & Pahuatatempa y anexos Xaltepec y Tachitepec \\
+J. A. Villegas Contreras & Victorino\index[nombres]{Bando, Victorino} y Leonardo Bando\index[nombres]{Bando, Leonardo} & \texttlf{3000} & \textlf{3} & \texttlf{12} & \texttlf{1080} & Pahuatatempa\index[lugares]{Pahuatatempa!hacienda} y anexos Xaltepec\index[lugares]{Xaltepec!rancho} y Tachitepec\index[lugares]{Tachitepec!rancho} \\
+J. A. Villegas Contreras & Victorino y Leonardo Bando & \texttlf{2550} & \textlf{5} & \texttlf{10} & \texttlf{1275} & Pahuatatempa y anexos Xaltepec y Tachitepec \\
 José María Villegas\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} & A. Murrieta\index[nombres]{Murrieta, Antonio} y J. Romero\index[nombres]{Romero, Josefa} & \texttlf{390} & & & & Terreno \\
 Q. Villegas Contreras\index[nombres]{Villegas Contreras, Quirino} & José Luis Huici\index[nombres]{Huici, Jose@Huici, José} & \texttlf{1686} & & & & Trabajo \\
-Q. Villegas Contreras & Gertrudis Fernández\index[nombres]{Fernandez de Vinals, Gertrudis@Fernández de Viñals, Gertrudis} & \texttlf{17000} & \texttlf{3} & \texttlf{12} & \texttlf{6120} & Casa \\
-José María Villegas\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} & M\textsu{a} N. Mendoza\index[nombres]{Mendoza, Maria Natividad@Mendoza, María Natividad} y Clotilde Ayala\index[nombres]{Ayala, Clotilde} & \texttlf{2000} & \texttlf{2} & \texttlf{12} & \texttlf{720} & Casa \\
+Q. Villegas Contreras & Gertrudis Fernández\index[nombres]{Fernandez de Vinals, Gertrudis@Fernández de Viñals, Gertrudis} & \texttlf{17000} & \textlf{3} & \texttlf{12} & \texttlf{6120} & Casa \\
+José María Villegas\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} & M\textsu{a} N. Mendoza\index[nombres]{Mendoza, Maria Natividad@Mendoza, María Natividad} y Clotilde Ayala\index[nombres]{Ayala, Clotilde} & \texttlf{2000} & \textlf{2} & \texttlf{12} & \texttlf{720} & Casa \\
 J. A. Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio} & Claudio Antonio Limón\index[nombres]{Limon, Claudio Antonio@Limón, Claudio Antonio} & \texttlf{40000} & & \texttlf{5} & \texttlf{2000} & Hda. San Antonio Limón\index[lugares]{San Antonio Limon@San Antonio Limón!hacienda} y anexos \\
-J. A. Villegas Contreras & Fco. Hernández\index[nombres]{Hernandez, Francisco@Hernández, Francisco} & \texttlf{30000} & \texttlf{3} & \texttlf{6} & \texttlf{5400} & Hda. de Cuautotolapam\index[lugares]{Cuautotolapam!hacienda} \\
-J. A. Villegas Contreras & José Gandara\index[nombres]{Gandara, Jose@Gandara, José} & \texttlf{2000} & \texttlf{2} & \texttlf{6} & \texttlf{240} & Casas y terrenos \\
-J. A. Villegas Contreras & Miguel Locela\index[nombres]{Locela, Miguel} & \texttlf{1000} & \texttlf{4} & \texttlf{6} & \texttlf{240} & Casa y terrenos \\
-J. A. Villegas Contreras & Santiago Flores\index[nombres]{Flores, Santiago} & \texttlf{350} & \texttlf{3} & \texttlf{1} & \texttlf{10} & Casa \\
+J. A. Villegas Contreras & Fco. Hernández\index[nombres]{Hernandez, Francisco@Hernández, Francisco} & \texttlf{30000} & \textlf{3} & \texttlf{6} & \texttlf{5400} & Hda. de Cuautotolapam\index[lugares]{Cuautotolapam!hacienda} \\
+J. A. Villegas Contreras & José Gandara\index[nombres]{Gandara, Jose@Gandara, José} & \texttlf{2000} & \textlf{2} & \texttlf{6} & \texttlf{240} & Casas y terrenos \\
+J. A. Villegas Contreras & Miguel Locela\index[nombres]{Locela, Miguel} & \texttlf{1000} & \textlf{4} & \texttlf{6} & \texttlf{240} & Casa y terrenos \\
+J. A. Villegas Contreras & Santiago Flores\index[nombres]{Flores, Santiago} & \texttlf{350} & \textlf{3} & \texttlf{1} & \texttlf{10} & Casa \\
 J. Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} & Manuel de Alcalde\index[nombres]{Alcalde, Manuel de} & \texttlf{678} & & \texttlf{6} & \texttlf{40} & Rancho \\
-J. Villegas del Campo & Bacilio Bello\index[nombres]{Bello, Bacilio} & \texttlf{1147} & \texttlf{2} & {} & {} & Rancho \\
-J. Villegas del Campo & Manuel de Alcalde & \texttlf{773} & \texttlf{1.5} & \texttlf{24} & \texttlf{241} & Rancho y terrenos \\
-Josefa Villegas Contreras\index[nombres]{Villegas Contreras, Josefa} & Feliciano Mendoza\index[nombres]{Mendoza, Feliciano} & \texttlf{230} & \texttlf{2} & {} & {} & Rancho \\
+J. Villegas del Campo & Bacilio Bello\index[nombres]{Bello, Bacilio} & \texttlf{1147} & \textlf{2} & {} & {} & Rancho \\
+J. Villegas del Campo & Manuel de Alcalde & \texttlf{773} & \textlf{1.5} & \texttlf{24} & \texttlf{241} & Rancho y terrenos \\
+Josefa Villegas Contreras\index[nombres]{Villegas Contreras, Josefa} & Feliciano Mendoza\index[nombres]{Mendoza, Feliciano} & \texttlf{230} & \textlf{2} & {} & {} & Rancho \\
 Carmen Villegas Guzmán\index[nombres]{Villegas Guzman, Carmen@Villegas Guzmán, Carmen} & Miguel María de Guzmán\index[nombres]{Guzman, Miguel Maria de@Guzmán, Miguel María de} & \texttlf{2961} & {} & {} & {} & Terreno \\
-Q. Villegas Contreras & Miguel María de Guzmán & \texttlf{3500} & \texttlf{2} & {} & {} & Casa \\
-J. A. Villegas Contreras & Ignacio Bustos\index[nombres]{Bustos, Ignacio} & \texttlf{1522} & \texttlf{1} & \texttlf{12} & \texttlf{182} & Fincas \\
-J. A. Villegas Contreras & Juan del Campo\index[nombres]{Campo, Juan del} e hijos & \texttlf{2733} & \texttlf{2} & \texttlf{6} & \texttlf{164} & Casa \\
-J. Villegas del Campo & Bacilio Bello e hijos & \texttlf{1500} & \texttlf{6} & {} & {} & Rancho \\
+Q. Villegas Contreras & Miguel María de Guzmán & \texttlf{3500} & \textlf{2} & {} & {} & Casa \\
+J. A. Villegas Contreras & Ignacio Bustos\index[nombres]{Bustos, Ignacio} & \texttlf{1522} & \textlf{1} & \texttlf{12} & \texttlf{182} & Fincas \\
+J. A. Villegas Contreras & Juan del Campo\index[nombres]{Campo, Juan del} e hijos & \texttlf{2733} & \textlf{2} & \texttlf{6} & \texttlf{164} & Casa \\
+J. Villegas del Campo & Bacilio Bello e hijos & \texttlf{1500} & \textlf{6} & {} & {} & Rancho \\
 J. Villegas del Campo & Manuel Y. Bello\index[nombres]{Bello, Manuel} & \texttlf{789} & {} & {} & {} & Rancho \\
 J. A. Villegas Contreras & José de Jesús López\index[nombres]{Lopez, Jose de Jesus@López, José de Jesús} & \texttlf{365} & {} & {} & {} & Casa \\
-J. A. Villegas Contreras & Miguel Valdés\index[nombres]{Valdes, Miguel@Valdés, Miguel} & \texttlf{4000} & \texttlf{3} & \texttlf{12} & \texttlf{1440} & Rancho Buenavista\index[lugares]{San Pedro Buenavista!rancho} \\
-J. A. Villegas Contreras & Nicolás Velázquez\index[nombres]{Velazquez, Nicolas@Velázquez, Nicolás} & \texttlf{3000} & \texttlf{3} & \texttlf{12} & \texttlf{1080} & Casa \\
+J. A. Villegas Contreras & Miguel Valdés\index[nombres]{Valdes, Miguel@Valdés, Miguel} & \texttlf{4000} & \textlf{3} & \texttlf{12} & \texttlf{1440} & Rancho Buenavista\index[lugares]{San Pedro Buenavista!rancho} \\
+J. A. Villegas Contreras & Nicolás Velázquez\index[nombres]{Velazquez, Nicolas@Velázquez, Nicolás} & \texttlf{3000} & \textlf{3} & \texttlf{12} & \texttlf{1080} & Casa \\
 M. L. Villegas Perdomo\index[nombres]{Villegas Perdomo, Mariano Lauro} & Juan Cuevas\index[nombres]{Cuevas, Juan} & \texttlf{200} & {} & {} & {} & Casa \\
 M. L. Villegas Perdomo & Rafaela García\index[nombres]{Garcia, Rafaela@García, Rafaela} & \texttlf{116} & {} & {} & {} & Casa \\
 M. L. Villegas Perdomo & Manuela de Jesus\index[nombres]{Jesus, Manuela de@Jesús, Manuela de} & \texttlf{25} & {} & {} & {} & Casa \\
 M. Villegas del Campo & José Hernández Mondragón\index[nombres]{Hernandez Mondragon, Jose@Hernández Mondragón, José} & \texttlf{492} & {} & {} & {} & Rancho \\
 M. L. Villegas Perdomo & Ventura Calixto\index[nombres]{Calixto, Ventura} & \texttlf{67} & {} & {} & {} & Rancho \\
 J. A. Villegas Contreras & Alejandro Marín\index[nombres]{Marin, Alejandro@Marín, Alejandro} & \texttlf{4000} & {} & \texttlf{5} & \texttlf{200} & Rancho «Arroyo Zarco»\index[lugares]{Arroyo Zarco!rancho} \\
-J. A. Villegas Contreras & Alejandro Marín & \texttlf{1600} & \texttlf{1} & \texttlf{12} & \texttlf{192} & Rancho «Arroyo Zarco» \\
+J. A. Villegas Contreras & Alejandro Marín & \texttlf{1600} & \textlf{1} & \texttlf{12} & \texttlf{192} & Rancho «Arroyo Zarco» \\
 J. A. Villegas Contreras & Miguel Valdés & \texttlf{1034} & {} & \texttlf{12} & \texttlf{31} & Rancho, terreno y casa \\
-M. L. Villegas Perdomo & Aniceto González\index[nombres]{Gonzalez, Aniceto@González, Aniceto} & \texttlf{140} & \texttlf{1} & {} & {} & Rancho \\
+M. L. Villegas Perdomo & Aniceto González\index[nombres]{Gonzalez, Aniceto@González, Aniceto} & \texttlf{140} & \textlf{1} & {} & {} & Rancho \\
 M. L. Villegas Perdomo & Manuel Bandala\index[nombres]{Bandala, Manuel} & \texttlf{108} & {} & {} & {} & Rancho y casa \\
 M. L. Villegas Perdomo & Miguel Murrieta\index[nombres]{Murrieta, Manuel} & \texttlf{110} & {} & {} & {} & Terreno \\
 M. L. Villegas Perdomo & Bernardo Morales\index[nombres]{Morales, Bernardo} & \texttlf{55} & {} & {} & {} & Terrenos \\
-J. A. Villegas Contreras & Miguel María de Guzmán & \texttlf{2000} & \texttlf{0.25} & \texttlf{12} & \texttlf{60} & Casa \\
+J. A. Villegas Contreras & Miguel María de Guzmán & \texttlf{2000} & \textlf{0.25} & \texttlf{12} & \texttlf{60} & Casa \\
 M. L. Villegas Perdomo & José\index[nombres]{Luciano, Jose@Luciano, José} y Antonio Pedro Luciano\index[nombres]{Luciano, Antonio Pedro} & \texttlf{60} & {} & {} & {} & Terrenos \\
-J. A. Villegas Contreras & Adolfo B. Carsi\index[nombres]{Carsi, Adolfo B.} & \texttlf{25000} & \texttlf{5} & \texttlf{12} & \texttlf{15000} & Hda. «El Pital»\index[lugares]{Pital, El!hacienda} \\
-J. A. Villegas Contreras & Juan\index[nombres]{Garcia, Juan@García, Juan} y José Antonio García\index[nombres]{Garcia, Jose Antonio@García, José Antonio} & \texttlf{5725} & \texttlf{0.25} & \texttlf{12} & \texttlf{50} & Terrenos y casa \\
-M. L. Villegas Perdomo & Marcos Mendoza\index[nombres]{Mendoza, Marcos} y esposa & \texttlf{199} & \texttlf{1} & {} & {} & Terrenos \\
+J. A. Villegas Contreras & Adolfo B. Carsi\index[nombres]{Carsi, Adolfo B.} & \texttlf{25000} & \textlf{5} & \texttlf{12} & \texttlf{15000} & Hda. «El Pital»\index[lugares]{Pital, El!hacienda} \\
+J. A. Villegas Contreras & Juan\index[nombres]{Garcia, Juan@García, Juan} y José Antonio García\index[nombres]{Garcia, Jose Antonio@García, José Antonio} & \texttlf{5725} & \textlf{0.25} & \texttlf{12} & \texttlf{50} & Terrenos y casa \\
+M. L. Villegas Perdomo & Marcos Mendoza\index[nombres]{Mendoza, Marcos} y esposa & \texttlf{199} & \textlf{1} & {} & {} & Terrenos \\
 M. L. Villegas Perdomo & Miguel Juárez\index[nombres]{Juarez, Miguel@Juárez, Miguel} & \texttlf{76} & {} & {} & {} & Terrenos \\
-J. A. Villegas Contreras & Luciano\index[nombres]{Hernandez, Luciano@Hernández, Luciano} y Gabriel E. Hernández\index[nombres]{Hernandez, Gabriel E.@Hernández, Gabriel E.} & \texttlf{6000} & \texttlf{0.5} & \texttlf{12} & \texttlf{360} & Rancho «Santa Ana Moluapan»\index[lugares]{Santa Ana Moloapan!rancho} \\
-M. L. Villegas Perdomo & Josefa Serrano\index[nombres]{Serrano, Josefa} & \texttlf{141} & \texttlf{1} & {} & {} & Terrenos y casas \\
-J. M. Villegas del Campo & Manuela Gómez de la Torre\index[nombres]{Gomez de la Torre, Manuela@Gómez de la Torre, Manuela} & \texttlf{3000} & \texttlf{0.5} & \texttlf{12} & \texttlf{180} & Hda. Santa Cruz\index[lugares]{Santa Cruz!hacienda} y rancho San Luis\index[lugares]{San Luis!rancho} \\
-J. A. Villegas Contreras & Luis Marín\index[nombres]{Marin, Luis@Marín, Luis} & \texttlf{9000} & \texttlf{0.5} & \texttlf{12} & \texttlf{540} & Casas, terrenos, etc. \\
-Miguel Villegas\index[nombres]{Villegas, Miguel} & Pascual Mendoza\index[nombres]{Mendoza, Pascual} & \texttlf{200} & \texttlf{0.5} & {} & {} & Rancho \\
-J. A. Villegas Contreras & M\textsu{a} de Jesús Carrión\index[nombres]{Carrion, Maria de Jesus@Carrión, María de Jesús} y Nicolás Soto\index[nombres]{Soto, Nicolas@Soto, Nicolás} & \texttlf{500} & \texttlf{1} & {} & {} & Casa \\
+J. A. Villegas Contreras & Luciano\index[nombres]{Hernandez, Luciano@Hernández, Luciano} y Gabriel E. Hernández\index[nombres]{Hernandez, Gabriel E.@Hernández, Gabriel E.} & \texttlf{6000} & \textlf{0.5} & \texttlf{12} & \texttlf{360} & Rancho «Santa Ana Moluapan»\index[lugares]{Santa Ana Moloapan!rancho} \\
+M. L. Villegas Perdomo & Josefa Serrano\index[nombres]{Serrano, Josefa} & \texttlf{141} & \textlf{1} & {} & {} & Terrenos y casas \\
+J. M. Villegas del Campo & Manuela Gómez de la Torre\index[nombres]{Gomez de la Torre, Manuela@Gómez de la Torre, Manuela} & \texttlf{3000} & \textlf{0.5} & \texttlf{12} & \texttlf{180} & Hda. Santa Cruz\index[lugares]{Santa Cruz!hacienda} y rancho San Luis\index[lugares]{San Luis!rancho} \\
+J. A. Villegas Contreras & Luis Marín\index[nombres]{Marin, Luis@Marín, Luis} & \texttlf{9000} & \textlf{0.5} & \texttlf{12} & \texttlf{540} & Casas, terrenos, etc. \\
+Miguel Villegas\index[nombres]{Villegas, Miguel} & Pascual Mendoza\index[nombres]{Mendoza, Pascual} & \texttlf{200} & \textlf{0.5} & {} & {} & Rancho \\
+J. A. Villegas Contreras & M\textsu{a} de Jesús Carrión\index[nombres]{Carrion, Maria de Jesus@Carrión, María de Jesús} y Nicolás Soto\index[nombres]{Soto, Nicolas@Soto, Nicolás} & \texttlf{500} & \textlf{1} & {} & {} & Casa \\
 L. Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo} & M. Mendoza\index[nombres]{Mendoza, Manuela} y Fco. Alonso Espinoza\index[nombres]{Alonso Espinoza, Francisco} & \texttlf{67} & {} & {} & {} & Terrenos y jacales \\
-J. A. Villegas Contreras & Ignacio Perdomo\index[nombres]{Perdomo, Ignacio} & \texttlf{4000} & \texttlf{1} & \texttlf{6} & \texttlf{240} & Casa \\
-J. A. Villegas Contreras & Felipe Revuelta\index[nombres]{Revuelta, Felipe} & \texttlf{4000} & \texttlf{1} & \texttlf{9} & \texttlf{360} & Casa y terrenos \\
-J. A. Villegas Contreras & Felipe Revuelta & \texttlf{3000} & \texttlf{0.5} & \texttlf{9} & \texttlf{135} & Casa y terrenos \\
-J. A. Villegas Contreras & Luciano y Gabriel E. Hernández & \texttlf{13000} & \texttlf{1} & \texttlf{9} & \texttlf{1170} & Hda. «Santa Ana Moluapan» y «El Mirador»\index[lugares]{Mirador, El!rancho} \\
-J. A. Villegas Contreras & Joaquín Hoyos\index[nombres]{Hoyos, Joaquin@Hoyos, Joaquín} y Dolores Vázquez\index[nombres]{Vazquez, Dolores@Vázquez, Dolores} & \texttlf{3000} & \texttlf{0.5} & {} & {} & Rancho «Teacal»\index[lugares]{Teacal!rancho} \\
-J. A. Villegas Contreras & Ana Rugama de Cruz\index[nombres]{Rugama de Cruz, Ana} y Carlos Cruz Rugama\index[nombres]{Cruz Rugama, Carlos} & \texttlf{53000} & \texttlf{10} & \texttlf{6} & \texttlf{31800} & Hda. Tenextepec\index[lugares]{Tenextepec!hacienda} y anexos; casa en Puebla \\
-J. A. Villegas Contreras & Luis Marín & \texttlf{15000} & \texttlf{1} & \texttlf{6} & \texttlf{900} & Terrenos «Planes de Almanza»\index[lugares]{Almanza!Planes de} \\
-J. A. Villegas Contreras & Benjamín González\index[nombres]{Gonzalez, Benjamin@González, Benjamín} y esposa & \texttlf{26185} & \texttlf{4} & \texttlf{6} & \texttlf{6284} & Casas y terrenos \\
-J. M. Villegas del Campo & Andrés Rodríguez\index[nombres]{Rodriguez, Andres@Rodríguez, Andrés} & \texttlf{600} & \texttlf{1} & \texttlf{18} & \texttlf{108} & Terrenos \\
-J. M. Villegas del Campo & Benigno Ríos\index[nombres]{Rios, Benigno@Ríos, Benigno} & \texttlf{6000} & \texttlf{5} & \texttlf{12} & \texttlf{3600} & Hda. «Santa Cruz y anexos» \\
-J. M. Villegas del Campo & Miguel Locela herederos\index[nombres]{Locela, Miguel!herederos} & \texttlf{1400} & \texttlf{2} & \texttlf{12} & \texttlf{336} & Casa \\
-J. M. Villegas del Campo & Roberto Guzmán\index[nombres]{Guzman, Roberto@Guzmán, Roberto} & \texttlf{5000} & \texttlf{4} & \texttlf{12} & \texttlf{2400} & Rancho «Progreso»\index[lugares]{Progreso, El!rancho} y anexos; cafetales \\
+J. A. Villegas Contreras & Ignacio Perdomo\index[nombres]{Perdomo, Ignacio} & \texttlf{4000} & \textlf{1} & \texttlf{6} & \texttlf{240} & Casa \\
+J. A. Villegas Contreras & Felipe Revuelta\index[nombres]{Revuelta, Felipe} & \texttlf{4000} & \textlf{1} & \texttlf{9} & \texttlf{360} & Casa y terrenos \\
+J. A. Villegas Contreras & Felipe Revuelta & \texttlf{3000} & \textlf{0.5} & \texttlf{9} & \texttlf{135} & Casa y terrenos \\
+J. A. Villegas Contreras & Luciano y Gabriel E. Hernández & \texttlf{13000} & \textlf{1} & \texttlf{9} & \texttlf{1170} & Hda. «Santa Ana Moluapan» y «El Mirador»\index[lugares]{Mirador, El!rancho} \\
+J. A. Villegas Contreras & Joaquín Hoyos\index[nombres]{Hoyos, Joaquin@Hoyos, Joaquín} y Dolores Vázquez\index[nombres]{Vazquez, Dolores@Vázquez, Dolores} & \texttlf{3000} & \textlf{0.5} & {} & {} & Rancho «Teacal»\index[lugares]{Teacal!rancho} \\
+J. A. Villegas Contreras & Ana Rugama de Cruz\index[nombres]{Rugama de Cruz, Ana} y Carlos Cruz Rugama\index[nombres]{Cruz Rugama, Carlos} & \texttlf{53000} & \textlf{10} & \texttlf{6} & \texttlf{31800} & Hda. Tenextepec\index[lugares]{Tenextepec!hacienda} y anexos; casa en Puebla \\
+J. A. Villegas Contreras & Luis Marín & \texttlf{15000} & \textlf{1} & \texttlf{6} & \texttlf{900} & Terrenos «Planes de Almanza»\index[lugares]{Almanza!Planes de} \\
+J. A. Villegas Contreras & Benjamín González\index[nombres]{Gonzalez, Benjamin@González, Benjamín} y esposa & \texttlf{26185} & \textlf{4} & \texttlf{6} & \texttlf{6284} & Casas y terrenos \\
+J. M. Villegas del Campo & Andrés Rodríguez\index[nombres]{Rodriguez, Andres@Rodríguez, Andrés} & \texttlf{600} & \textlf{1} & \texttlf{18} & \texttlf{108} & Terrenos \\
+J. M. Villegas del Campo & Benigno Ríos\index[nombres]{Rios, Benigno@Ríos, Benigno} & \texttlf{6000} & \textlf{5} & \texttlf{12} & \texttlf{3600} & Hda. «Santa Cruz y anexos» \\
+J. M. Villegas del Campo & Miguel Locela herederos\index[nombres]{Locela, Miguel!herederos} & \texttlf{1400} & \textlf{2} & \texttlf{12} & \texttlf{336} & Casa \\
+J. M. Villegas del Campo & Roberto Guzmán\index[nombres]{Guzman, Roberto@Guzmán, Roberto} & \texttlf{5000} & \textlf{4} & \texttlf{12} & \texttlf{2400} & Rancho «Progreso»\index[lugares]{Progreso, El!rancho} y anexos; cafetales \\
 J. M. Villegas del Campo & Luis Condado Velis\index[nombres]{Condado Velis, Luis} & \texttlf{2000} & {} & {} & {} & Terrenos \\
-J. A. Villegas Contreras & José Gandara & \texttlf{2670} & \texttlf{2} & \texttlf{6} & \texttlf{320} & Terrenos \\
+J. A. Villegas Contreras & José Gandara & \texttlf{2670} & \textlf{2} & \texttlf{6} & \texttlf{320} & Terrenos \\
 J. M. Villegas del Campo & Bartolomé Sánchez\index[nombres]{Sanchez, Bartolome@Sánchez, Bartolomé} & \texttlf{17800} & {} & \texttlf{12} & \texttlf{2132} & Terrenos \\
-J. A. Villegas Contreras & Enrique Mendoza\index[nombres]{Mendoza, Enrique} & \texttlf{3000} & \texttlf{3} & \texttlf{6} & \texttlf{540} & Casa \\
-J. A. Villegas Contreras & Fam. Flores\index[nombres]{Flores!familia} y Rosendo R. Velázquez\index[nombres]{Velazquez, Rosendo@Velázquez, Rosendo} & \texttlf{20000} & \texttlf{6} & \texttlf{6} & \texttlf{7200} & Casas y terrenos \\
-J. M. Villegas del Campo & Mariano Rivera\index[nombres]{Rivera, Mariano} & \texttlf{2000} & \texttlf{3} & \texttlf{12} & \texttlf{720} & Terrenos y casas \\
-J. M. Villegas del Campo & Antonio Murrieta Morales\index[nombres]{Murrieta Morales, Antonio} & \texttlf{2815} & \texttlf{4} & \texttlf{12} & \texttlf{1351} & Terrenos y casas \\
-J. M. Villegas del Campo & José Antonio García & \texttlf{650} & \texttlf{2} & \texttlf{12} & \texttlf{156} & Terrenos y casas \\
-J. M. Villegas del Campo & Fco. García González\index[nombres]{Garcia Gonzalez, Francisco@García González, Francisco} & \texttlf{350} & \texttlf{2} & \texttlf{24} & \texttlf{168} & Terrenos \\
-Guadalupe Villegas del Campo\index[nombres]{Villegas del Campo, Guadalupe} & Juan Cuevas & \texttlf{1200} & \texttlf{3} & {} & {} & Terrenos \\
-J. M. Villegas del Campo & Cosme Benavides\index[nombres]{Benavides, Cosme} & \texttlf{1000} & \texttlf{2} & \texttlf{15} & \texttlf{300} & Rancho \\
+J. A. Villegas Contreras & Enrique Mendoza\index[nombres]{Mendoza, Enrique} & \texttlf{3000} & \textlf{3} & \texttlf{6} & \texttlf{540} & Casa \\
+J. A. Villegas Contreras & Fam. Flores\index[nombres]{Flores!familia} y Rosendo R. Velázquez\index[nombres]{Velazquez, Rosendo@Velázquez, Rosendo} & \texttlf{20000} & \textlf{6} & \texttlf{6} & \texttlf{7200} & Casas y terrenos \\
+J. M. Villegas del Campo & Mariano Rivera\index[nombres]{Rivera, Mariano} & \texttlf{2000} & \textlf{3} & \texttlf{12} & \texttlf{720} & Terrenos y casas \\
+J. M. Villegas del Campo & Antonio Murrieta Morales\index[nombres]{Murrieta Morales, Antonio} & \texttlf{2815} & \textlf{4} & \texttlf{12} & \texttlf{1351} & Terrenos y casas \\
+J. M. Villegas del Campo & José Antonio García & \texttlf{650} & \textlf{2} & \texttlf{12} & \texttlf{156} & Terrenos y casas \\
+J. M. Villegas del Campo & Fco. García González\index[nombres]{Garcia Gonzalez, Francisco@García González, Francisco} & \texttlf{350} & \textlf{2} & \texttlf{24} & \texttlf{168} & Terrenos \\
+Guadalupe Villegas del Campo\index[nombres]{Villegas del Campo, Guadalupe} & Juan Cuevas & \texttlf{1200} & \textlf{3} & {} & {} & Terrenos \\
+J. M. Villegas del Campo & Cosme Benavides\index[nombres]{Benavides, Cosme} & \texttlf{1000} & \textlf{2} & \texttlf{15} & \texttlf{300} & Rancho \\
 J. M. Villegas del Campo & Miguel\index[nombres]{Tejeda Fernandez, Miguel@Tejeda Fernández, Miguel} y Micaela Tejeda Fernández\index[nombres]{Tejeda Fernandez, Micaela@Tejeda Fernández, Micaela} & \texttlf{190} & {} & {} & {} & Terreno \\
-J. M. Villegas del Campo & José Antonio García & \texttlf{4400} & \texttlf{5} & \texttlf{12} & \texttlf{2640} & Rancho «Nansolco»\index[lugares]{Nansolco!rancho} \\
-J. M. Villegas del Campo & María de Jesús Mendoza\index[nombres]{Mendoza, Maria de Jesus@Mendoza, María de Jesús} & \texttlf{4300} & \texttlf{4} & \texttlf{10} & \texttlf{1720} & Casa \\
-J. M. Villegas del Campo & Fam. Parra Mendoza\index[nombres]{Parra Mendoza!familia} & \texttlf{10000} & \texttlf{3} & \texttlf{10} & \texttlf{3000} & Rancho «Tepantepec»\index[lugares]{Tepantepec!rancho} y casa \\
-J. M. Villegas del Campo & S. Mota,\index[nombres]{Mota, Santiago} Manuel L. Glez.\index[nombres]{Gonzalez, Manuel L.@González, Manuel L.} y Porfirio Aburto\index[nombres]{Aburto, Porfirio} & \texttlf{4985} & \texttlf{3} & \texttlf{9} & \texttlf{1346} & Casas \\
-J. M. Villegas del Campo & Estanislao Galván Monfil\index[nombres]{Galvan Monfil, Estanislao@Galván Monfil, Estanislao} & \texttlf{9000} & \texttlf{2} & {} & {} & Rancho «Progreso» \\
+J. M. Villegas del Campo & José Antonio García & \texttlf{4400} & \textlf{5} & \texttlf{12} & \texttlf{2640} & Rancho «Nansolco»\index[lugares]{Nansolco!rancho} \\
+J. M. Villegas del Campo & María de Jesús Mendoza\index[nombres]{Mendoza, Maria de Jesus@Mendoza, María de Jesús} & \texttlf{4300} & \textlf{4} & \texttlf{10} & \texttlf{1720} & Casa \\
+J. M. Villegas del Campo & Fam. Parra Mendoza\index[nombres]{Parra Mendoza!familia} & \texttlf{10000} & \textlf{3} & \texttlf{10} & \texttlf{3000} & Rancho «Tepantepec»\index[lugares]{Tepantepec!rancho} y casa \\
+J. M. Villegas del Campo & S. Mota,\index[nombres]{Mota, Santiago} Manuel L. Glez.\index[nombres]{Gonzalez, Manuel L.@González, Manuel L.} y Porfirio Aburto\index[nombres]{Aburto, Porfirio} & \texttlf{4985} & \textlf{3} & \texttlf{9} & \texttlf{1346} & Casas \\
+J. M. Villegas del Campo & Estanislao Galván Monfil\index[nombres]{Galvan Monfil, Estanislao@Galván Monfil, Estanislao} & \texttlf{9000} & \textlf{2} & {} & {} & Rancho «Progreso» \\
 J. M. Villegas del Campo & Estanislao Galván Monfil & \texttlf{17000} & {} & {} & {} & Rancho «Progreso» y «Naranjillo»\index[lugares]{Naranjillo!rancho} \\
-J. M. Villegas del Campo & Manuel L. González & \texttlf{1000} & \texttlf{3} & \texttlf{9} & \texttlf{270} & Casa \\
-J. M. Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} & Santiago Mota\index[nombres]{Mota, Santiago} & \texttlf{4108} & \texttlf{3} & \texttlf{6} & \texttlf{739} & Casa y terreno \\
+J. M. Villegas del Campo & Manuel L. González & \texttlf{1000} & \textlf{3} & \texttlf{9} & \texttlf{270} & Casa \\
+J. M. Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} & Santiago Mota\index[nombres]{Mota, Santiago} & \texttlf{4108} & \textlf{3} & \texttlf{6} & \texttlf{739} & Casa y terreno \\
 L. Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo} & J. M. Villegas Contreras & \texttlf{577} & {} & {} & {} & Terrenos \\
-J. A. Villegas Sucs.\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!sucesores} & José María Murrieta\index[nombres]{Murrieta, Jose Maria@Murrieta, José María} & \texttlf{11964} & \texttlf{8} & \texttlf{6} & \texttlf{5742} & Terrenos \\
+J. A. Villegas Sucs.\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!sucesores} & José María Murrieta\index[nombres]{Murrieta, Jose Maria@Murrieta, José María} & \texttlf{11964} & \textlf{8} & \texttlf{6} & \texttlf{5742} & Terrenos \\
 J. A. Villegas Sucs. & Miguel Murrieta\index[nombres]{Murrieta, Miguel} & \texttlf{2900} & {} & {} & {} & Terreno \\
 J. A. Villegas Sucs. & Rosalino Moreno\index[nombres]{Moreno, Rosalino} & \texttlf{1525} & {} & {} & {} & Terreno \\
 J. A. Villegas Sucs. & Pedro Méndez\index[nombres]{Mendez, Pedro@Méndez, Pedro} & \texttlf{2759} & {} & {} & {} & {} \\
 \midrule
 {} & {} & \texttlf{509087} & {} & {} & \texttlf{155002} & {} \\
 \bottomrule
-\caption[Préstamos y rendimientos ideales obtenidos por la familia Villegas, 1872-1910]{Préstamos y rendimientos ideales obtenidos por la familia Villegas,\index[nombres]{Villegas!préstamos (\emph{cuadro})} 1872-1910. \textsu{\em a}~\textsc{p} = préstamo; \textsu{\em b} \textsc{t} = tiempo (en años); \textsu{\em c} \textsc{tia} = tasa de interés anual (en \char 37); \textsu{\em d} \textsc{r}= rendimiento. \textsc{Fuente:} \textsc{agnep}, 1876-1910. \textsc{arppj}, 1872-1910.}
+\caption[Préstamos y rendimientos ideales obtenidos por la familia Villegas, 1872-1910]{Préstamos y rendimientos ideales obtenidos por la familia Villegas,\index[nombres]{Villegas!préstamos (\emph{cuadro})} 1872-1910. \textsu{\em a}~\textsc{p} $=$ préstamo; \textsu{\em b} \textsc{t} $=$ tiempo (en años); \textsc{tia} $=$ tasa de interés anual; \textsu{\em c} \textsc{r} $=$ rendimiento. \textsc{Fuente:} \textsc{agnep}, 1876-1910. \textsc{arppj}, 1872-1910.}
 \label{tab:prestamos-y-rendimientos}
 \end{longtable}
 }%
@@ -1442,7 +1446,7 @@ Con tasa de interés & Sin tasa de interés\textsu{*} & Total \\
 Núm. de operaciones & \texttlf{2} & \texttlf{1} & \texttlf{1} & \texttlf{30} & \texttlf{3} & \texttlf{5} & \texttlf{14} & \texttlf{2} & \texttlf{1} & \texttlf{59} \\
 \bottomrule
 \end{tabular}
-\caption[Préstamos realizados según la tasa de interés, 1872-1910]{Préstamos realizados según la tasa de interés, 1872-1910.\index[nombres]{Villegas!préstamos según tasa de interés (\emph{cuadro}) } \textsu{*} \textsc{tia} = tasa de interés anual. \textsc{Fuente:} \textsc{agnep}, \mbox{1876-1910}. \textsc{arppj}, 1872-1910.}
+\caption[Préstamos realizados según la tasa de interés, 1872-1910]{Préstamos realizados según la tasa de interés, 1872-1910.\index[nombres]{Villegas!préstamos según tasa de interés (\emph{cuadro}) } \textsu{*} \textsc{tia} $=$ tasa de interés anual. \textsc{Fuente:} \textsc{agnep}, \mbox{1876-1910}. \textsc{arppj}, 1872-1910.}
 \label{tab:prestamos-tasa-interes}
 \end{table}
 \begin{table}[H]
@@ -1474,7 +1478,7 @@ Las propiedades territoriales de la familia Villegas\index[nombres]{Villegas!fam
 
 ¿Cómo, entonces, se hicieron de haciendas y ranchos? ¿Cómo es que teniendo los medios económicos y políticos a su alcance no lograron sacarles provecho? La paulatina acumulación de capitales en la primera mitad del siglo \textsc{xix} a través de las prácticas usurarias y su \emph{continuum} en las décadas siguientes, fue uno de los factores que llevaron a la familia a hacerse de un sinfín de propiedades rurales y urbanas.
 
-En efecto, mientras los demás hacendados y comerciantes del cantón ensanchaban sus propiedades con base en las leyes de Desamortización de Bienes Eclesiásticos, de Privatización de Tierras Comunales y Terrenos Baldíos, los Villegas las adquirían a través de la compra, pero sobre todo ganándolas en pleitos hipotecarios a sus deudores. Efectivamente, la hacienda de Santa Cruz,\index[lugares]{Santa Cruz!hacienda} propiedad de Manuela Gómez,\index[nombres]{Gomez, Manuela@Gómez, Manuela} había agregado a las 900 ha ya existentes, una extensión de 1200 ha mediante la compra al gobierno federal de los terrenos comunales indígenas de Atzalan.\index[lugares]{Atzalan!terrenos comunales}\footnote{\textsc{agev, acam}, Tierras, Jalacingo, Santa Anita, Dotación, c. 135, exp. 243, 1922, fs. 1-2. Estos terrenos fueron comprados por Benigno Ríos\index[nombres]{Rios, Benigno@Ríos, Benigno} el 2 de abril de 1891 y habían pertenecido a las antiguas cofradías de Ánimas, Nexquepala\index[lugares]{Nexquepala} y San Juan de la municipalidad de Atzalan.\index[lugares]{Atzalan!cofradías} Al respecto véase \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Tatzayanala, Dotación, c. 183, exp. 441, 1922, fs. s/f. \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Dotación, c. 8, exp. 7, 1937, fs. 53-58. Los predios despojados a la comunidad indígena de Atzalan\index[lugares]{Atzalan!terrenos comunales} (Huapala,\index[lugares]{Huapala!predio} Xocoyolapa\index[lugares]{Xocoyolapa!predio} y Tecuanteco,\index[lugares]{Tecuanteco!predio} alias «La Florida»)\index[lugares]{Florida, La|seealso{Tecuanteco}} habrían de ser restituidos por el gobierno de Veracruz\index[lugares]{Veracruz!gobierno} el 3 de marzo de 1915. De las 1200 ha, sólo lograron recuperar una superficie de 910 hectáreas. En este sentido véase \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Dotación, c. 8, exp. 7, 1937, fs. 48-52. \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Dotación, c. 8, exp. 7, 1921, fs. 42-47. \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Restitución, c. 7, exp. 7, 1936, fs.~s/f.} Hacia 1886 su esposo, Benigno Ríos,\index[nombres]{Rios, Benigno@Ríos, Benigno} intentaba hacerse de los terrenos baldíos «La Candelaria»\index[lugares]{Candelaria, La!terrenos baldíos} y «San Marcos»,\index[lugares]{San Marcos!terrenos baldíos} ubicados en la misma municipalidad con una dimensión aproximada a las 7000 ha.\footnote{\textsc{agev, asgg, gyj}, Tierras, Atzalan, 1886, f. 34-36. Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, Informes de sus gobernadores, 1826-1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, t. \textsc{vi}, p.~3242.} El 18 de agosto de 1890, Ríos habría de comprar junto a Nicanor Carballo,\index[nombres]{Carballo, Nicanor} Evaristo\index[nombres]{Garcia, Evaristo@García, Evaristo} y José de Jesús García\index[nombres]{Garcia, Jose de Jesus@García, José de Jesús} parte~de los terrenos comunales indígenas de Atzalan.\index[lugares]{Atzalan!terrenos comunales}\footnote{\textsc{arppj}, 1891, Sec. 1"a, Inst. 101, fs. 139-140. Blázquez, 1986a, t. \textsc{viii}, p. 4283-4284. Blázquez, 1986a, t. \textsc{ix}, p.~4656.} Ese mismo año Carballo\index[nombres]{Carballo, Nicanor!munícipe} y Ríos,\index[nombres]{Rios, Benigno@Ríos, Benigno!munícipe} sacando ventaja de su posición política ---ambos eran munícipes de Atzalan---, habrían de comprar con base en la Ley del 4 de julio de 1889, las tierras comunales de Altotonga\index[lugares]{Altotonga!tierras comunales} por un valor de \$\,10100.\footnote{\textsc{arppj}, 1890 (Libro \textsc{i}), Sec. 1"a, Inst. 116, fs. 189-194. \textsc{agev, asgg, gyj}, Tierras, Altotonga, Magueyitos, 1895, c. 433, exp. 6, fs. s/f. Blázquez, 1986a, t. \textsc{viii}, pp. 4283-4284. Blázquez, 1986a, t. \textsc{ix}, p. 4656.}
+En efecto, mientras los demás hacendados y comerciantes del cantón ensanchaban sus propiedades con base en las leyes de Desamortización de Bienes Eclesiásticos, de Privatización de Tierras Comunales y Terrenos Baldíos, los Villegas las adquirían a través de la compra, pero sobre todo ganándolas en pleitos hipotecarios a sus deudores. Efectivamente, la hacienda de Santa Cruz,\index[lugares]{Santa Cruz!hacienda} propiedad de Manuela Gómez,\index[nombres]{Gomez, Manuela@Gómez, Manuela} había agregado a las 900 ha ya existentes, una extensión de 1200 ha mediante la compra al gobierno federal de los terrenos comunales indígenas de Atzalan.\index[lugares]{Atzalan!terrenos comunales}\footnote{\textsc{agev, acam}, Tierras, Jalacingo, Santa Anita, Dotación, c. 135, exp. 243, 1922, fs. 1-2. Estos terrenos fueron comprados por Benigno Ríos\index[nombres]{Rios, Benigno@Ríos, Benigno} el 2 de abril de 1891 y habían pertenecido a las antiguas cofradías de Ánimas, Nexquepala\index[lugares]{Nexquepala} y San Juan de la municipalidad de Atzalan.\index[lugares]{Atzalan!cofradías} Al respecto véase \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Tatzayanala, Dotación, c. 183, exp. 441, 1922, fs. s/f. \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Dotación, c. 8, exp. 7, 1937, fs. 53-58. Los predios despojados a la comunidad indígena de Atzalan\index[lugares]{Atzalan!terrenos comunales} (Huapala,\index[lugares]{Huapala!predio} Xocoyolapa\index[lugares]{Xocoyolapa!predio} y Tecuanteco,\index[lugares]{Tecuanteco!predio} alias «La Florida»)\index[lugares]{Florida, La|see{Tecuanteco}} habrían de ser restituidos por el gobierno de Veracruz\index[lugares]{Veracruz!gobierno} el 3 de marzo de 1915. De las 1200 ha, sólo lograron recuperar una superficie de 910 hectáreas. En este sentido véase \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Dotación, c. 8, exp. 7, 1937, fs. 48-52. \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Dotación, c. 8, exp. 7, 1921, fs. 42-47. \textsc{agev}, \textsc{acam}, Tierras, Atzalan, Atzalan, Restitución, c. 7, exp. 7, 1936, fs.~s/f.} Hacia 1886 su esposo, Benigno Ríos,\index[nombres]{Rios, Benigno@Ríos, Benigno} intentaba hacerse de los terrenos baldíos «La Candelaria»\index[lugares]{Candelaria, La!terrenos baldíos} y «San Marcos»,\index[lugares]{San Marcos!terrenos baldíos} ubicados en la misma municipalidad con una dimensión aproximada a las 7000 ha.\footnote{\textsc{agev, asgg, gyj}, Tierras, Atzalan, 1886, f. 34-36. Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, Informes de sus gobernadores, 1826-1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, t. \textsc{vi}, p.~3242.} El 18 de agosto de 1890, Ríos habría de comprar junto a Nicanor Carballo,\index[nombres]{Carballo, Nicanor} Evaristo\index[nombres]{Garcia, Evaristo@García, Evaristo} y José de Jesús García\index[nombres]{Garcia, Jose de Jesus@García, José de Jesús} parte~de los terrenos comunales indígenas de Atzalan.\index[lugares]{Atzalan!terrenos comunales}\footnote{\textsc{arppj}, 1891, Sec. 1"a, Inst. 101, fs. 139-140. Blázquez, 1986a, t. \textsc{viii}, p. 4283-4284. Blázquez, 1986a, t. \textsc{ix}, p.~4656.} Ese mismo año Carballo\index[nombres]{Carballo, Nicanor!munícipe} y Ríos,\index[nombres]{Rios, Benigno@Ríos, Benigno!munícipe} sacando ventaja de su posición política ---ambos eran munícipes de Atzalan---, habrían de comprar con base en la Ley del 4 de julio de 1889, las tierras comunales de Altotonga\index[lugares]{Altotonga!tierras comunales} por un valor de \$\,10100.\footnote{\textsc{arppj}, 1890 (Libro \textsc{i}), Sec. 1"a, Inst. 116, fs. 189-194. \textsc{agev, asgg, gyj}, Tierras, Altotonga, Magueyitos, 1895, c. 433, exp. 6, fs. s/f. Blázquez, 1986a, t. \textsc{viii}, pp. 4283-4284. Blázquez, 1986a, t. \textsc{ix}, p. 4656.}
 
 Antonio Sayago,\index[nombres]{Sayago, Antonio} un próspero comerciante xalapeño, había comprado a la federación los terrenos de la antigua cofradía de la Purísima Concepción de Jalacingo\index[lugares]{Jalacingo!Purísima Concepción (cofradía)} ubicados en el llano de Perote\index[lugares]{Perote!valle} por un valor de \$\,8500.\footnote{\textsc{arppj}, 1892, Sec. 1"a, Inst. 226, fs. 263-269. Respecto a la familia Sayago,\index[nombres]{Sayago!familia} véase Carmen Blázquez Domínguez, «Comercio y política. Bernardo Sayago, 1830-1850» en Beatriz Rojas (Coord.), \emph{El poder y el dinero. Grupos y regiones mexicanos en el siglo \textsc{xix}.} Instituto Mora, México, 1999, pp. 190-217.} Manuel Zorrilla,\index[nombres]{Zorrilla, Manuel} otro boyante comerciante español radicado en Teziutlán\index[lugares]{Teziutlan@Teziutlán} a principios del siglo \textsc{xix}, había ensanchado su hacienda de Almanza\index[lugares]{Almanza!hacienda} enclavada en la municipalidad de Atzalan,\index[lugares]{Atzalan} a través del denuncio de terrenos baldíos.\footnote{\textsc{agev, asgg, gyj}, Tierras, Atzalan, Hacienda de Almanza, c. 439, exp. 33, 1903, fs. s/f. Carmen Blázquez Domínguez y Ricardo Corzo Ramírez (Coord.), \emph{Colección de Leyes y Decretos de Veracruz, 1824-1919.} Universidad Veracruzana, Xalapa, 1997, t. \textsc{viii}, p. \textcolor{blue}{¿?}.} Nicolás J. Banda,\index[nombres]{Banda, Nicolas J.@Banda, Nicolás J.} propietario de la hacienda de Santa Ana\index[lugares]{Santa Ana!hacienda} en el valle de Perote,\index[lugares]{Perote!valle} compró a principios de 1900 los terrenos comunales indígenas de Altotonga\index[lugares]{Altotonga!tierras comunales} con una extensión de 805 ha y con un valor de \$\,10864.\footnote{\textsc{agev, acam}, Tierras, Altotonga, Magueyitos, Restitución, c. 58, exp. 75, 1918, fs. 32-36.} Carlos Cruz Rugama,\index[nombres]{Cruz Rugama, Carlos} propietario de la hacienda de Tenextepec\index[lugares]{Tenextepec!hacienda} localizada en el valle de Perote, se había adueñado de las tierras comunales indígenas de Ayahualulco\index[lugares]{Ayahualulco!tierras comunales} e Ixhuacán\index[lugares]{Ixhuacan@Ixhuacán!tierras comunales} del cantón de Coatepec.\index[lugares]{Coatepec!cantón}\footnote{Abel Juárez Martínez, «Reacomodo de las fuerzas sociales en el Valle de Perote, 1910-1920» en \textit{Anuario.} Centro de Investigaciones Históricas de la Universidad Veracruzana, Xalapa, 1992, pp. 114-115.} Gustavo Scheibe\index[nombres]{Scheibe, Gustavo} (\emph{sic}), un rico inmigrante alemán, se había hecho nada menos que de la hacienda de San Bartolo Aguascalientes,\index[lugares]{San Bartolo Aguascalientes!hacienda} ubicada en la municipalidad de Atzalan,\index[lugares]{Atzalan} con una extensión superior a las 3000 ha, precisamente mediante el denuncio de baldíos.\footnote{\textsc{agev, acam}, Tierras, Atzalan, Atzalan, Dotación, c. 8, exp. 7, 1937, fs. 53-58. Scheibe\index[nombres]{Scheibe, Gustavo} había adquirido entre 1882 y 1886 una superficie de 27657 ha. \textsc{agev, asgg, gyj}, Tierras, Atzalan, 1886, fs. 34-36.} A estos propietarios habría que agregar las adjudicaciones que hizo el municipio de Atzalan\index[lugares]{Atzalan!municipio} entre 1882 y 1886 a una decena de personas mediante la Ley de Terrenos Baldíos.\footnote{Los nombres y la superficie adjudicada a estos personajes aparecen en el Cuadro  \ref{tab:venta-terrenos-baldios}, pág. \pageref{tab:venta-terrenos-baldios}.} Como se podrá observar, aquí el despojo a las comunidades indígenas de sus tierras fue total. Además, entre los principales beneficiarios figuraban no sólo políticos, pequeños comerciantes y hacendados del entorno regional, sino propietarios ajenos a la misma e incluso extranjeros, que vieron en todas las disposiciones agrarias antes y durante el Porfiriato, un medio para formar o acrecentar sus capitales.
 \begin{sidewaystable}
@@ -1494,7 +1498,7 @@ José Antonio Villegas Contreras & Josefa Salvar\index[nombres]{Salvar, Josefa} 
 José María Villegas del Campo & Benigno Ríos\index[nombres]{Rios, Benigno@Ríos, Benigno} & Santa Cruz\index[lugares]{Santa Cruz!hacienda} y anexos & Atzalan\index[lugares]{Atzalan} y Altotonga\index[lugares]{Altotonga} & \texttlf{40613} & \texttlf{1200} & {} \\
 \bottomrule
 \end{tabular}
-\caption[Haciendas de la familia Villegas]{Haciendas de la familia Villegas.\index[nombres]{Villegas!haciendas (\emph{cuadro})} \textsu{\em a} Papantla;\index[lugares]{Papantla} \textsu{\em b} Libres,\index[lugares]{Libres} Pue.; \textsc{Fuente:} \textsc{arppj}, 1874-1905. \textsc{agnep}, 1881. John~R.~Southworth, \emph{Directorio oficial de las minas y haciendas de México.} Casino español de México, México, s/f., pp. 242-251. Romana Falcón y Soledad García Morales, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México"/Gobierno del estado de Veracruz, México, 1986, pp. 36-37. \textsc{agev, acam}, Tierras, Jalacingo, Santa Anita, Dotación, c. 135, exp. 243, 1922, fs. 1-2.}
+\caption[Haciendas de la familia Villegas]{Haciendas de la familia Villegas.\index[nombres]{Villegas!haciendas (\emph{cuadro})} \textsu{\em a} Papantla;\index[lugares]{Papantla} \textsu{\em b} Libres,\index[lugares]{Libres} Pue.; \textsc{Fuente:} \textsc{arppj}, 1874-1905. \textsc{agnep}, 1881. John~R.~Southworth, \emph{Directorio oficial de las minas y haciendas de México.} Casino español de México, México, s/f., pp. 242-251. Romana Falcón y Soledad García Morales, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México/Gobierno del estado de Veracruz, México, 1986, pp. 36-37. \textsc{agev, acam}, Tierras, Jalacingo, Santa Anita, Dotación, c. 135, exp. 243, 1922, fs. 1-2.}
 \label{tab:haciendas-villegas}
 \end{sidewaystable}
 
@@ -1505,11 +1509,11 @@ La adquisición de todas estas propiedades se llevó a través de una agresiva p
 \begin{sidewaysfigure}
 \centering
 \includegraphics[height=13.1cm]{limon} % <--- limon by default
-\caption[Plano de la hacienda de San Antonio Limón]{\index[lugares]{San Antonio Limon@San Antonio Limón!Plano@\textit{Plano}}\textsc{Fuente:} Luc Cambrezy y Bernal Lascurain, \emph{De la hacienda al ejido. Crónicas de un territorio fraccionado (Centro de Veracruz).} \textsc{larousse"/orstom}"/Centro de Estudios Mexicanos y Centroamericanos, México, 1992, p. 48.}
+\caption[Plano de la hacienda de San Antonio Limón]{\index[lugares]{San Antonio Limon@San Antonio Limón!Plano@\textit{Plano}}\textsc{Fuente:} Luc Cambrezy y Bernal Lascurain, \emph{De la hacienda al ejido. Crónicas de un territorio fraccionado (Centro de Veracruz).} \textsc{larousse/orstom}/Centro de Estudios Mexicanos y Centroamericanos, México, 1992, p. 48.}
 \label{fig:hda-limon}
 \end{sidewaysfigure}
 
-La hacienda de Cuautotolapam\index[lugares]{Cuautotolapam!hacienda} fue adquirida en condiciones similares. En 1870 José Antonio prestó a Francisco Hernández,\index[nombres]{Hernandez, Francisco@Hernández, Francisco} vecino de San Andrés Chalchicomula\index[lugares]{Chalchicomula} ---hoy Ciudad Serdán,\index[lugares]{Ciudad Serdán|seealso{Chalchicomula}} Puebla---\index[lugares]{Puebla} una cantidad de \$\,30000 con una tasa de intereses del 6 \% pagaderos a tres años, para comprar la hacienda.\footnote{\textsc{arppj}, 1873, Sec. 1"a, Inst. 4, fs. 4-6.} Imposibilitado para liquidar sus adeudos, Villegas concedió a Hernández un año de prórroga. Pero éste no pudo pagar y el 27 de enero de 1874 ambos decidieron dar por terminado el contrato.\footnote{\textsc{arppj}, 1873, Sec. 1"a, Inst. 74, fs. 91-93.} Agobiado por la deuda, Hernández se vio obligado a vender al año siguiente la propiedad en \$\,40000.\footnote{\textsc{arppj}, 1875, Sec. 1"a, Inst. 82, fs. 61-62.}
+La hacienda de Cuautotolapam\index[lugares]{Cuautotolapam!hacienda} fue adquirida en condiciones similares. En 1870 José Antonio prestó a Francisco Hernández,\index[nombres]{Hernandez, Francisco@Hernández, Francisco} vecino de San Andrés Chalchicomula\index[lugares]{Chalchicomula} ---hoy Ciudad Serdán,\index[lugares]{Ciudad Serdán|see{Chalchicomula}} Puebla---\index[lugares]{Puebla} una cantidad de \$\,30000 con una tasa de intereses del 6 \% pagaderos a tres años, para comprar la hacienda.\footnote{\textsc{arppj}, 1873, Sec. 1"a, Inst. 4, fs. 4-6.} Imposibilitado para liquidar sus adeudos, Villegas concedió a Hernández un año de prórroga. Pero éste no pudo pagar y el 27 de enero de 1874 ambos decidieron dar por terminado el contrato.\footnote{\textsc{arppj}, 1873, Sec. 1"a, Inst. 74, fs. 91-93.} Agobiado por la deuda, Hernández se vio obligado a vender al año siguiente la propiedad en \$\,40000.\footnote{\textsc{arppj}, 1875, Sec. 1"a, Inst. 82, fs. 61-62.}
 \begin{sidewaysfigure}
 \centering
 \includegraphics[height=13.8cm]{cuautotolapam}
@@ -1546,7 +1550,7 @@ J. A. Villegas Contreras & Enrique Marín\index[nombres]{Marin, Enrique@Marín, 
 Quirino Villegas\index[nombres]{Villegas, Quirino} & R. Agüeros\index[nombres]{Agueros, Ruperto@Agüeros, Ruperto} y V. Calderón\index[nombres]{Calderon, Virginia@Calderón, Virginia} & Paxta\index[lugares]{Paxta} & Hueytamalco\index[lugares]{Hueytamalco} (Pue.)\index[lugares]{Puebla} & \texttlf{10000} & {} \\
 Quirino Villegas & Marcelino Pumarino\index[nombres]{Pumarino, Marcelino} & La Peña\index[lugares]{Pena, La@Peña, La!rancho} & Nautla\index[lugares]{Nautla} (Misantla)\index[lugares]{Misantla} & \texttlf{16000} & \texttlf{334} \\
 María Antonio Moya\index[nombres]{Antonio Moya, Maria@Antonio Moya, María} & J. M. Villegas Contreras & Tenextezala\index[lugares]{Tenextezala} & El Arco\index[lugares]{Arco, El} (Jalacingo)\index[lugares]{Jalacingo} & \texttlf{2920} & {} \\
-Quirino Villegas & Fam. Santiesteban\index[nombres]{Santiesteban!familia} & Tlacuilolopan\index[lugares]{Tlacuilolopan|seealso{Atetehuetzin}} o Atetehuetzin\index[lugares]{Atetehuetzin} & Hueytamalco (Pue.) & \texttlf{5500} & \texttlf{615} \\
+Quirino Villegas & Fam. Santiesteban\index[nombres]{Santiesteban!familia} & Tlacuilolopan\index[lugares]{Tlacuilolopan|see{Atetehuetzin}} o Atetehuetzin\index[lugares]{Atetehuetzin} & Hueytamalco (Pue.) & \texttlf{5500} & \texttlf{615} \\
 J. M. Villegas Campo & Roberto Burkle\index[nombres]{Burkle, Roberto} & Estugarda\index[lugares]{Estugarda} y Ojo de Agua\index[lugares]{Ojo de Agua} & Atzalan\index[lugares]{Atzalan} & \texttlf{2287} & \texttlf{275} \\
 \bottomrule
 \end{tabular}
@@ -1554,7 +1558,7 @@ J. M. Villegas Campo & Roberto Burkle\index[nombres]{Burkle, Roberto} & Estugard
 \label{tab:ranchos-villegas}
 \end{sidewaystable}
 
-Las relaciones clientelares de la familia\index[nombres]{Villegas!familia} no sólo estaban circunscritas al valle de Perote\index[lugares]{Perote!valle} y los municipios que integraban el cantón de Jalacingo.\index[lugares]{Jalacingo!cantón} El prestigio de la familia, fincado en su enorme poder económico, era conocido más allá de las fronteras del entorno regional. En 1903, Quirino Villegas Contreras\index[nombres]{Villegas Contreras, Quirino} habría de apropiarse del rancho «La Peña»,\index[lugares]{Pena, La@Peña, La!rancho} propiedad de Marcelino Pumarino\index[nombres]{Pumarino, Marcelino} ubicado en Nautla,\index[lugares]{Nautla} cantón de Misantla,\index[lugares]{Misantla!cantón} por una cantidad de \$\,16000.\footnote{\textsc{arppj}, 1903, Sec. 4"a, fs. 10-14.} La adjudicación había acabado en muy malas relaciones entre ambos, pues Pumarino «ha destruido los techos de las casas de dicha finca para aprovecharse con perjuicio del acreedor, del producto de la venta de la lámina de Zinc que formaban dichos techos, [ésta] ha sufrido considerable demérito y consiguientemente una notable disminución en el precio de su valor>>.\footnote{\em Ídem.} La escritura revelaría con sorna que «El sr. Pumarino dijo: que no está conforme con el embargo practicado [y además] tiene otros acreedores a quien juzga de mejor derecho
+Las relaciones clientelares de la familia\index[nombres]{Villegas!familia} no sólo estaban circunscritas al valle de Perote\index[lugares]{Perote!valle} y los municipios que integraban el cantón de Jalacingo.\index[lugares]{Jalacingo!cantón} El prestigio de la familia, fincado en su enorme poder económico, era conocido más allá de las fronteras del entorno regional. En 1903, Quirino Villegas Contreras\index[nombres]{Villegas Contreras, Quirino} habría de apropiarse del rancho «La Peña»,\index[lugares]{Pena, La@Peña, La!rancho} propiedad de Marcelino Pumarino\index[nombres]{Pumarino, Marcelino} ubicado en Nautla,\index[lugares]{Nautla} cantón de Misantla,\index[lugares]{Misantla!cantón} por una cantidad de \$\,16000.\footnote{\textsc{arppj}, 1903, Sec. 4"a, fs. 10-14.} La adjudicación había acabado en muy malas relaciones entre ambos, pues Pumarino «ha destruido los techos de las casas de dicha finca para aprovecharse con perjuicio del acreedor, del producto de la venta de la lámina de Zinc que formaban dichos techos, [ésta] ha sufrido considerable demérito y consiguientemente una notable disminución en el precio de su valor».\footnote{\em Ídem.} La escritura revelaría con sorna que «El sr. Pumarino dijo: que no está conforme con el embargo practicado [y además] tiene otros acreedores a quien juzga de mejor derecho
 para aprovecharse del producto de la venta de las mercancías».\footnote{\em Ídem.} Como los \$\,16000 eran insuficientes para cubrir el pago del capital e intereses, Pumarino tuvo que otorgar a Villegas algunos~pagos extras, así como otros bienes raíces.
 
 Meses antes de que iniciara la Revolución, José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} se apropió de los predios rústicos «Estugarda\index[lugares]{Estugarda} y Ojo de Agua»,\index[lugares]{Ojo de Agua} propiedades de Roberto Burkle\index[nombres]{Burkle, Roberto} por un valor de \$\,2287 y con una extensión superficial de 245 ha en conjunto. Hipotecados desde 1897, su propietario no puso objeción alguna en la adjudicación.\footnote{\textsc{arppj}, 1909, Sec. 1"a, Inst. 41, fs. 90-94.}
@@ -1565,20 +1569,20 @@ Es importante mencionar la dificultad que tenían rancheros y hacendados para cu
 
 Poseer demasiada tierra no implicaba necesariamente que ésta fuera totalmente productiva; es decir, se podía tener un millón de hectáreas y sólo destinar para su cultivo 50 ha o 100 ha de las mismas. Aunque el resto permanecía sin producir ganancias, no dejaba de ser una propiedad que representaba un capital, aunque estuviera amortizado. Existía la posibilidad de arrendarla, subarrendarla; de establecer contratos con los `medieros' para maximizar las ganancias; de fraccionar y vender los predios menos productivos para recuperar parte del capital. El mapa elaborado por Luc Cambrezy\index[nombres]{Cambrezy, Luc} y Bernal Lascurain\index[nombres]{Lascurain, Bernal} sobre la hacienda de Cuautotolapam\index[lugares]{Cuautotolapam!hacienda} (\emph{v.} Imagen \ref{fig:hda-cuatotolapam}, pág. \pageref{fig:hda-cuatotolapam}) revela que ésta explotaba de facto 3874-48-01 ha de tierra de temporal, disponiendo potencialmente para su explotación cerca de 3535-56-92 ha de montes.\footnote{Cambrezy y Lascurain, \emph{op. cit.,} p. 50.} Es decir, que de las 10059 ha que poseía la hacienda, sólo el 73.66 \% eran susceptibles de cultivo. No obstante, este número de hectáreas se reduce ya que en las estadísticas de Southworth\index[nombres]{Southworth, John R.} y Falcón\index[nombres]{Falcon, Romana@Falcón, Romana} y García Morales,\index[nombres]{Garcia Morales, Soledad@García Morales, Soledad}\footnote{Southworth, \emph{op. cit.,} p. 244. Falcón y García, \emph{op. cit.,} pp. 36-37.} la Cuautotolapam manifestó tan sólo dedicarse al cultivo de cereales como el trigo, maíz, cebada y haba, así como a la extracción de raíz de zacatón y pulque; al no hablar de explotación maderera se deduce que las 3535 ha de montes no estaban siendo explotadas, o que esta información se omitió. Si nos dejamos guiar por las cifras, encontramos que sólo el 38.51 \% de las tierras de la hacienda eran productivas.
 
-Aunque no disponemos del número de hectáreas que las haciendas Ximonco,\index[lugares]{Ximonco!hacienda} Tenextepec,\index[lugares]{Tenextepec!hacienda} San Antonio\index[lugares]{San Antonio Limon@San Antonio Limón!hacienda} y Cerro de León\index[lugares]{Cerro de Leon@Cerro de León!hacienda} destinaban para el cultivo, hay evidencias de que sí eran lo suficientemente productivas. Como ha señalado Abel Juárez,\index[nombres]{Juarez Martinez, Abel@Juárez Martínez, Abel} hacia 1890 las haciendas, ranchos y congregaciones del valle cultivaban 30000 ha de temporal; 6000 ha de riego, 14000 ha con pastizales para ganado mayor y menor, y disponían de 20010 ha para la extracción de madera.\footnote{Abel Juárez Martínez, «El trabajo en la hacienda de San José de los Molinos, en Veracruz (\mbox{1890-1910})» en Mario Cerutti (Coord.), \emph{De los Borbones a la Revolución. Ocho estudios regionales.} \textsc{comecso"/gv} Editores"/Universidad Autónoma de Nuevo León, 1986, pp. 186-187.} Esto quiere decir que de las 69930 ha que poseían las haciendas, poco más del 100 \% eran explotadas. No es fortuito que para esas fechas Miguel S. Perdomo,\index[nombres]{Perdomo, Miguel S.!jefe político} jefe político de Jalacingo,\index[lugares]{Jalacingo!jefe político} sostuviera ante la legislatura\index[lugares]{Veracruz!Congreso} del estado que el cantón\index[lugares]{Jalacingo!cantón} experimentaba un crecimiento paulatino de las actividades agrícolas. Afirmó que en las tierras frías, pese a las funestas consecuencias que dejó el ciclón de 1888, los agricultores habían logrado producir cantidades considerables de cereales y leguminosas; en la zona templada, que comprendía las municipalidades de Altotonga,\index[lugares]{Altotonga!municipio} Jalacingo\index[lugares]{Jalacingo!municipio} y Atzalan,\index[lugares]{Atzalan!municipio} los campesinos habían incrementado su producción de maíz, frijol y cebada; y finalmente en la tierra caliente, que abarcaba porciones de Atzalan,\index[lugares]{Atzalan} Tlapacoyan\index[lugares]{Tlapacoyan} y Martínez de la Torre,\index[lugares]{Martinez de la Torre@Martínez de la Torre} productos para la exportación como el café y el tabaco, así como la cría y engorda de ganado mayor, habían experimentado un auge considerable.\footnote{Soledad García Morales, \emph{Jefes políticos y regiones veracruzanas, 1880-1900.} Universidad Nacional Autónoma de México, México, 2000, p. 161 [Tesis doctoral].}
+Aunque no disponemos del número de hectáreas que las haciendas Ximonco,\index[lugares]{Ximonco!hacienda} Tenextepec,\index[lugares]{Tenextepec!hacienda} San Antonio\index[lugares]{San Antonio Limon@San Antonio Limón!hacienda} y Cerro de León\index[lugares]{Cerro de Leon@Cerro de León!hacienda} destinaban para el cultivo, hay evidencias de que sí eran lo suficientemente productivas. Como ha señalado Abel Juárez,\index[nombres]{Juarez Martinez, Abel@Juárez Martínez, Abel} hacia 1890 las haciendas, ranchos y congregaciones del valle cultivaban 30000 ha de temporal; 6000 ha de riego, 14000 ha con pastizales para ganado mayor y menor, y disponían de 20010 ha para la extracción de madera.\footnote{Abel Juárez Martínez, «El trabajo en la hacienda de San José de los Molinos, en Veracruz (\mbox{1890-1910})» en Mario Cerutti (Coord.), \emph{De los Borbones a la Revolución. Ocho estudios regionales.} \textsc{comecso/gv} Editores/Universidad Autónoma de Nuevo León, 1986, pp. 186-187.} Esto quiere decir que de las 69930 ha que poseían las haciendas, poco más del 100 \% eran explotadas. No es fortuito que para esas fechas Miguel S. Perdomo,\index[nombres]{Perdomo, Miguel S.!jefe político} jefe político de Jalacingo,\index[lugares]{Jalacingo!jefe político} sostuviera ante la legislatura\index[lugares]{Veracruz!Congreso} del estado que el cantón\index[lugares]{Jalacingo!cantón} experimentaba un crecimiento paulatino de las actividades agrícolas. Afirmó que en las tierras frías, pese a las funestas consecuencias que dejó el ciclón de 1888, los agricultores habían logrado producir cantidades considerables de cereales y leguminosas; en la zona templada, que comprendía las municipalidades de Altotonga,\index[lugares]{Altotonga!municipio} Jalacingo\index[lugares]{Jalacingo!municipio} y Atzalan,\index[lugares]{Atzalan!municipio} los campesinos habían incrementado su producción de maíz, frijol y cebada; y finalmente en la tierra caliente, que abarcaba porciones de Atzalan,\index[lugares]{Atzalan} Tlapacoyan\index[lugares]{Tlapacoyan} y Martínez de la Torre,\index[lugares]{Martinez de la Torre@Martínez de la Torre} productos para la exportación como el café y el tabaco, así como la cría y engorda de ganado mayor, habían experimentado un auge considerable.\footnote{Soledad García Morales, \emph{Jefes políticos y regiones veracruzanas, 1880-1900.} Universidad Nacional Autónoma de México, México, 2000, p. 161 [Tesis doctoral].}
 
 Las actividades agrícolas del valle\index[lugares]{Perote!valle} estaban mucho más diversificadas e iban más allá de la simple producción de cereales. La hacienda de San José de los Molinos,\index[lugares]{San Jose de los Molinos@San José de los Molinos!hacienda} además de dedicarse a las actividades agropecuarias, era la única propiedad que poseía una fábrica de hilados y tejidos: \emph{La Claudina.} Movilizada por fuerza hidráulica, la factoría pertenecía a un conjunto más amplio de establecimientos textiles e intereses en poder de unos hermanos españoles de apellidos Mier y Rubín,\index[nombres]{Mier y Rubin@Mier y Rubín!hermanos} que se extendían hasta la ciudad de Puebla.\index[lugares]{Puebla!ciudad}
 
 La hacienda de Tenextepec\index[lugares]{Tenextepec!hacienda} y sus propietarios los Rugama,\index[nombres]{Rugama!familia} habían volcado sus capitales e intereses en la explotación de los ricos bosques del cofre de Perote.\index[lugares]{Perote!cofre de} Tan fuertes eran, que la familia hizo construir de manera particular una línea férrea entre la hacienda y el bosque que entroncaba con el Ferrocarril Interoceánico para su extracción. En efecto, la riqueza maderera del cofre venía siendo explotada indiscriminadamente por toda una caterva de hacendados y rancheros, que venían colocando el producto en sitios como Xalapa,\index[lugares]{Xalapa} Veracruz (Puerto),\index[lugares]{Veracruz!puerto} Alvarado\index[lugares]{Alvarado} y Tlacotalpan\index[lugares]{Tlacotalpan} en el estado de Veracruz,\index[lugares]{Veracruz!estado} y Atlixco,\index[lugares]{Atlixco} Puebla\index[lugares]{Puebla} y la ciudad de México\index[lugares]{Mexico@México!ciudad} en el Altiplano Central.\footnote{Abel Juárez Martínez, «Crónica de un ecocidio: el llano de Perote» en \textit{Anuario \textsc{vii}.} Centro de Investigaciones Históricas de la Universidad Veracruzana, Xalapa, 1990, pp. 71-72. Roberto Vélez Pliego,\index[nombres]{Velez Pliego, Roberto@Vélez Pliego, Roberto} exdirector del Instituto de Ciencias Sociales y Humanidades (\textsc{buap}) me dijo que, cuando se inició la remodelación del Hotel Arronte\index[nombres]{Arronte!Hotel@\textit{Hotel}} (av. Juan de Palafox y Mendoza,\index[nombres]{Palafox y Mendoza, Juan de} núm. 219, Puebla, Pue.)\index[lugares]{Puebla!ciudad} en la década de los noventa (s. \textsc{xx}), los trabajadores retiraron una gran cantidad de vigas y polines \emph{apolillados}, procedentes de la hacienda de Tenextepec. «Muchas [vigas y polines] venían grabadas con la marca de fuego: Cruz Rugama y C\textsu{ia},\index[nombres]{Cruz Rugama!compañía} Hda. de Tenextepec, Perote, Ver».\index[lugares]{Perote} Roberto Vélez Pliego, comunicación personal, julio del 2007.} Esta asesina e inconsciente tala inmoderada trajo severas consecuencias para el valle.
 \begin{quoting}
 al empezar los desmontes, recuerda un informante, se sucedió la escasez de lluvias y los maizales murieron, los campos no se volvieron a poblar de plantas altas y de tronco macizo con mazorcas frondosas: en su lugar aparecieron milpillas raquíticas amarillentas que poseían en su seno un
-`molcate' en lugar de mazorca; del trigo ya ni hablar, desde entonces desapareció el valle.\footnote{Abel Juárez Martínez, «Los rancheros. Un nuevo grupo en el poder (1910-1920)» en Mirna Benítez; Carmen Blázquez Domínguez \emph{et al., Veracruz, un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana"/Instituto Nacional de Antropología e Historia, México, 1989, pp. 184-185 [Regiones de México].}
+`molcate' en lugar de mazorca; del trigo ya ni hablar, desde entonces desapareció el valle.\footnote{Abel Juárez Martínez, «Los rancheros. Un nuevo grupo en el poder (1910-1920)» en Mirna Benítez; Carmen Blázquez Domínguez \emph{et al., Veracruz, un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana/Instituto Nacional de Antropología e Historia, México, 1989, pp. 184-185 [Regiones de México].}
 \end{quoting}
 De este modo, los latifundistas del valle\index[lugares]{Perote!valle} sacaron el máximo usufructo de sus propiedades sin importarles los riesgos. Además del lucrativo negocio de la madera, las haciendas habían destinado parte de sus tierras para la cría y engorda de ganado mayor y menor. Las dimensiones de los corrales de las haciendas, que en ocasiones abarcaban varias hectáreas, revelan la importancia que ésta desempeñaba dentro de las actividades económicas del valle.\footnote{Cambrezy y Lascurain, \emph{op. cit.,} pp. 22-24.} De este modo lograron producir carne, cueros, leche y todos sus derivados; además de dedicarse a la porcicultura y la ganadería de pastoreo.\footnote{\emph{Ibid.,} p. 83.} La comercialización de todos estos productos se reducía a satisfacer las necesidades de un mercado local y regional.
 
 En el caso de los ranchos es más difícil poder determinar el número de hectáreas que éstos destinaban para su producción, ya que las fuentes consultadas son bastante estériles en este aspecto. Sin embargo, podemos inferir por su ubicación geográfica y los escasos datos encontrados en el~\textsc{arppj}, que se trataba de propiedades aptas para la ganadería mayor y el cultivo de productos tropicales como el café, el tabaco, la caña de azúcar y los cítricos, con una amplia demanda en los mercados local, regional e internacional. Al comprar el rancho «La Peña»\index[lugares]{Pena, La@Peña, La!rancho} en 1891, José María Villegas Contreras\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María} también había adquirido «70 cabezas de ganado vacuno de un año arriba del criadero que en dicho rancho tiene, las cuales están marcadas con el fierro del vendedor, cuyo fierro tiene cedido al comprador para que continúe usándolo como suyo».\footnote{\textsc{arppj}, 1891, Sec. 1"a, Inst. 93, fs. 129-130.}
 
-Las potencialidades agrícolas del rancho «San Pedro Buenavista»\index[lugares]{San Pedro Buenavista!rancho} se hicieron notables en 1891. En la escritura de adjudicación se mencionó que «el referido rancho está dividido en potreros con pasto natural y una extensión de 60 estajos [42.12 ha] de zacate del Pará\index[lugares]{Africa@África!Pará} [\emph{Brachiaria mutica}] en mal estado y lo demás en Monte Alto».\footnote{\textsc{arppj}, 1891, Sec. 1"a (Libro 2), Inst. 214, fs. 41-44.} En el litigio de 1903 entre Quirino Villegas Contreras\index[nombres]{Villegas Contreras, Quirino} y Marcelino Pumarino\index[nombres]{Pumarino, Marcelino} sobre el rancho «La Peña»,\index[lugares]{Pena, La@Peña, La!rancho} se mencionó que dicha propiedad poseía «arrendamiento de pastos que el sr. Pedro Naude\index[nombres]{Naude, Pedro} debe pagar al sr. Pumarino, por razón de los ganados [...] y se encuentran pastando en la mencionada finca [...]. Las mercancías, aparadores, caja de fierro, mesas de juego, prensa de copiar y escritorio existentes en la tienda».\footnote{\textsc{arppj}, 1903, Sec. 4"a, fs. 10-14.} Es importante mencionar que de los once ranchos que la familia\index[nombres]{Villegas!familia} llego a poseer, ocho de ellos se ubicaban en la tierra caliente.
+Las potencialidades agrícolas del rancho «San Pedro Buenavista»\index[lugares]{San Pedro Buenavista!rancho} se hicieron notables en 1891. En la escritura de adjudicación se mencionó que «el referido rancho está dividido en potreros con pasto natural y una extensión de 60 estajos [42.12 ha] de zacate del Pará\index[lugares]{Africa@África!Pará} [\emph{Brachiaria mutica}] en mal estado y lo demás en Monte Alto».\footnote{\textsc{arppj}, 1891, Sec. 1"a (Libro 2), Inst. 214, fs. 41-44. Corchetes míos.} En el litigio de 1903 entre Quirino Villegas Contreras\index[nombres]{Villegas Contreras, Quirino} y Marcelino Pumarino\index[nombres]{Pumarino, Marcelino} sobre el rancho «La Peña»,\index[lugares]{Pena, La@Peña, La!rancho} se mencionó que dicha propiedad poseía «arrendamiento de pastos que el sr. Pedro Naude\index[nombres]{Naude, Pedro} debe pagar al sr. Pumarino, por razón de los ganados [...] y se encuentran pastando en la mencionada finca [...]. Las mercancías, aparadores, caja de fierro, mesas de juego, prensa de copiar y escritorio existentes en la tienda».\footnote{\textsc{arppj}, 1903, Sec. 4"a, fs. 10-14.} Es importante mencionar que de los once ranchos que la familia\index[nombres]{Villegas!familia} llego a poseer, ocho de ellos se ubicaban en la tierra caliente.
 
 Ahora bien, revelar los efectos económicos y sociales que las sequías de 1875, 1884, 1886 y 1894 tuvieron sobre el valle de Perote\index[lugares]{Perote!valle} y otras partes del cantón, aún está por determinarse. Sin embargo, es interesante hacer notar que este periodo de sequías coincide con las adjudicaciones que hizo la familia Villegas de sus haciendas y ranchos. En efecto, en 1875 la familia obtuvo las haciendas de San Antonio\index[lugares]{San Antonio Limon@San Antonio Limón!hacienda} y Cuautotolapam;\index[lugares]{Cuautotolapam!hacienda} y en 1885, la de Cerro de León;\index[lugares]{Cerro de Leon@Cerro de León!hacienda} sólo el rancho «Arroyo Zarco»\index[lugares]{Arroyo Zarco!rancho} fue adquirido en 1896. Es decir, que de las cuatro haciendas que poseía la familia en esta área, la adquisición~de tres coincide con las sequías y los procesos de adjudicación. El valle de Perote, a pesar de ubicarse geopolíticamente en el estado de Veracruz,\index[lugares]{Veracruz!estado} histórica y geográficamente siempre se ha vinculado al Altiplano Central. El hecho de que las haciendas de esta área hayan practicado una agricultura fincada en el cultivo de cereales durante la centuria decimonona ---similar a las del valle Puebla-Tlaxcala---,\index[lugares]{Puebla-Tlaxcala!valle} confirma las similitudes que tenían con aquéllas. \protect\enlargethispage*{\baselineskip}
 
@@ -1640,7 +1644,7 @@ De todos los miembros de la familia sólo hallamos a Joaquín Villegas del Campo
 
 Finalmente, en 1880, Manuel Bello\index[nombres]{Bello, Manuel} hipotecó por segunda ocasión a Joaquín Villegas un rancho por la suma de \$\,789, especificándose que «Villegas tiene derecho de levantar las dos cosechas de café que produzca la finca hipotecada en los años de 1880-1881, quedando en la obligación de abonar a Bello el quintal de café a 20 reales menos del precio que valga en la plaza de Altotonga\index[lugares]{Altotonga} el día de su entrega, cuyo fruto recibirá Villegas en su finca de Temimilco».\footnote{\textsc{arppj}, 1880, Sec. 1"a, Inst. 22, fs. 13-14.} Además, se acordó que los gastos por cosecha y transporte correrían a cargo de Villegas, y en el caso de que la producción se perdiera, éste no entregaría al deudor la finca hasta que le fuera reintegrado el capital.
 
-Hubo otros productos objetos de comercio pero jamás lograron competir con el ganado y el café. En 1883, José Hernández Mondragón\index[nombres]{Hernandez Mondragon, Jose@Hernández Mondragón, José} liquidó el adeudo que había contraído con Miguel Villegas del Campo\index[nombres]{Villegas del Campo, Miguel} «con @'s de panela, situadas en el rancho de Napoala\index[lugares]{Napoala!rancho} [...], 984 [@'s] que cubrirá en su totalidad dentro del término de 6 meses entregando por lo menos 50 @'s semanarias a cuentas desde el día 13 de junio».\footnote{\textsc{arppj}, 1883, Sec. 1"a, Inst. 58, f. 49.} Seis años más tarde, Pascual Mendoza\index[nombres]{Mendoza, Pascual} se obligaría a liquidar igualmente sus adeudos a Villegas del Campo con «503\textfrac{1}{2} @ de panela, limpia, buena clase, a razón de \$\,1 la @>>.\footnote{\textsc{arppj}, 1889, Sec. 1"a, Inst. 91, fs. 89-90.} Son, pues, tan sólo algunos testimonios sobre las actividades comerciales de la familia. Sobre el maíz, el pulque y otros productos nada sabemos.
+Hubo otros productos objetos de comercio pero jamás lograron competir con el ganado y el café. En 1883, José Hernández Mondragón\index[nombres]{Hernandez Mondragon, Jose@Hernández Mondragón, José} liquidó el adeudo que había contraído con Miguel Villegas del Campo\index[nombres]{Villegas del Campo, Miguel} «con @'s de panela, situadas en el rancho de Napoala\index[lugares]{Napoala!rancho} [...], 984 [@'s] que cubrirá en su totalidad dentro del término de 6 meses entregando por lo menos 50 @'s semanarias a cuentas desde el día 13 de junio».\footnote{\textsc{arppj}, 1883, Sec. 1"a, Inst. 58, f. 49.} Seis años más tarde, Pascual Mendoza\index[nombres]{Mendoza, Pascual} se obligaría a liquidar igualmente sus adeudos a Villegas del Campo con «503\textfrac{1}{2} @ de panela, limpia, buena clase, a razón de \$\,1 la @».\footnote{\textsc{arppj}, 1889, Sec. 1"a, Inst. 91, fs. 89-90.} Son, pues, tan sólo algunos testimonios sobre las actividades comerciales de la familia. Sobre el maíz, el pulque y otros productos nada sabemos.
 \chapter*{Conclusiones}
 \label{ch:conclusiones}
 \thispagestyle{empty}
@@ -1680,7 +1684,7 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \end{minipage}
 \end{flushright}
 \begin{flushright}
-\textsc{Jorge Luis Borges}
+\textsc{Jorge Luis Borges}\index[nombres]{Borges, Jorge Luis}
 \end{flushright}
 % BIBLIOGRAFÍA
 \chapter*{Fuentes consultadas}
@@ -1761,7 +1765,7 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 
 \hangpara{1cm}{1}\textsc{Ariès}, Philippe, \emph{El hombre ante la muerte.} Taurus, Madrid, 1999, 522 pp.
 
-\hangpara{1cm}{1}\textsc{Baltazar Vázquez}, Miguel, \emph{Altotonga: Un pueblo con historia.} Talleres <<Impresiones 2000>>, Altotonga, 2002, 345 pp.
+\hangpara{1cm}{1}\textsc{Baltazar Vázquez}, Miguel, \emph{Altotonga: Un pueblo con historia.} Talleres «Impresiones 2000», Altotonga, 2002, 345 pp.
 
 \hangpara{1cm}{1}\textsc{Bazant}, Jan, \emph{Los bienes de la Iglesia en México (1856-1875).} El Colegio de México, México, 1995, 364 pp.
 
@@ -1769,30 +1773,30 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 
 \hangpara{1cm}{1}\textsc{Blázquez Domínguez}, Carmen (Comp.), \emph{Estado de Veracruz, Informes de sus gobernadores, 1826-1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, tomos \textsc{ii-ix}.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Veracruz liberal, 1858-1860.} El Colegio de México"/Gobierno del estado de Veracruz, México, 1986b, 269 pp.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Veracruz liberal, 1858-1860.} El Colegio de México/Gobierno del estado de Veracruz, México, 1986b, 269 pp.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Veracruz. Una historia compartida.} Gobierno del estado de Veracruz"/Ins"-tituto Veracruzano de Cultura"/Instituto Mora, México, 1988a, t. \textsc{i}, 369~pp.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Veracruz. Una historia compartida.} Gobierno del estado de Veracruz/Ins"-tituto Veracruzano de Cultura/Instituto Mora, México, 1988a, t. \textsc{i}, 369~pp.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz"/Instituto Veracruzano de Cultura"/Instituto Mora, México, 1988b, t. \textsc{ii}, 419 pp.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz/Instituto Veracruzano de Cultura/Instituto Mora, México, 1988b, t. \textsc{ii}, 419 pp.
 
 \hangpara{1cm}{1}\rule{1cm}{0.4pt} y \textsc{Corzo Ramírez}, Ricardo (Coord.), \emph{Colección de Leyes y Decretos de Veracruz, 1824-1919.} Universidad Veracruzana, Xalapa, 1997.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, <<Comercio y política: Bernardo Sayago, 1830-1850>> en \textsc{Rojas}, Beatriz (Coord.), \emph{El poder y el dinero. Grupos y regiones mexicanos en el siglo \textsc{xix}.} Instituto Mora, México, 1999, pp. 190-217.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, «Comercio y política: Bernardo Sayago, 1830-1850» en \textsc{Rojas}, Beatriz (Coord.), \emph{El poder y el dinero. Grupos y regiones mexicanos en el siglo \textsc{xix}.} Instituto Mora, México, 1999, pp. 190-217.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Breve historia de Veracruz.} Fondo de Cultura Económica"/El Colegio de México, México, 2000, 203 pp.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Breve historia de Veracruz.} Fondo de Cultura Económica/El Colegio de México, México, 2000, 203 pp.
 
 \hangpara{1cm}{1}\textsc{Bloch}, Marc, \emph{Introducción a la historia.} Fondo de Cultura Económica, México, 1987, 159 pp.
 
-\hangpara{1cm}{1}\textsc{Cambrezy}, Luc y \textsc{Lascurain}, Bernal, \emph{De la hacienda al ejido. Crónicas de un territorio fraccionado (Centro de Veracruz).} \textsc{larousse"/orstom}"/Centro de Estudios Mexicanos y Centroamericanos, México, 1992, 168 pp.
+\hangpara{1cm}{1}\textsc{Cambrezy}, Luc y \textsc{Lascurain}, Bernal, \emph{De la hacienda al ejido. Crónicas de un territorio fraccionado (Centro de Veracruz).} \textsc{larousse/orstom}/Centro de Estudios Mexicanos y Centroamericanos, México, 1992, 168 pp.
 
 \hangpara{1cm}{1}\textsc{Cardozo}, Ciro (Coord.), \emph{México en el siglo \textsc{xix}, 1821-1910. Historia económica y de la estructura social.} Nueva Imagen, México, 1999, 525 pp.
 
 \hangpara{1cm}{1}\textsc{Certeau}, Michel de, \emph{La escritura de la historia.} Universidad Iberoamericana, México, 1999, 3"a ed., 334 pp.
 
-\hangpara{1cm}{1}\textsc{Chust}, Manuel, <<Legitimación, representación y soberanía: del doceañismo
-monárquico al republicanismo federal mexicano>> en \textsc{Connaugton}, Brian (Coord.), \emph{Poder y legitimidad en México en el siglo \textsc{xix}.} Universidad Autónoma Metropolitana"/Consejo Nacional de Ciencia y Tecnología"/Porrúa, 2003, pp. 209-247.
+\hangpara{1cm}{1}\textsc{Chust}, Manuel, «Legitimación, representación y soberanía: del doceañismo
+monárquico al republicanismo federal mexicano» en \textsc{Connaugton}, Brian (Coord.), \emph{Poder y legitimidad en México en el siglo \textsc{xix}.} Universidad Autónoma Metropolitana/Consejo Nacional de Ciencia y Tecnología/Porrúa, 2003, pp. 209-247.
 
-\hangpara{1cm}{1}\textsc{Falcón}, Romana y \textsc{García Morales}, Soledad, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México"/Gobierno del
+\hangpara{1cm}{1}\textsc{Falcón}, Romana y \textsc{García Morales}, Soledad, \emph{La semilla en el surco. Adalberto Tejeda y el radicalismo en Veracruz, 1883-1960.} El Colegio de México/Gobierno del
 estado de Veracruz, México, 1986, 411 pp.
 
 \hangpara{1cm}{1}\textsc{Florescano}, Enrique, \emph{Breve historia de la sequía en México.} Consejo Nacional para la Cultura y las Artes, México, 2000, 252 pp [Regiones].
@@ -1801,19 +1805,19 @@ estado de Veracruz, México, 1986, 411 pp.
 
 \hangpara{1cm}{1}\textsc{Fowler Salamini}, Heather, \emph{Movilización campesina en Veracruz (1920-1935).} Siglo \textsc{xxi}, México, 1979, 227 pp.
 
-\hangpara{1cm}{1}\textsc{Fuentes}, Carlos, \emph{La muerte de Artemio Cruz.} DeAgostini"/Consejo Nacional para la Cultura y las Artes, México, 2003, 311 pp [Grandes Novelas de la Historia Mexicana].
+\hangpara{1cm}{1}\textsc{Fuentes}, Carlos, \emph{La muerte de Artemio Cruz.} DeAgostini/Consejo Nacional para la Cultura y las Artes, México, 2003, 311 pp [Grandes Novelas de la Historia Mexicana].
 
 \hangpara{1cm}{1}\textsc{Galindo}, Sergio, \emph{Otilia Rauda.} Universidad Veracruzana, Xalapa, 2001, 321~pp [Ficción].
 
 \hangpara{1cm}{1}\textsc{García Cubas}, Antonio, \emph{Escritos Diversos. De 1870-1874.} Imprenta «Escalante», México, 1874, 422 pp. \pagebreak[4]
 
-\hangpara{1cm}{1}\textsc{García Díaz}, Bernardo, \emph{La terminal ferroviaria de Veracruz.} Secretaría de Comunicaciones y Transportes"/Ferrocarriles Nacionales de México, México, 1996, 95 pp.
+\hangpara{1cm}{1}\textsc{García Díaz}, Bernardo, \emph{La terminal ferroviaria de Veracruz.} Secretaría de Comunicaciones y Transportes/Ferrocarriles Nacionales de México, México, 1996, 95 pp.
 
-\hangpara{1cm}{1}\textsc{García Morales}, Soledad, <<Análisis de la Estadística de 1907. Haciendas y
-hacendados>> en \textsc{Benítez}, Mirna; \textsc{Blázquez Domínguez}, Carmen,
-\emph{et al.}, \emph{Veracruz, un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana"/Instituto Nacional de Antropología e Historia, México, 1989, 295 pp [Regiones de México].
+\hangpara{1cm}{1}\textsc{García Morales}, Soledad, «Análisis de la Estadística de 1907. Haciendas y
+hacendados» en \textsc{Benítez}, Mirna; \textsc{Blázquez Domínguez}, Carmen,
+\emph{et al., Veracruz, un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana/Instituto Nacional de Antropología e Historia, México, 1989, 295 pp [Regiones de México].
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, <<Sistema político y control de cantones en Veracruz, 1877-1911>> en \emph{La palabra y el hombre. Revista de la Universidad Veracruzana.} Universidad Veracruzana, Xalapa, 1990, julio-septiembre, núm. 75, pp. 55-67.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, «Sistema político y control de cantones en Veracruz, 1877-1911» en \emph{La palabra y el hombre. Revista de la Universidad Veracruzana.} Universidad Veracruzana, Xalapa, 1990, julio-septiembre, núm. 75, pp. 55-67.
 
 \hangpara{1cm}{1}\rule{1cm}{0.4pt} y \textsc{Velasco Toro}, José (Coord.), \emph{Memorias e informes de jefes políticos y autoridades del régimen porfirista, 1883-1911. Estado de Veracruz.} Universidad
 Veracruzana, Xalapa, 1997, t. \textsc{ii}, 260 pp.
@@ -1822,32 +1826,32 @@ Veracruzana, Xalapa, 1997, t. \textsc{ii}, 260 pp.
 
 \hangpara{1cm}{1}\textsc{Gonzalbo}, Pilar (Comp.), \emph{Historia de la familia.} Instituto Mora, México, 1993, 263 pp.
 
-\hangpara{1cm}{1}\textsc{González y González}, Luís, <<Terruño, microhistoria y ciencias sociales>> en \textsc{Pérez Herrero}, Pedro (Comp.), \emph{Región e Historia en México, \mbox{1700-1850}.} Instituto Mora"/Universidad Autónoma Metropolitana, México, 1991, pp. 23-36.
+\hangpara{1cm}{1}\textsc{González y González}, Luís, «Terruño, microhistoria y ciencias sociales» en \textsc{Pérez Herrero}, Pedro (Comp.), \emph{Región e Historia en México, \mbox{1700-1850}.} Instituto Mora/Universidad Autónoma Metropolitana, México, 1991, pp. 23-36.
 
-\hangpara{1cm}{1}\textsc{Grosso}, Juan Carlos, <<El tráfico comercial Puebla y Veracruz>> en \textsc{Ludlow}, Leonor y \textsc{Silva Riquer}, Jorge (Comp.), \emph{Los negocios y las ganancias de la Colonia al México Moderno.} Instituto Mora"/Universidad Nacional Autónoma de México, México, 1993, pp. 135-175.
+\hangpara{1cm}{1}\textsc{Grosso}, Juan Carlos, «El tráfico comercial Puebla y Veracruz» en \textsc{Ludlow}, Leonor y \textsc{Silva Riquer}, Jorge (Comp.), \emph{Los negocios y las ganancias de la Colonia al México Moderno.} Instituto Mora/Universidad Nacional Autónoma de México, México, 1993, pp. 135-175.
 
 \hangpara{1cm}{1}\textsc{Guerra}, Fran"cois-Xavier, \emph{México: Del Antiguo Régimen a la Revolución.} Fondo de Cultura Económica, México, 2000, 5"a ri., t. \textsc{i}, 453 pp.
 
-\hangpara{1cm}{1}\textsc{Hiernaux}, Daniel y \textsc{Lindon}, Alicia, <<El concepto de espacio y el análisis regional>> en \textsc{Secuencia}. Instituto Mora, México, 1993, núm. 25, enero-abril, pp. 89-110.
+\hangpara{1cm}{1}\textsc{Hiernaux}, Daniel y \textsc{Lindon}, Alicia, «El concepto de espacio y el análisis regional» en \textit{Secuencia.} Instituto Mora, México, 1993, núm. 25, enero-abril, pp. 89-110.
 
-\hangpara{1cm}{1}\textsc{Juárez Martínez}, Abel, <<El trabajo en la hacienda de San José de los Molinos, en Veracruz (1890-1910)>> en \textsc{Cerutti}, Mario (Coord.), \emph{De los Borbones a la
-Revolución. Ocho estudios regionales.} \textsc{comecso}"/Universidad Autónoma de Nuevo León"/GV Editores, México, 1986, pp. 181-211.
+\hangpara{1cm}{1}\textsc{Juárez Martínez}, Abel, «El trabajo en la hacienda de San José de los Molinos, en Veracruz (1890-1910)» en \textsc{Cerutti}, Mario (Coord.), \emph{De los Borbones a la
+Revolución. Ocho estudios regionales.} \textsc{comecso}/Universidad Autónoma de Nuevo León/GV Editores, México, 1986, pp. 181-211.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, <<Los rancheros. Un nuevo grupo en el poder (1910-1920)>> en \textsc{Benítez}, Mirna; \textsc{Blázquez Domínguez}, Carmen \emph{et al.}, \emph{Veracruz, un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana"/Instituto Nacional de Antropología e Historia, México, 1989, 295 pp [Regiones de México].
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, «Los rancheros. Un nuevo grupo en el poder (1910-1920)» en \textsc{Benítez}, Mirna; \textsc{Blázquez Domínguez}, Carmen \emph{et al., Veracruz, un tiempo para contar. Memoria del 1"er Seminario de Historia Regional.} Universidad Veracruzana/Instituto Nacional de Antropología e Historia, México, 1989, 295 pp [Regiones de México].
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, <<Crónica de un ecocidio: el llano de Perote>> en \textsc{Anuario vii}. Centro de Investigaciones Históricas de la Universidad Veracruzana, Xalapa, 1990, pp. 55-75.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, «Crónica de un ecocidio: el llano de Perote» en \textit{Anuario \textsc{vii}.} Centro de Investigaciones Históricas de la Universidad Veracruzana, Xalapa, 1990, pp. 55-75.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, <<Reacomodo de las fuerzas sociales en el Valle de Perote, 1910-1920>> en \textsc{Anuario viii}. Centro de Investigaciones Históricas de la Universidad Veracruzana, Xalapa, 1992, pp. 97-118.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, «Reacomodo de las fuerzas sociales en el Valle de Perote, 1910-1920» en \textit{Anuario \textsc{viii}.} Centro de Investigaciones Históricas de la Universidad Veracruzana, Xalapa, 1992, pp. 97-118.
 
 \hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{San José de los Molinos.} Secretaría de Educación y Cultura, Xalapa, 2005, 129 pp.
 
-\hangpara{1cm}{1}\textsc{Katz}, Friedrich, <<México: La Restauración de la República y el Porfiriato, 1867-1910>> en \textsc{Bethell}, Leslie (Ed.), \emph{Historia de América Latina.} Crítica, Barcelona, 2000, t. \textsc{ix}, pp. 14-78.
+\hangpara{1cm}{1}\textsc{Katz}, Friedrich, «México: La Restauración de la República y el Porfiriato, 1867-1910» en \textsc{Bethell}, Leslie (Ed.), \emph{Historia de América Latina.} Crítica, Barcelona, 2000, t. \textsc{ix}, pp. 14-78.
 
-\hangpara{1cm}{1}\textsc{Lameiras}, José, <<El ritmo de la historia y la región>> en \textsc{Secuencia}. Instituto Mora, México, 1993, núm. 25, enero-abril, pp. 111-122.
+\hangpara{1cm}{1}\textsc{Lameiras}, José, «El ritmo de la historia y la región» en \textit{Secuencia.} Instituto Mora, México, 1993, núm. 25, enero-abril, pp. 111-122.
 
-\hangpara{1cm}{1}\textsc{Landa}, Hilarión, \emph{Memorias jalacingueñas.} s"/e., Pánuco, 1940, 8 pp.
+\hangpara{1cm}{1}\textsc{Landa}, Hilarión, \emph{Memorias jalacingueñas.} s/e., Pánuco, 1940, 8 pp.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Memorias jalacingueñas.} Imprenta <<La Económica>>, Puebla, 1946, 2"a~ed., 72 pp.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, \emph{Memorias jalacingueñas.} Imprenta «La Económica», Puebla, 1946, 2"a~ed., 72 pp.
 
 \hangpara{1cm}{1}\textsc{Merino Hernández}, Noel, \emph{Las cofradías en Jalacingo, 1799-1873.} Universidad Veracruzana, Xalapa, 2003, 170 pp [Tesis de Licenciatura].
 
@@ -1855,18 +1859,18 @@ Revolución. Ocho estudios regionales.} \textsc{comecso}"/Universidad Autónoma 
 
 \hangpara{1cm}{1}\textsc{Morales}, Luz Marina (Coord.), \emph{Migrantes y comerciantes en la Nueva España. Origen y formación de las oligarquías mexicanas.} Benemérita Universidad Autónoma de Puebla, Puebla, 2002, 117 pp. \enlargethispage{\baselineskip}
 
-\hangpara{1cm}{1}\textsc{Rodríguez Quintana}, Clara Iris, <<El ataque rebelde a la hacienda de Cuautotolapan: Testimonios orales>> en \emph{Virajes. Revista de la Facultad de Historia de la Universidad Veracruzana.} Universidad Veracruzana, Xalapa, núm. 1, marzo-agosto, 1997, pp. 37-40.
+\hangpara{1cm}{1}\textsc{Rodríguez Quintana}, Clara Iris, «El ataque rebelde a la hacienda de Cuautotolapan: Testimonios orales» en \emph{Virajes. Revista de la Facultad de Historia de la Universidad Veracruzana.} Universidad Veracruzana, Xalapa, núm. 1, marzo-agosto, 1997, pp. 37-40.
 
-\hangpara{1cm}{1}\textsc{Ramírez Lavoignet}, David, \emph{Testimonios para una historia de Perote.} Editora del Gobierno del estado de Veracruz, México, s"/f, 155 pp.
+\hangpara{1cm}{1}\textsc{Ramírez Lavoignet}, David, \emph{Testimonios para una historia de Perote.} Editora del Gobierno del estado de Veracruz, México, s/f, 155 pp.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, <<Síntesis monográfica de Altotonga, Ver.>> en \emph{Cronos. Revista de difusión cultural.} Talleres Linotipográficos <<Impresora de Córdoba>>, Xalapa, 1986,
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, «Síntesis monográfica de Altotonga, Ver.» en \emph{Cronos. Revista de difusión cultural.} Talleres Linotipográficos «Impresora de Córdoba», Xalapa, 1986,
 año 7, núm. 39, pp. 18-28.
 
-\hangpara{1cm}{1}\rule{1cm}{0.4pt}, <<Síntesis monográfica de Altotonga, Ver.>> en \emph{Altotonga.} Gobierno del estado de Veracruz, Xalapa, 1987, 13 pp.
+\hangpara{1cm}{1}\rule{1cm}{0.4pt}, «Síntesis monográfica de Altotonga, Ver.» en \emph{Altotonga.} Gobierno del estado de Veracruz, Xalapa, 1987, 13 pp.
 
 \hangpara{1cm}{1}\textsc{Skerritt Gardner}, David, \emph{Colonos franceses y modernización en el Golfo de México.} Universidad Veracruzana, Xalapa, 1995, 229 pp [Historias Veracruzanas].
 
-\hangpara{1cm}{1}\textsc{Solís Vicarte}, Ruth (Comp.), \emph{Veracruz en el Diccionario Universal de Historia y de Geografía, 1853-1856.} Gobierno del estado de Veracruz"/Secreta\-ría de Educación y Cultura, Xalapa, 1998.
+\hangpara{1cm}{1}\textsc{Solís Vicarte}, Ruth (Comp.), \emph{Veracruz en el Diccionario Universal de Historia y de Geografía, 1853-1856.} Gobierno del estado de Veracruz/Secreta\-ría de Educación y Cultura, Xalapa, 1998.
 
 \hangpara{1cm}{1}\textsc{Southworth}, John R., \emph{Directorio oficial de las minas y haciendas de México.} Casino español de México, México, s/f, pp. 242-251.
 
@@ -1878,7 +1882,7 @@ año 7, núm. 39, pp. 18-28.
 \newpage
 \pagestyle{empty}
 \hspace*{0pt}
-\phantomsection
+\protect\phantomsection
 \vfill
 \begin{center}
 \addcontentsline{toc}{chapter}{Apéndices}
@@ -1887,6 +1891,71 @@ año 7, núm. 39, pp. 18-28.
 \vfill
 % APÉNDICES
 \appendix
+\chapter{El antiguo sistema de unidades españolas}
+\label{ap:antiguo-sistema-unidades-españolas}
+\thispagestyle{empty}
+\pagestyle{fancy}
+\fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
+\fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872-1910} % Centrados
+\fancyhead[CO]{\small\sc apéndice a: el antiguo sistema de unidades españolas} % Centrados
+\fancyhead[RO,LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\section{Contexto histórico}
+Entre los siglos \textsc{xvi} y \textsc{xix} existió en la monarquía hispánica y sus colonias americanas, un sistema de unidades que cayó en desuso con el advenimiento y adopción del sistema métrico decimal. Entre ellas figuraban, por citar algunas, la vara (longitud), el pie (superficie), el quintal (peso) y la fanega (volumen).\footnote{Aunque la mayor parte de los países no anglófonos adoptaron el \emph{Système International d'\/Unités} (\textsc{si} por sus siglas en francés), resulta curioso que este antiguo sistema se siga empleando en la vida cotidiana y coexista, a la par, con el del \textsc{si}. En México, por ejemplo, cuando uno asiste a una ferretería a comprar ---digamos--- clavos, el dependiente nos informa que tiene medidas disponibles en \textfrac{1}{4} de pulgada, \textfrac{1}{2} pulgada, \textfrac{3}{4} de pulgada, \textlf{1} pulgada, \textfrac[2]{1}{2} pulgadas, etcétera.} Este sistema de unidades heredado de los romanos y los árabes tuvo distintas equivalencias según las épocas y los territorios, creando «caos» y «desorden» en las operaciones comerciales.
+
+La vara, por ejemplo, tuvo múltiples equivalencias. La de Burgos medía ---según el moderno \emph{Système International d'\/Unités}--- 0.836 m; la de Alicante, 0.912 m; la de Baleares, 0.782 m; la de Castellón, 0.906 m; la de Huesca, 0.772~m, etcétera.\footnote{\url{https://es.wikipedia.org/wiki/Antiguas_medidas_espa\%C3\%B1olas}} Como puede advertirse, el «caos» metrológico en la monarquía hispánica era evidente. Lo mismo pasaba en sus posesiones americanas, pues como ha señalado Héctor Vera,\footnote{Héctor Vera. \emph{A peso el kilo. Historia del sistema métrico decimal en México.} Libros del escarabajo, México, 2007.} la vara usada en ciudades como Puebla y México podían ser distintas.
+
+¿A qué se debía que en un mismo territorio existiesen dos o más varas con diferentes equivalencias? Este «desorden» se debía ---señala Vera--- a muchos factores: incapacidad política de la monarquía por imponer y regular un \emph{único} sistema de unidades; derogación de algunas unidades y el
+establecimiento de otras; cambio en la casa reinante; corrupción, etc. A estos hechos habría que sumar la migración, pues los españoles que vinieron a poblar los nuevos territorios procedían de distintas regiones, trayendo consigo sus propios instrumentos de longitud, superficie, capacidad y volumen.
+
+La diversidad de unidades de medición dentro de un mismo territorio y su uso, era un factor latente para desatar todo un cúmulo de arbitrariedades, de corrupciones. Por ejemplo, un comerciante de cuerdas podía hacerle creer a un arriero, que las varas de cuerda que había cortado frente a sus ojos, habían sido medidas con la vara usada en Alicante (0.912 m) cuando, en realidad, habían sido medidas con la empleada en Huesca (0.722 m). Al menudeo, esa cantidad podría considerarse insignificante, pero en grandes volúmenes de ventas la ganancia era considerable.\footnote{La imposición del sistema métrico decimal en la mayor parte de los países no anglófonos, no necesariamente implicó que los abusos y fraudes se erradicaran. En México, todos los días existen quejas de que las gasolinerías no despachan los litros completos; las tortillerías los kilos de tortillas, las mercerías los metros de encaje, listón, etc. La incapacidad del Estado para supervisar, vigilar y regular todas y cada una de las operaciones mercantiles excede su
+capacidad política. Al señalar esto, no estoy tratando de encontrar el hilo negro; sucedía antaño como hogaño, y, con seguridad, sucederá en el futuro.} Los comerciantes, principalmente ---afirma Vera---, ¡compraban con una medida y vendían con otra!
+
+Además de las unidades de longitud ---como la vara---, existían otras unidades para medir, pesar y
+contar. Entra ellas destacan el sitio de ganado (mayor y menor), la carga (áridos), la pipa (líquidos), el buey (hidráulicas), el quintal (peso), la libra (oro, plata y medicamentos), entre otras. Cada una de ellas se dividía, a su vez, en un universo más amplio de subunidades como la toesa, el paso, el palmo, el codo, la legua, etc.\footnote{Para una relación exhaustiva y pormenorizada de este antiguo sistema de unidades, véase Héctor Vera y Virginia García Acosta (Coord.), \emph{Metros, leguas y mecates. Historia de los sistemas de medición en México.} Centro de Investigaciones y Estudios Superiores en Antropología Social/Centro de Ingeniería y Desarrollo Industrial, México, 2011, 278 pp.}
+
+Los cuadros (\ref{aptab:antiguas-unidades-españolas} y \ref{aptab:antiguas-unidades-monetarias-españolas}, pág. \pageref{apsec:antiguas-unidades-españolas-cuadros}) que siguen a continuación, son una muestra de algunas de esas antiguas unidades, que fueron citadas durante la redacción de este trabajo. Debido a su «inexactitud» y a las razones históricas antes expuestas, deben ser consideradas solo una referencia o crasa aproximación.
+\section{Antiguas unidades españolas (cuadros)}
+\label{apsec:antiguas-unidades-españolas-cuadros}
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+Unidad & Magnitud & Equivalencia \textsc{si} \\
+\midrule
+Arroba & masa & \texttlf{11.5} kg \\
+Barril & volumen & \texttlf{7-140} l \\
+Braza & longitud, área & \texttlf{1.67} m; \texttlf{3.352} m\textsu{2}  \\
+Caballería & área & \texttlf{42-79-53-1} ha \\
+Carga & volumen & \texttlf{103.15} l \\
+Estajo & área & \texttlf{0.702} ha \\
+Fanega & área, volumen, peso & \texttlf{3.56} ha; \texttlf{90.815} l; \texttlf{103.5} kg \\
+Paja & volumen & \texttlf{33 cm\textsu{2}} \\
+Quintal & masa & \texttlf{46} kg \\
+Vara & longitud & \texttlf{0.838} m \\
+\bottomrule
+\end{tabular}
+\caption[Antiguas unidades españolas (masa, volumen, etc.)]{Antiguas unidades españolas (masa, volumen, etcétera). \textsc{Fuente:} Julio César Montané Martí. \emph{Diccionario para la lectura de textos coloniales en México.} El Colegio de Sonora, Hermosillo, 1998. [En línea]: \url{https://www.colson.edu.mx/testamentos/Diccionario_montane.aspx} [Fecha de consulta: 15 de noviembre, 2023]}
+\label{aptab:antiguas-unidades-españolas}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lccccr@{}}
+\toprule
+\multirow{2}{*}{Unidad} & \multicolumn{5}{c}{Subunidades} \\
+\cmidrule{2-6}
+{} & real & medio real (\textfrac{1}{2}) & cuartilla (\textfrac{1}{4}) & tlaco (\textfrac{1}{8}) & pilón (\textfrac{1}{16}) \\
+\midrule
+Real & \texttlf{1} & \texttlf{2} & \texttlf{4} & \texttlf{8} & \texttlf{16} \\
+Medio real & {} & \texttlf{1} & \texttlf{2} & \texttlf{4} & \texttlf{8} \\
+Cuartilla & {} & {} & \texttlf{1} & \texttlf{2} & \texttlf{4} \\
+Tlaco & {} & {} & {} & \texttlf{1} & \texttlf{2} \\
+Pilón & {} & {} & {} & {} & \texttlf{1} \\
+\bottomrule
+\end{tabular}
+\caption[Antiguas unidades monetarias españolas (plata)]{Antiguas unidades monetarias (plata). \textsc{Fuente:} José Antonio Bátiz Vázquez, «Cambios y permanencias en la moneda mexicana durante el siglo \textsc{xix}», en \emph{Memorias del Segundo Congreso de Historia Económica. La historia económica hoy, entre la economía y la historia,} Asociación Mexicana de Historia Económica A. C., México D. F., 2004 (27-29 de octubre). [En línea]: \url{http://www.economia.unam.mx/amhe/memoria/simposio10/Jose\%20Antonio\%20BATIZ.pdf} [Fecha de consulta: 18 de agosto, 2023]}
+\label{aptab:antiguas-unidades-monetarias-españolas}
+\end{table}
 \chapter{Glosario}
 \label{ap:glosario}
 \thispagestyle{empty}
@@ -1897,16 +1966,16 @@ año 7, núm. 39, pp. 18-28.
 \fancyhead[RO,LE]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \begin{description}[noitemsep]
-\item[Medieros]Personas que van a medias en la explotación de tierras, cría de ganados u otras granjerías del campo.\footnote{«Mediero"/ra» en \emph{Diccionario de la Lengua Española.} Real Academia Española, Madrid. [En línea]: \url{https://dle.rae.es/mediero} [Consulta: 17 de diciembre, 2022].}
-\item[Punta de ganado]Pequeña porción de ganado que se separa del hato.\footnote{<<Punta>> en \emph{Diccionario de la Lengua Española.} Real Academia Española, Madrid. [En línea]: \url{https://dle.rae.es/punta} [Consulta: 17 de diciembre, 2022].}
+\item[Medieros]Personas que van a medias en la explotación de tierras, cría de ganados u otras granjerías del campo.\footnote{«Mediero/ra» en \emph{Diccionario de la Lengua Española.} Real Academia Española, Madrid. [En línea]: \url{https://dle.rae.es/mediero} [Consulta: 17 de diciembre, 2022].}
+\item[Punta de ganado]Pequeña porción de ganado que se separa del hato.\footnote{«Punta» en \emph{Diccionario de la Lengua Española.} Real Academia Española, Madrid. [En línea]: \url{https://dle.rae.es/punta} [Consulta: 17 de diciembre, 2022].}
 \end{description}
-\chapter{Aviso Legal/Disclaimer}
+\chapter{Aviso Legal\slash Disclaimer}
 \label{ap:aviso-legal-disclaimer}
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
 \fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872-1910} % Centrados
-\fancyhead[CO]{\small\sc apéndice d: aviso legal"/disclaimer} % Centrados
+\fancyhead[CO]{\small\sc apéndice c: aviso legal/disclaimer} % Centrados
 \fancyhead[RO,LE]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 % Fix TeX, LaTeX and LaTeXe logos
@@ -2002,6 +2071,6 @@ Inkscape\texttrademark\ es una marca registrada del grupo de desarrollares de In
 \begin{center}
 \includegraphics[width=1.5cm]{vineta}\phantomsection\label{fig:vineta}
 \end{center}
-{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El <<manuscrito>> se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeX\ de Leslie Lamport, basado en el lenguaje de programación \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por Hàn Th\'{ê} Thành. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizado por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}}
+{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El «manuscrito» se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de composición tipográfico \LaTeX\ de Leslie Lamport, basado en el lenguaje de programación \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por Hàn Th\'{ê} Thành. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizado por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}}
 \addcontentsline{toc}{chapter}{Colofón}
 \end{document}

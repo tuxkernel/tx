@@ -36,3 +36,5 @@ Control de versiones:
 1.034 Mejor legibilidad de los planos de las haciendas (20-10-2023)
 1.035 Agregados algunos marcadores en Índice de contenidos (26-10-2023)
 1.036 Corrección de cursivas en notas a pie de página (31-10-2023)
+1.037 Correcciones menores en Cuadros (05-11-2023)
+1.038 Agregado de un Apéndice (16-11-2023)
