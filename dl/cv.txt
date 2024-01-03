@@ -39,3 +39,4 @@ Control de versiones:
 1.037 Correcciones menores en Cuadros (05-11-2023)
 1.038 Agregado de un Apéndice (16-11-2023)
 1.039 Correcciones ortotipograficas menores (15-12-2023)
+1.040 Correcciones ortotipograficas menores (03-01-2024)
