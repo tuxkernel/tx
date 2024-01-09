@@ -40,3 +40,4 @@ Control de versiones:
 1.038 Agregado de un Apéndice (16-11-2023)
 1.039 Correcciones ortotipograficas menores (15-12-2023)
 1.040 Correcciones ortotipograficas menores (03-01-2024)
+1.041 Cambio de licencia a WTFPL (08-01-2024)
