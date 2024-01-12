@@ -417,7 +417,7 @@ Puebla, Pue., 29 de agosto del 2007
 
 \textcopyright\ 2022--2024. \href{muxkernel@gmail.com}{Tuxkernel} (de la composición tipográfica). \protect\medskip
 
-Este documento se proporciona \emph{como es,} sin ningún tipo de garantía, aunque se espera que pueda ser útil, y se distribuye bajo una licencia \href{http://www.wtfpl.net/}{Do What The Fuck You Want To Public License (\lsc{WTFPL})}, versión 2.0 o posterior. Por lo tanto, \emph{eres total y absolutamente libre} de hacer con este material lo que quieras. \protect\medskip
+Este documento se proporciona \emph{como es,} sin ningún tipo de garantía, aunque se espera que pueda ser útil, y se distribuye bajo \href{http://www.wtfpl.net/}{Do What The Fuck You Want To Public License (\lsc{WTFPL})}, versión 2.0 o posterior. Por lo tanto, todos son absolutamente libres de hacer de este documento lo que quieran. \protect\medskip
 
 Para más información sobre esta licencia, visita: \protect\medskip
 
@@ -1993,7 +1993,7 @@ Las imágenes, logos y nombres de marcas comerciales utilizadas en este trabajo,
 
 \noindent\textcopyright\ 2007--2024 Eugenio Pedro José Pradal Roa, detalle (pág. \pageref{fig:vineta}). \\
 
-\TeX{}maker\texttrademark\ es una marca registrada de Pascal Brachet, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
+\noindent\TeX{}maker\texttrademark\ es una marca registrada de Pascal Brachet, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
 
 \LaTeX\texttrademark\ es una marca registrada de Leslie Lamport, y su \emph{software} se distribuye bajo la licencia pública del proyecto \LaTeX{}, versión 1.3c.
 
