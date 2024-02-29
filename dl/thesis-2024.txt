@@ -411,7 +411,7 @@ Puebla, Pue., 29 de agosto del 2007
 \includegraphics[width=2.5cm]{wtfpl}\phantomsection\label{fig:wtfpl} \protect\medskip
 
 \def\fileversion{1.044}
-\def\filedate{(28-02-2024)}
+\def\filedate{(29-02-2024)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
 \textcopyright\ 2007--2024. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
