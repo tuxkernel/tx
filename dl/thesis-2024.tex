@@ -218,10 +218,6 @@
 \pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{5\p@}}}{}{}
 \makeatother
 
-% APÉNDICES
-
-\usepackage{appendix}
-
 % MICROTIPOGRAFÍA
 
 \usepackage[activate={true,nocompatibility},final=true,babel=true,tracking=true,
@@ -269,10 +265,10 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 \sethlcolor{red} % Color rojo para el marca textos.
 \usepackage{silence} % Necesario para suprimir el mensaje del paquete everypage
 \WarningsOff[everypage] % Elimina el mensaje
-\usepackage{transparent} % transparencia en imágenes
+%\usepackage{transparent} % transparencia en imágenes
 \usepackage{tcolorbox} % Cajas de diálogo.
 %\usepackage[stamp=true,text=Borrador]{draftwatermark} % Marca al agua (borrador)
-\usepackage[normalem]{ulem} % Tachado de palabras
+%\usepackage[normalem]{ulem} % Tachado de palabras. Uso: \xout{} o \sout{}
 
 % TABLAS
 
@@ -286,7 +282,7 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 
 % UTILIDADES PARA PDF
 
-\usepackage{pdfpages} % Inserta archivos PDF. Necesario para la portada.
+%\usepackage{pdfpages} % Inserta archivos PDF. Necesario para la portada.
 
 % PDF para pantalla (Día y noche)
 
@@ -412,9 +408,9 @@ Puebla, Pue., 29 de agosto del 2007
 \def\filedate{(29-02-2024)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
-\textcopyright\ 2007--2024. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
+Copyright \textcopyright\ 2007--2024. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
 
-\textcopyright\ 2022--2024. \href{muxkernel@gmail.com}{Tuxkernel} (de la composición tipográfica). \protect\medskip
+Copyright \textcopyright\ 2022--2024. \href{muxkernel@gmail.com}{Tuxkernel} (de la composición tipográfica). \protect\medskip
 
 Este documento se proporciona \emph{como es,} sin ningún tipo de garantía, aunque se espera que pueda ser útil, y se distribuye bajo \href{http://www.wtfpl.net/}{Do What The Fuck You Want To Public License (\lsc{WTFPL})}, versión 2 o posterior. Por lo tanto, todos son absolutamente libres de hacer de este documento lo que quieran. \protect\medskip
 
@@ -473,7 +469,7 @@ Agradezco a mi \emph{alter ego,} \href{muxkernel@gmail.com}{Tuxkernel}, su tiemp
 \pagestyle{fancy}
 \fancyhf{} % Remueve encabezados y pies previos. Necesario sí o sí.
 \fancyhead[CE,CO]{\small\sc agradecimientos} % Centrados
-\fancyhead[LE,RO]{\thepage}
+\fancyhead[LE,RO]{\thepage} % Default
 \renewcommand{\headrulewidth}{0pt}
 \addcontentsline{toc}{chapter}{Agradecimientos}
 \addtocontents{toc}{\vspace{\normalbaselineskip}}
@@ -508,7 +504,7 @@ A la Dra. Leticia Gamboa Ojeda, una directora tan ruda como técnica, que con m�
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
 \fancyhead[CE,CO]{\small\sc índice de contenidos} % Centrados
-\fancyhead[RO,LE]{\thepage}
+\fancyhead[LE,RO]{\thepage}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \microtypesetup{protrusion=false}
@@ -650,7 +646,7 @@ W & watts \\
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
 \fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872--1910} % Centrados
 \fancyhead[CO]{\small\sc introducción} % Centrados
-\fancyhead[RO,LE]{\thepage}
+\fancyhead[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \addcontentsline{toc}{chapter}{Introducción}
 Como la familia Villegas\index[nombres]{Villegas!familia} de Jalacingo\index[lugares]{Jalacingo}, este trabajo tiene también su propia historia. Acostado en un viejo y débil camastro con la mirada clavada en el techo, los músculos endurecidos y la boca cobriza, ese día al despertar, intentaba evanescer con exiguos logros el nombre de aquel personaje que, días antes, había aparecido en las amarillentas fojas de aquellos libros. Quería, aunque fuera por unos instantes, olvidarme de ese archivo y concentrar mi atención en la escritura de ese último apartado de la tesis, mas nada conseguía. Su nombre me perseguía a todas partes, secuestraba mi mente, detenía la escritura de un desgastado lapicero próximo al desecho, canalizando mis pensamientos hacia otra parte... allá... en un lado... en otro. ¿Por qué su nombre me provocaba interés?, ¿le molestaba que hiciera muchas preguntas sobre él?, ¿sobre su pasado?, ¿que leyera el registro de sus operaciones cuidadosamente conservadas en aquel acervo olvidado, mugroso y lleno de polvo?; ¿qué quería?, ¿qué \emph{exactamente} quería de mí? Llegué a pensar que su fantasmagórica presencia, era una extraña maquinación mía producto de la fatiga diaria. No podía ser verdad, había muerto hacía más de cien años y no veía motivo alguno para que atormentara la mente de un joven que, con dificultades, intentaba redactar unas cuantas cuartillas para finalizar la tesis. Después de todo, su nombre nada tenía que ver con el tema de ésta. Es más, nunca apareció escrito en alguna página de la misma. Regresé a la cama desconcertado, encendí un cigarrillo y, al poco tiempo, caí sumergido en un sueño profundo.
@@ -704,7 +700,7 @@ Por último, en el capítulo tres (p.~\pageref{ch:capitulo-tres}), se analizan t
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí. \tex
 \fancyhead[CE]{\iffloatpage{}{\small\sc familia y poder. los villegas de jalacingo, 1872--1910}}
 \fancyhead[CO]{\iffloatpage{}{\small\sc 1 \textbullet\ el cantón de jalacingo. la región y su \emph{hinterland} económico}} % centrados
-\fancyhead[RO,LE]{\iffloatpage{}{\thepage}} % default
+\fancyhead[RO,LE]{\iffloatpage{}{\thepage}}
 \renewcommand\headrulewidth{\iffloatpage{0pt}{0pt}}
 \section{El cantón de Jalacingo. Características generales}
 \label{sec:canton-caracteristicas-generales}
@@ -857,7 +853,7 @@ Frente a los exiguos logros en cuanto el reparto de los terrenos comunales, la v
 \caption[Venta de terrenos baldíos en Atzalan]{Venta de terrenos baldíos en Atzalan.\index[lugares]{Atzalan!terrenos baldíos (\emph{cuadro})}}
 \begin{tabular}{@{}lrr@{}}
 \toprule
-\multirow{2}{*}{Propietario} & \multicolumn{2}{c}{Superficie} \\
+\multirow{2}{*}{Propietario} & \multicolumn{2}{c}{Superficie} \\ % test with * and =
 \cmidrule{2-3}
 {} & Estajos\textsu{*} & Hectáreas \\
 \midrule
@@ -1925,11 +1921,11 @@ Unidad & Magnitud & Equivalencia \textsc{si} \\
 \midrule
 Arroba & masa & \texttlf{11.5} kg \\
 Barril & volumen & \texttlf{7--140} l \\
-Braza & longitud, área & \texttlf{1.67} m; \texttlf{3.352} m\textsu{2}  \\
+Braza & longitud; área & \texttlf{1.67} m; \texttlf{3.352} m\textsu{2}  \\
 Caballería & área & \texttlf{42-79-53-1} ha \\
 Carga & volumen & \texttlf{103.15} l \\
 Estajo & área & \texttlf{0.702} ha \\
-Fanega & área, volumen, peso & \texttlf{3.56} ha; \texttlf{90.815} l; \texttlf{103.5} kg \\
+Fanega & área; volumen; peso & \texttlf{3.56} ha; \texttlf{90.815} l; \texttlf{103.5} kg \\
 Paja & volumen & \texttlf{33 cm\textsu{2}} \\
 Quintal & masa & \texttlf{46} kg \\
 Vara & longitud & \texttlf{0.838} m \\
@@ -1987,49 +1983,49 @@ Las imágenes, logos y nombres de marcas comerciales utilizadas en este trabajo,
 
 \noindent Portada: \\
 
-\noindent\textcopyright\ 2007--2024 Benemérita Universidad Autónoma de Puebla (pág. \pageref{fig:buap}).
+\noindent Copyright \textcopyright\ 1578--2024. Benemérita Universidad Autónoma de Puebla (pág. \pageref{fig:buap}).
 
-\noindent\textcopyright\ 2007--2024 Instituto de Ciencias Sociales y Humanidades (pág. \pageref{fig:icsyh}). \\
+\noindent Copyright \textcopyright\ 1991--2024. Instituto de Ciencias Sociales y Humanidades (pág.~\pageref{fig:icsyh}). \\
 
 \noindent Licencia: \\
 
-\noindent\textcopyright\ 2022--2024 Do What The Fuck You Want To Public License (pág. \pageref{fig:wtfpl}) \\
+\noindent Copyright \textcopyright\ 2004--2024. Do What The Fuck You Want To Public License (pág. \pageref{fig:wtfpl}). \\
 
 \noindent Capítulo 1: \\
 
-\noindent\textcopyright\ 1987--2024 María de la Luz Belmonte Guzmán (pág. \pageref{fig:veracruz-1857}).
+\noindent Copyright \textcopyright\ 1987--2024. María de la Luz Belmonte Guzmán (pág. \pageref{fig:veracruz-1857}).
 
-\noindent\textcopyright\ 1992--2024 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:jalacingo-principios-xx}).
+\noindent Copyright \textcopyright\ 1992--2024. Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:jalacingo-principios-xx}).
 
-\noindent\textcopyright\ 2007--2024 Archivo General del Estado de Veracruz (pág. \pageref{fig:progreso-industrial}). \\
+\noindent Copyright \textcopyright\ 1988--2024. Archivo General del Estado de Veracruz (pág. \pageref{fig:progreso-industrial}). \\
 
 \noindent Capítulo 2: \\
 
-\noindent\textcopyright\ 2007--2024 Eugenio Pedro José Pradal Roa (pág. \pageref{fig:jalacingo-photo}).\pagebreak[4]
+\noindent Copyright \textcopyright\ 2007--2024. Eugenio Pedro José Pradal Roa (pág. \pageref{fig:jalacingo-photo}).
 
 \noindent Capítulo 3: \\
 
-\noindent\textcopyright\ 1992--2024 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-limon}).
+\noindent Copyright \textcopyright\ 1992--2024. Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-limon}).
 
-\noindent\textcopyright\ 1992--2024 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-cuatotolapam}).
+\noindent Copyright \textcopyright\ 1992--2024. Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-cuatotolapam}).
 
-\noindent\textcopyright\ 1992--2024 Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-tenextepec}). \\
+\noindent Copyright \textcopyright\ 1992--2024. Luc Cambrezy y Bernal Lascurain (pág. \pageref{fig:hda-tenextepec}). \\
 
 \noindent Colofón: \\
 
-\noindent\textcopyright\ 2007--2024 Eugenio Pedro José Pradal Roa, detalle (pág. \pageref{fig:vineta}). \\
+\noindent Copyright \textcopyright\ 2007--2024. Eugenio Pedro José Pradal Roa, detalle (pág. \pageref{fig:vineta}). \\
 
-\noindent\TeX{}maker\texttrademark\ es una marca registrada de Pascal Brachet, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
+\noindent TeXmaker\texttrademark\ es una marca registrada de Pascal Brachet, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
 
-\LaTeX\texttrademark\ es una marca registrada de Leslie Lamport, y su \emph{software} se distribuye bajo la licencia pública del proyecto \LaTeX{}, versión 1.3c.
+LaTeX\texttrademark\ es una marca registrada de Leslie Lamport, y su \emph{software} se distribuye bajo la licencia pública del proyecto LaTeX, versión 1.3c.
 
-\TeX\texttrademark\ es una marca registrada de Donald E.~Knuth y la American Matemathical Society, y su \emph{software} se distribuye bajo dominio público.
+TeX\texttrademark\ es una marca registrada de Donald E.~Knuth y la American Matemathical Society, y su \emph{software} se distribuye bajo dominio público.
 
-\textsc{pdf}\TeX\texttrademark\ es una marca registrada de H\`{a}n Th\'{\^{e}} Th\`{a}nh, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
+\textsc{pdf}TeX\texttrademark\ es una marca registrada de H\`{a}n Th\'{\^{e}} Th\`{a}nh, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
 
-Crimson Text\texttrademark\ es una marca registrada de Sebastian Kosch, y su tipografía se distribuye bajo una licencia \textsc{sil} Open Font.
+Crimson Text\texttrademark\ es una marca registrada de Sebastian Kosch, y su tipografía se distribuye bajo una licencia \textls[50]{SIL} Open Font.
 
-Cochineal\texttrademark\ es una marca registrada de Michael Sharpe, y su tipografía se distribuye bajo una licencia \textsc{sil} Open Font.
+Cochineal\texttrademark\ es una marca registrada de Michael Sharpe, y su tipografía se distribuye bajo una licencia \textls[50]{SIL} Open Font.
 
 \textsc{gimp}\texttrademark\ es una marca registrada de Spencer Kimball y Peter Mattis, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}, versión 3 o posterior.
 
@@ -2065,6 +2061,6 @@ Inkscape\texttrademark\ es una marca registrada del grupo de desarrollares de In
 \begin{center}
 \includegraphics[width=1.5cm]{vineta}\phantomsection\label{fig:vineta}
 \end{center}
-{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872--1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El «manuscrito» se capturó con el editor de texto plano \TeX{}maker (5.0.3) de Pascal Brachet, y se formó en el sistema de preparación de documentos \LaTeX\ de Leslie Lamport, basado en el lenguaje y sistema de composición tipográfico \TeX\ creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}\TeX\ desarrollado por H\`{a}n Th\'{\^{e}} Th\`{a}nh. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizado por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}}
+{\scriptsize\squarepar{\emph{Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872--1910} de Noel Merino Hernández, se terminó de componer en Universidad Autónoma de Nuevo León núm. 7305, col. Universidades, Heroica Puebla de Zaragoza (México). El «manuscrito» se capturó con el editor de texto plano TeXmaker (5.0.3) de Pascal Brachet, y se formó en el sistema de preparación de documentos LaTeX de Leslie Lamport, basado en el lenguaje y sistema de composición tipográfico TeX creado por Donald E. Knuth; el archivo fuente fue compilado con el motor de tipografías \textsc{pdf}TeX desarrollado por H\`{a}n Th\'{\^{e}} Th\`{a}nh. En su composición se utilizó tipografía Cochineal, \emph{fork} de Crimson Text de Sebastian Kosch realizado por Michael Sharpe. Las imágenes se manipularon en \textsc{gimp} (2.10.22) e Inkscape (1.0.2). Disposición tipográfica realizada para papel \emph{Bond} ahuesado tamaño carta de 90\,gr. Diseño, diagramación y composición tipográfica: \href{muxkernel@gmail.com}{Tuxkernel}.}}
 \addcontentsline{toc}{chapter}{Colofón}
 \end{document}
