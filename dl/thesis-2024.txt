@@ -631,7 +631,7 @@ W & watts \\
 \protect\smallskip
 \begin{flushright}
 \begin{minipage}{8cm}
-\emph{Nuestros queridos muertos entran en el texto porque no pueden \emph{[...]} hablarnos \emph{[...]}. Los fantasmas se meten en la escritura, sólo cuando callan para siempre \emph{[...]}. La búsqueda histórica del \guilsinglleft sentido\guilsinglright{}, no es sino la búsqueda del \emph{Otro,} pero esta acción contradictoria trata de envolver y ocultar en el «sentido» la alteridad de este extraño, o, lo que es lo mismo, trata de calmar a los muertos que todavía se aparecen y ofrecerles tumbas escriturísticas.}
+\emph{Nuestros queridos muertos entran en el texto porque no pueden \emph{[...]} hablarnos \emph{[...]}. Los fantasmas se meten en la escritura, sólo cuando callan para siempre \emph{[...]}. La búsqueda histórica del `sentido', no es sino la búsqueda del \emph{Otro,} pero esta acción contradictoria trata de envolver y ocultar en el «sentido» la alteridad de este extraño, o, lo que es lo mismo, trata de calmar a los muertos que todavía se aparecen y ofrecerles tumbas escriturísticas.}
 \end{minipage}
 \end{flushright}
 \begin{flushright}
