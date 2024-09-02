@@ -45,3 +45,4 @@ Control de versiones:
 1.043 Eliminación de viudas y huérfanas en notas a pie de página (15-02-2024)
 1.044 Corrección de cifras en el bloque de texto (29-02-2024)
 1.045 Corrección de espacio en el signo de porcentaje (01-01-2024)
+1.046 Microtipografía con el paquete typoG (02-09-2024)

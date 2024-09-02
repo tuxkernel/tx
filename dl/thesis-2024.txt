@@ -6,7 +6,6 @@
 
 % CODIFICACIÓN DE ARCHIVO Y FUENTE
 
-\usepackage[utf8]{inputenc}
 \usepackage[TS1,T1]{fontenc}
 
 % SÍMBOLOS
@@ -69,6 +68,7 @@
 
 % SANGRIA
 
+\usepackage[indent=5mm,skip=0pt]{parskip} % sangría y espacio vertical entre párrafos.
 \usepackage{hanging} % Para la bibliografía
 
 % Espacio horizontal entre el marcador y la primera letra en las notas a pie de página.
@@ -225,6 +225,62 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 \SetTracking[no ligatures=q]{encoding=*,shape=sc}{30} % Elimina ligaduras, kerning.
 %\DeclareMicrotypeSet*{smallcapsi} % Kerning versalitas itálicas
 %{encoding={TS1,T1},shape={sc*,si,scit}}
+\usepackage[raisecapitalguillemets=.05em]{typog} % typoGraphic Fine-Tuning.
+
+% opciones:
+
+% breakpenalty=50 % separación de palabras. Default: 50. \exhyphenpenalty:50
+% debug or nodebug % escribe información en el archivo log.
+% ligaturekern=33 % divide una ligadura. Default: 33. \nolig la activa.
+% lowercaselabelitemadjustments={⟨dim1⟩,⟨dim2⟩,⟨dim3⟩,⟨dim4⟩} ajuste de las etiquetas en listas.
+% la macro \lowercaseadjustlabelitems la activa (minúsculas).
+% mathitalicscorrection=0.4mu. Corrección de itálicas (matemático). Default value: 0.4mu
+% raise*=0pt. «Eleva» la semirraya (--), el guion (-) y el signo menos (x).
+% raisecapitaldash=0pt. «Eleva» la semirraya en mayúsculas. Default=0pt. \capitaldash lo activa.
+% raisecapitalhyphen=0pt. «Eleva» el guion en mayúsculas. Default=0pt. \capitalhyphen lo activa.
+% raisecapitaltimes=0pt. «Eleva» el signo de multiplicación (x) en mayúsculas. Default=0pt. \capitaltimes lo activa.
+% raisecapitalguillemets=0pt. «Eleva» las comillas latinas (simples o dobles) en mayúsculas. Default=0pt.
+% raiseguillemets=0pt. «Eleva» las comillas latinas (simples o dobles) en minúsculas. Default=0pt.
+% raisefiguredash=0pt. «Eleva» la semirraya en números. \figuredash lo activa. Default=0pt.
+% shrinklimits= req. microtype
+% stretchlimits= req. microtype
+% slashkern=50em. Activa el kerning antes y después en la barra. \kernedslash lo activa. Default=50
+% \textitalicscorrection=20 Corrección de itálicas. Default=20
+% trackingttspacing={outer-spacing} req. microtype
+% uppercaselabelitemadjustments={⟨dim1⟩,⟨dim2⟩,⟨dim3⟩,⟨dim4⟩} ajuste de las etiquetas en listas.
+% la macro \uppercaseadjustlabelitem la activa (mayúsculas).
+% la macro \capitalemdash* ajusta la raya en mayúsculas.
+% la macro \allowhyphenation permite el corte de palabras aunque TeX se niegue.
+% la macro \hskip 0pt permite separar en sílabas la primera palabra de un párrafo.
+% la macro \nolig*[33] desactiva la ligadura pero no separa la palabra.
+% la macro \nolig[33] desactiva la ligadura y separa la palabra.
+% la macro \itcorr{1} activa la corrección de itálicas. Util en paréntesis que inician con una itálica.
+% la macro \itcorr*{1} activa la corrección de itálicas. Util en paréntesis que inician con una itálica.
+% la macro \lastlinecenteredpar centra la última línea de una Figura o Cuadro en su leyenda (caption).
+% la macro \kernedslash agrega un kerning en la barra pero la separa en sílabas. Definir en opciones.
+% la macro \kernedslash* agrega un kerning en la barra pero no la separa en sílabas. Definir en opciones. Ambas macros son útiles, por ejemplo, en números alineados (2024-2025, ciudad/código postal).
+% las macros \kernedhyphen y \kernedhyphen* agregan un kerning antes y después en el guion. \kernedhyphen* no la separá en sílabas; \kernedhyphen la separa en sílabas. El parametro opcional [raise] permite elevar el guion. Ejemplo: \kernedhyphen[raise]{left-kerning}{right-kerning}. Por default zero.
+% \leftkernedhyphen[raise]{left-kerning}
+% \leftkernedhyphen*[raise]{left-kerning}
+% \rightkernedhyphen[raise]{right-kerning}
+% \rightkernedhyphen*[raise]{right-kerning}
+% \capitalhyphen eleva el guion en versalitas o mayúsculas. Permite separación de palabras.
+% \capitalhyphen* eleva el guion en versalitas o mayúsculas. No permite separación de palabras.
+% \capitalendash eleva la semirraya en mayúsculas. Permite separación de palabras
+% \capitalendash* eleva la semirraya en mayúsculas. No permite separación de palabras
+% \capitaldash (alias) permite separación de palabras
+% \capitaldash* (alias) NO permite separación de palabras
+% \capitalemdash
+% \capitalemdash*
+% \figuredash útil en números alineados o de caja alta. Permite separaciónn de palabras
+% \figuredash* útil en números alineados o de caja alta. NO permite separación de palabras
+% valor sugerido (\figuredash): .1em
+% \singleguillemetleft y \singleguillemetright «eleva» la comilla latina simple (minúsculas).
+% \Singleguillemetleft y \Singleguillemetright «eleva» la comilla latina simple (mayúsculas).
+% \doubleguillemetleft y \doubleguillemetright «eleva» la comilla latina simple (minúsculas).
+% \Doubleguillemetleft y \Doubleguillemetright «eleva» la comilla latina simple (mayúsculas).
+% valor sugerido (\Doubleguillemetleft y \Doubleguillemetright): .1em (cochineal).
+% 
 
 % DISPOSICIÓN TIPOGRÁFICA
 
@@ -331,10 +387,8 @@ pdflicenseurl={https://creativecommons.org/licenses/by/4.0/deed.es},
 \begin{document}
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\parindent=5mm % Sangría.
-\parskip=0mm % Espacio entre párrafos.
 %\setlength{\footnotesep}{0pt} % Elimina el espacio vertical entre las notas a pie de página.
-%\linespread{1.5} % Interlineado
+%\linespread{1.5} % Interlineado.
 % PORTADA
 \newpage
 \thispagestyle{empty}
@@ -352,7 +406,7 @@ pdflicenseurl={https://creativecommons.org/licenses/by/4.0/deed.es},
 \large\scshape Benemérita Universidad Autónoma de Puebla
 \end{center}
 \begin{center}
-\large\scshape Instituto de Ciencias Sociales y Humanidades «Alfonso Vélez Pliego»
+\large\scshape Instituto de Ciencias Sociales y Humanidades \Doubleguillemetleft Alfonso Vélez Pliego\Doubleguillemetright
 \end{center}
 \begin{center}
 \large\scshape Posgrado en Historia
@@ -394,18 +448,18 @@ Puebla, Pue., 29 de agosto del 2007
 % LICENCIA DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 \newpage
 \thispagestyle{empty}
+\vspace*{0pt}
+\vfill
 \protect\phantomsection
 \addcontentsline{toc}{chapter}{Licencia \texorpdfstring{\textsc{wtfpl}}{WTFPL}}
 \addtocontents{toc}{\vspace{\normalbaselineskip}} % Add some vertical space between titles in TOC
-\vspace*{0pt}
-\vfill
 \begin{scriptsize}
 \begin{flushleft}
 \begin{minipage}{7.5cm}
 \includegraphics[width=2.5cm]{wtfpl}\phantomsection\label{fig:wtfpl} \protect\medskip
 
-\def\fileversion{1.045}
-\def\filedate{(01-01-2024)}
+\def\fileversion{1.046}
+\def\filedate{(02--09--2024)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
 Copyright \textcopyright\ 2007--2024. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -1965,13 +2019,13 @@ Pilón & {} & {} & {} & {} & 1 \\
 \item[Medieros]Personas que van a medias en la explotación de tierras, cría de ganados u otras granjerías del campo.\footnote{«Mediero/ra» en \emph{Diccionario de la Lengua Española.} Real Academia Española, Madrid. [En línea]: \url{https://dle.rae.es/mediero} [Consulta: 17 de diciembre, 2022].}
 \item[Punta de ganado]Pequeña porción de ganado que se separa del hato.\footnote{«Punta» en \emph{Diccionario de la Lengua Española.} Real Academia Española, Madrid. [En línea]: \url{https://dle.rae.es/punta} [Consulta: 17 de diciembre, 2022].}
 \end{description}
-\chapter{Aviso Legal\slash Disclaimer}
-\label{ap:aviso-legal-disclaimer}
+\chapter{Aviso Legal}
+\label{ap:aviso-legal}
 \thispagestyle{empty}
 \pagestyle{fancy}
 \fancyhf{} % Remueve los encabezados y pies previos. Necesario sí o sí.
 \fancyhead[CE]{\small\sc familia y poder. los villegas de jalacingo, 1872--1910} % Centrados
-\fancyhead[CO]{\small\sc apéndice c: aviso legal/disclaimer} % Centrados
+\fancyhead[CO]{\small\sc apéndice c: aviso legal} % Centrados
 \fancyhead[RO,LE]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 % Patch TeX and LaTeX logos
@@ -1982,7 +2036,7 @@ Las imágenes, logos y nombres de marcas comerciales utilizadas en este trabajo,
 
 \noindent Portada: \\
 
-\noindent Copyright \textcopyright\ 1578--2024. Benemérita Universidad Autónoma de Puebla (pág. \pageref{fig:buap}).
+\noindent Copyright \textcopyright\ 1578--2024. Benemérita Universidad Autónoma de Puebla (pág.~\pageref{fig:buap}).
 
 \noindent Copyright \textcopyright\ 1991--2024. Instituto de Ciencias Sociales y Humanidades (pág.~\pageref{fig:icsyh}). \\
 
