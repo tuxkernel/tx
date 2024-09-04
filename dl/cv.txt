@@ -23,7 +23,7 @@ Control de versiones:
 1.021 Eliminación de un Apéndice (21-01-2023)
 1.022 Rectificación de logos TeX, LaTeX y pdfTeX en el colofón (18-02-2023)
 1.023 Corrección de comas y puntos en cursivas (12-04-2023)
-1.024 Agregado un Aviso Legal/Disclaimer (26-05-2023)
+1.024 Agregado un Aviso Legal (26-05-2023)
 1.025 Correcciones ortotipográficas menores (20-08-2023)
 1.026 Correcciones menores en Cuadros (22-08-2023)
 1.027 Corrección de homeoarquías y homeotéleutones (25-08-2023)
@@ -46,3 +46,4 @@ Control de versiones:
 1.044 Corrección de cifras en el bloque de texto (29-02-2024)
 1.045 Corrección de espacio en el signo de porcentaje (01-01-2024)
 1.046 Microtipografía con el paquete typoG (02-09-2024)
+1.047 Agregada Licencia Publica WTFPL en Apéndices (03-09-2024)

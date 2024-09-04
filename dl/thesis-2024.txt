@@ -225,7 +225,14 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 \SetTracking[no ligatures=q]{encoding=*,shape=sc}{30} % Elimina ligaduras, kerning.
 %\DeclareMicrotypeSet*{smallcapsi} % Kerning versalitas itálicas
 %{encoding={TS1,T1},shape={sc*,si,scit}}
-\usepackage[raisecapitalguillemets=.05em]{typog} % typoGraphic Fine-Tuning.
+\usepackage[raise*=.05em,
+raisecapitaldash=.05em,
+raisecapitalhyphen=.05em,
+raisecapitaltimes=.05em,
+raisecapitalguillemets=.05em,
+raisefiguredash=.05em,
+slashkern=.05em
+]{typog} % typoGraphic Fine-Tuning.
 
 % opciones:
 
@@ -458,15 +465,15 @@ Puebla, Pue., 29 de agosto del 2007
 \begin{minipage}{7.5cm}
 \includegraphics[width=2.5cm]{wtfpl}\phantomsection\label{fig:wtfpl} \protect\medskip
 
-\def\fileversion{1.046}
-\def\filedate{(02--09--2024)}
+\def\fileversion{1.047}
+\def\filedate{(03--09--2024)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
 Copyright \textcopyright\ 2007--2024. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
 
 Copyright \textcopyright\ 2022--2024. \href{muxkernel@gmail.com}{Tuxkernel} (de la composición tipográfica). \protect\medskip
 
-Este documento se proporciona \emph{como es,} sin ningún tipo de garantía, aunque se espera que pueda ser útil, y se distribuye bajo \href{http://www.wtfpl.net/}{Do What The Fuck You Want To Public License (\lsc{WTFPL})}, versión 2 o posterior. Por lo tanto, todos son absolutamente libres de hacer de este documento lo que quieran. \protect\medskip
+Este documento se proporciona \emph{como es,} sin ningún tipo de garantía, aunque se espera que pueda ser útil, y se distribuye bajo \href{http://www.wtfpl.net/}{Do What The Fuck You Want To Public License (\lsc{WTFPL})}, versión 2 o posterior. Una copia de esta licencia se encuentra en el \autoref{ap:wtfpl-license} (pág.~\pageref{ap:wtfpl-license}). Por lo tanto, \emph{todos son absolutamente libres de hacer de este documento lo que quieran.} \protect\medskip
 
 Para más información sobre esta licencia, visita: \protect\medskip
 
@@ -882,7 +889,7 @@ Por su parte, Falcón\index[nombres]{Falcon, Romana@Falcón, Romana} y García M
 
 Además de las haciendas y los grandes ranchos, habría que señalar que las tierras comunales indígenas enfrentaban un ataque sistemático por parte de la legislación liberal, a fin de reducirlas a propiedad privada. Desde 1856, año de la promulgación de la \emph{Ley de Desamortización de Fincas Rústicas y Urbanas, Propiedad de las Corporaciones Civiles y Religiosas,} las comunidades indígenas del cantón de Jalacingo\index[lugares]{Jalacingo!comunidades indígenas} hicieron de la legislación liberal un instrumento que fue vehiculizado hacia la defensa de sus tierras.
 
-No es fortuito que en 1864 las congregaciones de los poblados de Altotonga,\index[lugares]{Altotonga!poblado} Jalacingo\index[lugares]{Jalacingo!poblado} y Atzalan\index[lugares]{Atzalan!poblado} compraran a la federación las antiguas tierras de la cofradía del Santísimo Sacramento\index[lugares]{Jalacingo!Santísimo Sacramento (cofradía)} de Jalacingo,\index[lugares]{Jalacingo} por un valor de \$\,600.\footnote{Los hermanos Miguel José\index[nombres]{Arcos, Miguel José} y Manuel Arcos,\index[nombres]{Arcos, Manuel} antiguos arrendatarios de éstas y representantes de las comunidades indígenas de los poblados las compraron a su nombre, pero en la escritura se especificó que las tierras eran para el beneficio común de las congregaciones. Cada congregación contribuyó con las siguientes cantidades: Santa Cruz\index[lugares]{Santa Cruz!congregación} (\$\,35), Texacaxco\index[lugares]{Texacaxco!congregación} (\$\,15), Champilico\index[lugares]{Champilico!congregación} (\$\,43), Ahueyahualco\index[lugares]{Ahueyahualco!congregación} (\$\,43), Tlalpoalan\index[lugares]{Tlalpoalan!congregación} (\$\,30), Tepozoteco\index[lugares]{Tepozoteco!congregación} (\$\,15), Juan Marcos\index[lugares]{Juan Marcos!congregación} (\$\,60), Temimilco\index[lugares]{Temimilco!congregación} (\$\,15), Chichicapa\index[lugares]{Chichicapa!congregación} (\$\,30), Xoampolco\index[lugares]{Xoampolco!congregación} (\$\,15), San Felipe\index[lugares]{San Felipe!congregación} (\$\,10), Paxtepec\index[lugares]{Paxtepec!congregación} (\$\,15), Mecacalco\index[lugares]{Mecacalco!congregación} (\$\,60), Las Truchas\index[lugares]{Truchas, Las!congregación} (\$\,15), San Pedrito\index[lugares]{San Pedrito!congregación} (\$\,10), Mexcalteco\index[lugares]{Mexcalteco!congregación} (\$\,20), Arroyo Negro\index[lugares]{Arroyo Negro!congregación} (\$\,15), Barrancones\index[lugares]{Barrancones!congregación} (\$\,15) y Altotonga\index[lugares]{Altotonga!pueblo} (\$\,144). \textsc{agev}, \textsc{asgg}, \textsc{gyj}, Tierras, Altotonga, Magueyitos, 1864, c. 435, exp. 10, f. s/f. Agradezco al Dr. José Manuel Velasco Toro,\index[nombres]{Velasco Toro, Jose Manuel@Velasco Toro, José Manuel} investigador del Instituto de Investigaciones Histórico-Sociales de la Universidad Veracruzana (\textsc{iihs-uv}), haberme facilitado un material previamente consultado por él, proveniente del Archivo General del estado de Veracruz,\index[lugares]{Veracruz!\textsc{agev}} referente a los archivos de la Comisión Agraria Mixta (\textsc{acam})\index[lugares]{Veracruz!\textsc{acam}} y la Secretaría General de Gobierno (\textsc{asgg})\index[lugares]{Veracruz!\textsc{asgg}} sobre el cantón de Jalacingo.\index[lugares]{Jalacingo!cantón} Su ayuda contribuyó sensiblemente a reducir el tiempo de consulta de un material que hubiera implicado años.} Pero los problemas estaban por venir: el 26 de febrero de 1872, Manuel Arcos\index[nombres]{Arcos, Manuel} ---uno de los originales compradores de las tierras de las cofradías---, junto con los herederos de su hermano Miguel José,\index[nombres]{Arcos, Miguel José} pasando por encima de los derechos de las diecinueve congregaciones que contribuyeron para la compra, se dividieron los terrenos «entre el comparente y los herederos del difunto».\footnote{\textsc{agev, asgg, gyj}, Tierras, Altotonga, Magueyitos, 1895, c. 433, exp. 6, f. s/f.} Al año siguiente, la enardecida comunidad indígena hizo caer sobre ellos una ráfaga de protestas que conminó a los cabildantes de Jalacingo\index[lugares]{Jalacingo!munícipes} a otorgarles la razón, respaldando su queja.
+No es fortuito que en 1864 las congregaciones de los poblados de Altotonga,\index[lugares]{Altotonga!poblado} Jalacingo\index[lugares]{Jalacingo!poblado} y Atzalan\index[lugares]{Atzalan!poblado} compraran a la federación las antiguas tierras de la cofradía del Santísimo Sacramento\index[lugares]{Jalacingo!Santísimo Sacramento (cofradía)} de Jalacingo,\index[lugares]{Jalacingo} por un valor de \$\,600.\footnote{Los hermanos Miguel José\index[nombres]{Arcos, Miguel José} y Manuel Arcos,\index[nombres]{Arcos, Manuel} antiguos arrendatarios de éstas y representantes de las comunidades indígenas de los poblados las compraron a su nombre, pero en la escritura se especificó que las tierras eran para el beneficio común de las congregaciones. Cada congregación contribuyó con las siguientes cantidades: Santa Cruz\index[lugares]{Santa Cruz!congregación} (\$\,35), Texacaxco\index[lugares]{Texacaxco!congregación} (\$\,15), Champilico\index[lugares]{Champilico!congregación} (\$\,43), Ahueyahualco\index[lugares]{Ahueyahualco!congregación} (\$\,43), Tlalpoalan\index[lugares]{Tlalpoalan!congregación} (\$\,30), Tepozoteco\index[lugares]{Tepozoteco!congregación} (\$\,15), Juan Marcos\index[lugares]{Juan Marcos!congregación} (\$\,60), Temimilco\index[lugares]{Temimilco!congregación} (\$\,15), Chichicapa\index[lugares]{Chichicapa!congregación} (\$\,30), Xoampolco\index[lugares]{Xoampolco!congregación} (\$\,15), San Felipe\index[lugares]{San Felipe!congregación} (\$\,10), Paxtepec\index[lugares]{Paxtepec!congregación} (\$\,15), Mecacalco\index[lugares]{Mecacalco!congregación} (\$\,60), Las Truchas\index[lugares]{Truchas, Las!congregación} (\$\,15), San Pedrito\index[lugares]{San Pedrito!congregación} (\$\,10), Mexcalteco\index[lugares]{Mexcalteco!congregación} (\$\,20), Arroyo Negro\index[lugares]{Arroyo Negro!congregación} (\$\,15), Barrancones\index[lugares]{Barrancones!congregación} (\$\,15) y Altotonga\index[lugares]{Altotonga!pueblo} (\$\,144). \textsc{agev}, \textsc{asgg}, \textsc{gyj}, Tierras, Altotonga, Magueyitos, 1864, c. 435, exp. 10, f. s/f. Agradezco al Dr. José Manuel Velasco Toro,\index[nombres]{Velasco Toro, Jose Manuel@Velasco Toro, José Manuel} investigador del Instituto de Investigaciones Histórico-Sociales de la Universidad Veracruzana (\textsc{iihs\capitalhyphen uv}), haberme facilitado un material previamente consultado por él, proveniente del Archivo General del estado de Veracruz,\index[lugares]{Veracruz!\textsc{agev}} referente a los archivos de la Comisión Agraria Mixta (\textsc{acam})\index[lugares]{Veracruz!\textsc{acam}} y la Secretaría General de Gobierno (\textsc{asgg})\index[lugares]{Veracruz!\textsc{asgg}} sobre el cantón de Jalacingo.\index[lugares]{Jalacingo!cantón} Su ayuda contribuyó sensiblemente a reducir el tiempo de consulta de un material que hubiera implicado años.} Pero los problemas estaban por venir: el 26 de febrero de 1872, Manuel Arcos\index[nombres]{Arcos, Manuel} ---uno de los originales compradores de las tierras de las cofradías---, junto con los herederos de su hermano Miguel José,\index[nombres]{Arcos, Miguel José} pasando por encima de los derechos de las diecinueve congregaciones que contribuyeron para la compra, se dividieron los terrenos «entre el comparente y los herederos del difunto».\footnote{\textsc{agev, asgg, gyj}, Tierras, Altotonga, Magueyitos, 1895, c. 433, exp. 6, f. s/f.} Al año siguiente, la enardecida comunidad indígena hizo caer sobre ellos una ráfaga de protestas que conminó a los cabildantes de Jalacingo\index[lugares]{Jalacingo!munícipes} a otorgarles la razón, respaldando su queja.
 
 El 27 de abril de 1874, Manuel Arcos\index[nombres]{Arcos, Manuel} y sus sobrinos, ante la presión de los quejosos, se vieron obligados a ceder los terrenos a la corporación municipal para beneficio «del vecindario de razón o indígena».\footnote{\textsc{agev, acam}, Tierras, Altotonga, Magueyitos, Restitución, 1918, c. 18, exp. 75, fs. 13--15.} En la transacción se señaló que lo hacían con la «indicación precisa e inalterable de que sirva \emph{perpetuam,} continúe sirviendo de ejidos al vecindario de Altotonga,\index[lugares]{Altotonga!ejidos} tanto a la clase de razón como especialmente a la indígena, prefiriéndose en las debidas consideraciones en el aprovechamiento a los más necesitados.\footnote{\em Ídem.}
 
@@ -1095,7 +1102,7 @@ Año(s) & Nombre & Cargo & \multicolumn{1}{c}{Lugar} \\
 \midrule
 \textlf{1871} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia & Jalacingo \\
 \textlf{1873} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!juez 2.\textsu{o} de paz} & Juez 2"o de paz & Jalacingo \\
-\textlf{1873--1874} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia & Jalacingo \\
+\textlf{1873\capitaldash 1874} & Manuel Villegas\index[nombres]{Villegas Contreras, Manuel!juez de 1.\textsu{a} instancia} & Juez de 1"a instancia & Jalacingo \\
 \textlf{1874} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!miembro del ayuntamiento} & Miembro del ayuntamiento & Jalacingo \\
 \textlf{1874} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!enc. del \textsc{arppj}} & Encargado del \textsc{arppj} & Jalacingo \\
 \textlf{1875} & Mariano Lauro Villegas Perdomo\index[nombres]{Villegas Perdomo, Mariano Lauro!miembro del ayuntamiento} & Miembro del ayuntamiento & Jalacingo \\
@@ -1106,10 +1113,10 @@ Año(s) & Nombre & Cargo & \multicolumn{1}{c}{Lugar} \\
 \textlf{1885} & Leonardo Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo!regidor del ayuntamiento} & Regidor del ayuntamiento & Jalacingo \\
 \textlf{1885} & Mariano Lauro Villegas Perdomo\index[nombres]{Villegas Perdomo, Mariano Lauro!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
 \textlf{1885} & Joaquín Villegas del Campo\index[nombres]{Villegas del Campo, Joaquin@Villegas del Campo, Joaquín!miembro de la Junta Auxiliar} & Miembro de la Junta Auxiliar & Jalacingo \\
-\textlf{1886--1888} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!srio. de la Junta de Caridad} & Srio. de la Junta de Caridad & Jalacingo \\
+\textlf{1886\capitaldash 1888} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!srio. de la Junta de Caridad} & Srio. de la Junta de Caridad & Jalacingo \\
 \textlf{1892} & Leonardo Villegas Perdomo\index[nombres]{Villegas Perdomo, Leonardo!regidor del ayuntamiento} & Regidor del ayuntamiento & Jalacingo \\
 \textlf{1892} & José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María!juez 2.\textsu{o} de paz} & Juez 2"o de paz & Jalacingo \\
-\textlf{1894--1896} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!diputado en el congreso local} & Dip. prop. ante el Congreso del Estado & Veracruz \\
+\textlf{1894\capitaldash 1896} & José Antonio Villegas Contreras\index[nombres]{Villegas Contreras, Jose Antonio@Villegas Contreras, José Antonio!diputado en el congreso local} & Dip. prop. ante el Congreso del Estado & Veracruz \\
 \textlf{1896} & José María Villegas del Campo\index[nombres]{Villegas del Campo, Jose Maria@Villegas del Campo, José María!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
 \textlf{1897} & Agustín Elías Villegas Perdomo\index[nombres]{Villegas Perdomo, Agustin Elias@Villegas Perdomo, Agustín Elías!juez 1.\textsu{o} de paz} & Juez 1"o de paz & Jalacingo \\
 \textlf{1900} & Agustín Elías Villegas Perdomo & Juez 1"o de paz & Jalacingo \\
@@ -1193,15 +1200,15 @@ Año(s) & Nombre(s) \\
 \textlf{1883} & José Serrano y Luis Tejeda Guzmán\index[nombres]{Tejeda Guzman, Luis@Tejeda Guzmán, Luis!jefe político} \\
 \textlf{1884} & Luis Tejeda Guzmán \\
 \textlf{1885} & Luis Tejeda Guzmán y Miguel S. Perdomo\index[nombres]{Perdomo, Miguel S.!jefe político} \\
-\textlf{1886--1890} & Miguel S. Perdomo \\
+\textlf{1886\capitaldash 1890} & Miguel S. Perdomo \\
 \textlf{1891} & Miguel S. Perdomo y José María Guzmán\index[nombres]{Guzman, Jose Maria@Guzmán, José María!jefe político} \\
 \textlf{1892} & Miguel María de Guzmán\index[nombres]{Guzman, Miguel Maria de@Guzmán, Miguel María de!jefe político} y Carlos V. Rosas\index[nombres]{Vera Rosas, Carlos!jefe político} \\
 \textlf{1893} & Carlos V. Rosas \\
-\textlf{1894--1895} & Diego Rosas Landa\index[nombres]{Rosas Landa, Diego!jefe político} \\
+\textlf{1894\capitaldash 1895} & Diego Rosas Landa\index[nombres]{Rosas Landa, Diego!jefe político} \\
 \textlf{1896} & Diego Rosas Landa y Miguel V. Gómez\index[nombres]{Gomez, Miguel V.@Gómez, Miguel V.!jefe político} \\
-\textlf{1897--1901} & Miguel V. Gómez \\
+\textlf{1897\capitaldash 1901} & Miguel V. Gómez \\
 \textlf{1902} & Miguel V. Gómez y Carlos del Campo\index[nombres]{Campo, Carlos del!jefe político} \\
-\textlf{1903--1910} & Carlos del Campo \\
+\textlf{1903\capitaldash 1910} & Carlos del Campo \\
 \bottomrule
 \end{tabular}
 \caption*{\textsc{Fuente:} \textsc{arppj}, 1873--1910.}
@@ -1757,18 +1764,20 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \label{sec:archivos}
 \addcontentsline{toc}{section}{Archivos}
 \begin{itemize}[noitemsep]
-\item[•]Archivo General de Notarías del Estado de Puebla (\textsc{agnep})
+\spanishdashitems
+\item Archivo General de Notarías del Estado de Puebla (\textsc{agnep})
 \begin{itemize}[noitemsep]
-\item[•]Teziutlán
+\item Teziutlán
 \begin{itemize}[noitemsep]
-\item[•]Años: 1876--1910
+\item Años: 1876--1910
 \end{itemize}
 \end{itemize}
 \end{itemize}
 \begin{itemize}[noitemsep]
-\item[•]Archivo del Registro Público y de la Propiedad de Jalacingo (\textsc{arppj})
+\spanishdashitems
+\item Archivo del Registro Público y de la Propiedad de Jalacingo (\textsc{arppj})
 \begin{itemize}[noitemsep]
-\item[•]Secciones:
+\item Secciones:
 \begin{enumerate}[noitemsep]
 \item Primera
 \item Segunda
@@ -1776,19 +1785,20 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \item Cuarta
 \item Quinta (sociedades y poderes)
 \begin{itemize}[noitemsep]
-\item[•]Años: 1872--1910
+\item Años: 1872--1910
 \end{itemize}
 \end{enumerate}
 \end{itemize}
 \end{itemize}
 \begin{itemize}[noitemsep]
-\item[•]Archivo General del Estado de Veracruz (\textsc{agev})
+\spanishdashitems
+\item Archivo General del Estado de Veracruz (\textsc{agev})
 \begin{enumerate}[noitemsep]
 \item Archivo de la Comisión Agraria Mixta (\textsc{acam})
 \begin{enumerate}[noitemsep]
 \item Tierras
 \begin{itemize}[noitemsep]
-\item[•]Años: 1918--1937
+\item Años: 1918--1937
 \end{itemize}
 \end{enumerate}
 \item Archivo de la Secretaría General de Gobierno (\textsc{asgg})
@@ -1796,19 +1806,20 @@ Al margen de estas políticas, sobresale la figura de José Antonio Villegas Con
 \item Gobernación y Justicia (\textsc{gyj})
 \item Fomento (\textsc{f})
 \begin{itemize}[noitemsep]
-\item[•]Años: 1864--1937
+\item Años: 1864--1937
 \end{itemize}
 \end{enumerate}
 \end{enumerate}
 \end{itemize}
 \begin{itemize}[noitemsep]
-\item[•]Archivo Parroquial de Jalacingo (\textsc{apj})
+\spanishdashitems
+\item Archivo Parroquial de Jalacingo (\textsc{apj})
 \begin{itemize}[noitemsep]
-\item[•]Disciplinar
+\item Disciplinar
 \begin{itemize}[noitemsep]
-\item[•]Cofradías
+\item Cofradías
 \begin{itemize}[noitemsep]
-\item[•]Año: 1818
+\item Año: 1818
 \end{itemize}
 \end{itemize}
 \end{itemize}
@@ -1973,9 +1984,9 @@ Los cuadros que siguen a continuación (\ref{aptab:antiguas-unidades-españolas}
 Unidad & Magnitud & Equivalencia \textsc{si} \\
 \midrule
 Arroba & masa & \texttlf{11.5} kg \\
-Barril & volumen & \texttlf{7--140} l \\
+Barril & volumen & \texttlf{7\figuredash 140} l \\
 Braza & longitud; área & \texttlf{1.67} m; \texttlf{3.352} m\textsu{2}  \\
-Caballería & área & \texttlf{42-79-53-1} ha \\
+Caballería & área & \texttlf{42\capitalhyphen 79\capitalhyphen 53\capitalhyphen 1} ha \\
 Carga & volumen & \texttlf{103.15} l \\
 Estajo & área & \texttlf{0.702} ha \\
 Fanega & área; volumen; peso & \texttlf{3.56} ha; \texttlf{90.815} l; \texttlf{103.5} kg \\
@@ -2072,7 +2083,7 @@ Las imágenes, logos y nombres de marcas comerciales utilizadas en este trabajo,
 
 LaTeX\texttrademark\ es una marca registrada de Leslie Lamport, y su \emph{software} se distribuye bajo la licencia pública del proyecto LaTeX, versión 1.3c.
 
-TeX\texttrademark\ es una marca registrada de Donald E.~Knuth y la American Matemathical Society, y su \emph{software} se distribuye bajo dominio público.
+TeX\texttrademark\ es una marca registrada de Donald E.~Knuth y la American Math\-emathical Society, y su \emph{software} se distribuye bajo dominio público.
 
 \textsc{pdf}TeX\texttrademark\ es una marca registrada de H\`{a}n Th\'{\^{e}} Th\`{a}nh, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}.
 
@@ -2083,6 +2094,18 @@ Cochineal\texttrademark\ es una marca registrada de Michael Sharpe, y su tipogra
 \textsc{gimp}\texttrademark\ es una marca registrada de Spencer Kimball y Peter Mattis, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}, versión 3 o posterior.
 
 Inkscape\texttrademark\ es una marca registrada del grupo de desarrollares de Inkscape, y su \emph{software} se distribuye bajo la licencia pública general de \textsc{gnu}, versión 3 o posterior.
+\chapter{Do What The Fuck You Want To Public License}
+\label{ap:wtfpl-license}
+\begin{center}
+\textls[50]{DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE} \\ Version 2, December 2004
+\end{center}
+Copyright \textcopyright\ 2004 Sam Hocevar <sam@hocevar.net> \\
+
+\noindent Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
+\begin{center}
+\textls[50]{DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE \\ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION}
+\end{center}
+0. You just \textls[50]{DO WHAT THE FUCK YOU WANT TO.}
 % INDICE ONOMÁSTICO
 \newpage
 \thispagestyle{empty}
