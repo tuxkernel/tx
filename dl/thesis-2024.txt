@@ -937,7 +937,7 @@ José Cazzasa\index[nombres]{Cazzasa, Jose@Cazzasa, José} & \texttlf{94} & \tex
 {} & \texttlf{24453} & \texttlf{171273} \\
 \bottomrule
 \end{tabular}
-\caption*{\textsc{Fuente:} \textsc{agev, asgg, gyj}, Tierras, Atzalan, 1886, fs. 34--36. \textsu{*} 1 estajo $=$ 7 ha. Al respecto véase \textsc{agev, acam}, Atzalan, Atzalan, Dotación, 1937, fs. 53--58; \textsc{agev, acam}, Atzalan, San Felipe, Restitución, 1923, c. 233, exp. 444, fs. 60--61. \ding{43} \nameref{ch:nota-preliminar}. Cfr. Cuadro~\ref{tab:venta-terrenos-baldios-dos}, p.~\pageref{tab:venta-terrenos-baldios-dos}.}
+\caption*{\textsc{Fuente:} \textsc{agev, asgg, gyj}, Tierras, Atzalan, 1886, fs. 34--36. \textsu{*} 1 estajo $=$ 7 ha. Al respecto véase \textsc{agev, acam}, Atzalan, Atzalan, Dotación, 1937, fs. 53--58; \textsc{agev, acam}, Atzalan, San Felipe, Restitución, 1923, c. 233, exp. 444, fs. 60--61. \ding{43} \nameref{ch:nota-preliminar}. Cfr. Cuadro~\ref{tab:venta-terrenos-baldios-dos}, p.~\hyperref[tab:venta-terrenos-baldios-dos]{153}.}
 \label{tab:venta-terrenos-baldios}
 \end{table}
 \section{El valle de Perote y los pueblos de la sierra}
@@ -2042,7 +2042,7 @@ Pilón & {} & {} & {} & {} & 1 \\
 \caption{Fe de erratas y correcciones.}
 \begin{tabular}{@{}cccrr@{}}
 \toprule
-Pág. & Párrafo & Línea & \multicolumn{1}{c}{Dice} & \multicolumn{1}{c}{Debe decir} \\
+Pág. & Párrafo & Línea & \multicolumn{1}{c}{Dice} & Debe decir \\
 \midrule
 \texttlf{47} & \texttlf{2} & \texttlf{4} & \texttlf{171273}\,ha & \texttlf{17159}\,ha \\
 \texttlf{47} & \texttlf{2} & \texttlf{7} & \texttlf{658}\,ha & \texttlf{65}\,ha \\
@@ -2051,7 +2051,7 @@ Pág. & Párrafo & Línea & \multicolumn{1}{c}{Dice} & \multicolumn{1}{c}{Debe d
 \label{tab:fe-de-erratas-y-correcciones}
 \end{tabular}
 \end{table}
-Los datos de la tercera columna de la derecha (Hectáreas) del Cuadro~\ref{tab:venta-terrenos-baldios} (pág.~\pageref{tab:venta-terrenos-baldios}) son erróneos. Decidimos dejarlos tal cuales y de manera \emph{intencional,} para que la «nueva» composición (2024) reprodujera fielmente los yerros de la versión del 2007 (\ding{43} \nameref{ch:nota-preliminar}). Ofrecemos aquí, ya corregidos, los nuevos valores de dicho cuadro.
+Los datos de la tercera columna (Hectáreas) del Cuadro~\ref{tab:venta-terrenos-baldios} (pág.~\pageref{tab:venta-terrenos-baldios}) son erróneos. Decidimos dejarlos tal cuales y de manera \emph{intencional,} para que la «nueva» composición (2024) reprodujera fielmente los yerros de la versión del 2007 (\ding{43} \nameref{ch:nota-preliminar}). Ofrecemos aquí, ya corregidos, los nuevos valores de dicho cuadro.
 \begin{longtable}[c]{@{}lrr@{}}
 \caption[Venta de terrenos baldíos en Atzalan (corregido)]{Venta de terrenos baldíos en Atzalan.\index[lugares]{Atzalan!terrenos baldíos (\emph{cuadro})}}
 % Título de la tabla
