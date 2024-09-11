@@ -47,3 +47,5 @@ Control de versiones:
 1.045 Corrección de espacio en el signo de porcentaje (01-01-2024)
 1.046 Microtipografía con el paquete typoG (02-09-2024)
 1.047 Agregada Licencia Publica WTFPL en Apéndices (03-09-2024)
+1.048 Mejoras en referencias cruzadas (09-09-2024)
+1.049 Agregados dos Apéndices (erratas 1 y 2) (10-09-2024)
