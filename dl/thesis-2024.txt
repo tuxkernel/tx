@@ -282,8 +282,7 @@ slashkern=.05em]{typog} % typoGraphic Fine-Tuning.
 % \Singleguillemetleft y \Singleguillemetright «eleva» la comilla latina simple (mayúsculas).
 % \doubleguillemetleft y \doubleguillemetright «eleva» la comilla latina simple (minúsculas).
 % \Doubleguillemetleft y \Doubleguillemetright «eleva» la comilla latina simple (mayúsculas).
-% valor sugerido (\Doubleguillemetleft y \Doubleguillemetright): .1em (cochineal).
-% 
+% valor sugerido (\Doubleguillemetleft y \Doubleguillemetright): .1em (cochineal). 
 
 % DISPOSICIÓN TIPOGRÁFICA
 
@@ -454,7 +453,7 @@ Puebla, Pue., 29 de agosto del 2007
 \vspace*{0pt}
 \vfill
 \protect\phantomsection
-\addcontentsline{toc}{chapter}{Licencia \texorpdfstring{\textsc{wtfpl}}{WTFPL}}
+\addcontentsline{toc}{chapter}{Licencia del documento}
 \addtocontents{toc}{\vspace{\normalbaselineskip}} % Add some vertical space between titles in TOC
 \begin{scriptsize}
 \begin{flushleft}
@@ -1016,7 +1015,6 @@ Altotonga\index[lugares]{Altotonga} & Genaro Méndez\index[nombres]{Mendez, Gena
 \caption*{\textsc{Fuente:} Blázquez, \emph{Estado...,} tomo \textsc{ii}, s/f.; tomo \textsc{viii}, p. 14.}
 \label{tab:productores-cerveza}
 \end{table}
-% Aquí iba la tabla de abajo
 
 \noindent Pero no sólo la cerveza era la única bebida alcohólica producida en la región. El hecho de que la municipalidad contara con algunas tierras en la zona caliente del cantón,\index[lugares]{Jalacingo!cantón} propicias para el cultivo de la caña de azúcar, hizo que proliferara una industria aún más enviciante. Desde la primera mitad del siglo \textsc{xix}, se tiene el registro de la existencia de dos trapiches en la municipalidad, que en su conjunto producían 98\,l de aguardiente y 960\,@ de panela, con ganancias cercanas a los \$\,480 anuales (\emph{v.} Cuadro \ref{tab:establecimientos-industriales}, pág.~\pageref{tab:establecimientos-industriales}). Aunque es cierto que los rendimientos y las producciones son pequeñas, debe tenerse presente la posible clandestinidad con la que operaban algunos trapiches.
 \begin{table}[h] % H default
@@ -1332,7 +1330,6 @@ En casi cuarenta años, la familia Villegas llegó a prestar a diversos sectores
 
 Los Villegas\index[nombres]{Villegas!familia} habrían de cumplir un papel determinante en el valle de Perote\index[lugares]{Perote!valle} y otras parte del cantón, al prestar parte de sus capitales para el fomento de las actividades agrícolas de rancheros y hacendados. Sin embargo, un análisis revela que estos grupos no terminaron siendo favorecidos sino perjudicados. Recordemos que Ignacio Danini\index[nombres]{Danini, Ignacio} e Isidoro O. Marié,\index[nombres]{Marie, Isidoro O.@Marié, Isidoro O.} Claudio Antonio Limón,\index[nombres]{Limon, Claudio Antonio@Limón, Claudio Antonio} Francisco Hernández,\index[nombres]{Hernandez, Francisco@Hernández, Francisco} Benigno Ríos,\index[nombres]{Rios, Benigno@Ríos, Benigno} Josefa Salvar\index[nombres]{Salvar, Josefa} y Francisco Rojas;\index[nombres]{Rojas, Francisco} así como Miguel Valdés,\index[nombres]{Valdes, Miguel@Valdés, Miguel} Enrique Marín,\index[nombres]{Marin, Enrique@Marín, Enrique} Marcelino Pumarino\index[nombres]{Pumarino, Marcelino} y Roberto Burkle,\index[nombres]{Burkle, Roberto} perdieron sus haciendas y ranchos por no pagar ni los capitales ni los intereses. Las tasas eran bastante onerosas, pues ocho de ellos pagaron préstamos al 12\% y sólo tres al 6\%. Realmente muy pocos saldaron sus cuentas con la familia. Entre ellos sobresalen Gertrudis Fernández de Viñals,\index[nombres]{Fernandez de Vinals, Gertrudis@Fernández de Viñals, Gertrudis} Adolfo B. Carsi,\index[nombres]{Carsi, Adolfo B.} Luciano\index[nombres]{Hernandez, Luciano@Hernández, Luciano} y Gabriel E. Hernández,\index[nombres]{Hernandez, Gabriel E.@Hernández, Gabriel E.} Benjamín González,\index[nombres]{Gonzalez, Benjamin@González, Benjamín} Roberto Guzmán,\index[nombres]{Guzman, Roberto@Guzmán, Roberto} Bartolomé Sánchez,\index[nombres]{Sanchez, Bartolome@Sánchez, Bartolomé} así como las familias Flores\index[nombres]{Flores!familia} y Mendoza,\index[nombres]{Mendoza!familia} quienes pagaron tasas de intereses entre el 6, 10 y 12\%. A diferencia de los bancos del periodo, que cobraban una tasa de interés que oscilaba entre 5 y el 6\%,\footnote{Bátiz, art. cit., p. 168. José Antonio Bátiz Vázquez y Enrique Canudas Sandoval, «Los aspectos financieros y monetarios (1880--1910)» en Ciro Cardoso (Coord.), \emph{México en el siglo \textsc{xix}, 1821--1910. Historia económica y de la estructura social.} Nueva Imagen, México, 1999, p. 416.} la familia prestaba como mínino al 6\% y como máximo al 12\%; hecho que contribuyó al acrecentamiento de sus capitales. De un total de 59 operaciones prestatarias, cerca del 50\% cobraron intereses al 12\% y un 25\% al 6\%.
 
-% \char 37 = %
 {\tiny
 \begin{longtable}[c]{@{}p{2.5cm}lrSrrl@{}}
 \caption[Préstamos y rendimientos ideales obtenidos por la familia Villegas, 1872--1910]{Préstamos y rendimientos ideales obtenidos por la familia Villegas,\index[nombres]{Villegas!préstamos (\emph{cuadro})} 1872--1910.}
@@ -2003,7 +2000,7 @@ Vara & longitud & \texttlf{0.838} m \\
 \toprule
 \multirow{2}{*}{Unidad} & \multicolumn{5}{c}{Subunidades} \\
 \cmidrule{2-6}
-{} & real & medio real (\textfrac{1}{2}) & cuartilla (\textfrac{1}{4}) & tlaco (\textfrac{1}{8}) & {pilón (\textfrac{1}{16})} \\
+{} & real & medio real (\textfrac{1}{2}) & cuartilla (\textfrac{1}{4}) & tlaco (\textfrac{1}{8}) &   \multicolumn{1}{c}{pilón (\textfrac{1}{16})} \\
 \midrule
 Real & \texttlf{1} & \texttlf{2} & \texttlf{4} & \texttlf{8} & 16 \\
 Medio real & {} & \texttlf{1} & \texttlf{2} & \texttlf{4} & 8 \\
