@@ -228,7 +228,7 @@ kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype} % kernin
 %{encoding={TS1,T1},shape={sc*,si,scit}}
 \usepackage[raise*=.05em,raisecapitaldash=.05em,raisecapitalhyphen=.05em,raisecapitaltimes=.05em,
 raisecapitalguillemets=.05em,raiseguillemets=.05em,raisefiguredash=.05em,
-slashkern=.05em]{typog} % typoGraphic Fine-Tuning.
+slashkern=.05em,lowerslash=.05em]{typog} % typoGraphic Fine-Tuning.
 
 % opciones:
 
@@ -292,10 +292,10 @@ slashkern=.05em]{typog} % typoGraphic Fine-Tuning.
 
 \usepackage{eso-pic} % Cuadrícula. Opciones: "grid" agrega una cuadrícula. gridBG=true,gridcolor=blue
 %\usepackage{showframe} % Elementos macrotipográficos
-%\usepackage[switch*]{lineno} % Números de líneas en párrafos
+\usepackage[switch*]{lineno} % Números de líneas en párrafos
 %\usepackage{fnlineno} % Números de lineas en notas a pie de páginas
 %\linenumbers % Agrega números de lineas. Activar con lineno
-%\renewcommand\thelinenumber{\color{blue}\arabic{linenumber}} % Agrega color a las líneas
+\renewcommand\thelinenumber{\color{blue}\arabic{linenumber}} % Agrega color a las líneas
 %\usepackage[columns=2,headings=false,margin=false]{typogrid} % Draw a grid on the page.
 %\usepackage{fonttable}
 
@@ -366,12 +366,13 @@ slashkern=.05em]{typog} % typoGraphic Fine-Tuning.
 \usepackage[pdftex,unicode,hyperindex=true,final=true,bookmarks=true,
 bookmarksnumbered=true,bookmarksopen=true,breaklinks=true,citecolor=black,
 colorlinks=true,linkcolor=black,urlcolor=black,pdftitle={Familia y poder en el centro de Veracruz. Los Villegas de Jalacingo, 1872-1910},pdfsubject={Tesis Maestría en Historia},pdfauthor={Noel Merino Hernández},pdfkeywords={Familia Poder Veracruz Villegas Jalacingo Historia},pdfproducer={pdflatex 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian)},pdfcreator={Tuxkernel (muxkernel@gmail.com)}]{hyperref} % Opción: pdftex, luatex, unicode (luatex)
+
 \providecommand\phantomsection{} % Necessary for seudo chapters
 
 % COPYRIGHT
 
 \hypersetup{
-pdfcopyright={© 2007-2023. Noel Merino Hernández. Algunos derechos reservados. Este documento se proporciona como es, sin ningún tipo de garantía, aunque se espera que pueda ser útil, y se distribuye bajo una licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0). Por lo tanto, eres libre de compartir, copiar y redistribuir el material en cualquier medio o formato. Adaptar, remezclar, transformar y construir a partir del material para cualquier propósito, incluso comercialmente. El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia, bajo los siguientes términos: Atribución. Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante. No hay restricciones adicionales. No puede aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otras a hacer cualquier uso permitido por la licencia. Avisos: Usted no tiene que cumplir con la licencia para elementos del material en el dominio público o cuando su uso esté permitido por una excepción o limitación aplicable. No se dan garantías. La licencia podría no darle todos los permisos que necesita para el uso que tenga previsto. Por ejemplo, otros derechos como publicidad, privacidad, o derechos morales pueden limitar la forma en que utilice el material.},
+pdfcopyright={© 2007-2024. Noel Merino Hernández. Algunos derechos reservados. Este documento se proporciona como es, sin ningún tipo de garantía, aunque se espera que pueda ser útil, y se distribuye bajo una licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0). Por lo tanto, eres libre de compartir, copiar y redistribuir el material en cualquier medio o formato. Adaptar, remezclar, transformar y construir a partir del material para cualquier propósito, incluso comercialmente. El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia, bajo los siguientes términos: Atribución. Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante. No hay restricciones adicionales. No puede aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otras a hacer cualquier uso permitido por la licencia. Avisos: Usted no tiene que cumplir con la licencia para elementos del material en el dominio público o cuando su uso esté permitido por una excepción o limitación aplicable. No se dan garantías. La licencia podría no darle todos los permisos que necesita para el uso que tenga previsto. Por ejemplo, otros derechos como publicidad, privacidad, o derechos morales pueden limitar la forma en que utilice el material.},
 pdflicenseurl={https://creativecommons.org/licenses/by/4.0/deed.es},
 }
 
@@ -460,8 +461,8 @@ Puebla, Pue., 29 de agosto del 2007
 \begin{minipage}{7.5cm}
 \includegraphics[width=2.5cm]{wtfpl}\phantomsection\label{fig:wtfpl} \protect\medskip
 
-\def\fileversion{1.049}
-\def\filedate{(10--09--2024)}
+\def\fileversion{1.050}
+\def\filedate{(27--09--2024)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
 Copyright \textcopyright\ 2007--2024. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -905,9 +906,13 @@ En Atzalan,\index[lugares]{Atzalan} por otra parte, la escasa información exist
 habiendo sido indígenas\index[lugares]{Atzalan!indígenas} en su mayor parte los que [se] adjudicaron los terrenos del municipio\index[lugares]{Atzalan!terrenos comunales} y ellos mismos los que fueron vendiendo para cubrir sus necesidades, es cínica hasta el extremo la pretensión de que se les reparta lo que vendieron.\footnote{\textsc{agev, asgg, gyj}, Tierras, Atzalan, 1886, fs. 29--31.}
 \end{quoting}
 No sabemos con certeza cuál fue el destino de los terrenos comunales. Tampoco podemos afirmar con seguridad si hubo despojo de los hacendados hacia las comunidades indígenas. Si se efectuó, es probable que ocurriera en una fase posterior al análisis de esta información. Sin embargo, de todo lo anterior se desprende, que si hubo despojo, este se llevó a cabo en el seno de las mismas comunidades indígenas. Los gobiernos municipales, en aras de congratularse con los gobiernos estatales, aplicaron
-diversas leyes tratando de beneficiar a las comunidades indígenas, pero en su rápida aplicación no hicieron más que generar entuertos. Todo parece indicar que el reparto de los terrenos comunales en el cantón de Jalacingo\index[lugares]{Jalacingo!cantón} nunca se resolvió totalmente durante el Porfiriato, siendo los gobiernos posrevolucionarios los que lo heredarían.
+diversas leyes tratando de beneficiar a las comunidades indígenas, pero en su rápida aplicación no hicieron más que generar entuertos. Todo parece indicar que el reparto de los terrenos comunales en el cantón de Jalacingo\index[lugares]{Jalacingo!cantón} nunca se resolvió totalmente durante el Porfiriato, siendo los gobiernos posrevolucionarios los que lo heredarían.\protect\phantomsection\label{para:errata}
 
-Frente a los exiguos logros en cuanto el reparto de los terrenos comunales, la venta de terrenos baldíos\index[lugares]{Jalacingo!terrenos baldíos} tuvo mejores resultados (\emph{v.} Cuadro~\ref{tab:venta-terrenos-baldios}, pág.~\pageref{tab:venta-terrenos-baldios}). Tan sólo en el municipio de Atzalan\index[lugares]{Atzalan!terrenos baldíos} fueron repartidas, en diferentes fechas, al menos 171\,273 ha a diferentes individuos nacionales y extranjeros, lo que vendría a acentuar el aumento de las grandes propiedades durante el Porfiriato.\footnote{Se repartieron más terrenos baldíos pero las autoridades no las consignaron por tratarse de pequeñas propiedades.} Hubo una disparidad en la adjudicación de los baldíos. Las 658~ha que se adjudicaron a José Cazzasa (sic),\index[nombres]{Cazzasa, Jose@Cazzasa, José} eran mínimas en comparación con las 62\,811 ha que se le otorgaron a Roberto Guzmán,\index[nombres]{Guzman, Roberto@Guzmán, Roberto} un próspero comerciante, reconocido usurero y miembro de la élite local del poblado de Atzalan.\index[lugares]{Atzalan!poblado} Aparte de las dimensiones superficiales de los baldíos,\index[lugares]{Atzalan!terrenos baldíos} debe tenerse en cuenta su riqueza agropecuaria. Se trataba de terrenos ubicados en la zona caliente del cantón,\index[lugares]{Jalacingo!cantón} con abundante agua, aptos para el cultivo de la vainilla, el tabaco, el café, la caña de azúcar y la engorda de ganado mayor, productos con una fuerte demanda en el mercado nacional e internacional.
+\begin{linenumbers*}
+\rightlinenumbers* % pone los números en el margen derecho sin afectar la opción switch
+\modulolinenumbers[4] % inicia en la línea 4
+Frente a los exiguos logros en cuanto el reparto de los terrenos comunales, la venta de terrenos baldíos\index[lugares]{Jalacingo!terrenos baldíos} tuvo mejores resultados (\emph{v.} Cuadro~\ref{tab:venta-terrenos-baldios}, pág.~\pageref{tab:venta-terrenos-baldios}). Tan sólo en el municipio de Atzalan\index[lugares]{Atzalan!terrenos baldíos} fueron repartidas, en diferentes fechas, al menos 171\,273 ha\linelabel{cuatro} a diferentes individuos nacionales y extranjeros, lo que vendría a acentuar el aumento de las grandes propiedades durante el Porfiriato.\footnote{Se repartieron más terrenos baldíos pero las autoridades no las consignaron por tratarse de pequeñas propiedades.} Hubo una disparidad en la adjudicación de los baldíos. Las 658~ha\linelabel{siete} que se adjudicaron a José Cazzasa (sic),\index[nombres]{Cazzasa, Jose@Cazzasa, José} eran mínimas en comparación con las 62\,811 ha\linelabel{ocho} que se le otorgaron a Roberto Guzmán,\index[nombres]{Guzman, Roberto@Guzmán, Roberto} un próspero comerciante, reconocido usurero y miembro de la élite local del poblado de Atzalan.\index[lugares]{Atzalan!poblado} Aparte de las dimensiones superficiales de los baldíos,\index[lugares]{Atzalan!terrenos baldíos} debe tenerse en cuenta su riqueza agropecuaria. Se trataba de terrenos ubicados en la zona caliente del cantón,\index[lugares]{Jalacingo!cantón} con abundante agua, aptos para el cultivo de la vainilla, el tabaco, el café, la caña de azúcar y la engorda de ganado mayor, productos con una fuerte demanda en el mercado nacional e internacional.
+\end{linenumbers*}
 \begin{table}%[H]
 \centering
 \caption[Venta de terrenos baldíos en Atzalan]{Venta de terrenos baldíos en Atzalan.\index[lugares]{Atzalan!terrenos baldíos (\emph{cuadro})}}
@@ -2038,16 +2043,17 @@ Pilón & {} & {} & {} & {} & 1 \\
 \begin{table}[H]
 \centering
 \caption{Fe de erratas y correcciones.}
+\label{tab:fe-de-erratas-y-correcciones}
 \begin{tabular}{@{}cccrr@{}}
 \toprule
 Pág. & Párrafo & Línea & \multicolumn{1}{c}{Dice} & Debe decir \\
 \midrule
-\texttlf{47} & \texttlf{2} & \texttlf{4} & \texttlf{171273}\,ha & \texttlf{17159}\,ha \\
-\texttlf{47} & \texttlf{2} & \texttlf{7} & \texttlf{658}\,ha & \texttlf{65}\,ha \\
-\texttlf{47} & \texttlf{2} & \texttlf{8} & \texttlf{62811}\,ha & \texttlf{6299}\,ha \\
+\pageref{para:errata}\textsu{*} & \texttlf{2} & \texttlf{\lineref{cuatro}} & \texttlf{171273}\,ha & \texttlf{17159}\,ha \\
+\pageref{para:errata}\textsu{*} & \texttlf{2} & \texttlf{\lineref{siete}} & \texttlf{658}\,ha & \texttlf{65}\,ha \\
+\pageref{para:errata}\textsu{*} & \texttlf{2} & \texttlf{\lineref{ocho}} & \texttlf{62811}\,ha & \texttlf{6299}\,ha \\
 \bottomrule
-\label{tab:fe-de-erratas-y-correcciones}
 \end{tabular}
+\caption*{\textsu{*} \emph{véanse} números de línea en el margen derecho de la pág.~\pageref{para:errata}.}
 \end{table}
 Los datos de la tercera columna (Hectáreas) del Cuadro~\ref{tab:venta-terrenos-baldios} (pág.~\pageref{tab:venta-terrenos-baldios}) son erróneos. Decidimos dejarlos tal cuales y de manera \emph{intencional,} para que la «nueva» composición (2024) reprodujera fielmente los yerros de la versión del 2007 (\ding{43} \nameref{ch:nota-preliminar}). Ofrecemos aquí, ya corregidos, los nuevos valores de dicho cuadro.
 \begin{longtable}[c]{@{}lrr@{}}

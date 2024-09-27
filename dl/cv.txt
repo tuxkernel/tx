@@ -49,3 +49,4 @@ Control de versiones:
 1.047 Agregada Licencia Publica WTFPL en Apéndices (03-09-2024)
 1.048 Mejoras en referencias cruzadas (09-09-2024)
 1.049 Agregados un Apéndice (erratas 1 y 2) (10-09-2024)
+1.050 Agregados números de línea (pág. 47) y referencias en Fe de erratas (27-09-2024)
