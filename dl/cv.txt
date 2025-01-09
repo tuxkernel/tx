@@ -52,3 +52,4 @@ Control de versiones:
 1.050 Agregados números de línea (pág. 47) y referencias en Fe de erratas (27-09-2024)
 1.051 Agregados agradecimientos de Tuxkernel e información adicional en Aviso legal (29-09-2024)
 1.052 Correcciones menores en Aviso legal (30-09-2024)
+1.053 Correcciones tipográficas menores para el año 2025 (08-01-2025)
