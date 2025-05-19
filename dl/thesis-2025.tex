@@ -286,13 +286,16 @@ slashkern=.05em,lowerslash=.05em]{typog} % typoGraphic Fine-Tuning.
 
 % DISPOSICIÓN TIPOGRÁFICA
 
-\usepackage[letterpaper,includehead,headsep=1.5cm,left=4cm,right=3cm,top=3cm,bottom=3cm]{geometry} % Márgenes (Tamaño carta)
+\usepackage[letterpaper,includehead,headsep=1.5cm,left=4cm,right=3cm,top=3cm,bottom=3cm]{geometry} % Márgenes (Tamaño carta).
 
 % HERRAMIENTAS DE DISEÑO
 
 \usepackage{eso-pic} % Cuadrícula. Opciones: "grid" agrega una cuadrícula. gridBG=true,gridcolor=blue
 %\usepackage{showframe} % Elementos macrotipográficos
 \usepackage[switch*]{lineno} % Números de líneas en párrafos
+\newcommand{\llabel}[1]{\hypertarget{llineno:#1}{\linelabel{#1}}}
+\newcommand{\lref}[1]{\hyperlink{llineno:#1}{\ref*{#1}}}
+\newcommand{\lpageref}[1]{\hyperlink{llineno:#1}{\pageref*{#1}}}
 %\usepackage{fnlineno} % Números de lineas en notas a pie de páginas
 %\linenumbers % Agrega números de lineas. Activar con lineno
 \renewcommand\thelinenumber{\color{blue}\arabic{linenumber}} % Agrega color a las líneas
@@ -466,8 +469,8 @@ Puebla, Pue., 29 de agosto del 2007
 \begin{minipage}{7.5cm}
 \includegraphics[width=2.5cm]{wtfpl}\phantomsection\label{fig:wtfpl} \protect\medskip
 
-\def\fileversion{1.053}
-\def\filedate{(08--01--2025)}
+\def\fileversion{1.054}
+\def\filedate{(15--05--2025)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
 Copyright \textcopyright\ 2007--2025. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -873,6 +876,7 @@ Según Southworth\index[nombres]{Southworth, John R.} en su \emph{Directorio Ofi
 \begin{sidewaystable}
 \centering
 \caption[Haciendas del cantón de Jalacingo en 1907]{Haciendas del cantón de Jalacingo\index[lugares]{Jalacingo!haciendas (\emph{cuadro})} en 1907.}
+\sisetup{table-number-alignment=center}
 \begin{small}
 \tlfstyle
 \begin{tabular}{@{}llrl@{}}
@@ -932,7 +936,7 @@ diversas leyes tratando de beneficiar a las comunidades indígenas, pero en su r
 \begin{linenumbers}
 \rightlinenumbers % pone los números en el margen derecho sin afectar la opción switch
 \modulolinenumbers[4] % inicia en la línea 4
-Frente a los exiguos logros en cuanto al reparto de los terrenos comunales, la venta de terrenos baldíos\index[lugares]{Jalacingo!terrenos baldíos} tuvo mejores resultados (\emph{v.} Cuadro~\ref{tab:venta-terrenos-baldios}, pág.~\pageref{tab:venta-terrenos-baldios}). Tan sólo en el municipio de Atzalan\index[lugares]{Atzalan!terrenos baldíos} fueron repartidas, en diferentes fechas, al menos 171\,273 ha\linelabel{cuatro} a diferentes individuos nacionales y extranjeros, lo que vendría a acentuar el aumento de las grandes propiedades durante el Porfiriato.\footnote{Se repartieron más terrenos baldíos pero las autoridades no las consignaron por tratarse de pequeñas propiedades.} Hubo una disparidad en la adjudicación de los baldíos. Las 658~ha\linelabel{siete} que se adjudicaron a José Cazzasa (sic),\index[nombres]{Cazzasa, Jose@Cazzasa, José} eran mínimas en comparación con las 62\,811 ha\linelabel{ocho} que se le otorgaron a Roberto Guzmán,\index[nombres]{Guzman, Roberto@Guzmán, Roberto} un próspero comerciante, reconocido usurero y miembro de la élite local del poblado de Atzalan.\index[lugares]{Atzalan!poblado} Aparte de las dimensiones superficiales de los baldíos,\index[lugares]{Atzalan!terrenos baldíos} debe tenerse en cuenta su riqueza agropecuaria. Se trataba de terrenos ubicados en la zona caliente del cantón,\index[lugares]{Jalacingo!cantón} con abundante agua, aptos para el cultivo de la vainilla, el tabaco, el café, la caña de azúcar y la engorda de ganado mayor, productos con una fuerte demanda en el mercado nacional e internacional.
+Frente a los exiguos logros en cuanto al reparto de los terrenos comunales, la venta de terrenos baldíos\index[lugares]{Jalacingo!terrenos baldíos} tuvo mejores resultados (\emph{v.} Cuadro~\ref{tab:venta-terrenos-baldios}, pág.~\pageref{tab:venta-terrenos-baldios}). Tan sólo en el municipio de Atzalan\index[lugares]{Atzalan!terrenos baldíos} fueron repartidas, en diferentes fechas, al menos 171\,273 ha\llabel{cuatro} a diferentes individuos nacionales y extranjeros, lo que vendría a acentuar el aumento de las grandes propiedades durante el Porfiriato.\footnote{Se repartieron más terrenos baldíos pero las autoridades no las consignaron por tratarse de pequeñas propiedades.} Hubo una disparidad en la adjudicación de los baldíos. Las 658~ha\llabel{siete} que se adjudicaron a José Cazzasa (sic),\index[nombres]{Cazzasa, Jose@Cazzasa, José} eran mínimas en comparación con las 62\,811 ha\llabel{ocho} que se le otorgaron a Roberto Guzmán,\index[nombres]{Guzman, Roberto@Guzmán, Roberto} un próspero comerciante, reconocido usurero y miembro de la élite local del poblado de Atzalan.\index[lugares]{Atzalan!poblado} Aparte de las dimensiones superficiales de los baldíos,\index[lugares]{Atzalan!terrenos baldíos} debe tenerse en cuenta su riqueza agropecuaria. Se trataba de terrenos ubicados en la zona caliente del cantón,\index[lugares]{Jalacingo!cantón} con abundante agua, aptos para el cultivo de la vainilla, el tabaco, el café, la caña de azúcar y la engorda de ganado mayor, productos con una fuerte demanda en el mercado nacional e internacional.
 \end{linenumbers}
 \begin{table}%[H]
 \centering
@@ -2085,9 +2089,9 @@ Pilón & {} & {} & {} & {} & 1 \\
 \toprule
 Pág. & Párrafo & Línea & \multicolumn{1}{c}{Dice} & Debe decir \\
 \midrule
-\pageref{para:errata}\textsu{*} & 2 & \lineref{cuatro} & 171273\,ha & 17159\,ha \\
-\pageref{para:errata}\textsu{*} & 2 & \lineref{siete} & 658\,ha & 65\,ha \\
-\pageref{para:errata}\textsu{*} & 2 & \lineref{ocho} & 62811\,ha & 6299\,ha \\
+\pageref{para:errata}\textsu{*} & 2 & \lref{cuatro} & 171273\,ha & 17159\,ha \\
+\pageref{para:errata}\textsu{*} & 2 & \lref{siete} & 658\,ha & 65\,ha \\
+\pageref{para:errata}\textsu{*} & 2 & \lref{ocho} & 62811\,ha & 6299\,ha \\
 \bottomrule
 \end{tabular}
 \caption*{\textsu{*} \emph{véanse} números de línea en el margen derecho de la pág.~\pageref{para:errata}.}

@@ -53,3 +53,4 @@ Control de versiones:
 1.051 Agregados agradecimientos de Tuxkernel e información adicional en Aviso legal (29-09-2024)
 1.052 Correcciones menores en Aviso legal (30-09-2024)
 1.053 Correcciones tipográficas menores para el año 2025 (08-01-2025)
+1.054 Agregados hipervínculos en Fe de erratas (15-05-2025)
