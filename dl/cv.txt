@@ -55,3 +55,4 @@ Control de versiones:
 1.053 Correcciones tipográficas menores para el año 2025 (08-01-2025)
 1.054 Agregados hipervínculos en Fe de erratas (15-05-2025)
 1.055 Agregadas referencias en pág. 53 (29-05-2025)
+1.056 Agregados hiperenlaces para gráficos (31-05-2025)
