@@ -1,0 +1,56 @@
+% PREAMBLE
+
+\documentclass[14pt,oneside,final]{extbook}
+\usepackage[TS1,T1]{fontenc}
+\usepackage[full]{textcomp}
+\usepackage[spanish,mexico,es-noindentfirst,es-nosectiondot]{babel}
+\usepackage[sups]{cochineal}
+\useosf
+\useproportional
+\usepackage[cochineal,vvarbb]{newtxmath}
+\usepackage[activate={true,nocompatibility},final=true,babel=true,tracking=true,
+kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype}
+\SetTracking[no ligatures=q]{encoding=*,shape=sc}{30}
+\usepackage[raise*=.05em,raisecapitaldash=.05em,raisecapitalhyphen=.05em,raisecapitaltimes=.05em,
+raisecapitalguillemets=.05em,raiseguillemets=.05em,raisefiguredash=.05em,
+slashkern=.05em,lowerslash=.05em]{typog}
+\usepackage[letterpaper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%\usepackage{showframe}
+\usepackage[pdftex]{graphicx}
+\usepackage{tikz,xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[figurename=Imagen]{caption}
+
+% DOCUMENT
+
+\begin{document}
+\thispagestyle{empty}
+\begin{figure}
+\centering
+\caption{Distribución poblacional del cantón de Jalacingo por municipio (habitantes), 1869--1870 y 1873.}
+\begin{tikzpicture}
+\begin{axis}[
+ybar,
+x tick label style={/pgf/number format/1000 sep={\,},font={\normalsize}},
+y tick label style={/pgf/number format/1000 sep={\,},font={\normalsize}},
+enlarge x limits=0.1,
+width=0.96\textwidth,
+legend style={at={(0.5,-0.10)},
+anchor=north,legend columns=-1},
+ylabel={\normalsize Habitantes},
+symbolic x coords={Altotonga,Atzalan,Jalacingo,{Las Minas},Perote,Tlapacoyan},
+xtick=data,/pgf/number format/1000 sep={\,},font={\scriptsize},bar width=.5cm,
+nodes near coords,
+nodes near coords align={vertical},
+]
+\addplot coordinates {(Altotonga,7052) (Atzalan,5543) (Jalacingo,5664) ({Las Minas},1695) (Perote,4730) (Tlapacoyan,5582)};
+\addplot coordinates {(Altotonga,7786) (Atzalan,5750) (Jalacingo,5579) ({Las Minas},2037) (Perote,5671) (Tlapacoyan,5462)};
+\addplot coordinates {(Altotonga,7993) (Atzalan,5945) (Jalacingo,5863) ({Las Minas},2247) (Perote,5897) (Tlapacoyan,5962)};
+\legend{\lfstyle\normalsize 1869,\lfstyle\normalsize 1870,\lfstyle\normalsize 1873}
+\end{axis}
+\end{tikzpicture}
+\caption*{\textsc{Fuente:} Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, Informes de
+sus gobernadores, 1826--1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, tomo \textsc{ii}, pp.~701 y 845; tomo \textsc{iii}, p. 1724.}
+\end{figure}
+\end{document}

@@ -1,0 +1,55 @@
+% PREAMBLE
+
+\documentclass[14pt,oneside,final]{extbook}
+\usepackage[TS1,T1]{fontenc}
+\usepackage[full]{textcomp}
+\usepackage[spanish,mexico,es-noindentfirst,es-nosectiondot]{babel}
+\usepackage[sups]{cochineal}
+\useosf
+\useproportional
+\usepackage[cochineal,vvarbb]{newtxmath}
+\usepackage[activate={true,nocompatibility},final=true,babel=true,tracking=true,
+kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype}
+\SetTracking[no ligatures=q]{encoding=*,shape=sc}{30}
+\usepackage[raise*=.05em,raisecapitaldash=.05em,raisecapitalhyphen=.05em,raisecapitaltimes=.05em,
+raisecapitalguillemets=.05em,raiseguillemets=.05em,raisefiguredash=.05em,
+slashkern=.05em,lowerslash=.05em]{typog}
+\usepackage[letterpaper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%\usepackage{showframe}
+\usepackage[pdftex]{graphicx}
+\usepackage{tikz,xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[figurename=Imagen]{caption}
+
+% DOCUMENT
+
+\begin{document}
+\thispagestyle{empty}
+\begin{figure}
+\centering
+\caption{Distribución poblacional del cantón de Jalacingo por grupo social, 1885 y 1910.}
+\begin{tikzpicture}
+\begin{axis}[
+ybar,
+x tick label style={/pgf/number format/1000 sep={\,},font={\normalsize}},
+y tick label style={/pgf/number format/1000 sep={\,},font={\normalsize}},
+scaled ticks=false,
+enlarge x limits=0.15,
+width=0.94\textwidth,
+ylabel={\normalsize Habitantes},
+legend style={at={(0.5,-0.10)},
+anchor=north,legend columns=-1},
+symbolic x coords={Indígenas,{No indígenas},Franceses,Italianos,Españoles},
+xtick=data,/pgf/number format/1000 sep={\,},font={\small},bar width=.7cm,
+nodes near coords,
+nodes near coords align={vertical},
+]
+\addplot coordinates {(Indígenas,21815) ({No indígenas},19975) (Franceses,108) (Italianos,29) (Españoles,24)};
+\addplot coordinates {(Indígenas,) ({No indígenas},) (Franceses,212) (Italianos,) (Españoles,98)};
+\legend{\lfstyle\normalsize 1885,\lfstyle\normalsize 1910}
+\end{axis}
+\end{tikzpicture}
+\caption*{\textsc{Fuente:} Soledad García Morales. \emph{Jefes políticos y regiones veracruzanas, 1880--1900.} Universidad Nacional Autónoma de México, México, 2000, 474 pp [Tesis doctoral].}
+\end{figure}
+\end{document}

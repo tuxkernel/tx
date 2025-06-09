@@ -1,0 +1,55 @@
+% PREAMBLE
+
+\documentclass[14pt,oneside,final]{extbook}
+\usepackage[TS1,T1]{fontenc}
+\usepackage[full]{textcomp}
+\usepackage[spanish,mexico,es-noindentfirst,es-nosectiondot]{babel}
+\usepackage[sups]{cochineal}
+\useosf
+\useproportional
+\usepackage[cochineal,vvarbb]{newtxmath}
+\usepackage[activate={true,nocompatibility},final=true,babel=true,tracking=true,
+kerning=true,spacing=false,factor=1100,stretch=20,shrink=20]{microtype}
+\SetTracking[no ligatures=q]{encoding=*,shape=sc}{30}
+\usepackage[raise*=.05em,raisecapitaldash=.05em,raisecapitalhyphen=.05em,raisecapitaltimes=.05em,
+raisecapitalguillemets=.05em,raiseguillemets=.05em,raisefiguredash=.05em,
+slashkern=.05em,lowerslash=.05em]{typog}
+\usepackage[letterpaper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%\usepackage{showframe}
+\usepackage[pdftex]{graphicx}
+\usepackage{tikz,xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[figurename=Imagen]{caption}
+
+% DOCUMENT
+
+\begin{document}
+\thispagestyle{empty}
+\begin{figure}
+\centering
+\caption{Población en el cantón de Jalacingo, 1869--1910.}
+\begin{tikzpicture}
+\lfstyle
+\begin{axis}[
+ybar,
+/pgf/number format/1000 sep={\,},
+scaled ticks=false,
+enlarge x limits=0.1,
+width=.95\textwidth,
+legend style={at={(0.5,-0.15)},
+ylabel=Habitantes,
+xlabel=Años,
+anchor=north,legend columns=-1},
+symbolic x coords={1869,1870,1873,1878,1882,1885,1895,1900,1908,1910},
+xtick=data,bar width=.7cm,
+nodes near coords,
+]
+\addplot[black!100,fill=gray!30,font=\small,/pgf/number format/1000 sep={\,}] plot coordinates
+{(1869,30266) (1870,32285) (1873,33907) (1878,36572) (1882,42610) (1885,41992) (1895,60593)
+ (1900,67016) (1908,67016) (1910,69913)};
+\end{axis}
+\end{tikzpicture}
+\caption*{\textsc{Fuente:} Soledad García Morales, «Sistema político y control de cantones en Veracruz, 1877--1911» en \emph{La palabra y el hombre. Revista de la Universidad Veracruzana.} Universidad Veracruzana, Xalapa, 1990, julio-septiembre, núm.~75, pp. 313--314; Carmen Blázquez Domínguez (Comp.), \emph{Estado de Veracruz, Informes de sus gobernadores, 1826–1986.} Gobierno del estado de Veracruz, Xalapa, 1986a, tomo \textsc{ii}, pp. 701 y 845; Antonio García Cubas, \emph{Escritos diversos. De 1870--1874.} Imprenta Escalante, México, 1874, p. 41; Carmen Blázquez Domínguez (Comp.), \emph{Veracruz. Textos de su historia.} Gobierno del estado de Veracruz\kernedslash Instituto Veracruzano de Cultura\kernedslash Instituto Mora, México, 1988b, tomo \textsc{ii}, p. 168.}
+\end{figure}
+\end{document}
