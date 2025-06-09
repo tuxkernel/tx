@@ -472,8 +472,8 @@ Puebla, Pue., 29 de agosto del 2007
 \begin{minipage}{7.5cm}
 \includegraphics[width=2.5cm]{wtfpl}\phantomsection\label{fig:wtfpl} \protect\medskip
 
-\def\fileversion{1.056}
-\def\filedate{(31--05--2025)}
+\def\fileversion{1.057}
+\def\filedate{(09--06--2025)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
 Copyright \textcopyright\ 2007--2025. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -1346,7 +1346,7 @@ nodes near coords,
 {(Compras,56) (Ventas,42) (Préstamos,101) (Otros,2)};
 \end{axis}
 \end{tikzpicture}
-\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910.}
+\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910. Cfr. Cuadro~\ref{tab:operaciones-fam-villegas}, pág.~\pageref{tab:operaciones-fam-villegas}; Imagen~\ref{fig:porcentajes}, pág.~\pageref{fig:porcentajes}.}
 \label{fig:operaciones-villegas}
 \end{figure}
 % PORCENTAJES
@@ -1518,7 +1518,7 @@ Compras & Ventas & Préstamos & Otros & Total \\
 56 & 42 & 101 & 2 & 201 \\
 \bottomrule
 \end{tabular}
-\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910.}
+\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910. Cfr. Imágenes \ref{fig:operaciones-villegas} y \ref{fig:porcentajes}, págs.~\pageref{fig:operaciones-villegas} y \pageref{fig:porcentajes}.}
 \label{tab:operaciones-fam-villegas}
 \end{table}
 \begin{table}[H]

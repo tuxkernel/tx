@@ -56,3 +56,4 @@ Control de versiones:
 1.054 Agregados hipervínculos en Fe de erratas (15-05-2025)
 1.055 Agregadas referencias en pág. 53 (29-05-2025)
 1.056 Agregados hiperenlaces para gráficos (31-05-2025)
+1.057 Agregadas algunas referencias cruzadas en Cuadros e Imágenes (09-06-2025)
