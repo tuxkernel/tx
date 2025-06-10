@@ -1358,7 +1358,7 @@ nodes near coords,
 \centering
 \pie[explode=0.1,text=inside,color={gray!27.8,gray!20.8,gray!50.2,black!0.9}]{27.8/Compras,20.8/Ventas,50.2/Préstamos,0.9/Otros}
 \end{tikzpicture}
-\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910.}
+\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910. Cfr. Cuadro~\ref{tab:operaciones-fam-villegas}, pág.~\pageref{tab:operaciones-fam-villegas}.}
 \label{fig:porcentajes}
 \end{figure}
 
@@ -1518,7 +1518,7 @@ Compras & Ventas & Préstamos & Otros & Total \\
 56 & 42 & 101 & 2 & 201 \\
 \bottomrule
 \end{tabular}
-\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910. Cfr. Imágenes \ref{fig:operaciones-villegas} y \ref{fig:porcentajes}, págs.~\pageref{fig:operaciones-villegas} y \pageref{fig:porcentajes}.}
+\caption*{\textsc{Fuente:} \textsc{agnep}, 1876--1910; \textsc{arppj}, 1872--1910. Cfr. Imágenes \ref{fig:operaciones-villegas}--\ref{fig:porcentajes}, págs.~\pageref{fig:operaciones-villegas}--\pageref{fig:porcentajes}.}
 \label{tab:operaciones-fam-villegas}
 \end{table}
 \begin{table}[H]
