@@ -472,8 +472,8 @@ Puebla, Pue., 29 de agosto del 2007
 \begin{minipage}{7.5cm}
 \includegraphics[width=2.5cm]{wtfpl}\phantomsection\label{fig:wtfpl} \protect\medskip
 
-\def\fileversion{1.057}
-\def\filedate{(09--06--2025)}
+\def\fileversion{1.058}
+\def\filedate{(17--07--2025)}
 \href{https://tuxkernel.github.io/tx/dl/cv.txt}{versión\space\fileversion\space\filedate} \protect\medskip
 
 Copyright \textcopyright\ 2007--2025. \href{noel_merino@yahoo.com.mx}{Noel Merino Hernández} (del texto).
@@ -1537,7 +1537,7 @@ Con tasa de interés & Sin tasa de interés\textsu{*} & Total \\
 \end{table}
 \begin{table}[H]
 \centering
-\caption[Préstamos realizados según la tasa de interés, 1872--1910]{Préstamos realizados según la tasa de interés, 1872--1910.\index[nombres]{Villegas!préstamos según tasa de interés (\emph{cuadro}}}
+\caption[Préstamos realizados según la tasa de interés, 1872--1910]{Préstamos realizados según la tasa de interés, 1872--1910.\index[nombres]{Villegas!préstamos según tasa de interés (\emph{cuadro})}}
 \tlfstyle
 \begin{tabular}{@{}lrrrcrcrccc@{}}
 \toprule
