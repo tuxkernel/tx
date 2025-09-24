@@ -58,3 +58,4 @@ Control de versiones:
 1.056 Agregados hiperenlaces para gráficos (31-05-2025)
 1.057 Agregadas algunas referencias cruzadas en Cuadros e Imágenes (09-06-2025)
 1.058 Correcciones menores en Índice toponímico (17-07-2025)
+1.059 Corrección ortotipográfica en pág. 153 (24-09-2025)
