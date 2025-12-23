@@ -59,3 +59,4 @@ Control de versiones:
 1.057 Agregadas algunas referencias cruzadas en Cuadros e Imágenes (09-06-2025)
 1.058 Correcciones menores en Índice toponímico (17-07-2025)
 1.059 Corrección ortotipográfica en pág. 153 (24-09-2025)
+1.060 Actualización de fechas para el año 2026 (01-01-2026)
